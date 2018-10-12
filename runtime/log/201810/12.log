@@ -1,0 +1,113 @@
+---------------------------------------------------------------
+[ 2018-10-12T16:46:47+08:00 ] 127.0.0.1 GET /
+[ info ] www.linguifengs.org/ [运行时间：0.043868s][吞吐率：22.80req/s] [内存消耗：1,435.46kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T16:47:06+08:00 ] 127.0.0.1 GET /
+[ info ] www.linguifengs.org/ [运行时间：0.044427s][吞吐率：22.51req/s] [内存消耗：1,455.13kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=37',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\lin\MyBlog\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T16:47:31+08:00 ] 127.0.0.1 GET /
+[ info ] www.linguifengs.org/ [运行时间：0.042550s][吞吐率：23.50req/s] [内存消耗：1,455.57kb] [文件加载：44]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=38',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\lin\MyBlog\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T16:48:35+08:00 ] 127.0.0.1 GET /
+[ info ] www.linguifengs.org/ [运行时间：0.070796s][吞吐率：14.13req/s] [内存消耗：1,833.30kb] [文件加载：52]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=39',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\lin\MyBlog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\lin\MyBlog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
