@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\lin\MyBlog\public/../application/index\view\index\index.html";i:1539340419;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\lin\MyBlog\public/../application/index\view\index\index.html";i:1539341195;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +7,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE;chrome=1">
 <title>MAOLAI个人博客 | wordpress博客Grace主题</title>
 <meta name="keywords" content="个人博客网站,lmlblog,Grace主题,wordpress主题">
-<link rel='stylesheet' href='/public/static/css/owl.carousel.min.css' type='text/css' media='all' />
-<link rel='stylesheet' href='/public/static/css/fontello.css' type='text/css' media='all' />
-<link rel='stylesheet' href='/public/static/css/nicetheme.css' type='text/css' media='all' />
-<link rel='stylesheet' href='/public/static/css/reset.css' type='text/css' media='all' />
-<link rel='stylesheet' href='/public/static/css/style.css' type='text/css' media='all' />
-<script type='text/javascript' src='/public/static/js/jquery.js'></script>
+<link rel='stylesheet' href='/static/css/owl.carousel.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='/static/css/fontello.css' type='text/css' media='all' />
+<link rel='stylesheet' href='/static/css/nicetheme.css' type='text/css' media='all' />
+<link rel='stylesheet' href='/static/css/reset.css' type='text/css' media='all' />
+<link rel='stylesheet' href='/static/css/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='/static/js/jquery.js'></script>
 <style>
 #header, #header .toggle-tougao, .two-s-footer .footer-box {
 	background-color: #000;
@@ -566,9 +566,9 @@
 var suxingme_url = {"slidestyle":"index_slide_sytle_2","wow":"1","sideroll":"1","duang":"1"};
 /* ]]> */
 </script> 
-<script type='text/javascript' src='/public/static/js/plugins.min.js'></script> 
-<script type='text/javascript' src='/public/static/js/lmlblog.js'></script> 
-<script type='text/javascript' src='/public/static/js/owl.carousel.min.js'></script> 
-<script type='text/javascript' src='/public/static/js/wow.min.js'></script>
+<script type='text/javascript' src='/static/js/plugins.min.js'></script> 
+<script type='text/javascript' src='/static/js/lmlblog.js'></script> 
+<script type='text/javascript' src='/static/js/owl.carousel.min.js'></script> 
+<script type='text/javascript' src='/static/js/wow.min.js'></script>
 </body>
 </html>
