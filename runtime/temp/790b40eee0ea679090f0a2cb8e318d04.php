@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"/usr/share/nginx/html/MyBlog/public/../application/index/view/index/index.html";i:1539340659;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
 <head>
