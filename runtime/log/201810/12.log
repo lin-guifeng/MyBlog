@@ -111,10 +111,17 @@
 [ info ] [ VIEW ] D:\lin\MyBlog\public/../application/index\view\index\index.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+<<<<<<< HEAD
 ---------------------------------------------------------------
 [ 2018-10-12T17:01:00+08:00 ] 119.123.49.107 GET /
 [ info ] www.linguifeng.top/ [运行时间：0.037339s][吞吐率：26.78req/s] [内存消耗：1,394.82kb] [文件加载：47]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /
+[ info ] www.linguifengs.org/ [运行时间：0.059734s][吞吐率：16.74req/s] [内存消耗：1,899.91kb] [文件加载：50]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -123,6 +130,7 @@
     1 => NULL,
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -219,11 +227,18 @@
   'host' => 'www.linguifeng.top',
   'connection' => 'keep-alive',
   'cache-control' => 'max-age=0',
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
   'upgrade-insecure-requests' => '1',
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN,zh;q=0.9',
+<<<<<<< HEAD
   'cookie' => '__guid=166004024.635698143544678400.1535966060786.503; pgv_pvi=1968872448; thinkphp_show_page_trace=0|0; monitor_count=9',
   'content-type' => '',
   'content-length' => '',
@@ -238,12 +253,27 @@
 [ 2018-10-12T18:37:48+08:00 ] 119.123.49.107 GET /public/static/css/nicetheme.css
 [ info ] www.linguifeng.top/public/static/css/nicetheme.css [运行时间：0.087803s][吞吐率：11.39req/s] [内存消耗：1,136.36kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\lin\MyBlog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\lin\MyBlog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/js/jquery.js
+[ info ] www.linguifengs.org/public/static/js/jquery.js [运行时间：0.045736s][吞吐率：21.86req/s] [内存消耗：1,435.40kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'public',
     1 => 'static',
+<<<<<<< HEAD
     2 => 'css',
   ),
 )
@@ -266,6 +296,28 @@
 [ 2018-10-12T18:37:48+08:00 ] 119.123.49.107 GET /public/static/css/owl.carousel.min.css
 [ info ] www.linguifeng.top/public/static/css/owl.carousel.min.css [运行时间：0.094348s][吞吐率：10.60req/s] [内存消耗：1,136.38kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/css/nicetheme.css
+[ info ] www.linguifengs.org/public/static/css/nicetheme.css [运行时间：0.049749s][吞吐率：20.10req/s] [内存消耗：1,435.56kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -274,6 +326,7 @@
     1 => 'static',
     2 => 'css',
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -294,6 +347,26 @@
 [ 2018-10-12T18:37:48+08:00 ] 119.123.49.107 GET /public/static/css/style.css
 [ info ] www.linguifeng.top/public/static/css/style.css [运行时间：0.092174s][吞吐率：10.85req/s] [内存消耗：1,136.18kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/css/reset.css
+[ info ] www.linguifengs.org/public/static/css/reset.css [运行时间：0.062844s][吞吐率：15.91req/s] [内存消耗：1,435.47kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -302,6 +375,7 @@
     1 => 'static',
     2 => 'css',
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -322,6 +396,26 @@
 [ 2018-10-12T18:37:48+08:00 ] 119.123.49.107 GET /public/static/css/fontello.css
 [ info ] www.linguifeng.top/public/static/css/fontello.css [运行时间：0.100824s][吞吐率：9.92req/s] [内存消耗：1,136.19kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/css/fontello.css
+[ info ] www.linguifengs.org/public/static/css/fontello.css [运行时间：0.066842s][吞吐率：14.96req/s] [内存消耗：1,435.49kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -330,6 +424,7 @@
     1 => 'static',
     2 => 'css',
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -350,6 +445,26 @@
 [ 2018-10-12T18:37:48+08:00 ] 119.123.49.107 GET /public/static/css/reset.css
 [ info ] www.linguifeng.top/public/static/css/reset.css [运行时间：0.092114s][吞吐率：10.86req/s] [内存消耗：1,136.19kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/css/owl.carousel.min.css
+[ info ] www.linguifengs.org/public/static/css/owl.carousel.min.css [运行时间：0.088222s][吞吐率：11.34req/s] [内存消耗：1,435.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -358,6 +473,7 @@
     1 => 'static',
     2 => 'css',
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -434,12 +550,33 @@
 [ 2018-10-12T18:37:49+08:00 ] 119.123.49.107 GET /public/static/js/wow.min.js
 [ info ] www.linguifeng.top/public/static/js/wow.min.js [运行时间：0.084840s][吞吐率：11.79req/s] [内存消耗：1,136.25kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/css/style.css
+[ info ] www.linguifengs.org/public/static/css/style.css [运行时间：0.104659s][吞吐率：9.55req/s] [内存消耗：1,435.47kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'public',
     1 => 'static',
+<<<<<<< HEAD
     2 => 'js',
   ),
 )
@@ -462,6 +599,28 @@
 [ 2018-10-12T18:37:49+08:00 ] 119.123.49.107 GET /public/static/js/owl.carousel.min.js
 [ info ] www.linguifeng.top/public/static/js/owl.carousel.min.js [运行时间：0.091172s][吞吐率：10.97req/s] [内存消耗：1,136.27kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/js/plugins.min.js
+[ info ] www.linguifengs.org/public/static/js/plugins.min.js [运行时间：0.055196s][吞吐率：18.12req/s] [内存消耗：1,435.35kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -470,6 +629,7 @@
     1 => 'static',
     2 => 'js',
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -490,6 +650,26 @@
 [ 2018-10-12T18:37:49+08:00 ] 119.123.49.107 GET /public/static/js/lmlblog.js
 [ info ] www.linguifeng.top/public/static/js/lmlblog.js [运行时间：0.088635s][吞吐率：11.28req/s] [内存消耗：1,136.25kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/js/owl.carousel.min.js
+[ info ] www.linguifengs.org/public/static/js/owl.carousel.min.js [运行时间：0.035463s][吞吐率：28.20req/s] [内存消耗：1,435.30kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -498,6 +678,7 @@
     1 => 'static',
     2 => 'js',
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -518,6 +699,26 @@
 [ 2018-10-12T18:37:49+08:00 ] 119.123.49.107 GET /images/19.jpg
 [ info ] www.linguifeng.top/images/19.jpg [运行时间：0.092581s][吞吐率：10.80req/s] [内存消耗：1,136.30kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/19.jpg
+[ info ] www.linguifengs.org/images/19.jpg [运行时间：0.045534s][吞吐率：21.96req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -526,6 +727,7 @@
     1 => '19.jpg',
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -12736,6 +12938,26 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /public/static/js/owl.carousel.min.js
 [ info ] www.linguifeng.top/public/static/js/owl.carousel.min.js [运行时间：0.141331s][吞吐率：7.08req/s] [内存消耗：1,135.97kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/js/wow.min.js
+[ info ] www.linguifengs.org/public/static/js/wow.min.js [运行时间：0.040046s][吞吐率：24.97req/s] [内存消耗：1,435.35kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -12744,6 +12966,7 @@
     1 => 'static',
     2 => 'js',
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -12764,11 +12987,32 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/6.jpg
 [ info ] www.linguifeng.top/images/6.jpg [运行时间：0.116486s][吞吐率：8.58req/s] [内存消耗：1,135.95kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/20.jpg
+[ info ] www.linguifengs.org/images/20.jpg [运行时间：0.045538s][吞吐率：21.96req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '6.jpg',
     2 => NULL,
   ),
@@ -12792,10 +13036,34 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/16.jpg
 [ info ] www.linguifeng.top/images/16.jpg [运行时间：0.112868s][吞吐率：8.86req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '20.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/js/lmlblog.js
+[ info ] www.linguifengs.org/public/static/js/lmlblog.js [运行时间：0.044211s][吞吐率：22.62req/s] [内存消耗：1,435.35kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'images',
     1 => '16.jpg',
     2 => NULL,
@@ -12820,6 +13088,30 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/21.jpg
 [ info ] www.linguifeng.top/images/21.jpg [运行时间：0.111962s][吞吐率：8.93req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'public',
+    1 => 'static',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/21.jpg
+[ info ] www.linguifengs.org/images/21.jpg [运行时间：0.037561s][吞吐率：26.62req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -12828,6 +13120,7 @@
     1 => '21.jpg',
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -12848,11 +13141,32 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/2.jpg
 [ info ] www.linguifeng.top/images/2.jpg [运行时间：0.118300s][吞吐率：8.45req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/1.jpg
+[ info ] www.linguifengs.org/images/1.jpg [运行时间：0.034754s][吞吐率：28.77req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '2.jpg',
     2 => NULL,
   ),
@@ -12876,11 +13190,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/11.jpg
 [ info ] www.linguifeng.top/images/11.jpg [运行时间：0.164856s][吞吐率：6.07req/s] [内存消耗：1,135.95kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '1.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/wo.jpg
+[ info ] www.linguifengs.org/images/wo.jpg [运行时间：0.037592s][吞吐率：26.60req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '11.jpg',
     2 => NULL,
   ),
@@ -12904,10 +13242,34 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /public/static/js/wow.min.js
 [ info ] www.linguifeng.top/public/static/js/wow.min.js [运行时间：0.110868s][吞吐率：9.02req/s] [内存消耗：1,135.98kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => 'wo.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/2.jpg
+[ info ] www.linguifengs.org/images/2.jpg [运行时间：0.042131s][吞吐率：23.74req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'js',
@@ -12932,11 +13294,36 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/1.jpg
 [ info ] www.linguifeng.top/images/1.jpg [运行时间：0.116629s][吞吐率：8.57req/s] [内存消耗：1,135.95kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'images',
+    1 => '2.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/4.jpg
+[ info ] www.linguifengs.org/images/4.jpg [运行时间：0.051655s][吞吐率：19.36req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '1.jpg',
     2 => NULL,
   ),
@@ -12960,11 +13347,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/wo.jpg
 [ info ] www.linguifeng.top/images/wo.jpg [运行时间：0.124246s][吞吐率：8.05req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '4.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/5.jpg
+[ info ] www.linguifengs.org/images/5.jpg [运行时间：0.052287s][吞吐率：19.13req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => 'wo.jpg',
     2 => NULL,
   ),
@@ -12988,6 +13399,29 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/3.jpg
 [ info ] www.linguifeng.top/images/3.jpg [运行时间：0.118978s][吞吐率：8.40req/s] [内存消耗：1,135.95kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '5.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/3.jpg
+[ info ] www.linguifengs.org/images/3.jpg [运行时间：0.066326s][吞吐率：15.08req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -12996,6 +13430,7 @@
     1 => '3.jpg',
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -13016,11 +13451,32 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/4.jpg
 [ info ] www.linguifeng.top/images/4.jpg [运行时间：0.115580s][吞吐率：8.65req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/6.jpg
+[ info ] www.linguifengs.org/images/6.jpg [运行时间：0.059026s][吞吐率：16.94req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '4.jpg',
     2 => NULL,
   ),
@@ -13044,11 +13500,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/5.jpg
 [ info ] www.linguifeng.top/images/5.jpg [运行时间：0.104780s][吞吐率：9.54req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '6.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/8.jpg
+[ info ] www.linguifengs.org/images/8.jpg [运行时间：0.048163s][吞吐率：20.76req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '5.jpg',
     2 => NULL,
   ),
@@ -13072,11 +13552,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/8.jpg
 [ info ] www.linguifeng.top/images/8.jpg [运行时间：0.101615s][吞吐率：9.84req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '8.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/9.jpg
+[ info ] www.linguifengs.org/images/9.jpg [运行时间：0.045315s][吞吐率：22.07req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '8.jpg',
     2 => NULL,
   ),
@@ -13100,11 +13604,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/9.jpg
 [ info ] www.linguifeng.top/images/9.jpg [运行时间：0.052750s][吞吐率：18.96req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '9.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/11.jpg
+[ info ] www.linguifengs.org/images/11.jpg [运行时间：0.041652s][吞吐率：24.01req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '9.jpg',
     2 => NULL,
   ),
@@ -13128,11 +13656,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/10.jpg
 [ info ] www.linguifeng.top/images/10.jpg [运行时间：0.035174s][吞吐率：28.43req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '11.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/13.jpg
+[ info ] www.linguifengs.org/images/13.jpg [运行时间：0.034933s][吞吐率：28.63req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '10.jpg',
     2 => NULL,
   ),
@@ -13156,11 +13708,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/12.jpg
 [ info ] www.linguifeng.top/images/12.jpg [运行时间：0.018685s][吞吐率：53.52req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '13.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/14.jpg
+[ info ] www.linguifengs.org/images/14.jpg [运行时间：0.036496s][吞吐率：27.40req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '12.jpg',
     2 => NULL,
   ),
@@ -13184,11 +13760,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/13.jpg
 [ info ] www.linguifeng.top/images/13.jpg [运行时间：0.018622s][吞吐率：53.70req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '14.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/12.jpg
+[ info ] www.linguifengs.org/images/12.jpg [运行时间：0.055282s][吞吐率：18.09req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '13.jpg',
     2 => NULL,
   ),
@@ -13212,11 +13812,35 @@
 [ 2018-10-12T18:52:53+08:00 ] 119.123.49.107 GET /images/14.jpg
 [ info ] www.linguifeng.top/images/14.jpg [运行时间：0.018969s][吞吐率：52.72req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '12.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/10.jpg
+[ info ] www.linguifengs.org/images/10.jpg [运行时间：0.077322s][吞吐率：12.93req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '14.jpg',
     2 => NULL,
   ),
@@ -13240,6 +13864,29 @@
 [ 2018-10-12T18:52:54+08:00 ] 119.123.49.107 GET /images/15.jpg
 [ info ] www.linguifeng.top/images/15.jpg [运行时间：0.018807s][吞吐率：53.17req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '10.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/15.jpg
+[ info ] www.linguifengs.org/images/15.jpg [运行时间：0.040930s][吞吐率：24.43req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -13248,6 +13895,7 @@
     1 => '15.jpg',
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -13268,11 +13916,32 @@
 [ 2018-10-12T18:52:54+08:00 ] 119.123.49.107 GET /images/b1.jpg
 [ info ] www.linguifeng.top/images/b1.jpg [运行时间：0.018899s][吞吐率：52.91req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/16.jpg
+[ info ] www.linguifengs.org/images/16.jpg [运行时间：0.038171s][吞吐率：26.20req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => 'b1.jpg',
     2 => NULL,
   ),
@@ -13296,11 +13965,35 @@
 [ 2018-10-12T18:52:54+08:00 ] 119.123.49.107 GET /images/17.jpg
 [ info ] www.linguifeng.top/images/17.jpg [运行时间：0.021926s][吞吐率：45.61req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '16.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/b1.jpg
+[ info ] www.linguifengs.org/images/b1.jpg [运行时间：0.042655s][吞吐率：23.44req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '17.jpg',
     2 => NULL,
   ),
@@ -13324,6 +14017,29 @@
 [ 2018-10-12T18:52:54+08:00 ] 119.123.49.107 GET /images/18.jpg
 [ info ] www.linguifeng.top/images/18.jpg [运行时间：0.021122s][吞吐率：47.34req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => 'b1.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/18.jpg
+[ info ] www.linguifengs.org/images/18.jpg [运行时间：0.034638s][吞吐率：28.87req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -13332,6 +14048,7 @@
     1 => '18.jpg',
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -13352,10 +14069,31 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /
 [ info ] www.linguifeng.top/ [运行时间：0.020988s][吞吐率：47.65req/s] [内存消耗：1,284.37kb] [文件加载：45]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /images/17.jpg
+[ info ] www.linguifengs.org/images/17.jpg [运行时间：0.045456s][吞吐率：22.00req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => '',
     1 => NULL,
     2 => NULL,
@@ -13384,12 +14122,37 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /public/static/css/nicetheme.css
 [ info ] www.linguifeng.top/public/static/css/nicetheme.css [运行时间：0.100048s][吞吐率：10.00req/s] [内存消耗：1,136.02kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'images',
+    1 => '17.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:41+08:00 ] 127.0.0.1 GET /public/static/js/owl.carousel.min.js
+[ info ] www.linguifengs.org/public/static/js/owl.carousel.min.js [运行时间：0.033589s][吞吐率：29.77req/s] [内存消耗：1,435.28kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'public',
     1 => 'static',
+<<<<<<< HEAD
     2 => 'css',
   ),
 )
@@ -13412,12 +14175,35 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /public/static/css/owl.carousel.min.css
 [ info ] www.linguifeng.top/public/static/css/owl.carousel.min.css [运行时间：0.106654s][吞吐率：9.38req/s] [内存消耗：1,136.08kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:45:42+08:00 ] 127.0.0.1 GET /public/static/js/wow.min.js
+[ info ] www.linguifengs.org/public/static/js/wow.min.js [运行时间：0.039726s][吞吐率：25.17req/s] [内存消耗：1,435.35kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'public',
     1 => 'static',
+<<<<<<< HEAD
     2 => 'css',
   ),
 )
@@ -13440,10 +14226,33 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /public/static/css/reset.css
 [ info ] www.linguifeng.top/public/static/css/reset.css [运行时间：0.114978s][吞吐率：8.70req/s] [内存消耗：1,135.88kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /
+[ info ] www.linguifengs.org/ [运行时间：0.055773s][吞吐率：17.93req/s] [内存消耗：1,900.05kb] [文件加载：50]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'css',
@@ -13468,10 +14277,39 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /public/static/css/fontello.css
 [ info ] www.linguifeng.top/public/static/css/fontello.css [运行时间：0.120672s][吞吐率：8.29req/s] [内存消耗：1,135.90kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=41',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\lin\MyBlog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\lin\MyBlog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/19.jpg
+[ info ] www.linguifengs.org/images/19.jpg [运行时间：0.048180s][吞吐率：20.76req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'css',
@@ -13496,10 +14334,35 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /public/static/css/style.css
 [ info ] www.linguifeng.top/public/static/css/style.css [运行时间：0.118343s][吞吐率：8.45req/s] [内存消耗：1,135.88kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'images',
+    1 => '19.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/2.jpg
+[ info ] www.linguifengs.org/images/2.jpg [运行时间：0.047479s][吞吐率：21.06req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'css',
@@ -13524,10 +14387,35 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /public/static/js/jquery.js
 [ info ] www.linguifeng.top/public/static/js/jquery.js [运行时间：0.124539s][吞吐率：8.03req/s] [内存消耗：1,135.91kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'images',
+    1 => '2.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/wo.jpg
+[ info ] www.linguifengs.org/images/wo.jpg [运行时间：0.047216s][吞吐率：21.18req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'js',
@@ -13552,6 +14440,30 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /images/20.jpg
 [ info ] www.linguifeng.top/images/20.jpg [运行时间：0.117468s][吞吐率：8.51req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'images',
+    1 => 'wo.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/20.jpg
+[ info ] www.linguifengs.org/images/20.jpg [运行时间：0.050966s][吞吐率：19.62req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -13560,6 +14472,7 @@
     1 => '20.jpg',
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -13580,11 +14493,32 @@
 [ 2018-10-12T18:52:56+08:00 ] 119.123.49.107 GET /images/19.jpg
 [ info ] www.linguifeng.top/images/19.jpg [运行时间：0.132705s][吞吐率：7.54req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/1.jpg
+[ info ] www.linguifengs.org/images/1.jpg [运行时间：0.057155s][吞吐率：17.50req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '19.jpg',
     2 => NULL,
   ),
@@ -13636,10 +14570,34 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /public/static/js/wow.min.js
 [ info ] www.linguifeng.top/public/static/js/wow.min.js [运行时间：0.116631s][吞吐率：8.57req/s] [内存消耗：1,135.96kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '1.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/21.jpg
+[ info ] www.linguifengs.org/images/21.jpg [运行时间：0.063107s][吞吐率：15.85req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'js',
@@ -13664,10 +14622,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /public/static/js/plugins.min.js
 [ info ] www.linguifeng.top/public/static/js/plugins.min.js [运行时间：0.130388s][吞吐率：7.67req/s] [内存消耗：1,135.87kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'images',
+    1 => '21.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/3.jpg
+[ info ] www.linguifengs.org/images/3.jpg [运行时间：0.056349s][吞吐率：17.75req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'js',
@@ -13692,10 +14675,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /public/static/js/lmlblog.js
 [ info ] www.linguifeng.top/public/static/js/lmlblog.js [运行时间：0.135192s][吞吐率：7.40req/s] [内存消耗：1,135.98kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'images',
+    1 => '3.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /static/css/suxingme.otf
+[ info ] www.linguifengs.org/static/css/suxingme.otf [运行时间：0.037743s][吞吐率：26.49req/s] [内存消耗：1,435.69kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'public',
     1 => 'static',
     2 => 'js',
@@ -13720,11 +14728,37 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/2.jpg
 [ info ] www.linguifeng.top/images/2.jpg [运行时间：0.124569s][吞吐率：8.03req/s] [内存消耗：1,135.95kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'static',
+    1 => 'css',
+    2 => 'suxingme.otf',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'origin' => 'http://www.linguifengs.org',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.linguifengs.org/static/css/reset.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/4.jpg
+[ info ] www.linguifengs.org/images/4.jpg [运行时间：0.032874s][吞吐率：30.42req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '2.jpg',
     2 => NULL,
   ),
@@ -13748,11 +14782,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/11.jpg
 [ info ] www.linguifeng.top/images/11.jpg [运行时间：0.124128s][吞吐率：8.06req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '4.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/5.jpg
+[ info ] www.linguifengs.org/images/5.jpg [运行时间：0.034034s][吞吐率：29.38req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '11.jpg',
     2 => NULL,
   ),
@@ -13776,6 +14834,29 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/6.jpg
 [ info ] www.linguifeng.top/images/6.jpg [运行时间：0.122787s][吞吐率：8.14req/s] [内存消耗：1,135.95kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '5.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/6.jpg
+[ info ] www.linguifengs.org/images/6.jpg [运行时间：0.032815s][吞吐率：30.47req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
@@ -13784,6 +14865,7 @@
     1 => '6.jpg',
     2 => NULL,
   ),
+<<<<<<< HEAD
 )
 [ info ] [ HEADER ] array (
   'host' => 'www.linguifeng.top',
@@ -13804,11 +14886,32 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/21.jpg
 [ info ] www.linguifeng.top/images/21.jpg [运行时间：0.117663s][吞吐率：8.50req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/8.jpg
+[ info ] www.linguifengs.org/images/8.jpg [运行时间：0.043544s][吞吐率：22.97req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '21.jpg',
     2 => NULL,
   ),
@@ -13832,11 +14935,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/1.jpg
 [ info ] www.linguifeng.top/images/1.jpg [运行时间：0.117816s][吞吐率：8.49req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '8.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/9.jpg
+[ info ] www.linguifengs.org/images/9.jpg [运行时间：0.046667s][吞吐率：21.43req/s] [内存消耗：1,435.45kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '1.jpg',
     2 => NULL,
   ),
@@ -13860,11 +14987,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/16.jpg
 [ info ] www.linguifeng.top/images/16.jpg [运行时间：0.135365s][吞吐率：7.39req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '9.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/10.jpg
+[ info ] www.linguifengs.org/images/10.jpg [运行时间：0.036181s][吞吐率：27.64req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '16.jpg',
     2 => NULL,
   ),
@@ -13916,11 +15067,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/wo.jpg
 [ info ] www.linguifeng.top/images/wo.jpg [运行时间：0.078155s][吞吐率：12.80req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '10.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/11.jpg
+[ info ] www.linguifengs.org/images/11.jpg [运行时间：0.037442s][吞吐率：26.71req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => 'wo.jpg',
     2 => NULL,
   ),
@@ -13944,11 +15119,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/3.jpg
 [ info ] www.linguifeng.top/images/3.jpg [运行时间：0.056616s][吞吐率：17.66req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '11.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/12.jpg
+[ info ] www.linguifengs.org/images/12.jpg [运行时间：0.036840s][吞吐率：27.14req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '3.jpg',
     2 => NULL,
   ),
@@ -14000,11 +15199,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/4.jpg
 [ info ] www.linguifeng.top/images/4.jpg [运行时间：0.023139s][吞吐率：43.22req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '12.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/14.jpg
+[ info ] www.linguifengs.org/images/14.jpg [运行时间：0.031649s][吞吐率：31.60req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '4.jpg',
     2 => NULL,
   ),
@@ -14028,11 +15251,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/5.jpg
 [ info ] www.linguifeng.top/images/5.jpg [运行时间：0.020764s][吞吐率：48.16req/s] [内存消耗：1,135.95kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '14.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/13.jpg
+[ info ] www.linguifengs.org/images/13.jpg [运行时间：0.044102s][吞吐率：22.67req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '5.jpg',
     2 => NULL,
   ),
@@ -14056,11 +15303,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/8.jpg
 [ info ] www.linguifeng.top/images/8.jpg [运行时间：0.020680s][吞吐率：48.36req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '13.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/b1.jpg
+[ info ] www.linguifengs.org/images/b1.jpg [运行时间：0.032905s][吞吐率：30.39req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '8.jpg',
     2 => NULL,
   ),
@@ -14084,11 +15355,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/9.jpg
 [ info ] www.linguifeng.top/images/9.jpg [运行时间：0.019396s][吞吐率：51.56req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => 'b1.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/16.jpg
+[ info ] www.linguifengs.org/images/16.jpg [运行时间：0.032224s][吞吐率：31.03req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '9.jpg',
     2 => NULL,
   ),
@@ -14112,11 +15407,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/10.jpg
 [ info ] www.linguifeng.top/images/10.jpg [运行时间：0.018556s][吞吐率：53.89req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '16.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/15.jpg
+[ info ] www.linguifengs.org/images/15.jpg [运行时间：0.036275s][吞吐率：27.57req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '10.jpg',
     2 => NULL,
   ),
@@ -14140,11 +15459,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/12.jpg
 [ info ] www.linguifeng.top/images/12.jpg [运行时间：0.019229s][吞吐率：52.00req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '15.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/17.jpg
+[ info ] www.linguifengs.org/images/17.jpg [运行时间：0.036235s][吞吐率：27.60req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '12.jpg',
     2 => NULL,
   ),
@@ -14168,11 +15511,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/13.jpg
 [ info ] www.linguifeng.top/images/13.jpg [运行时间：0.019442s][吞吐率：51.44req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '17.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/18.jpg
+[ info ] www.linguifengs.org/images/18.jpg [运行时间：0.033022s][吞吐率：30.28req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '13.jpg',
     2 => NULL,
   ),
@@ -14196,10 +15563,34 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/14.jpg
 [ info ] www.linguifeng.top/images/14.jpg [运行时间：0.020194s][吞吐率：49.52req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '18.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /static/css/bootstrap.min.css.map
+[ info ] www.linguifengs.org/static/css/bootstrap.min.css.map [运行时间：0.039684s][吞吐率：25.20req/s] [内存消耗：1,435.15kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'images',
     1 => '14.jpg',
     2 => NULL,
@@ -14224,10 +15615,33 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/15.jpg
 [ info ] www.linguifeng.top/images/15.jpg [运行时间：0.019981s][吞吐率：50.05req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'static',
+    1 => 'css',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /static/js/maps/theia-sticky-sidebar.min.js.map
+[ info ] www.linguifengs.org/static/js/maps/theia-sticky-sidebar.min.js.map [运行时间：0.039381s][吞吐率：25.39req/s] [内存消耗：1,435.06kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'images',
     1 => '15.jpg',
     2 => NULL,
@@ -14252,11 +15666,34 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/b1.jpg
 [ info ] www.linguifeng.top/images/b1.jpg [运行时间：0.018772s][吞吐率：53.27req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    0 => 'static',
+    1 => 'js',
+    2 => 'maps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/19.jpg
+[ info ] www.linguifengs.org/images/19.jpg [运行时间：0.039539s][吞吐率：25.29req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => 'b1.jpg',
     2 => NULL,
   ),
@@ -14280,11 +15717,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/17.jpg
 [ info ] www.linguifeng.top/images/17.jpg [运行时间：0.019635s][吞吐率：50.93req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '19.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/21.jpg
+[ info ] www.linguifengs.org/images/21.jpg [运行时间：0.043133s][吞吐率：23.18req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '17.jpg',
     2 => NULL,
   ),
@@ -14308,11 +15769,35 @@
 [ 2018-10-12T18:52:57+08:00 ] 119.123.49.107 GET /images/18.jpg
 [ info ] www.linguifeng.top/images/18.jpg [运行时间：0.020629s][吞吐率：48.48req/s] [内存消耗：1,135.94kb] [文件加载：39]
 [ info ] [ LANG ] /usr/share/nginx/html/MyBlog/thinkphp/lang/zh-cn.php
+=======
+    1 => '21.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-12T18:48:00+08:00 ] 127.0.0.1 GET /images/20.jpg
+[ info ] www.linguifengs.org/images/20.jpg [运行时间：0.045855s][吞吐率：21.81req/s] [内存消耗：1,435.55kb] [文件加载：42]
+[ info ] [ LANG ] D:\lin\MyBlog\thinkphp\lang\zh-cn.php
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
     0 => 'images',
+<<<<<<< HEAD
     1 => '18.jpg',
     2 => NULL,
   ),
@@ -14332,3 +15817,22 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
+=======
+    1 => '20.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.linguifengs.org',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.linguifengs.org/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '__guid=170140326.2988060520119045600.1539331707427.987; thinkphp_show_page_trace=0|0; pgv_pvi=7578516480; pgv_si=s2962487296; monitor_count=42',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+>>>>>>> 8230917bcc5d28bbcc1565f9e64394d2f53176a3
