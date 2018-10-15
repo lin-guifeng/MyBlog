@@ -13,5 +13,9 @@ class Login
         return view('login_v2');
     }
 
+    public function register()
+    {
+    	return view('register');
+    }
     
 }
