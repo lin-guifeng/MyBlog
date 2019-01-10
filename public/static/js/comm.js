@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-
+	//banner
+    $('#banner').easyFader();
+	
 	//nav
 	var oH2 = document.getElementById("mnavh"); 
 	var oUl = document.getElementById("starlist");  
@@ -17,6 +19,7 @@ $(document).ready(function () {
      for(i=1;i<As.length;i++){if(window.location.href.indexOf(As[i].href)>=0)
      obj=As[i];}
      obj.id='selected';
+
 
   /*
   
@@ -74,13 +77,38 @@ $(document).ready(function () {
         );
     });
 	
+	//aside
+    var Sticky = new hcSticky('aside', {
+      stickTo: 'article',
+      innerTop: 200,
+      followScroll: false,
+      queries: {
+        480: {
+          disable: true,
+          stickTo: 'body'
+        }
+      }
+    });
 
-
-
-	$('.fenlei li').click(function(){
-                $(this).addClass('flselect').siblings().removeClass('flselect');
-                $('.mbans>div:eq('+$(this).index()+')').show().siblings().hide();
-            });
-
+//scroll
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        window.scrollReveal = new scrollReveal({reset: true});
+    };
+	
+//tab	
+    var oLi = document.getElementById("tab").getElementsByTagName("a");
+	var oUls = document.getElementById("content").getElementsByTagName("ul");
+	
+	for(var i = 0; i < oLi.length; i++)
+	{
+		oLi[i].index = i;
+		oLi[i].onmouseover = function ()
+		{
+			for(var n = 0; n < oLi.length; n++) oLi[n].className="";
+			this.className = "current";
+			for(var n = 0; n < oUls.length; n++) oUls[n].style.display = "none";
+			oUls[this.index].style.display = "block"
+		}	
+	};
 		
 	});
