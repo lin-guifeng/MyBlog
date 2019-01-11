@@ -32,8 +32,15 @@ class Index
     {
         return view('index_v5');
     }
+//    文章列表
     public function article_list()
     {
         return view('article_list');
+    }
+
+//    添加文章
+    public function addArticle()
+    {
+        return view('addArticle');
     }
 }
