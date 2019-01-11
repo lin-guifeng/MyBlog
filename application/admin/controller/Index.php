@@ -32,4 +32,8 @@ class Index
     {
         return view('index_v5');
     }
+    public function article_list()
+    {
+        return view('article_list');
+    }
 }
