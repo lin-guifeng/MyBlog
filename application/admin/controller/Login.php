@@ -6,9 +6,10 @@ class Login
     public function login()
     {
         $ip = $this->ip();
+        dump('123');
         dump($ip);
         exit;
-        return view('login');
+//        return view('login');
     }
 
     public function login_v2()
