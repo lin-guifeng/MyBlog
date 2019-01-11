@@ -7,6 +7,7 @@ class Login
     {
         $ip = $this->ip();
         dump($ip);
+        exit;
         return view('login');
     }
 
