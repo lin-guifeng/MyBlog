@@ -4,30 +4,10 @@ use \think\Validate;
 use \think\Controller;
 class Login extends Controller
 {
-    public function _initialize() {
-         header("Content-Type:text/html; charset=utf-8");
-        if (!isset($_SESSION['user'])) {
-            echo "<script>alert('请先登陆！');document.location.href='/admin/Login/login';</script>";
-        }
-        $this->checkAdminSession();
-    }
-    public function checkAdminSession() {
-    // 设置超时为10分
-        $nowtime = time();
-        $s_time = $_SESSION['logintime'];
-        if (($nowtime - $s_time) > 6000000) {
-            session_unset();
-            session_destroy();
-            echo "<script>alert('当前用户登录超时，请重新登录！');document.location.href='/index.php/Home/Login/login';</script>";
-            $_SESSION['logintime'] = $nowtime;
-        }
-    }
     public function login()
     {
         $ip = $this->ip();
-//        dump('123');
-//        dump($ip);
-//        exit;
+
         return view('login');
     }
 
