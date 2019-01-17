@@ -12,6 +12,10 @@ class Index extends Common
     {
         return view('index_v1');
     }
+    public function main()
+    {
+        return view('main');
+    }
 
     public function index_v2()
     {
