@@ -33,7 +33,7 @@ class Index extends Common
         return view('index_v5');
     }
 //    文章列表
-    public function article_list()
+    public function articleList()
     {
         return view('article_list');
     }
