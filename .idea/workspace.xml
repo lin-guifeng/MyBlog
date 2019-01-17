@@ -43,14 +43,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="344" />
+          <entry key="html" value="345" />
           <entry key="php" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="344" />
+          <entry key="HTML" value="345" />
           <entry key="PHP" value="162" />
         </counts>
       </usages-collector>
@@ -83,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="432" column="95" selection-start-line="432" selection-start-column="95" selection-end-line="432" selection-end-column="95" />
+              <caret line="432" column="105" selection-start-line="432" selection-start-column="105" selection-end-line="432" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -476,12 +476,12 @@
       <workItem from="1547253229587" duration="8538000" />
       <workItem from="1547280347637" duration="2589000" />
       <workItem from="1547429086263" duration="5358000" />
-      <workItem from="1547693600359" duration="8354000" />
+      <workItem from="1547693600359" duration="8507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47685000" />
+    <option name="totallyTimeSpent" value="47838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -781,7 +781,7 @@
     <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="432" column="95" selection-start-line="432" selection-start-column="95" selection-end-line="432" selection-end-column="95" />
+          <caret line="432" column="105" selection-start-line="432" selection-start-column="105" selection-end-line="432" selection-end-column="105" />
         </state>
       </provider>
     </entry>
