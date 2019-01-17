@@ -5,8 +5,7 @@ class Index extends Common
 {
     public function index()
     {
-        dump(url('admin/Account/accountList'));
-        exit;
+
         return view('index');
     }
 
