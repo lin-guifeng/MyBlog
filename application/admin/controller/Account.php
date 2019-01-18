@@ -50,8 +50,10 @@ class Account extends Common
                 dump($data);
             }
 
+        }else{
+            return view('admin-accountadd');
         }
-        return view('admin-accountadd');
+
     }
 
     public function addaccount(){
