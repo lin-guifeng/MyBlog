@@ -19,6 +19,20 @@ class Account extends Common
     public function accountAdd(){
         if ($this->request->isPost()){
             $data = $this->request->post();
+//            $result = $this->validate(
+//                [
+//                    'name'  => 'thinkphp',
+//                    'email' => 'thinkphp@qq.com',
+//                ],
+//                [
+//                    'name'  => 'require|max:25',
+//                    'email'   => 'email',
+//                ]);
+//            if(true !== $result){
+//                // 验证失败 输出错误信息
+//                dump($result);
+//            }
+
             dump($data);
         }
         return view('admin-accountadd');

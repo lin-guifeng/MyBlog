@@ -29,7 +29,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="5" />
-          <entry key="html" value="69" />
+          <entry key="html" value="70" />
           <entry key="ico" value="1" />
           <entry key="php" value="72" />
         </counts>
@@ -37,7 +37,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="HTML" value="69" />
+          <entry key="HTML" value="70" />
           <entry key="Image" value="1" />
           <entry key="PHP" value="72" />
         </counts>
@@ -45,26 +45,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="479" />
-          <entry key="php" value="217" />
+          <entry key="html" value="486" />
+          <entry key="php" value="258" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="479" />
-          <entry key="PHP" value="217" />
+          <entry key="HTML" value="486" />
+          <entry key="PHP" value="258" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state relative-caret-position="421">
+              <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="e#74#96#0#PHP" expanded="true" />
               </folding>
@@ -75,8 +75,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://E:/demo/thinkphp51_backstage/application/admin/controller/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="37" column="68" lean-forward="true" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+              <folding>
+                <element signature="e#40#64#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,15 +94,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/demo/thinkphp51_backstage/views/admin/public/form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://E:/demo/thinkphp51_backstage/application/admin/request/UserRequest.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="70" column="92" selection-start-line="70" selection-start-column="92" selection-end-line="70" selection-end-column="92" />
+            <state relative-caret-position="183">
+              <caret line="66" column="104" selection-start-line="66" selection-start-column="104" selection-end-line="66" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -158,8 +170,8 @@
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" />
         <option value="E:/demo/thinkphp51_backstage/application/admin/controller/User.php" />
         <option value="E:/demo/thinkphp51_backstage/application/service/MenuService.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html" />
       </list>
     </option>
   </component>
@@ -489,6 +501,48 @@
             </path>
             <path>
               <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="E:\新建文件夹\H+plus-V4.9\H+4.9正版源码" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
@@ -532,12 +586,12 @@
       <workItem from="1547280347637" duration="2589000" />
       <workItem from="1547429086263" duration="5358000" />
       <workItem from="1547693600359" duration="12091000" />
-      <workItem from="1547775429032" duration="8176000" />
+      <workItem from="1547775429032" duration="10705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59598000" />
+    <option name="totallyTimeSpent" value="62127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -772,13 +826,6 @@
         <state relative-caret-position="-1049" />
       </provider>
     </entry>
-    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/public/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="22" column="75" lean-forward="true" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/demo/thinkphp51_backstage/application/model/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -799,31 +846,10 @@
     <entry file="file://E:/demo/thinkphp51_backstage/application/admin/request/UserRequest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://E:/demo/thinkphp51_backstage/application/admin/controller/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/demo/thinkphp51_backstage/application/service/MenuService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/demo/thinkphp51_backstage/config/permissions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="70" column="92" selection-start-line="70" selection-start-column="92" selection-end-line="70" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -836,11 +862,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="421">
+          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
             <element signature="e#74#96#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/demo/thinkphp51_backstage/config/permissions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/demo/thinkphp51_backstage/application/admin/controller/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" column="68" lean-forward="true" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/public/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="66" column="104" selection-start-line="66" selection-start-column="104" selection-end-line="66" selection-end-column="104" />
         </state>
       </provider>
     </entry>
