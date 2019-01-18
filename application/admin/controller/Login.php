@@ -29,7 +29,6 @@ class Login extends Controller
                 if($res==true){
                     session('admin_id',$res['id']);
                     session('admin_name',$res['name']);
-                    session('admin_img',$res['img']);
                     session('long_time',time());
                     $this->success('登录成功','admin/index/index');
                 }else{
