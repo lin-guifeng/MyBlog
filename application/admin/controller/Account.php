@@ -20,7 +20,7 @@ class Account extends Common
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
-                'name|用户名'   => 'require|min:3|max:15|alphaNum|unique:users',
+                'name|用户名'   => 'require|min:3|max:15|alphaNum|unique:admin',
                 'password|密码' => 'confirm|min:6|max:20|alphaDash',
             ];
 
