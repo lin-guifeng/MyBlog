@@ -35,31 +35,23 @@ class Account extends Common
                 'password.alphaDash'=> '密码只能由字母和数字，_和-组成',
             ];
 
-            $data = [
-                'name'              => $data['name'],
-                'password'          => $data['password'],
-                'password_confirm'  => $data['password_confirm'],
-            ];
-
             $validate = new Validate($rule, $msg);
             $result   = $validate->check($data);
             if(!$result){
                 $this->error($validate->getError());
             }else{
                 $data['password']=md5($data['password']);
-                $data=
+                $datas=
                     [
                         'name'=>$data['name'],
                         'password'=>$data['password'],
                         'time'=>time(),
                     ];
-
-                $account=model('Account');
-                $res=$account->accountAdd($data);
+                $res=model('Account')->accountAdd($datas);
                 if($res){
-                    $this->success("添加管理员成功","/admin/account/accountlist");
+                    $this->success("添加管理员成功","/admin/account/accountList");
                 }else{
-                    $this->error("添加管理员失败","/admin/account/accountlist");
+                    $this->error("添加管理员失败","/admin/account/accountList");
                 }
 
             }

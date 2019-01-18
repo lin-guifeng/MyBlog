@@ -9,16 +9,16 @@ class Common extends Controller
         // dump(session('long_time'));
         // dump(time());
         // exit;
-//        if(session('admin_id')==NULL){
-//            $this->error('请先登录','admin/login/login');
-//        }
-//        if(session('long_time')+3600<time()){
-//            session('admin_id',NULL);
-//            session('admin_name',null);
-//            $this->error('登录超时,请重新登录','admin/login/login');
-//        }else{
-//            session('long_time',time());
-//        }
+        if(session('admin_id')==NULL){
+            $this->error('请先登录','admin/login/login');
+        }
+        if(session('long_time')+3600<time()){
+            session('admin_id',NULL);
+            session('admin_name',null);
+            $this->error('登录超时,请重新登录','admin/login/login');
+        }else{
+            session('long_time',time());
+        }
     }
 
 }

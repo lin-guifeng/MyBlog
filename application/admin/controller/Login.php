@@ -6,8 +6,38 @@ class Login extends Controller
 {
     public function login()
     {
-        $ip = $this->ip();
+//        $ip = $this->ip();
+        if ($this->request->isPost()){
+            $data = $this->request->post();
+            $rule = [
+                'name'=>'require',
+                'password'=> 'require',
+            ];
+            $msg = [
+                'name.require'=>'账号必须填写',
+                'password.require' => '密码必须填写',
+            ];
 
+            $validate = new Validate($rule, $msg);
+            $result   = $validate->check($data);
+            if(!$result){
+                $this->error($validate->getError());
+            }else{
+                $data['password']=md5($data['password']);
+                $res=model('Login')->check($data);
+
+                if($res==true){
+                    session('admin_id',$res['id']);
+                    session('admin_name',$res['name']);
+                    session('admin_img',$res['img']);
+                    session('long_time',time());
+                    $this->success('登录成功','admin/index/index');
+                }else{
+                    $this->error('登录失败,请重新登录','admin/login/login');
+                }
+            }
+
+        }
         return view('login');
     }
 
