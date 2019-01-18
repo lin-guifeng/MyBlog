@@ -17,6 +17,10 @@ class Account extends Common
     }
 
     public function accountAdd(){
+        if ($this->request->isPost()){
+            $data = $this->request->post();
+            dump($data);
+        }
         return view('admin-accountadd');
     }
 
