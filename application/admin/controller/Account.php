@@ -23,7 +23,6 @@ class Account extends Common
                 'name|用户名'   => 'require|min:3|max:15|alphaNum|unique:admin',
                 'password|密码' => 'confirm|min:6|max:20|alphaDash',
             ];
-
             $msg = [
                 'name.require'      => '用户名必须填写',
                 'name.min'          => '用户名最少要3个字符',
@@ -46,9 +45,23 @@ class Account extends Common
             $result   = $validate->check($data);
             if(!$result){
                 $this->error($validate->getError());
-
             }else{
-                dump($data);
+                $data['password']=md5($data['password']);
+                $data=
+                    [
+                        'name'=>$data['name'],
+                        'password'=>$data['password'],
+                        'time'=>time(),
+                    ];
+
+                $account=model('Account');
+                $res=$account->accountAdd($data);
+                if($res){
+                    $this->success("添加管理员成功","/admin/account/accountlist");
+                }else{
+                    $this->error("添加管理员失败","/admin/account/accountlist");
+                }
+
             }
 
         }
