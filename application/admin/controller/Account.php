@@ -45,14 +45,15 @@ class Account extends Common
             $validate = new Validate($rule, $msg);
             $result   = $validate->check($data);
             if(!$result){
-                echo $validate->getError();
+                $this->error($validate->getError());
+
             }else{
                 dump($data);
             }
 
-        }else{
-            return view('admin-accountadd');
         }
+        return view('admin-accountadd');
+
 
     }
 
