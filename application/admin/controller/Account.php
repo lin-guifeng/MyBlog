@@ -19,21 +19,37 @@ class Account extends Common
     public function accountAdd(){
         if ($this->request->isPost()){
             $data = $this->request->post();
-//            $result = $this->validate(
-//                [
-//                    'name'  => 'thinkphp',
-//                    'email' => 'thinkphp@qq.com',
-//                ],
-//                [
-//                    'name'  => 'require|max:25',
-//                    'email'   => 'email',
-//                ]);
-//            if(true !== $result){
-//                // 验证失败 输出错误信息
-//                dump($result);
-//            }
+            $rule = [
+                'name|用户名'   => 'require|min:3|max:15|alphaNum|unique:users',
+                'password|密码' => 'confirm|min:6|max:20|alphaDash',
+            ];
 
-            dump($data);
+            $msg = [
+                'name.require'      => '用户名必须填写',
+                'name.min'          => '用户名最少要3个字符',
+                'name.max'          => '用户名最多不能超过15个字符',
+                'name.alphaNum'     => '用户名只能由字母和数字组成',
+                'name.unique'       => '用户名已注册',
+                'password.confirm'  => '密码必须一致',
+                'password.min'      => '密码至少6个字符',
+                'password.max'      => '密码最多不能超过20个字符',
+                'password.alphaDash'=> '密码只能由字母和数字，_和-组成',
+            ];
+
+            $data = [
+                'name'              => $data['name'],
+                'password'          => $data['password'],
+                'password_confirm'  => $data['password_confirm'],
+            ];
+
+            $validate = new Validate($rule, $msg);
+            $result   = $validate->check($data);
+            if(!$result){
+                echo $validate->getError();
+            }else{
+                dump($data);
+            }
+
         }
         return view('admin-accountadd');
     }
