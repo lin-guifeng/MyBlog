@@ -14,7 +14,7 @@ class Login extends Model
 
     //记录登录信息
     public function record($data){
-        $res=db('admin_record')->add($data);
+        $res=db('admin_record')->insert($data);
         return $res;
     }
 
