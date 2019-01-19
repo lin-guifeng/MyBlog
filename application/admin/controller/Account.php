@@ -45,7 +45,6 @@ class Account extends Common
                     [
                         'name'=>$data['name'],
                         'password'=>$data['password'],
-                        'time'=>time(),
                     ];
                 $res=model('Account')->accountAdd($datas);
                 if($res){

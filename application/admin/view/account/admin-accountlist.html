@@ -118,22 +118,19 @@
 
                                 </thead>
                                 <tbody>
-                                {if condition="!$admin"}
-                                <tr>
-                                    <td colspan="7" class="text-center">没有数据</td>
-                                </tr>
-                                {else/}
-                                {foreach $admin as $key => $user}
-                                <tr>
-
-                                    <td>{$user.id}</td>
-                                    <td>{$user.name}</td>
-                                    <td>{$user.time}</td>
-
-                              
-                                </tr>
-                                {/foreach}
-                                {/if}
+                                    {if condition="!$admin"}
+                                    <tr>
+                                        <td colspan="7" class="text-center">没有数据</td>
+                                    </tr>
+                                    {else/}
+                                    {foreach $admin as $key => $user}
+                                    <tr>
+                                        <td>{$user.id}</td>
+                                        <td>{$user.name}</td>
+                                        <td>{$user.time}</td>
+                                    </tr>
+                                    {/foreach}
+                                    {/if}
                                 </tbody>
                             </table>
                             {$page}

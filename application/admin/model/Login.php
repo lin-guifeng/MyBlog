@@ -12,6 +12,12 @@ class Login extends Model
         return $res;
     }
 
+    //记录登录信息
+    public function record($data){
+        $res=db('admin')->where('password',$data['password'])->add($data);
+        return $res;
+    }
+
 }
 
 

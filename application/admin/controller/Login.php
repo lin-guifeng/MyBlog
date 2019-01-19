@@ -6,7 +6,7 @@ class Login extends Controller
 {
     public function login()
     {
-        $ip = $this->ip();
+
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
@@ -24,9 +24,14 @@ class Login extends Controller
                 $this->error($validate->getError());
             }else{
                 $data['password']=md5($data['password']);
+
                 $res=model('Login')->check($data);
 
                 if($res==true){
+                    $record['ip']= $this->ip();
+                    $record['aid']= $res['id'];
+                  
+                    model('Login')->record($record);
                     session('admin_id',$res['id']);
                     session('admin_name',$res['name']);
                     session('long_time',time());
