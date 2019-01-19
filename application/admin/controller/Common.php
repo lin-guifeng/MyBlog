@@ -2,6 +2,7 @@
 namespace app\admin\controller;
 use \think\Controller;
 use \think\Request;
+use \think\Session;
 class Common extends Controller
 {
     public function _initialize()
