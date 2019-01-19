@@ -10,12 +10,12 @@ class Login extends Controller
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
-                'name'=>'require',
-                'password'=> 'require',
+                'name'      =>'require',
+                'password'  => 'require',
             ];
             $msg = [
-                'name.require'=>'账号必须填写',
-                'password.require' => '密码必须填写',
+                'name.require'      =>'账号必须填写',
+                'password.require'  => '密码必须填写',
             ];
 
             $validate = new Validate($rule, $msg);
@@ -28,9 +28,9 @@ class Login extends Controller
                 $res=model('Login')->check($data);
 
                 if($res==true){
-                    $record['ip']= $this->ip();
-                    $record['aid']= $res['id'];
-
+                    $record['ip']   = $this->ip();
+                    $record['aid']  = $res['id'];
+                    $record['time'] = CURRENT_TIME();
                     model('Login')->record($record);
                     session('admin_id',$res['id']);
                     session('admin_name',$res['name']);

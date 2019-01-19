@@ -17,7 +17,6 @@ class Login extends Model
         $res=db('admin_record')->insert($data);
         return $res;
     }
-
 }
 
 

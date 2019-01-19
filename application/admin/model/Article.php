@@ -3,10 +3,10 @@ namespace app\admin\model;
 
 use think\Model;
 
-class Account extends Model
+class Article extends Model
 {
-    public function accountList(){
-        $res=db('admin')->paginate(10);
+    public function articleList(){
+        $res=db('article')->field('id','title','img','time')->paginate(10);
         return $res;
     }
 
