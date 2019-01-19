@@ -8,11 +8,11 @@ use \think\Config;
 class Account extends Common
 {
     public function accountList(){
-//        $account=model('Account');
-//        $res=$account->accountlist();
-//        $page=$res->render();
-//        $this->assign('page',$page);
-//        $this->assign('admin',$res);
+
+        $res=model('Account')->accountlist();
+        $page=$res->render();
+        $this->assign('page',$page);
+        $this->assign('admin',$res);
         return view('admin-accountlist');
     }
 

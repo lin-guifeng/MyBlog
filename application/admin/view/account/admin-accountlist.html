@@ -107,16 +107,42 @@
                                     <span>创建用户</span>
                                 </a>
                             </div>
-                            <table id="" data-toggle="table" data-url="/static/admin/js/demo/bootstrap_table_test.json" data-query-params="queryParams" data-mobile-responsive="true" data-pagination="true" data-icon-size="outline">
+                            <table id="" class="table">
                                 <thead>
                                 <tr>
-                                    <th data-field="state" data-checkbox="true"></th>
-                                    <th data-field="id">ID</th>
-                                    <th data-field="name">名称</th>
-                                    <th data-field="price">价格</th>
+                                    <!--<th data-field="state" data-checkbox="true"></th>-->
+                                    <th data-field="">ID</th>
+                                    <th data-field="">用户名</th>
+                                    <th data-field="">时间</th>
                                 </tr>
+
                                 </thead>
+                                <tbody>
+                                {if condition="!$admin"}
+                                <tr>
+                                    <td colspan="7" class="text-center">没有数据</td>
+                                </tr>
+                                {else/}
+                                {foreach $admin as $key => $user}
+                                <tr>
+                                    <!--<td>{$start + $key}</td>-->
+                                    <td>{$user.id}</td>
+                                    <td>{$user.name}</td>
+                                    <td>{$user.time}</td>
+
+                                    <!--<td>{$user->login_ip}</td>-->
+                                    <!--<td>{$user->login_at}</td>-->
+                                    <!--<td>{$user->created_at}</td>-->
+                                    <!--<td>-->
+                                    <!--{:editButton(url('user/edit', ['id' => $user->id ]))}-->
+                                    <!--{:deleteButton(url('user/delete'), $user->id)}-->
+                                    <!--</td>-->
+                                </tr>
+                                {/foreach}
+                                {/if}
+                                </tbody>
                             </table>
+                            {$page}
                         </div>
                     </div>
                     <!-- End Example Pagination -->

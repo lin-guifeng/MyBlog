@@ -5,8 +5,8 @@ use think\Model;
 
 class Account extends Model
 {
-    public function accountlist(){
-        $res=db('admin')->paginate(1);
+    public function accountList(){
+        $res=db('admin')->paginate(10);
         return $res;
     }
 

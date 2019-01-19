@@ -6,7 +6,7 @@ class Login extends Controller
 {
     public function login()
     {
-//        $ip = $this->ip();
+        $ip = $this->ip();
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
