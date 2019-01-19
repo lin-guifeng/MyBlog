@@ -30,7 +30,7 @@ class Login extends Controller
                 if($res==true){
                     $record['ip']= $this->ip();
                     $record['aid']= $res['id'];
-                  
+
                     model('Login')->record($record);
                     session('admin_id',$res['id']);
                     session('admin_name',$res['name']);
@@ -45,15 +45,6 @@ class Login extends Controller
         return view('login');
     }
 
-    public function login_v2()
-    {
-        return view('login_v2');
-    }
-
-    public function register()
-    {
-    	return view('register');
-    }
     public function ip() {
         if(getenv('HTTP_CLIENT_IP') && strcasecmp(getenv('HTTP_CLIENT_IP'), 'unknown')) {
             $ip = getenv('HTTP_CLIENT_IP');
@@ -66,47 +57,11 @@ class Login extends Controller
         }
         return preg_match ( '/[\d\.]{7,15}/', $ip, $matches ) ? $matches [0] : '';
     }
-    public function logincheck()
-    {
 
-        $account=input('post.account');
-        $password=input('post.password');
-        $rule = [
-            'account'=>'require',
-            'password'=> 'require',
-        ];
-        $msg = [
-            'account.require'=>'账号必须填写',
-            'password.require' => '密码必须填写',
-        ];
-        $data = [
-            'account'  => $account,
-            'password'=>$password,
-        ];
-        $validate = new Validate($rule, $msg);
-        $result   = $validate->check($data);
-        if(!$result){
-            $this->error($validate->getError());
-        }else{
-            $password=md5($password);
-            $login=model('Login');
-            $res=$login->check($account,$password);
-
-            if($res==true){
-                session('admin_id',$res['id']);
-                session('admin_name',$res['name']);
-                session('admin_img',$res['img']);
-                session('long_time',time());
-                $this->success('登录成功','admin/index/index');
-            }else{
-                $this->error('登录失败,请重新登录','admin/login/login');
-            }
-        }
-    }
     public function loginout(){
         session('admin_id',NULL);
         session('admin_name',NULL);
-        session('admin_img',NULL);
+
         $this->success('请重新登录','admin/login/login');
     }
     

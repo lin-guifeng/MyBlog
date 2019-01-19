@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +31,7 @@
         <counts>
           <entry key="Account" value="1" />
           <entry key="css" value="5" />
-          <entry key="html" value="80" />
+          <entry key="html" value="81" />
           <entry key="ico" value="1" />
           <entry key="php" value="115" />
         </counts>
@@ -42,7 +39,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="HTML" value="80" />
+          <entry key="HTML" value="81" />
           <entry key="Image" value="1" />
           <entry key="PHP" value="116" />
         </counts>
@@ -50,14 +47,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="597" />
+          <entry key="html" value="621" />
           <entry key="php" value="670" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="597" />
+          <entry key="HTML" value="621" />
           <entry key="PHP" value="670" />
         </counts>
       </usages-collector>
@@ -86,14 +83,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="541">
+              <caret line="60" column="28" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="28" />
               <folding>
                 <element signature="e#38#58#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -112,15 +118,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="835">
               <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/admin/view/account/admin-accountlist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="134" column="43" lean-forward="true" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -194,7 +191,6 @@
         <option value="$PROJECT_DIR$/application/admin/view/index/article_list.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/main.html" />
         <option value="E:/demo/thinkphp51_backstage/application/model/BaseModel.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="E:/demo/thinkphp51_backstage/application/service/MenuService.php" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html" />
@@ -209,6 +205,7 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/model/Login.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
       </list>
     </option>
   </component>
@@ -540,6 +537,14 @@
               <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="index" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="login" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -746,12 +751,12 @@
       <workItem from="1547693600359" duration="12091000" />
       <workItem from="1547775429032" duration="17813000" />
       <workItem from="1547801573794" duration="3732000" />
-      <workItem from="1547859858986" duration="5520000" />
+      <workItem from="1547859858986" duration="5688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78487000" />
+    <option name="totallyTimeSpent" value="78655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -784,6 +789,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/admin/controller/Login.php</url>
+          <line>47</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://E:/demo/thinkphp51_backstage/views/admin/role/index.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -810,13 +826,6 @@
     <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/table_bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6649" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="80" column="68" lean-forward="true" selection-start-line="80" selection-start-column="68" selection-end-line="80" selection-end-column="68" />
-        </state>
       </provider>
     </entry>
     <entry file="file://E:/demo/thinkphp51_backstage/application/admin/controller/Base.php">
@@ -1061,11 +1070,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="541">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="28" />
           <folding>
             <element signature="e#38#58#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
         </state>
       </provider>
     </entry>
