@@ -30,7 +30,7 @@ class Login extends Controller
                 if($res==true){
                     $record['ip']   = $this->ip();
                     $record['aid']  = $res['id'];
-                    $record['time'] = CURRENT_TIME();
+                    $record['time'] = date('y-m-d H:i:s',time());
                     model('Login')->record($record);
                     session('admin_id',$res['id']);
                     session('admin_name',$res['name']);
