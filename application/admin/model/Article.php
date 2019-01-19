@@ -6,7 +6,7 @@ use think\Model;
 class Article extends Model
 {
     public function articleList(){
-        $res=db('article')->field('id','title','img','time')->paginate(10);
+        $res=db('article')->paginate(10);
         return $res;
     }
 
