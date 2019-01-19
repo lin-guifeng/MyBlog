@@ -5,7 +5,7 @@ class Index extends Common
 {
     public function index()
     {
-        session('asd','qwe')
+        session('asd','qwe');
         dump(session);
         exit;
         $res = model('account')->recordList(session['admin_id']);
