@@ -8,7 +8,7 @@ class Index extends Common
     {
 
         $res = model('account')->recordList(session('admin_id'));
-        $this->assgin('res',$res);
+        $this->assign('res',$res);
         return view('index');
     }
 
