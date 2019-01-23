@@ -14,7 +14,6 @@ class Article extends Common
     }
 
     public function articleAdd(){
-
         return view('admin-articleadd');
     }
 }

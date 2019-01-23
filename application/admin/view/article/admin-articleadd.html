@@ -16,8 +16,6 @@
     <link href="/static/admin/css/animate.css" rel="stylesheet">
     <!--<link href="/static/admin/css/style.css?v=4.1.0" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="/static/admin/css/plugins/webuploader/webuploader.css">
-    <link rel="stylesheet" type="text/css" href="/static/admin/css/demo/webuploader-demo.css">
-
 
 </head>
 
@@ -31,19 +29,14 @@
                 <div class="ibox-content">
                     <form class="form-horizontal m-t" id="" action="{:url('article/articleAdd')}" method="post">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">用户名</label>
-                            <div class="col-sm-4" id="uploader-demo">
-                                    <div id="filePicker">选择图片</div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label"></label>
+                            <label class="col-sm-2 control-label">封面</label>
                             <div class="col-sm-4">
-                                <!--用来存放item-->
-                                <div id="fileList" class="uploader-list"></div>
-
+                                <div id="filePicker" style="width: 100px;height: 100px;">
+                                    <img src="/static/admin/img/20181211095522.png" alt="">
+                                </div>
                             </div>
                         </div>
+
                         <div class="form-group">
                             <label class="col-sm-2 control-label">标题</label>
                             <div class="col-sm-4">
@@ -75,12 +68,31 @@
 <!-- jQuery Validation plugin javascript-->
 <script src="/static/admin/js/plugins/validate/jquery.validate.min.js"></script>
 <script src="/static/admin/js/plugins/validate/messages_zh.min.js"></script>
-
 <script src="/static/admin/js/demo/form-validate-demo.js"></script>
 
-<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+<!--<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>-->
 <!--统计代码，可删除-->
-
+<script src="/static/admin/js/plugins/webuploader/webuploader.min.js"></script>
+<script type="text/javascript">
+    // 初始化Web Uploader
+    var uploader = WebUploader.create({
+        // 选完文件后，是否自动上传。
+        auto: true,
+        // swf文件路径
+        swf: BASE_URL + '/js/Uploader.swf',
+        // 文件接收服务端。
+        server: 'http://webuploader.duapp.com/server/fileupload.php',
+        // 选择文件的按钮。可选。
+        // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+        pick: '#filePicker',
+        // 只允许选择图片文件。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/*'
+        }
+    });
+</script>
 </body>
 
 </html>
