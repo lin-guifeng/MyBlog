@@ -14,12 +14,15 @@
     <link rel="shortcut icon" href="favicon.ico"> <link href="/static/admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="/static/admin/css/font-awesome.css?v=4.4.0" rel="stylesheet">
     <link href="/static/admin/css/animate.css" rel="stylesheet">
+    <link href="/static/admin/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="/static/admin/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
     <!--<link href="/static/admin/css/style.css?v=4.1.0" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="/static/admin/css/plugins/webuploader/webuploader.css">
 
 </head>
 
 <body class="gray-bg">
+<div style="width: 100%;height: 20px;"></div>
 <div class="wrapper wrapper-content animated fadeInRight">
 
     <div class="row">
@@ -32,13 +35,31 @@
                             <label class="col-sm-2 control-label">封面</label>
                             <div class="col-sm-4">
                                 <div id="filePicker" style="width: 100px;height: 100px;">
-                                    <img src="/static/admin/img/20181211095522.png" alt="">
+                                    <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;">
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">标题</label>
+                            <div class="col-sm-4">
+
+                                    <div class="ibox float-e-margins">
+
+                                        <div class="ibox-content no-padding">
+
+                                            <div class="summernote">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">文章详情</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="title" required>
                             </div>
@@ -91,6 +112,17 @@
             extensions: 'gif,jpg,jpeg,bmp,png',
             mimeTypes: 'image/*'
         }
+    });
+</script>
+<!-- SUMMERNOTE -->
+<script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>
+<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.summernote').summernote({
+            lang: 'zh-CN'
+        });
     });
 </script>
 </body>
