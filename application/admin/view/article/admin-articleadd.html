@@ -32,13 +32,13 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">封面</label>
                             <div class="col-sm-4">
-                                <div onclick="clickImg(this)" style="height: 100px;">
+                                <div style="height: 100px;">
                                     <input name="image" type="file" onchange="change(this)" class="upload_input" style="display: none;" >
                                     <input type="hidden" name="img" value="" >
-                                    <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;">
-                                    <div style="display: none;" class="preBlock">
-                                        <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;">
-                                    </div>
+                                    <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
+
+                                    <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;" onclick="clickImg(this)">
+
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,8 @@
 <script>
     function clickImg(obj){
         // console.log(obj);
-        $('.upload_input').click();
+        $(obj).parent().find('.upload_input').click();
+
         // alert('1');
     }
 
