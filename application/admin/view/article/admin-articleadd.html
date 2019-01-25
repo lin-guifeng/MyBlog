@@ -37,7 +37,7 @@
                                     <input type="hidden" name="img" value="" >
                                     <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
 
-                                    <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;" onclick="clickImg(this)">
+                                    <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;display: none;" onclick="clickImg(this)">
 
                                 </div>
                             </div>
@@ -84,9 +84,8 @@
         // alert('1');
     }
 
-    function changes(obj){
-        alert('123');
-        return false;
+    function change(obj){
+
         var formdata = new FormData();
         var obj='.upload_input';
         formdata.append("file", $(obj).get(0).files[0]);
