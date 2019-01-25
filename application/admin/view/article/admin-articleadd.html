@@ -79,9 +79,12 @@
 <script>
     var clickImg = function(obj){
         $(obj).find('.upload_input').click();
+        alert('1');
     }
 
     function changes(obj){
+        alert('123');
+        return false;
         var formdata = new FormData();
         var obj='.upload_input';
         formdata.append("file", $(obj).get(0).files[0]);
