@@ -30,8 +30,8 @@ class Index extends Common
 //        return;
         $info = $file->rule('md5')->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
-            $this->ajaxReturn($info->getFilename());
-          
+            $this->ajaxReturn($info->getFilename(),'上传成功','1');
+
         }else{
             echo $file->getError();
         }
