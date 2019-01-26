@@ -87,8 +87,8 @@
     function change(obj){
 
         var formdata = new FormData();
-        var obj='.upload_input';
-        formdata.append("file", $(obj).get(0).files[0]);
+
+        formdata.append("file", $('.upload_input').files[0]);
         console.log(formdata.get("file"));
         $.ajax({
             type:"post",
