@@ -26,11 +26,12 @@ class Index extends Common
 
     public function uppic(){
         $file = request()->file('file');
-        echo $file;
-        return;
+//        echo $file;
+//        return;
         $info = $file->rule('md5')->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
             echo $info->getExtension();
+            return;
             echo $info->getSaveName();
             echo $info->getFilename();
         }else{
