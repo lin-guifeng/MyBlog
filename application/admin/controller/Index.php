@@ -30,7 +30,7 @@ class Index extends Common
 //        return;
         $info = $file->rule('date')->move('/uploads/');
         if($info){
-            echo json_encode($info->getSaveName());
+            echo json_encode($info->getExtension());
             return;
 //            $this->ajaxReturn($info->getFilename(),'上传成功','1');
 
