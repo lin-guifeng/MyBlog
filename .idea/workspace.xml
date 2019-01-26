@@ -49,14 +49,14 @@
         <counts>
           <entry key="css" value="190" />
           <entry key="html" value="1212" />
-          <entry key="php" value="1173" />
+          <entry key="php" value="1177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
           <entry key="HTML" value="1212" />
-          <entry key="PHP" value="1173" />
+          <entry key="PHP" value="1177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -127,8 +127,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+            <state relative-caret-position="571">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="e#38#60#0#PHP" expanded="true" />
               </folding>
@@ -760,12 +760,12 @@
       <workItem from="1548227889874" duration="7426000" />
       <workItem from="1548293952010" duration="6095000" />
       <workItem from="1548380305434" duration="10597000" />
-      <workItem from="1548466993533" duration="2549000" />
+      <workItem from="1548466993533" duration="2609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128793000" />
+    <option name="totallyTimeSpent" value="128853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1093,8 +1093,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+        <state relative-caret-position="571">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="e#38#60#0#PHP" expanded="true" />
           </folding>

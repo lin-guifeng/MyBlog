@@ -28,7 +28,7 @@ class Index extends Common
         $file = request()->file('file');
 //        echo $file;
 //        return;
-        $info = $file->rule('md5')->move('/uploads/');
+        $info = $file->rule('date')->move('/uploads/');
         if($info){
             echo json_encode($info->getSaveName());
             return;
