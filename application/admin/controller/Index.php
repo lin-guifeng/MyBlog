@@ -30,10 +30,8 @@ class Index extends Common
 //        return;
         $info = $file->rule('md5')->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
-            echo json_encode($info->getExtension());
-            return;
-            echo $info->getSaveName();
-            echo $info->getFilename();
+            $this->ajaxReturn($info->getFilename());
+          
         }else{
             echo $file->getError();
         }
