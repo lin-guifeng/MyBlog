@@ -30,7 +30,7 @@ class Index extends Common
 //        return;
         $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
-            echo json_encode($info->getExtension());
+            echo json_encode($info->getSaveName());
             return;
 //            $this->ajaxReturn($info->getFilename(),'上传成功','1');
 
