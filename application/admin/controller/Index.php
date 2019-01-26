@@ -25,7 +25,7 @@ class Index extends Common
     }
 
     public function uppic(){
-        $file = request()->file('image');
+        $file = request()->file('file');
         echo $file;
         $info = $file->rule('md5')->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
