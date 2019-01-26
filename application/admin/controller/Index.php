@@ -28,14 +28,15 @@ class Index extends Common
         $file = request()->file('file');
 //        echo $file;
 //        return;
-        $info = $file->rule('date')->move('/uploads/');
+        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
             echo json_encode($info->getExtension());
             return;
 //            $this->ajaxReturn($info->getFilename(),'上传成功','1');
 
         }else{
-            echo $file->getError();
+            echo json_encode($file->getError());
+            return;
         }
     }
 
