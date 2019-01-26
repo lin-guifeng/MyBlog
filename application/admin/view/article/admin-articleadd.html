@@ -34,7 +34,7 @@
                             <div class="col-sm-4">
                                 <div style="height: 100px;">
                                     <input name="image" type="file" onchange="change(this)" class="upload_input" style="display: none;" id="myfile" >
-                                    <input type="hidden" name="img" value="" >
+                                    <input type="hidden" name="img" value="" class="imginput">
                                     <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
 
                                     <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;display: none;" onclick="clickImg(this)">
@@ -100,6 +100,9 @@
             processData:false,
             success:function(res){
                 console.log(res);
+                if(res.status==1){
+                    $('.imginput').val(res.data);
+                }
             },
             error: function(jqXHR){
                 console.log(jqXHR);
