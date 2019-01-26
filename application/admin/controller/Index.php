@@ -30,9 +30,9 @@ class Index extends Common
 //        return;
         $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
         if($info){
-//            echo json_encode($info->getSaveName());
-//            return;
-            $this->ajaxReturn($info->getSaveName(),'上传成功','1');
+            echo json_encode($info->getSaveName());
+            return;
+//            $this->ajaxReturn($info->getSaveName(),'上传成功','1');
 
         }else{
             echo json_encode($file->getError());
