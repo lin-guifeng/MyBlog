@@ -33,7 +33,7 @@
                             <label class="col-sm-2 control-label">封面</label>
                             <div class="col-sm-4">
                                 <div style="height: 100px;">
-                                    <input name="image" type="file" onchange="change(this)" class="upload_input" style="display: none;" >
+                                    <input name="image" type="file" onchange="change(this)" class="upload_input" style="display: none;" id="myfile" >
                                     <input type="hidden" name="img" value="" >
                                     <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
 
@@ -88,7 +88,7 @@
 
         var formdata = new FormData();
 
-        formdata.append("file", $('.upload_input').files[0]);
+        formdata.append("file", document.getElementById('myfile').files[0]);
         console.log(formdata.get("file"));
         $.ajax({
             type:"post",
@@ -100,6 +100,9 @@
             processData:false,
             success:function(res){
                 console.log(res);
+            },
+            error: function(jqXHR){
+                alert("发生错误：" + jqXHR.status);
             },
         });
     }
