@@ -30,7 +30,7 @@ class Index extends Common
 //        return;
         $info = $file->rule('md5')->move('/uploads/');
         if($info){
-            echo json_encode($info->getFilename());
+            echo json_encode($info->getSaveName());
             return;
 //            $this->ajaxReturn($info->getFilename(),'上传成功','1');
 
