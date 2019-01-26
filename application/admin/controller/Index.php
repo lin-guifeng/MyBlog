@@ -28,9 +28,11 @@ class Index extends Common
         $file = request()->file('file');
 //        echo $file;
 //        return;
-        $info = $file->rule('md5')->move(ROOT_PATH . 'public' . DS . 'uploads');
+        $info = $file->rule('md5')->move('/uploads/');
         if($info){
-            $this->ajaxReturn($info->getFilename(),'上传成功','1');
+            echo json_encode($info->getFilename());
+            return;
+//            $this->ajaxReturn($info->getFilename(),'上传成功','1');
 
         }else{
             echo $file->getError();
