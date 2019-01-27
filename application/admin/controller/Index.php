@@ -24,20 +24,20 @@ class Index extends Common
         return view('addArticle');
     }
 
+
+//    上传图片
     public function uppic(){
-
         $file = request()->file('file');
-//        echo $file;
-//        return;
-        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
-        if($info){
-            return ['data'=>$info->getSaveName(),'status'=>1];
-
-        }else{
-            echo json_encode($file->getError());
-            return;
+        if($file){
+            $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+            if($info){
+                $imgurl="/uploads/".$info->getSaveName();
+                echo $imgurl;
+            }else{
+                // 上传失败获取错误信息
+                echo $file->getError();
+            }
         }
     }
-
 
 }

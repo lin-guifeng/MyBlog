@@ -19,8 +19,8 @@ class Article extends Model
         $res=db('model')->paginate(5);
         return $res;
     }
-    public function accountAdd($data){
-        $res=db('admin')->insert($data);
+    public function articleAdd($data){
+        $res=db('article')->insert($data);
         return $res;
     }
     public function del($admin_id){

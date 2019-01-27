@@ -13,7 +13,7 @@ class Common extends Controller
         if(session('admin_id')==NULL){
             $this->error('请先登录','admin/login/login');
         }
-        if(session('long_time')+3600<time()){
+        if(session('long_time')+36000<time()){
             session('admin_id',NULL);
             session('admin_name',null);
             $this->error('登录超时,请重新登录','admin/login/login');

@@ -78,10 +78,7 @@
 <script src="/static/admin/js/bootstrap.min.js"></script>
 <script>
     function clickImg(obj){
-        // console.log(obj);
         $(obj).parent().find('.upload_input').click();
-
-        // alert('1');
     }
 
     function change(obj){
@@ -99,13 +96,11 @@
             contentType:false,
             processData:false,
             success:function(res){
-                console.log(res);
                 if(res.status==1){
                     $('.imginput').val(res.data);
                 }
             },
             error: function(jqXHR){
-                console.log(jqXHR);
                 alert("发生错误：" + jqXHR.status);
             },
         });
@@ -131,6 +126,7 @@
             // summernote.
             disableDragAndDrop : false,// default false You can disable drag
             // and drop
+
         });
     });
 </script>

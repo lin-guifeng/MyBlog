@@ -40,10 +40,9 @@
                             <table  class="table">
                                 <thead>
                                 <tr>
-
-                                    <th data-field="">ID</th>
-                                    <th data-field="">用户名</th>
-                                    <th data-field="">时间</th>
+                                    <th>ID</th>
+                                    <th>标题</th>
+                                    <th>时间</th>
                                 </tr>
 
                                 </thead>
@@ -53,11 +52,11 @@
                                     <td colspan="7" class="text-center">没有数据</td>
                                 </tr>
                                 {else/}
-                                {foreach $article as $key => $user}
+                                {foreach $article as $key => $val}
                                 <tr>
-                                    <td>{$user.id}</td>
-                                    <td>{$user.name}</td>
-                                    <td>{$user.time}</td>
+                                    <td>{$val.id}</td>
+                                    <td>{$val.title}</td>
+                                    <td>{$val.time}</td>
                                 </tr>
                                 {/foreach}
                                 {/if}

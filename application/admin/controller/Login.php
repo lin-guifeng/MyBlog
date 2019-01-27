@@ -31,6 +31,7 @@ class Login extends Controller
                 if($res==true){
                     $record['ip']   = $this->ip();
                     $record['aid']  = $res['id'];
+                    $record['area']  = $this->get_area($record['ip']);
                     $record['time'] = date('y-m-d H:i:s',time());
                     model('Login')->record($record);
                     session('admin_id',$res['id']);
@@ -41,7 +42,6 @@ class Login extends Controller
                     $this->error('登录失败,请重新登录','admin/login/login');
                 }
             }
-
         }
         return view('login');
     }
@@ -57,6 +57,17 @@ class Login extends Controller
             $ip = $_SERVER['REMOTE_ADDR'];
         }
         return preg_match ( '/[\d\.]{7,15}/', $ip, $matches ) ? $matches [0] : '';
+    }
+
+    public function get_area($ip = ''){
+        if($ip == ''){
+            $ip = ip();
+        }
+        $url = "http://ip.taobao.com/service/getIpInfo.php?ip={$ip}";//淘宝
+        //$res = @file_get_contents('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=' . $ip);//新浪
+        $ret = https_request($url);
+        $arr = json_decode($ret,true);
+        return $arr;
     }
 
     public function loginout(){
