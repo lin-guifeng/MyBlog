@@ -31,7 +31,7 @@ class Login extends Controller
                 if($res==true){
                     $record['ip']   = $this->ip();
                     $record['aid']  = $res['id'];
-                    $record['area']  = $this->get_area($record['ip']);
+//                    $record['area']  = $this->get_area($record['ip']);
                     $record['time'] = date('y-m-d H:i:s',time());
                     model('Login')->record($record);
                     session('admin_id',$res['id']);
@@ -66,7 +66,7 @@ class Login extends Controller
         $url = "http://ip.taobao.com/service/getIpInfo.php?ip={$ip}";//淘宝
         //$res = @file_get_contents('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=' . $ip);//新浪
 //        $ret = https_request($url);
-        $ret = https_request($url);
+//        $ret = https_request($url);
 //        $token = json_decode($token,true);
         $arr = json_decode($ret,true);
         return $arr;
