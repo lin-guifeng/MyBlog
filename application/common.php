@@ -64,10 +64,9 @@ function post( $url, $param )
     }
 }
 
-function https_request($url, $data = null,$time_out=60,$out_level="s",$headers=array())
+function https_request($url, $data = null)
 {
     $curl = curl_init();
-    curl_setopt($curl, CURLOPT_NOSIGNAL, 1);
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE);
     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, FALSE);
@@ -75,19 +74,7 @@ function https_request($url, $data = null,$time_out=60,$out_level="s",$headers=a
         curl_setopt($curl, CURLOPT_POST, 1);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
     }
-    if($out_level=="s")
-    {
-        //超时以秒设置
-        curl_setopt($curl, CURLOPT_TIMEOUT,$time_out);//设置超时时间
-    }elseif ($out_level=="ms")
-    {
-        curl_setopt($curl, CURLOPT_TIMEOUT_MS,$time_out);  //超时毫秒，curl 7.16.2中被加入。从PHP 5.2.3起可使用
-    }
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    if($headers)
-    {
-        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);//如果有header头 就发送header头信息
-    }
     $output = curl_exec($curl);
     curl_close($curl);
     return $output;
