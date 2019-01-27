@@ -63,10 +63,12 @@ class Login extends Controller
         if($ip == ''){
             $ip = ip();
         }
+//        $ip = '113.88.101.87';
+
         $url = "http://ip.taobao.com/service/getIpInfo.php?ip={$ip}";//淘宝
         //$res = @file_get_contents('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=' . $ip);//新浪
 //        $ret = https_request($url);
-//        $ret = https_request($url);
+        $ret = https_request($url);
 //        $token = json_decode($token,true);
         $arr = json_decode($ret,true);
         return $arr;
