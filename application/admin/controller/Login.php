@@ -60,9 +60,9 @@ class Login extends Controller
     }
 
     public function get_area($ip = ''){
-        if($ip == ''){
-            $ip = ip();
-        }
+//        if($ip == ''){
+//            $ip = ip();
+//        }
 //        $ip = '113.88.101.87';
 
         $url = "http://ip.taobao.com/service/getIpInfo.php?ip={$ip}";//淘宝
@@ -71,7 +71,9 @@ class Login extends Controller
         $ret = https_request($url);
 //        $token = json_decode($token,true);
         $arr = json_decode($ret,true);
-        return $arr;
+        dump($arr);
+        exit;
+//        return $arr;
     }
 
     public function loginout(){
