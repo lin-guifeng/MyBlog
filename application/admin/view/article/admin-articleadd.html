@@ -54,9 +54,9 @@
                             <label class="col-sm-2 control-label">文章详情</label>
                             <div class="col-sm-8">
                                 <div class="ibox no-padding" style="border: solid 1px #e5e6e7;overflow: scroll;">
-                                    <div id="summernote">
+                                    <textarea name="txt" id="summernote">
 
-                                    </div>
+                                    </textarea>
                                 </div>
                             </div>
                         </div>
@@ -136,11 +136,7 @@
                         processData: false,//告诉jQuery不要加工数据
                         contentType: false,
                         success: function (data) {
-                            if (data.Result == 1) {
-                                $('#summernote').summernote('insertImage', data.Data, 'img');
-                            } else {
-                                alert(data.Data);
-                            }
+                            $('#summernote').summernote('insertImage', data, 'img');
                         },
                         error: function (data) {
                             alert('图片上传出错，文件过大或者其他情况');
