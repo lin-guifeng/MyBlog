@@ -4,6 +4,7 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,14 +51,14 @@
         <counts>
           <entry key="css" value="190" />
           <entry key="html" value="1420" />
-          <entry key="php" value="1357" />
+          <entry key="php" value="1386" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
           <entry key="HTML" value="1420" />
-          <entry key="PHP" value="1357" />
+          <entry key="PHP" value="1386" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -72,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+            <state relative-caret-position="3030">
+              <caret line="98" column="55" selection-start-line="98" selection-start-column="55" selection-end-line="98" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -103,16 +104,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state relative-caret-position="480">
+              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
@@ -798,12 +799,12 @@
       <workItem from="1548466993533" duration="14306000" />
       <workItem from="1548552561575" duration="11230000" />
       <workItem from="1548637446465" duration="6881000" />
-      <workItem from="1548729281130" duration="2262000" />
+      <workItem from="1548729281130" duration="2557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160923000" />
+    <option name="totallyTimeSpent" value="161218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1085,17 +1086,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="67" column="111" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="111" />
+        <state relative-caret-position="570">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+        <state relative-caret-position="3030">
+          <caret line="98" column="55" selection-start-line="98" selection-start-column="55" selection-end-line="98" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1106,17 +1107,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="751">
+          <caret line="67" column="111" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="480">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
