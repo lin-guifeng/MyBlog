@@ -37,7 +37,7 @@
                                     <input type="hidden" name="img" value="" class="imginput">
                                     <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
 
-                                    <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;display: none;" onclick="clickImg(this)">
+                                    <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;display: none;" onclick="clickImg(this)" class="showImg">
 
                                 </div>
                             </div>
@@ -96,6 +96,9 @@
             success:function(res){
                 if(res.status==1){
                     $('.imginput').val(res.data);
+
+                    $('.showImg').attr("src",res.data).css('display','block');
+                    $('.addImg').css('display','none');
                 }
             },
             error: function(jqXHR){
