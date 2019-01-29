@@ -116,10 +116,13 @@
     $(document).ready(function () {
         $('#summernote').summernote({
             lang: 'zh-CN',
-            Height : 300,
+            // Height : 300,
             minHeight : 300,
-            maxHeight: 300,
-            focus: true,
+            // maxHeight: 300,
+            dialogsFade : true,// Add fade effect on dialogs
+            dialogsInBody : true,// Dialogs can be placed in body, not in
+            // summernote.
+            disableDragAndDrop : false,// default false You can disable drag
             // and drop
             toolbar: [
                 //字体工具
