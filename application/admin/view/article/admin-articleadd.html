@@ -54,7 +54,7 @@
                             <label class="col-sm-2 control-label">文章详情</label>
                             <div class="col-sm-8">
                                 <div class="ibox no-padding" style="border: solid 1px #e5e6e7;overflow: scroll;">
-                                    <div class="summernote">
+                                    <div id="summernote">
 
                                     </div>
                                 </div>
@@ -82,9 +82,7 @@
     }
 
     function change(obj){
-
         var formdata = new FormData();
-
         formdata.append("file", document.getElementById('myfile').files[0]);
         console.log(formdata.get("file"));
         $.ajax({
@@ -126,9 +124,52 @@
             // summernote.
             disableDragAndDrop : false,// default false You can disable drag
             // and drop
-
+            callbacks: {
+                onImageUpload: function (files) {
+                    var formData = new FormData();
+                    formData.append('file', files[0]);
+                    $.ajax({
+                        url: '/admin/Index/uppic',//上传图片文件处理地址,
+                        type: "POST",
+                        data: formData,
+                        dataType: 'JSON',
+                        processData: false,//告诉jQuery不要加工数据
+                        contentType: false,
+                        success: function (data) {
+                            if (data.Result == 1) {
+                                $('#summernote').summernote('insertImage', data.Data, 'img');
+                            } else {
+                                alert(data.Data);
+                            }
+                        },
+                        error: function (data) {
+                            alert('图片上传出错，文件过大或者其他情况');
+                        }
+                    });
+                }
+            }
         });
     });
+    //ajax上传图片
+    function sendFile($summernote, file) {
+        var formData = new FormData();
+        formData.append("file", file);
+        $.ajax({
+            url: "{:U('Upload/upload_img')}",//路径是你控制器中上传图片的方法，下面controller里面我会写到
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            type: 'POST',
+            success: function (data) {
+                $summernote.summernote('insertImage', data, function ($image) {
+                    $image.attr('src', data);
+                });
+            }
+        });
+    }
+
+
 </script>
 </body>
 

@@ -5,6 +5,7 @@ use \think\Controller;
 use \think\Session;
 class Login extends Controller
 {
+//    登录
     public function login()
     {
 
@@ -46,6 +47,7 @@ class Login extends Controller
         return view('login');
     }
 
+//    获取ip
     public function ip() {
         if(getenv('HTTP_CLIENT_IP') && strcasecmp(getenv('HTTP_CLIENT_IP'), 'unknown')) {
             $ip = getenv('HTTP_CLIENT_IP');
@@ -59,27 +61,23 @@ class Login extends Controller
         return preg_match ( '/[\d\.]{7,15}/', $ip, $matches ) ? $matches [0] : '';
     }
 
+//    获取ip所在地区
     public function get_area($ip = ''){
         if($ip == ''){
             $ip = ip();
         }
-
         $url = "http://ip.taobao.com/service/getIpInfo.php?ip={$ip}";//淘宝
         //$res = @file_get_contents('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=' . $ip);//新浪
-//        $ret = https_request($url);
         $ret = https_request($url);
-//        $token = json_decode($token,true);
         $arr = json_decode($ret,true);
-        $res = $arr['data']['region'].$arr['data']['city'];
-//        dump($arr);
-//        exit;
+        $res = $arr['data']['region']."-".$arr['data']['city'];
         return $res;
     }
 
+//    退出登录
     public function loginout(){
         session('admin_id',NULL);
         session('admin_name',NULL);
-
         $this->success('请重新登录','admin/login/login');
     }
     

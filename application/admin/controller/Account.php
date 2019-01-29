@@ -8,7 +8,6 @@ use \think\Config;
 class Account extends Common
 {
     public function accountList(){
-
         $res=model('Account')->accountlist();
         $page=$res->render();
         $this->assign('page',$page);
@@ -34,7 +33,6 @@ class Account extends Common
                 'password.max'      => '密码最多不能超过20个字符',
                 'password.alphaDash'=> '密码只能由字母和数字，_和-组成',
             ];
-
             $validate = new Validate($rule, $msg);
             $result   = $validate->check($data);
             if(!$result){
@@ -52,13 +50,9 @@ class Account extends Common
                 }else{
                     $this->error("添加管理员失败","/admin/account/accountList");
                 }
-
             }
-
         }
         return view('admin-accountadd');
-
-
     }
 
     public function addaccount(){
@@ -91,7 +85,6 @@ class Account extends Common
         ];   
         $validate = new Validate($rule, $msg);
         $result   = $validate->check($data);
-
         if(!$result){
             $this->error($validate->getError());
         }else{
@@ -103,10 +96,8 @@ class Account extends Common
                 'account'=>$account,
                 'img'=>$img,
             ];
-
             $account=model('Account');
             $res=$account->addaccount($data);
-    
             if($res){
                 $this->success("添加管理员成功","admin/account/accountlist");
             }else{
@@ -138,62 +129,6 @@ class Account extends Common
             $this->error('删除失败','admin/account/accountlist');
         }   
     }
-
-    public function edit(){
-        $admin_id=input('get.admin_id');
-        $account=model('Account');
-        $res=$account->edit($admin_id);
-        $this->assign('admin',$res);
-        return view('admin-accountedit');
-    }
-    public function edits(){
-        $admin_id=input('get.admin_id');
-        
-
-        $name=input('post.name');
-        $account=input('post.account');     
-        $password=input('post.pwd');     
-        $repwd=input('post.repwd');
-        $imgs=input('post.imgs');
-        $password=md5($password);
-        $repwd=md5($repwd);
-        
-      
-        $rule = [
-            'name'=>'require',                   
-        ];        
-        $msg = [
-            'name.require'=>'姓名不能为空',    
-        ];        
-        $data = array(
-            'name'  => $name
-        );   
-
-        $rule['password']='require|confirm:repwd';
-        $msg['password.require']='密码必须填写';
-        $msg['password.confirm']='密码不一致';
-        $data['password']=$password;
-        $data['repwd']=$repwd;
-        $data['img']=$imgs;      
-        $validate = new Validate($rule, $msg);
-        $result   = $validate->check($data);
-
-        if(!$result){
-            $this->error($validate->getError());
-        }
-        unset($data['repwd']);
-        // dump($data);
-        // exit;
-        $account=model('Account');
-        $res=$account->edits($admin_id,$data);
-        
-        if($res){
-            $this->success('修改成功','admin/account/accountlist');
-        }else{
-            $this->error('修改失败','admin/account/accountlist');
-        }  
-    }
-    
     
 }
    

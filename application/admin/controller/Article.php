@@ -5,6 +5,7 @@ use \think\Controller;
 
 class Article extends Common
 {
+//    文章列表
     public function articleList(){
         $res = model('article')->articlelist();
         $page= $res->render();
@@ -13,6 +14,7 @@ class Article extends Common
         return view('admin-articlelist');
     }
 
+//    添加文章
     public function articleAdd(){
         if ($this->request->isPost()){
             $data = $this->request->post();
