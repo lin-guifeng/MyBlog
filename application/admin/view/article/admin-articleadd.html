@@ -99,7 +99,7 @@
 
                     $('.showImg').attr("src",res).css('display','block');
                     $('.addImg').css('display','none');
-                
+
             },
             error: function(jqXHR){
                 alert("发生错误：" + jqXHR.status);
@@ -117,7 +117,7 @@
 <script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
 <script>
     $(document).ready(function () {
-        $('.summernote').summernote({
+        $('#summernote').summernote({
             lang: 'zh-CN',
             Height : 300,
             minHeight : 300,
