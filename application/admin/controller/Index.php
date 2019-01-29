@@ -32,7 +32,7 @@ class Index extends Common
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
                 $imgurl="/uploads/".$info->getSaveName();
-                echo $imgurl;
+                echo json_encode($imgurl);
             }else{
                 // 上传失败获取错误信息
                 echo $file->getError();
