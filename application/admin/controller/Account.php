@@ -46,9 +46,9 @@ class Account extends Common
                     ];
                 $res=model('Account')->accountAdd($datas);
                 if($res){
-                    echo "ok";
-                    return;
-//                    $this->success("添加管理员成功","/admin/account/accountList");
+//                    echo "ok";
+//                    return;
+                    $this->success("添加管理员成功","/admin/account/accountList");
                 }else{
                     $this->error("添加管理员失败","/admin/account/accountList");
                 }
