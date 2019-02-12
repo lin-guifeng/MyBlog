@@ -22,54 +22,6 @@
 
 <body class="gray-bg">
 <div class="wrapper wrapper-content animated fadeInRight">
-    <div class="ibox float-e-margins">
-        <div class="ibox-title">
-            <h5>Bootstrap table <a href="http://bootstrap-table.wenzhixin.net.cn/zh-cn/" target="_blank">http://bootstrap-table.wenzhixin.net.cn/zh-cn/</a></h5>
-            <div class="ibox-tools">
-                <a class="collapse-link">
-                    <i class="fa fa-chevron-up"></i>
-                </a>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-wrench"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#">选项1</a>
-                    </li>
-                    <li><a href="#">选项2</a>
-                    </li>
-                </ul>
-                <a class="close-link">
-                    <i class="fa fa-times"></i>
-                </a>
-            </div>
-        </div>
-        <div class="ibox-content">
-            <p>Bootstrap table是国人开发的一款基于 Bootstrap 的 jQuery 表格插件，通过简单的设置，就可以拥有强大的单选、多选、排序、分页，以及编辑、导出、过滤（扩展）等等的功能。目前在github上已经有2600多个Star，可见其受欢迎程度。</p>
-            <ul>
-                <li>支持 Bootstrap 3 和 Bootstrap 2</li>
-                <li>自适应界面</li>
-                <li>固定表头</li>
-                <li>非常丰富的配置参数</li>
-                <li>直接通过标签使用</li>
-                <li>显示/隐藏列</li>
-                <li>显示/隐藏表头</li>
-                <li>通过 AJAX 获取 JSON 格式的数据</li>
-                <li>支持排序</li>
-                <li>格式化表格</li>
-                <li>支持单选或者多选</li>
-                <li>强大的分页功能</li>
-                <li>支持卡片视图</li>
-                <li>支持多语言</li>
-                <li>支持插件</li>
-            </ul>
-        </div>
-    </div>
-
-
-
-
-
-
 
     <!-- Panel Other -->
     <div class="ibox float-e-margins">
@@ -138,62 +90,6 @@
                     </div>
                     <!-- End Example Pagination -->
                 </div>
-
-
-
-                <div class="col-sm-12">
-                    <!-- Example Pagination -->
-                    <div class="example-wrap">
-                        <h4 class="example-title">分页：客户端</h4>
-                        <div class="example">
-                            <table id="exampleTablePagination" data-toggle="table" data-url="/static/admin/js/demo/bootstrap_table_test.json" data-query-params="queryParams" data-mobile-responsive="true" data-height="400" data-pagination="true" data-icon-size="outline" data-search="true">
-                                <thead>
-                                <tr>
-                                    <th data-field="state" data-checkbox="true"></th>
-                                    <th data-field="id">ID</th>
-                                    <th data-field="name">名称</th>
-                                    <th data-field="price">价格</th>
-                                </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- End Example Pagination -->
-                </div>
-
-                <div class="col-sm-12">
-                    <!-- Example Events -->
-                    <div class="example-wrap">
-                        <h4 class="example-title">事件</h4>
-                        <div class="example">
-                            <div class="alert alert-success" id="examplebtTableEventsResult" role="alert">
-                                事件结果
-                            </div>
-                            <div class="btn-group hidden-xs" id="exampleTableEventsToolbar" role="group">
-                                <button type="button" class="btn btn-outline btn-default">
-                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" class="btn btn-outline btn-default">
-                                    <i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
-                                </button>
-                                <button type="button" class="btn btn-outline btn-default">
-                                    <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <table id="exampleTableEvents" data-height="400" data-mobile-responsive="true">
-                                <thead>
-                                <tr>
-                                    <th data-field="state" data-checkbox="true"></th>
-                                    <th data-field="id">ID</th>
-                                    <th data-field="name">名称</th>
-                                    <th data-field="price">价格</th>
-                                </tr>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- End Example Events -->
-                </div>
             </div>
         </div>
     </div>
@@ -221,7 +117,12 @@
 <script type="text/javascript">
     function edits(){
         console.log('123');
-        layer.alert('只想简单的提示');
+        // layer.alert('只想简单的提示');
+        layer.open({
+            // title: '在线调试',
+            type: 2,
+            content: 'http://layer.layui.com/mobile/'
+        });
         // layer.open({
         //     type: 2,
         //     title: 'layer mobile页',
