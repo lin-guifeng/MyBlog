@@ -12,11 +12,11 @@ class Login extends Controller
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
-                'name'      =>'require',
+                'user'      =>'require',
                 'password'  => 'require',
             ];
             $msg = [
-                'name.require'      =>'账号必须填写',
+                'user.require'      =>'账号必须填写',
                 'password.require'  => '密码必须填写',
             ];
 
