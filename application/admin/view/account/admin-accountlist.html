@@ -56,15 +56,19 @@
                                     <span>创建用户</span>
                                 </a>
                             </div>
-                            <table id="" class="table">
+                            <table class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
-                                    <th data-field="state" data-checkbox="true"></th>
-                                    <th data-field="">ID</th>
-                                    <th data-field="">用户名</th>
-                                    <th data-field="">时间</th>
+                                    <th>
+                                        <input type="checkbox" class="i-checks" name="input[]">
+                                    </th>
+                                    <th>ID</th>
+                                    <th>昵称</th>
+                                    <th>账号</th>
+                                    <th>所属分组</th>
+                                    <th>状态</th>
+                                    <th>时间</th>
                                 </tr>
-
                                 </thead>
                                 <tbody>
                                     {if condition="!$admin"}
@@ -79,6 +83,9 @@
                                         </td>
                                         <td>{$user.id}</td>
                                         <td>{$user.name}</td>
+                                        <td>{$user.user}</td>
+                                        <td>{$user.group_id}</td>
+                                        <td>{$user.status}</td>
                                         <td>{$user.time}</td>
                                     </tr>
                                     {/foreach}

@@ -19,15 +19,20 @@ class Account extends Common
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
-                'name|用户名'   => 'require|min:3|max:15|alphaNum|unique:admin',
+                'name|用户名'   => 'require|unique:admin',
+                'user|账户'   => 'require|min:3|max:15|alphaNum|unique:admin',
                 'password|密码' => 'confirm|min:6|max:20|alphaDash',
             ];
             $msg = [
                 'name.require'      => '用户名必须填写',
-                'name.min'          => '用户名最少要3个字符',
-                'name.max'          => '用户名最多不能超过15个字符',
-                'name.alphaNum'     => '用户名只能由字母和数字组成',
                 'name.unique'       => '用户名已注册',
+
+                'user.require'      => '账户必须填写',
+                'user.min'          => '账户最少要3个字符',
+                'user.max'          => '账户最多不能超过15个字符',
+                'user.alphaNum'     => '账户只能由字母和数字组成',
+                'user.unique'       => '账户已注册',
+
                 'password.confirm'  => '密码必须一致',
                 'password.min'      => '密码至少6个字符',
                 'password.max'      => '密码最多不能超过20个字符',
@@ -42,12 +47,11 @@ class Account extends Common
                 $datas=
                     [
                         'name'=>$data['name'],
+                        'user'=>$data['user'],
                         'password'=>$data['password'],
                     ];
                 $res=model('Account')->accountAdd($datas);
                 if($res){
-//                    echo "ok";
-//                    return;
                     $this->success("添加管理员成功","/admin/account/accountList");
                 }else{
                     $this->error("添加管理员失败","/admin/account/accountList");
