@@ -31,7 +31,7 @@
         <counts>
           <entry key="Account" value="1" />
           <entry key="css" value="7" />
-          <entry key="html" value="128" />
+          <entry key="html" value="129" />
           <entry key="ico" value="1" />
           <entry key="js" value="6" />
           <entry key="php" value="187" />
@@ -40,7 +40,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="128" />
+          <entry key="HTML" value="129" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="6" />
           <entry key="PHP" value="188" />
@@ -49,14 +49,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="1531" />
+          <entry key="html" value="1532" />
           <entry key="php" value="1406" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="1531" />
+          <entry key="HTML" value="1532" />
           <entry key="PHP" value="1406" />
         </counts>
       </usages-collector>
@@ -90,16 +90,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+            <state relative-caret-position="720">
+              <caret line="77" column="87" lean-forward="true" selection-start-line="77" selection-start-column="87" selection-end-line="77" selection-end-column="87" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/forum_main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90" />
           </provider>
         </entry>
       </file>
@@ -113,14 +106,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/form_basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1080" />
+            <state relative-caret-position="-3510">
+              <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/table_bootstrap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12960" />
+            <state relative-caret-position="-17879" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/table_basic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="329" column="107" lean-forward="true" selection-start-line="329" selection-start-column="44" selection-end-line="329" selection-end-column="107" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -787,18 +791,18 @@
       <workItem from="1548552561575" duration="11230000" />
       <workItem from="1548637446465" duration="6881000" />
       <workItem from="1548729281130" duration="7737000" />
-      <workItem from="1549936094898" duration="11466000" />
+      <workItem from="1549936094898" duration="12882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177864000" />
+    <option name="totallyTimeSpent" value="179280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -826,11 +830,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/index_v1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3420" />
-      </provider>
-    </entry>
     <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/index_v5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13050">
@@ -1085,20 +1084,29 @@
         <state relative-caret-position="-2250" />
       </provider>
     </entry>
-    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/form_basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080" />
-      </provider>
-    </entry>
     <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/table_bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12960" />
+        <state relative-caret-position="-17879" />
+      </provider>
+    </entry>
+    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/form_basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3510">
+          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/table_basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="329" column="107" lean-forward="true" selection-start-line="329" selection-start-column="44" selection-end-line="329" selection-end-column="107" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+        <state relative-caret-position="720">
+          <caret line="77" column="87" lean-forward="true" selection-start-line="77" selection-start-column="87" selection-end-line="77" selection-end-column="87" />
         </state>
       </provider>
     </entry>
