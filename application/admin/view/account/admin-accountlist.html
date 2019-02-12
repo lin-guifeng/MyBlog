@@ -51,7 +51,6 @@
                 <div class="col-sm-12">
                     <!-- Example Pagination -->
                     <div class="example-wrap">
-                        <h4 class="example-title">分页：客户端</h4>
                         <div class="example">
                             <div class="btn-group hidden-xs" role="group">
                                 <a onclick="edits()" type="button" class="btn btn-outline btn-primary">
@@ -62,7 +61,7 @@
                             <table id="" class="table">
                                 <thead>
                                 <tr>
-                                    <!--<th data-field="state" data-checkbox="true"></th>-->
+                                    <th data-field="state" data-checkbox="true"></th>
                                     <th data-field="">ID</th>
                                     <th data-field="">用户名</th>
                                     <th data-field="">时间</th>
@@ -77,6 +76,7 @@
                                     {else/}
                                     {foreach $admin as $key => $user}
                                     <tr>
+                                        <td></td>
                                         <td>{$user.id}</td>
                                         <td>{$user.name}</td>
                                         <td>{$user.time}</td>
