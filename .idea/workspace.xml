@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,16 +23,16 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="7" />
-          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Account" value="1" />
           <entry key="css" value="7" />
-          <entry key="html" value="118" />
+          <entry key="html" value="121" />
           <entry key="ico" value="1" />
           <entry key="js" value="6" />
           <entry key="php" value="186" />
@@ -40,7 +41,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="118" />
+          <entry key="HTML" value="121" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="6" />
           <entry key="PHP" value="187" />
@@ -49,14 +50,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="1441" />
+          <entry key="html" value="1479" />
           <entry key="php" value="1386" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="1441" />
+          <entry key="HTML" value="1479" />
           <entry key="PHP" value="1386" />
         </counts>
       </usages-collector>
@@ -69,62 +70,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="541">
-              <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Order.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php">
+        <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/layer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="-1792">
+              <caret line="53" column="82" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="82" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Miaosha.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="33" column="42" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Common.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -140,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="660">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -174,6 +144,7 @@
       <find>chart</find>
       <find>table</find>
       <find>00b8f5</find>
+      <find>chutiyan</find>
     </findStrings>
     <replaceStrings>
       <replace>/static/admin/css/</replace>
@@ -202,12 +173,10 @@
         <option value="E:/BaiduNetdiskDownload/demo1/MallTest/application/admin/controller/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/view/login/login.html" />
         <option value="E:/demo/thinkphp51_backstage/application/admin/controller/User.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Login.php" />
         <option value="$PROJECT_DIR$/application/admin/model/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html" />
         <option value="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" />
         <option value="$PROJECT_DIR$/application/common.php" />
@@ -220,6 +189,8 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" />
       </list>
     </option>
   </component>
@@ -249,7 +220,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -263,237 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="account" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="article" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="login" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="home" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="home" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="index" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="index" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="request" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="validates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="traits" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="index" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="permission" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="role" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="user" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\新建文件夹\H+plus-V4.9\H+4.9正版源码" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -729,6 +469,237 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="account" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="article" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="view" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="login" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="home" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="home" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="index" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\BaiduNetdiskDownload\demo1\MallTest" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="index" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="request" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="validates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="traits" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="index" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="permission" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="role" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\demo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="thinkphp51_backstage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="user" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\新建文件夹\H+plus-V4.9\H+4.9正版源码" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -784,18 +755,19 @@
       <workItem from="1548466993533" duration="14306000" />
       <workItem from="1548552561575" duration="11230000" />
       <workItem from="1548637446465" duration="6881000" />
-      <workItem from="1548729281130" duration="7138000" />
+      <workItem from="1548729281130" duration="7737000" />
+      <workItem from="1549936094898" duration="2746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165799000" />
+    <option name="totallyTimeSpent" value="169144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -823,9 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/role/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://E:/demo/thinkphp51_backstage/views/admin/role/create.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -884,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3540">
-          <caret line="118" column="20" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/index/form_simditor.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-810" />
@@ -936,10 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="93" column="1" selection-start-line="66" selection-end-line="93" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#80#0#PHP" expanded="true" />
-            <element signature="n#https_request#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,9 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#38#60#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,17 +991,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="67" column="111" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="391">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,7 +1011,7 @@
     <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1069,8 +1024,18 @@
     </entry>
     <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="33" column="42" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="930">
+          <caret line="33" column="42" selection-start-line="32" selection-start-column="8" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1083,20 +1048,24 @@
     <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Shoppingcart.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/User.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/layer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1792">
+          <caret line="53" column="82" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="82" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
         </state>
       </provider>
     </entry>
