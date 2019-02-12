@@ -49,14 +49,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="1507" />
+          <entry key="html" value="1511" />
           <entry key="php" value="1386" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="1507" />
+          <entry key="HTML" value="1511" />
           <entry key="PHP" value="1386" />
         </counts>
       </usages-collector>
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="123" column="52" selection-start-line="123" selection-start-column="52" selection-end-line="123" selection-end-column="52" />
+            <state relative-caret-position="649">
+              <caret line="130" column="29" lean-forward="true" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -90,7 +90,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/layer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="2851">
               <caret line="262" column="57" lean-forward="true" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="57" />
             </state>
           </provider>
@@ -755,12 +755,12 @@
       <workItem from="1548552561575" duration="11230000" />
       <workItem from="1548637446465" duration="6881000" />
       <workItem from="1548729281130" duration="7737000" />
-      <workItem from="1549936094898" duration="4963000" />
+      <workItem from="1549936094898" duration="5177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171361000" />
+    <option name="totallyTimeSpent" value="171575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1047,6 +1047,13 @@
     <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Shoppingcart.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/layer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2851">
+          <caret line="262" column="57" lean-forward="true" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountadd.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1054,17 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/layer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="262" column="57" lean-forward="true" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="123" column="52" selection-start-line="123" selection-start-column="52" selection-end-line="123" selection-end-column="52" />
+        <state relative-caret-position="649">
+          <caret line="130" column="29" lean-forward="true" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="29" />
         </state>
       </provider>
     </entry>
