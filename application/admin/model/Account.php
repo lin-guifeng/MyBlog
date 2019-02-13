@@ -10,8 +10,8 @@ class Account extends Model
         return $res;
     }
 
-    public function recordList($id){
-        $res=db('admin_record')->where('id',$id)->limit('10')->order('time')->select();
+    public function recordList(){
+        $res=db('admin_record')->paginate(10);
         return $res;
     }
 
