@@ -110,9 +110,9 @@ class Account extends Common
             }else{
                 $res=model('Account')->groupAdd($data);
                 if($res){
-                    $this->success("添加分组成功","/admin/account/accountList");
+                    $this->success("添加分组成功","/admin/account/groupList");
                 }else{
-                    $this->error("添加分组失败","/admin/account/accountList");
+                    $this->error("添加分组失败","/admin/account/groupList");
                 }
             }
         }
