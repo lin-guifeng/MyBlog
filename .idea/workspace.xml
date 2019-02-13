@@ -2,100 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/admin/view/account/admin-record.html" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-groupadd.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-groupadd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/agile_board.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/article_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/badges_labels.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/basic_gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/blueimp.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/buttons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/calendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/carousel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/chat_view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/clients.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/code_editor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/contacts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/css_animation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/diff.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/draggable_panels.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/empty_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/file_manager.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/fontawesome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_advanced.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_avatar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_builder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_editors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_file_upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_markdown.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_simditor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_validate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_webuploader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/form_wizard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/forum_main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/glyphicons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/graph_echarts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/graph_flot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/graph_metrics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/graph_morris.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/graph_peity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/graph_rickshaw.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/graph_sparkline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/grid_options.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/iconfont.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/ie.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/invoice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/invoice_print.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/jstree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/layer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/layerdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/layouts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/lockscreen.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/login_v2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/mail_compose.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/mail_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/mailbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/modal_window.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/nestable_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/pin_board.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/plyr.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/project_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/projects.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/search_results.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/social_feed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/spinners.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/suggest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/sweetalert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/table_basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/table_bootstrap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/table_data_tables.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/table_foo_table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/table_jqgrid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/tabs_panels.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/teams_board.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/timeline.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/timeline_v2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/toastr_notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/tree_view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/typography.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/webim.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/widgets.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,14 +50,14 @@
         <counts>
           <entry key="css" value="190" />
           <entry key="html" value="1690" />
-          <entry key="php" value="1631" />
+          <entry key="php" value="1636" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
           <entry key="HTML" value="1690" />
-          <entry key="PHP" value="1631" />
+          <entry key="PHP" value="1636" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -201,7 +109,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="661">
@@ -219,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="102" column="4" lean-forward="true" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+            <state relative-caret-position="271">
+              <caret line="99" column="52" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
               <folding>
                 <element signature="e#445#2142#0#PHP" />
               </folding>
@@ -344,8 +252,8 @@
         <option value="$PROJECT_DIR$/application/admin/model/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-groupadd.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-record.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
       </list>
     </option>
   </component>
@@ -920,12 +828,12 @@
       <workItem from="1548637446465" duration="6881000" />
       <workItem from="1548729281130" duration="7737000" />
       <workItem from="1549936094898" duration="19460000" />
-      <workItem from="1550019627931" duration="12061000" />
+      <workItem from="1550019627931" duration="12483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197919000" />
+    <option name="totallyTimeSpent" value="198341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1235,16 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="102" column="4" lean-forward="true" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
-          <folding>
-            <element signature="e#445#2142#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/model/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1256,6 +1154,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="661">
           <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="99" column="52" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
+          <folding>
+            <element signature="e#445#2142#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

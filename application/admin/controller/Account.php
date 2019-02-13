@@ -97,7 +97,7 @@ class Account extends Common
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
-                'name|名称'   => 'require|unique:admin',
+                'name|名称'   => 'require|unique:group',
             ];
             $msg = [
                 'name.require'      => '名称必须填写',
