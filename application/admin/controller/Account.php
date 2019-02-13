@@ -86,7 +86,7 @@ class Account extends Common
     }
 
     public function groupList(){
-        $res=model('Account')->grouplist();
+        $res=model('Account')->groupList();
         $page=$res->render();
         $this->assign('page',$page);
         $this->assign('group',$res);
