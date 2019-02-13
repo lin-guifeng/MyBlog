@@ -61,57 +61,6 @@ class Account extends Common
         return view('admin-accountadd');
     }
 
-    public function addaccount(){
-        $name=input('post.name');
-        $account=input('post.account'); 
-        $img=input('post.imgs');    
-        $password=input('post.pwd');
-        $repwd=input('post.repwd');
-        $rule = [
-            'name'=>'require',
-            'account'  => 'unique:admin|alphaDash|length:4,25',
-            'password'=> 'require|confirm:repwd',  
-            'img'=>'require',              
-        ];        
-        $msg = [
-            'name.require'=>'姓名不能为空',
-            'account.unique'=>'账号已存在',
-            'account.alphaDash'=>'账号只能由字母数字下划线破折号组成',
-            'account.length'=>'账号长度在4-25之间',
-            'password.require' => '密码必须填写',
-            'password.confirm' => '密码不一致',
-            'img.require'=>'图片不能为空',
-        ];        
-        $data = [
-            'name'  => $name,
-            'password'=>$password,
-            'repwd'=>$repwd,
-            'account'=>$account,
-            'img'=>$img,
-        ];   
-        $validate = new Validate($rule, $msg);
-        $result   = $validate->check($data);
-        if(!$result){
-            $this->error($validate->getError());
-        }else{
-            $password=md5($password);
-            $data=
-            [              
-                'name'=>$name,
-                'password'=>$password,
-                'account'=>$account,
-                'img'=>$img,
-            ];
-            $account=model('Account');
-            $res=$account->addaccount($data);
-            if($res){
-                $this->success("添加管理员成功","admin/account/accountlist");
-            }else{
-                $this->error("添加管理员失败","admin/account/accountlist");
-            }
-        }
-    }
-
     public function upimg(){
         $file = request()->file('img');     
         if($file){
@@ -135,7 +84,48 @@ class Account extends Common
             $this->error('删除失败','admin/account/accountlist');
         }   
     }
-    
+
+    public function groupList(){
+        $res=model('Account')->grouplist();
+        $page=$res->render();
+        $this->assign('page',$page);
+        $this->assign('group',$res);
+        return view('admin-grouplist');
+    }
+
+    public function groupAdd(){
+        if ($this->request->isPost()){
+            $data = $this->request->post();
+            $rule = [
+                'name|名称'   => 'require|unique:admin',
+            ];
+            $msg = [
+                'name.require'      => '名称必须填写',
+                'name.unique'       => '名称已注册',
+            ];
+            $validate = new Validate($rule, $msg);
+            $result   = $validate->check($data);
+            if(!$result){
+                $this->error($validate->getError());
+            }else{
+                $res=model('Account')->groupAdd($data);
+                if($res){
+                    $this->success("添加分组成功","/admin/account/accountList");
+                }else{
+                    $this->error("添加分组失败","/admin/account/accountList");
+                }
+            }
+        }
+        return view('admin-groupadd');
+    }
+
+    public function recordList(){
+        $res=model('Account')->recordList();
+        $page=$res->render();
+        $this->assign('page',$page);
+        $this->assign('record',$res);
+        return view('admin-record');
+    }
 }
    
     

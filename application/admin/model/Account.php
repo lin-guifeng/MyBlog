@@ -35,6 +35,21 @@ class Account extends Model
         $ret=db('admin')->where('id',$admin_id)->update($data);
         return $ret;
     }
+
+    public function groupList(){
+        $res=db('group')->paginate(10);
+        return $res;
+    }
+
+    public function groupAdd($data){
+        $res=db('group')->insert($data);
+        return $res;
+    }
+
+    public function record(){
+        $res=db('admin_record')->paginate(5);
+        return $res;
+    }
 }
 
 

@@ -29,16 +29,6 @@
                     <!-- Example Pagination -->
                     <div class="example-wrap">
                         <div class="example">
-                            <div class="btn-group hidden-xs" role="group">
-                                <a onclick="edits()" type="button" class="btn btn-outline btn-primary">
-                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
-                                    <span>创建分组</span>
-                                </a>
-                                <a onclick="" type="button" class="btn btn-outline btn-primary">
-                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
-                                    <span>编辑分组</span>
-                                </a>
-                            </div>
                             <table class="table table-bordered table-hover">
                                 <thead>
                                 <tr>
@@ -46,25 +36,31 @@
                                         <input type="checkbox" class="i-checks" name="input[]">
                                     </th>
                                     <th>ID</th>
-                                    <th>名称</th>
-                                    <th>状态</th>
-                                    <th>类别</th>
+                                    <th>昵称</th>
+                                    <th>账号</th>
+                                    <th>所属分组</th>
+                                    <th>登录IP</th>
+                                    <th>登录地点</th>
+                                    <th>最后登录时间</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {if condition="!$group"}
+                                {if condition="!$record"}
                                 <tr>
                                     <td colspan="7" class="text-center">没有数据</td>
                                 </tr>
                                 {else/}
-                                {foreach $group as $key => $user}
+                                {foreach $record as $key => $user}
                                 <tr>
                                     <td>
                                         <input type="checkbox" class="i-checks" name="input[]">
                                     </td>
                                     <td>{$user.id}</td>
-                                    <td>{$user.name}</td>
-                                    <td>{$user.status}</td>
+                                    <td>{$user.aid}</td>
+                                    <!--<td>{$user.user}</td>-->
+                                    <!--<td>{$user.group}</td>-->
+                                    <!--<td>{$user.status}</td>-->
+                                    <!--<td>{$user.time}</td>-->
                                     <td>{$user.time}</td>
                                 </tr>
                                 {/foreach}
@@ -86,29 +82,11 @@
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
 
-<!-- 自定义js -->
-<script src="/static/admin/js/content.js?v=1.0.0"></script>
-
-
 <!-- Bootstrap table -->
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
 
-<!-- Peity -->
-<script src="/static/admin/js/demo/bootstrap-table-demo.js"></script>
-<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
-
-<script type="text/javascript">
-    function edits(){
-        layer.open({
-            type: 2,
-            title: '添加分组',
-            area: ['800px', '90%'],
-            content: '{:url("Account/groupAdd")}'
-        });
-    }
-</script>
 </body>
 
 </html>
