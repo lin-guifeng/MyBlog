@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-record.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-record.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+            <state relative-caret-position="511">
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -140,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/model/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="420">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -251,10 +250,10 @@
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-groupadd.html" />
-        <option value="$PROJECT_DIR$/application/admin/view/account/admin-record.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Account.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/account/admin-record.html" />
       </list>
     </option>
   </component>
@@ -829,12 +828,12 @@
       <workItem from="1548637446465" duration="6881000" />
       <workItem from="1548729281130" duration="7737000" />
       <workItem from="1549936094898" duration="19460000" />
-      <workItem from="1550019627931" duration="13371000" />
+      <workItem from="1550019627931" duration="13419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199229000" />
+    <option name="totallyTimeSpent" value="199277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1137,13 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="661">
@@ -1163,8 +1155,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/model/Account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state relative-caret-position="420">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
         </state>
       </provider>
     </entry>
