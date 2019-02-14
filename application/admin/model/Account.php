@@ -12,6 +12,14 @@ class Account extends Model
 
     public function recordList(){
         $res=db('admin_record')->paginate(10);
+
+        $res = db('admin_record')->alias('r')
+            ->join('admin a',"a.id = u.aid")
+            ->field('r.id,r.aid,r.time,r.ip,r.area,a.name,a.user,a.group_id')
+            ->paginate(10);
+        foreach ($res as &$val){
+            $val['group'] = db('admin_group')->where('id',$val['group_id'])->field('name');
+        }
         return $res;
     }
 
