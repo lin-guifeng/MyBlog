@@ -111,9 +111,9 @@ function initTableCheckbox() {
         event.stopPropagation();
     });
     /*点击全选框所在单元格时也触发全选框的点击操作*/
-    $checkAllTh.click(function(){
-        $(this).find('input').click();
-    });
+    // $checkAllTh.click(function(){
+    //     $(this).find('input').click();
+    // });
     var $tbr = $('table tbody tr');
     // var $checkItemTd = $('<td><input type="checkbox" name="checkItem" /></td>');
     /*每一行都在最前面插入一个选中复选框的单元格*/
