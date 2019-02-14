@@ -15,6 +15,7 @@ class Account extends Model
             ->join('admin a',"a.id = r.aid")
             ->field('r.id,r.aid,r.time,r.ip,r.area,a.name,a.user,a.group_id,g.name')
             ->join('group g',"g.id = a.group_id")
+            ->order('r.time desc')
             ->paginate(10);
         return $res;
     }
