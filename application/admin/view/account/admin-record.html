@@ -35,7 +35,7 @@
                                 <thead>
                                 <tr>
                                     <th>
-                                        <input type="checkbox" class="i-checks" name="input[]">
+                                        <input type="checkbox" class="i-checks" name="checkAll">
                                     </th>
                                     <th>ID</th>
                                     <th>昵称</th>
@@ -55,7 +55,7 @@
                                 {foreach $record as $key => $user}
                                 <tr>
                                     <td>
-                                        <input type="checkbox" class="i-checks" name="input[]">
+                                        <input type="checkbox" class="i-checks" name="checkItem">
                                     </td>
                                     <td>{$user.id}</td>
                                     <td>{$user.name}</td>
@@ -115,9 +115,6 @@ function initTableCheckbox() {
     //     $(this).find('input').click();
     // });
     var $tbr = $('table tbody tr');
-    // var $checkItemTd = $('<td><input type="checkbox" name="checkItem" /></td>');
-    /*每一行都在最前面插入一个选中复选框的单元格*/
-    // $tbr.prepend($checkItemTd);
     /*点击每一行的选中复选框时*/
     $tbr.find('input').click(function(event){
         /*调整选中行的CSS样式*/
@@ -131,7 +128,17 @@ function initTableCheckbox() {
     $tbr.click(function(){
         $(this).find('input').click();
     });
+    show();
 }
+    function show(){
+        var obj = document.getElementsByName("checkItem");
+        var check_val = [];
+        for(k in obj){
+            if(obj[k].checked)
+                check_val.push(obj[k].value);
+        }
+        console.log(check_val);
+    }
     initTableCheckbox();
 });
 /* 获取第二列的数据并相加*/
