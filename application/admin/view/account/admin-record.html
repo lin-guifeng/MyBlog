@@ -117,6 +117,7 @@ function initTableCheckbox() {
     var $tbr = $('table tbody tr');
     /*点击每一行的选中复选框时*/
     $tbr.find('input').click(function(event){
+        show();
         /*调整选中行的CSS样式*/
         $(this).parent().parent().toggleClass('warning');
         /*如果已经被选中行的行数等于表格的数据行数，将全选框设为选中状态，否则设为未选中状态*/
@@ -126,6 +127,7 @@ function initTableCheckbox() {
     });
     /*点击每一行时也触发该行的选中操作*/
     $tbr.click(function(){
+
         $(this).find('input').click();
     });
 
@@ -140,7 +142,7 @@ function initTableCheckbox() {
         console.log(check_val);
     }
     initTableCheckbox();
-    show();
+
 });
 /* 获取第二列的数据并相加*/
 var allCost=0;
