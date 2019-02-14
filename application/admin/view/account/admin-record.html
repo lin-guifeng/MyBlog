@@ -128,7 +128,7 @@ function initTableCheckbox() {
     $tbr.click(function(){
         $(this).find('input').click();
     });
-    show();
+
 }
     function show(){
         var obj = document.getElementsByName("checkItem");
@@ -140,6 +140,7 @@ function initTableCheckbox() {
         console.log(check_val);
     }
     initTableCheckbox();
+    show();
 });
 /* 获取第二列的数据并相加*/
 var allCost=0;
