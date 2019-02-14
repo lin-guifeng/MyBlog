@@ -122,8 +122,6 @@ class Account extends Common
     public function recordList(){
         $res=model('Account')->recordList();
         $page=$res->render();
-        dump($res);
-        exit;
         $this->assign('page',$page);
         $this->assign('record',$res);
         return view('admin-record');
