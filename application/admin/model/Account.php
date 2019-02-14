@@ -14,7 +14,7 @@ class Account extends Model
         $res = db('admin_record')->alias('r')
             ->join('admin a',"a.id = r.aid",'right')
             ->join('group g',"g.id = a.group_id",'right')
-            ->field('g.name as group,r.id,r.aid,r.time,r.ip,r.area,a.name,a.user,a.group_id')
+            ->field('r.id,r.aid,r.time,r.ip,r.area,a.name,a.user,a.group_id,g.name as groups')
             ->order('r.time desc')
             ->paginate(10);
         return $res;
