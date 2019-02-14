@@ -12,8 +12,8 @@ class Account extends Model
 
     public function recordList(){
         $res = db('admin_record')->alias('r')
-            ->join('admin a',"a.id = r.aid")
-            ->join('group g',"g.id = a.group_id")
+            ->join('admin as a ON a.id = r.aid')
+            ->join('group as g ON g.id=a.group_id')
             ->field('r.id,r.aid,r.time,r.ip,r.area,a.name,a.user,a.group_id,g.name as group')
             ->order('r.time desc')
             ->paginate(10);
