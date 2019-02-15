@@ -74,8 +74,27 @@
         var oTableInit = new Object();
         oTableInit.Init = function () {
             $('#table').bootstrapTable({
-                url: '{:url("Account/recordData")}', //请求地址
-                method: 'GET', //请求
+                ajax : function (request) {
+                    $.ajax({
+                        type : "GET",
+                        url : '{:url("Account/recordData")}',
+                        contentType: "application/json;charset=utf-8",
+                        dataType:"json",
+                        data:'',
+                        success : function (msg) {
+                            console.log(msg);
+                            request.success({
+                                row : msg
+                            });
+                            $('#table').bootstrapTable('load', msg);
+                        },
+                        error:function(){
+                            alert("错误");
+                        }
+                    });
+                },
+                // url: '{:url("Account/recordData")}', //请求地址
+                // method: 'GET', //请求
                 striped: true,
                 cache: false,
                 pagination: true,
