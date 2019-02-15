@@ -128,8 +128,8 @@ class Account extends Common
     }
 
     public function recordData(){
-        $limit = trim(I('get.limit'));
-        $offset = trim(I('get.offset'));
+        $limit = trim(input('limit'));
+        $offset = trim(input('offset'));
         $page = floor($offset / $limit) + 1;
         # 获取并且计算 页号 分页大小
 
