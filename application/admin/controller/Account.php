@@ -132,8 +132,14 @@ class Account extends Common
         $offset = trim(input('offset'));
         $page = floor($offset / $limit) + 1;
         # 获取并且计算 页号 分页大小
-
-        $list = db('admin_record')->page($page,$limit)->select();
+        $res = db('admin_record')->alias('r')
+            ->join('admin a',"a.id = r.aid",'right')
+            ->join('group g',"g.id = a.group_id",'right')
+            ->field('r.id,r.aid,r.time,r.ip,r.area,a.name,a.user,a.group_id,g.name as groups')
+            ->order('r.time desc')
+            ->page($page,$limit)
+            ->select();
+//        $list = db('admin_record')->page($page,$limit)->select();
         # 查询相关数据
         $count = db('admin_record')->count();
         # 查询数据条数
