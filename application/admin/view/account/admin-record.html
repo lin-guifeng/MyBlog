@@ -32,7 +32,7 @@
                     <div class="example-wrap">
                         <div class="example">
                             <div class="" role="group" id="toolbar">
-                                <button onclick="edits()" type="button" class="btn btn-outline btn-primary">
+                                <button onclick="editMemberInfoShow()" type="button" class="btn btn-outline btn-primary">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <span>数据导出</span>
                                 </button>
@@ -61,7 +61,6 @@
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
-
 <script>
     $(function () {
 
@@ -145,10 +144,21 @@
                     align: 'center',
                     valign: 'middle',
                 }],
+                onDblClickRow : function(row, $element) {
+                    editMemberInfoShow(row, $element);
+                },
+
             });
         };
         return oTableInit;
     };
+    function editMemberInfoShow(a, b) {
+        console.log(a);
+        console.log(b);
+    }
+</script>
+<script>
+
 </script>
 </body>
 
