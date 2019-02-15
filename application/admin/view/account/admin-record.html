@@ -41,45 +41,7 @@
                                     <span>删除</span>
                                 </button>
                             </div>
-                            <table class="table table-bordered table-hover">
-                                <thead>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" class="i-checks" name="checkAll">
-                                    </th>
-                                    <th>ID</th>
-                                    <th>昵称</th>
-                                    <th>账号</th>
-                                    <th>所属分组</th>
-                                    <th>登录IP</th>
-                                    <th>登录地点</th>
-                                    <th>最后登录时间</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {if condition="!$record"}
-                                <tr>
-                                    <td colspan="7" class="text-center">没有数据</td>
-                                </tr>
-                                {else/}
-                                {foreach $record as $key => $user}
-                                <tr>
-                                    <td>
-                                        <input type="checkbox" class="i-checks" name="checkItem">
-                                    </td>
-                                    <td>{$user.id}</td>
-                                    <td>{$user.name}</td>
-                                    <td>{$user.user}</td>
-                                    <td>{$user.groups}</td>
-                                    <td>{$user.ip}</td>
-                                    <td>{$user.area}</td>
-                                    <td>{$user.time}</td>
-                                </tr>
-                                {/foreach}
-                                {/if}
-                                </tbody>
-                            </table>
-                            {$page}
+                          
                             <table id="tb_departments"></table>
                         </div>
                     </div>
