@@ -4,7 +4,6 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-record.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-record.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+            <state relative-caret-position="61">
+              <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -85,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2431">
+            <state relative-caret-position="811">
               <caret line="141" column="18" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="18" />
               <folding>
                 <element signature="e#445#2142#0#PHP" />
@@ -833,12 +832,12 @@
       <workItem from="1549936094898" duration="19460000" />
       <workItem from="1550019627931" duration="14828000" />
       <workItem from="1550106056166" duration="16428000" />
-      <workItem from="1550194831715" duration="10481000" />
+      <workItem from="1550194831715" duration="10962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227595000" />
+    <option name="totallyTimeSpent" value="228076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1140,7 +1139,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
+        <state relative-caret-position="811">
           <caret line="141" column="18" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="18" />
           <folding>
             <element signature="e#445#2142#0#PHP" />
@@ -1150,8 +1149,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+        <state relative-caret-position="61">
+          <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
         </state>
       </provider>
     </entry>
