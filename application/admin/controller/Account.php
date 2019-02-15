@@ -142,8 +142,9 @@ class Account extends Common
             'total' => $list,
             'rows' => $count,
         ];
+        echo $ret;
         # 构造返回数据类型
-        $this->ajaxReturn($ret);
+//        $this->ajaxReturn($ret);
         # 返回JSON数据
 
     }
