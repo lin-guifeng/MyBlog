@@ -4,7 +4,7 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-record.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-record.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,14 +53,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="1966" />
+          <entry key="html" value="1969" />
           <entry key="php" value="2085" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="1966" />
+          <entry key="HTML" value="1969" />
           <entry key="PHP" value="2085" />
         </counts>
       </usages-collector>
@@ -73,11 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+            <state relative-caret-position="391">
+              <caret line="149" column="26" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -140,7 +140,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="541">
@@ -254,8 +254,8 @@
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" />
         <option value="$PROJECT_DIR$/application/admin/model/Account.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/account/admin-record.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/account/admin-record.html" />
       </list>
     </option>
   </component>
@@ -838,12 +838,12 @@
       <workItem from="1549936094898" duration="19460000" />
       <workItem from="1550019627931" duration="14828000" />
       <workItem from="1550106056166" duration="16428000" />
-      <workItem from="1550194831715" duration="8485000" />
+      <workItem from="1550194831715" duration="9748000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225599000" />
+    <option name="totallyTimeSpent" value="226862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1143,13 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -1157,6 +1150,13 @@
           <folding>
             <element signature="e#445#2142#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="149" column="26" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
         </state>
       </provider>
     </entry>
