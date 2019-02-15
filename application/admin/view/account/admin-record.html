@@ -86,17 +86,15 @@
                 sidePagination: "server", //客户端client   服务端server
                 pageNumber: 1,
                 pageSize: 10,
-                pageList: [10, 15],
+                // pageList: [10, 15],
                 queryParams: function (params) {
                     return {
                         offset: params.offset,  //页码
                         limit: params.limit,   //页面大小
                     };
                 },
-                responseHandler:function(res){ // res为从服务器请求到的数据
-	    	        return res;
-	            },
-                detailView : true,
+
+
                 showHeader : true,
                 showColumns : true,
                 showRefresh : true,
