@@ -139,8 +139,8 @@ class Account extends Common
         # 查询数据条数
 
         $ret = [
-            'total' => $list,
-            'rows' => $count,
+            'rows' => $list,
+            'total' => $count,
         ];
         echo json_encode($ret);
         # 构造返回数据类型
