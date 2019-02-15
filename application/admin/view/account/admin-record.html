@@ -138,6 +138,7 @@ allCost=allCost+parseFloat($(this).find("td").eq(2).text())
         search: false,
         sidePagination: "server", //客户端client   服务端server
         pageNumber: 1,
+        pageSize: 10,
         pageList: [10, 15],
         queryParams: function (params) {
             return {
