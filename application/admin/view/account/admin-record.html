@@ -125,9 +125,7 @@ allCost=allCost+parseFloat($(this).find("td").eq(2).text())
 });
 </script>
 <script>
-    var oTableInit = new Object();
-    //初始化Table
-    oTableInit.Init = function () {
+
     $('#table').bootstrapTable({
         url: '{:url("Account/recordData")}', //请求地址
         method: 'GET', //请求
@@ -157,7 +155,7 @@ allCost=allCost+parseFloat($(this).find("td").eq(2).text())
             title: '应用名称',
         }],
     });
-    };
+
 </script>
 </body>
 
