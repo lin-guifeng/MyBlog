@@ -150,13 +150,16 @@ allCost=allCost+parseFloat($(this).find("td").eq(2).text())
                 pageNumber: 1,
                 pageSize: 10,
                 pageList: [10, 15],
-                detailView : true,
                 queryParams: function (params) {
                     return {
                         offset: params.offset,  //页码
                         limit: params.limit,   //页面大小
                     };
                 },
+                detailView : true,
+                showHeader : true,
+                showColumns : true,
+                showRefresh : true,
                 columns: [{
                     field: 'id',
                     title: '应用ID',
