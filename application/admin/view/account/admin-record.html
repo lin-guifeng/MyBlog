@@ -41,8 +41,8 @@
                                     <span>删除</span>
                                 </button>
                             </div>
-                          
-                            <table id="tb_departments"></table>
+
+                            <table id="table"></table>
                         </div>
                     </div>
                     <!-- End Example Pagination -->
@@ -125,85 +125,51 @@ allCost=allCost+parseFloat($(this).find("td").eq(2).text())
 });
 </script>
 <script>
-    var oTableInit = new Object();
-    //初始化Table
-    oTableInit.Init = function () {
-        $('#tb_departments').bootstrapTable({
-            // url: '/Home/GetDepartment',         //请求后台的URL（*）
-            // method: 'post',                      //请求方式（*）
-            toolbar: '#toolbar',                //工具按钮用哪个容器
-            striped: true,                      //是否显示行间隔色
-            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
-            pagination: true,                   //是否显示分页（*）
-            sortOrder: "asc",                   //排序方式
-            queryParams: oTableInit.queryParams,//传递参数（*）
-            sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
-            pageNumber: 1,                       //初始化加载第一页，默认第一页
-            pageSize: 5,                       //每页的记录行数（*）
-            pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
-            search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
-            showColumns: true,                  //是否显示所有的列
-            showRefresh: true,                  //是否显示刷新按钮
-            minimumCountColumns: 2,             //最少允许的列数
-            // clickToSelect: true,                //是否启用点击选中行
-            height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
-            uniqueId: "tnum",                     //每一行的唯一标识，一般为主键列
-            columns: [{
-                checkbox: true
-            }, {
-                field: 'tnum',
-                title: '工号',
-                align: 'center'
-            }, {
-                field: 'name',
-                title: '姓名',
-                align: 'center'
-            }, {
-                field: 'sex',
-                title: '性别',
-                align: 'center'
-            }, {
-                field: 'birth',
-                title: '出生年月',
-                align: 'center'
-            },{
-                field: 'tel',
-                title: '联系电话',
-                align: 'center'
-            }, {
-                field: 'grade',
-                title: '学历',
-                align: 'center'
-            }, {
-                field: 'school',
-                title: '毕业院校',
-                align: 'center',
-            }, {
-                field: 'college',
-                title: '所属院系',
-                align: 'center'
-            },{
-                field: 'office',
-                title: '所属教研室',
-                align: 'center'
-            },{
-                field: 'profess',
-                title: '职称',
-                align: 'center'
-            }, {
-                field: 'state',
-                title: '状态',
-                align: 'center'
-            },{
-                field: 'operation',
-                title: '操作',
-                align: 'center',
-                events:operateEvents,//给按钮注册事件
-                formatter:addFunctionAlty//表格中增加按钮
-            }]
-        });
-    };
-
+    $('#table').bootstrapTable({
+        url: '{:url("Account/recordData")}', //请求地址
+        method: 'GET', //请求
+        striped: true,
+        cache: false,
+        pagination: true,
+        sortable: true,
+        showHeader : true,
+        showRefresh: true,
+        clickToSelect: true,
+        search: false,
+        sidePagination: "server", //客户端client   服务端server
+        pageNumber: 1,
+        pageList: [10, 15],
+        queryParams: function (params) {
+            return {
+                offset: params.offset,  //页码
+                limit: params.limit,   //页面大小
+            };
+        },
+        columns: [{
+            field: 'id',
+            title: '应用ID',
+            width: '10%',
+        }, {
+            field: 'name',
+            title: '应用名称',
+        },  {
+            field: 'type',
+            title: '类型',
+            width: '10%',
+        },  {
+            field: 'status',
+            title: '状态',
+            width: '10%',
+        }, {
+            field: 'xznum',
+            title: '下载量',
+            width: '10%',
+        }, {
+            field: 'phnum',
+            title: '排序号',
+            width: '10%',
+        }],
+    });
 </script>
 </body>
 

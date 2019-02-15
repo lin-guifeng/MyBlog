@@ -55,6 +55,21 @@ class Account extends Model
         $res=db('admin_record')->paginate(5);
         return $res;
     }
+
+    public function doRoleRuleList($offset, $limit) {
+        $total = db('admin_record')->count();
+        $auth_group = Db::connect("dbUser")->table("auth_group")->field("id,rules")->where("id", $id)->find();
+        $rules ="-1";
+        if ($auth_group && $auth_group['rules']) $rules = $auth_group['rules'];
+
+        $rows = Db::connect("dbUser")->table("auth_rule")
+            ->field(['id','name','title',"if(id in ({$rules}), 1, 0)"=>'selected'])
+            ->order("time desc")
+            ->select();
+
+
+        return ['total'=>$total,'rows'=>$rows];
+    }
 }
 
 
