@@ -159,8 +159,8 @@ class Account extends Common
     public function recordDel(){
         $idlist = trim(input('idlist'));
 //        $res = model('Account')->recordDel($idlist);
-
-        return ['data'=>$idlist,'code'=>1,'message'=>'操作完成'];
+        $res = array_filter(explode(',', $idlist));
+        return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
     }
 }
    
