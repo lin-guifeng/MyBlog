@@ -120,10 +120,6 @@ class Account extends Common
     }
 
     public function recordList(){
-        $res=model('Account')->recordList();
-        $page=$res->render();
-        $this->assign('page',$page);
-        $this->assign('record',$res);
         return view('admin-record');
     }
 
@@ -135,6 +131,7 @@ class Account extends Common
         $list = db('admin_record')->alias('r')
             ->join('admin a',"a.id = r.aid",'right')
             ->join('group g',"g.id = a.group_id",'right')
+            ->where('r.id>0')
             ->field('r.id,r.aid,r.time,r.ip,r.area,a.name,a.user,a.group_id,g.name as groups')
             ->order('r.time desc')
             ->page($page,$limit)
