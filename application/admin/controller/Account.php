@@ -160,7 +160,7 @@ class Account extends Common
         $idlist = trim(input('idlist'));
 //        $res = model('Account')->recordDel($idlist);
 
-        $this->ajaxReturn($idlist);
+        return ['data'=>$idlist,'code'=>1,'message'=>'操作完成'];
     }
 }
    
