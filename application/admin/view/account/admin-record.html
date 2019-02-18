@@ -180,7 +180,7 @@
                 idlist += $(this).parents("tr").attr("data-uniqueid") + ",";
             })
             $.ajax({
-                url: '/admin/account/index_list',
+                url: '/admin/account/recordDel',
                 dataType: 'json',
                 type: 'get',
                 data: { idlist: idlist },
