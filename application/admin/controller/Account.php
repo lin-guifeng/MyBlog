@@ -154,6 +154,14 @@ class Account extends Common
         # 返回JSON数据
 
     }
+
+//    删除记录
+    public function recordDel(){
+        $idlist = trim(input('idlist'));
+//        $res = model('Account')->recordDel($idlist);
+
+        $this->ajaxReturn($idlist);
+    }
 }
    
     

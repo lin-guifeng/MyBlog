@@ -36,11 +36,8 @@
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <span>数据导出</span>
                                 </button>
-                                <button id="btn_edit" type="button" class="btn btn-outline btn-danger">
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <span>编辑</span>
-                                </button>
-                                <button onclick="" type="button" class="btn btn-outline btn-danger">
+
+                                <button id="btn_delete" type="button" class="btn btn-outline btn-danger">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                     <span>删除</span>
                                 </button>
@@ -182,8 +179,16 @@
             $("input[name='btSelectItem']:checked").each(function () {
                 idlist += $(this).parents("tr").attr("data-uniqueid") + ",";
             })
-            alert("删除的列表为" + idlist);
-
+            $.ajax({
+                url: '/admin/account/index_list',
+                dataType: 'json',
+                type: 'get',
+                data: { idlist: idlist },
+                success: function (res) {
+                    console.log(res);
+                },
+            });
+            // alert("删除的列表为" + idlist);
         }
     });
 </script>

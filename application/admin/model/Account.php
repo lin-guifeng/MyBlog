@@ -70,6 +70,10 @@ class Account extends Model
 
         return ['total'=>$total,'rows'=>$rows];
     }
+
+    public function recordDel($idlist){
+        $res = db('admin_record')->delete();
+    }
 }
 
 
