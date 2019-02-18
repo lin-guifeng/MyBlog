@@ -86,9 +86,7 @@
                 pageNumber: 1,
                 pageSize: 10,
                 uniqueId: "id",
-                showExport: true,
-                exportDataType: "basic",
-                exportTypes:['excel','xlsx'],
+
                 // pageList: [10, 15],
                 queryParams: function (params) {
                     return {
@@ -147,13 +145,25 @@
                     align: 'center',
                     valign: 'middle',
                 }],
+                showExport: true,
+                exportDataType: "basic",
+                exportTypes:['excel','xlsx'],
             });
         };
         return oTableInit;
     };
-    function editMemberInfoShow() {
+    $(".export-excel").click(function () {
+        //导出
+        $("#table").tableExport({
+            type: "excel",
+            escape: "false",
+            fileName: '答题情况表'
+        });
+    });
+
+    // function editMemberInfoShow() {
         // $('#table').tableExport({ type: 'excel', escape: 'false' });
-    }
+    // }
     $("#btn_edit").click(function () {
         var i = 0;
         var id;
