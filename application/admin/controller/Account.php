@@ -157,9 +157,8 @@ class Account extends Common
 
 //    删除记录
     public function recordDel(){
-        $idlist = trim(input('idlist'));
-//        $res = model('Account')->recordDel($idlist);
-        $res = array_filter(explode(',', $idlist));
+        $idlist = array_filter(explode(',', input('idlist')));
+        $res = model('Account')->recordDel($idlist);
         return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
     }
 }

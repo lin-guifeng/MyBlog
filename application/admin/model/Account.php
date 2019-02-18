@@ -72,7 +72,8 @@ class Account extends Model
     }
 
     public function recordDel($idlist){
-        $res = db('admin_record')->delete();
+        $res = db('admin_record')->delete($idlist);
+        return $res;
     }
 }
 
