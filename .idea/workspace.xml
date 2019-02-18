@@ -34,7 +34,7 @@
           <entry key="Account" value="1" />
           <entry key="css" value="7" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="158" />
+          <entry key="html" value="159" />
           <entry key="ico" value="2" />
           <entry key="js" value="10" />
           <entry key="php" value="230" />
@@ -43,7 +43,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="158" />
+          <entry key="HTML" value="159" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="10" />
           <entry key="PHP" value="231" />
@@ -53,14 +53,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="2296" />
+          <entry key="html" value="2297" />
           <entry key="php" value="2255" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="2296" />
+          <entry key="HTML" value="2297" />
           <entry key="PHP" value="2255" />
         </counts>
       </usages-collector>
@@ -76,9 +76,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="166" column="8" lean-forward="true" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+            <state relative-caret-position="366">
+              <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/TableExport-3.3.13/examples/exportButtons.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2790" />
           </provider>
         </entry>
       </file>
@@ -162,13 +169,6 @@
             <state relative-caret-position="630">
               <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2489" />
           </provider>
         </entry>
       </file>
@@ -853,12 +853,12 @@
       <workItem from="1550019627931" duration="14828000" />
       <workItem from="1550106056166" duration="16428000" />
       <workItem from="1550194831715" duration="19870000" />
-      <workItem from="1550452395994" duration="13371000" />
+      <workItem from="1550452395994" duration="13911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250355000" />
+    <option name="totallyTimeSpent" value="250895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -892,11 +892,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/modal_window.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2250" />
-      </provider>
-    </entry>
     <entry file="file://E:/新建文件夹/H+plus-V4.9/H+4.9正版源码/form_basic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3510">
@@ -1190,10 +1185,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/TableExport-3.3.13/examples/exportButtons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2790" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-record.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="166" column="8" lean-forward="true" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+        <state relative-caret-position="366">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
         </state>
       </provider>
     </entry>
