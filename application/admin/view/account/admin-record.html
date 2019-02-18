@@ -36,7 +36,6 @@
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <span>数据导出</span>
                                 </button>
-
                                 <button id="btn_delete" type="button" class="btn btn-outline btn-danger">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                     <span>删除</span>
@@ -62,6 +61,7 @@
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="/static/admin/js/tableexport.min.js"></script>
 <script>
     $(function () {
         //1.初始化Table
@@ -144,16 +144,12 @@
                     align: 'center',
                     valign: 'middle',
                 }],
-                onDblClickRow : function(row, $element) {
-                    editMemberInfoShow(row, $element);
-                },
             });
         };
         return oTableInit;
     };
-    function editMemberInfoShow(a, b) {
-        console.log(a);
-        console.log(b);
+    function editMemberInfoShow() {
+        $('#table').tableExport({ type: 'excel', escape: 'false' });
     }
     $("#btn_edit").click(function () {
         var i = 0;
