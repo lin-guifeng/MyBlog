@@ -187,19 +187,14 @@
                 success: function (res) {
                     console.log(res);
                     if(res.code=='1'){
-                        eco_refresh();
+                        self.location.reload();
                     }
                 },
             });
             // alert("删除的列表为" + idlist);
         }
     });
-    function eco_refresh(){
-        var _body = window.parent;
-        var _iframe1=_body.document.getElementById('rightMain');
-        window.onbeforeunload=function(){};
-        _iframe1.contentWindow.location.reload(true);
-    }
+   
 </script>
 <script>
 
