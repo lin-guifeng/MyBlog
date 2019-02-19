@@ -31,7 +31,7 @@ class Index extends Common
         if($file){
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
-                $imgurl="www.linguifeng.top/uploads/".$info->getSaveName();
+                $imgurl="/uploads/".$info->getSaveName();
                 echo json_encode($imgurl);
             }else{
                 // 上传失败获取错误信息

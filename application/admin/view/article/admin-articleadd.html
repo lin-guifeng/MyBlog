@@ -96,8 +96,9 @@
             processData:false,
             success:function(res){
                 console.log(res);
-                $('.imginput').val(res);
-                $('.showImg').attr("src",res).css('display','block');
+                var let = "www.linguifeng.top"+res
+                $('.imginput').val(let);
+                $('.showImg').attr("src",let).css('display','block');
                 $('.addImg').css('display','none');
             },
             error: function(jqXHR){
@@ -131,7 +132,8 @@
                         contentType: false,
                         success: function (data) {
                             console.log(data);
-                            $('#summernote').summernote('insertImage', data, 'img');
+                            var let = "www.linguifeng.top"+data
+                            $('#summernote').summernote('insertImage', let, 'img');
                         },
                         error: function (data) {
                             alert('图片上传出错，文件过大或者其他情况');
