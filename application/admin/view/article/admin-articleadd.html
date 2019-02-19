@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <title>H+ 后台主题UI框架 - 表单验证 jQuery Validation</title>
     <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
     <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
-
     <link rel="shortcut icon" href="favicon.ico"> <link href="/static/admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="/static/admin/css/font-awesome.css?v=4.4.0" rel="stylesheet">
     <link href="/static/admin/css/animate.css" rel="stylesheet">
     <link href="/static/admin/css/plugins/summernote/summernote.css" rel="stylesheet">
     <!--<link href="/static/admin/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">-->
-
 </head>
 <style>
-
     .modal-backdrop{
         z-index: -1!important;
         opacity: 0!important;
@@ -32,7 +25,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
-                    <form class="form-horizontal m-t" id="" action="{:url('article/articleAdd')}" method="post">
+                    <form class="form-horizontal m-t" id="form1" action="{:url('article/articleAdd')}" method="post">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">封面</label>
                             <div class="col-sm-4">
@@ -62,10 +55,10 @@
                                 </div>
                             </div>
                         </div>
-
+                        <input type="hidden" name="txt" id="details">
                         <div class="form-group">
                             <div class="col-sm-8 col-sm-offset-3">
-                                <button class="btn btn-primary" type="submit">提交</button>
+                                <button class="btn btn-primary" type="button" onclick="check()">提交</button>
                             </div>
                         </div>
                     </form>
@@ -74,7 +67,6 @@
         </div>
     </div>
 </div>
-
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js"></script>
 <script src="/static/admin/js/bootstrap.min.js"></script>
@@ -82,7 +74,6 @@
     function clickImg(obj){
         $(obj).parent().find('.upload_input').click();
     }
-
     function change(obj){
         var formdata = new FormData();
         formdata.append("file", document.getElementById('myfile').files[0]);
@@ -105,12 +96,12 @@
             },
         });
     }
+
 </script>
 <!-- jQuery Validation plugin javascript-->
 <script src="/static/admin/js/plugins/validate/jquery.validate.min.js"></script>
 <script src="/static/admin/js/plugins/validate/messages_zh.min.js"></script>
 <script src="/static/admin/js/demo/form-validate-demo.js"></script>
-
 <!-- SUMMERNOTE -->
 <script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>
 <script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
@@ -124,7 +115,6 @@
             dialogsFade : true,// Add fade effect on dialogs
             dialogsInBody : true,// Dialogs can be placed in body, not in
             disableDragAndDrop : false,// default false You can disable drag
-
             callbacks: {
                 onImageUpload: function (files) {
                     var formData = new FormData();
@@ -147,10 +137,10 @@
             }
         });
     });
-
-
-
+    function check() {
+        $('#details').val($('#summernote').code());
+        document.getElementById('form1').submit();
+    }
 </script>
 </body>
-
 </html>
