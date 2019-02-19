@@ -31,8 +31,8 @@
                     <!-- Example Pagination -->
                     <div class="example-wrap">
                         <div class="example">
-                            <div class="btn-group hidden-xs" id="" role="group">
-                                <a href="{:url('Article/articleAdd')}" type="button" class="btn btn-outline btn-primary">
+                            <div class="" id="" role="group">
+                                <a onclick="add()" type="button" class="btn btn-outline btn-primary">
                                     <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
                                     <span>新建文章</span>
                                 </a>
@@ -83,17 +83,22 @@
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
 
-<!-- 自定义js -->
-<script src="/static/admin/js/content.js?v=1.0.0"></script>
-
-
 <!-- Bootstrap table -->
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
 
-
-
+<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
+<script type="text/javascript">
+    function add(){
+        layer.open({
+            type: 2,
+            title: '添加文章',
+            area: ['800px', '90%'],
+            content: '{:url("Article/articleAdd")}'
+        });
+    }
+</script>
 </body>
 
 </html>
