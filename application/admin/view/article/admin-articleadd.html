@@ -116,26 +116,28 @@
             dialogsInBody : true,// Dialogs can be placed in body, not in
             disableDragAndDrop : false,// default false You can disable drag
             callbacks: {
-                onImageUpload: function (files, editor, $editable) {
+                onImageUpload: function (files) {
                     // console.log('image upload:', files, editor, $editable);
-
-                    var formData = new FormData();
-                    formData.append('file', files[0]);
-                    $.ajax({
-                        url: '/admin/Index/uppic',//上传图片文件处理地址,
-                        type: "POST",
-                        data: formData,
-                        dataType: 'JSON',
-                        processData: false,//告诉jQuery不要加工数据
-                        contentType: false,
-                        success: function (data) {
-                            console.log(data);
-                            // $('#summernote').summernote('insertImage', data, 'img');
-                        },
-                        error: function (data) {
-                            alert('图片上传出错，文件过大或者其他情况');
-                        }
-                    });
+                    console.log(files);
+                    // var formData = new FormData();
+                    // formData.append('file', files[0]);
+                    // formdata.append("file", document.getElementById('myfile').files[0]);
+                    // console.log(formdata.get("file"));
+                    // $.ajax({
+                    //     url: '/admin/Index/uppic',//上传图片文件处理地址,
+                    //     type: "POST",
+                    //     data: formData,
+                    //     dataType: 'JSON',
+                    //     processData: false,//告诉jQuery不要加工数据
+                    //     contentType: false,
+                    //     success: function (data) {
+                    //         console.log(data);
+                    //         // $('#summernote').summernote('insertImage', data, 'img');
+                    //     },
+                    //     error: function (data) {
+                    //         alert('图片上传出错，文件过大或者其他情况');
+                    //     }
+                    // });
                 }
             }
         });
