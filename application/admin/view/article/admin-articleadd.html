@@ -70,6 +70,14 @@
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js"></script>
 <script src="/static/admin/js/bootstrap.min.js"></script>
+
+<!-- jQuery Validation plugin javascript-->
+<script src="/static/admin/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="/static/admin/js/plugins/validate/messages_zh.min.js"></script>
+<script src="/static/admin/js/demo/form-validate-demo.js"></script>
+<!-- SUMMERNOTE -->
+<script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>
+<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
 <script>
     function clickImg(obj){
         $(obj).parent().find('.upload_input').click();
@@ -87,9 +95,9 @@
             contentType:false,
             processData:false,
             success:function(res){
-                    $('.imginput').val(res);
-                    $('.showImg').attr("src",res).css('display','block');
-                    $('.addImg').css('display','none');
+                $('.imginput').val(res);
+                $('.showImg').attr("src",res).css('display','block');
+                $('.addImg').css('display','none');
             },
             error: function(jqXHR){
                 alert("发生错误：" + jqXHR.status);
@@ -97,80 +105,53 @@
         });
     }
 
-</script>
-<!-- jQuery Validation plugin javascript-->
-<script src="/static/admin/js/plugins/validate/jquery.validate.min.js"></script>
-<script src="/static/admin/js/plugins/validate/messages_zh.min.js"></script>
-<script src="/static/admin/js/demo/form-validate-demo.js"></script>
-<!-- SUMMERNOTE -->
-<script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>
-<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
-<script>
-    $('div #summernote').each(function() {
-        var $this = $(this);
-        var placeholder = $this.attr("placeholder") || '';
-        var url = $this.attr("action") || '';
-        $this.summernote({
-            lang : 'zh-CN',
-            placeholder : placeholder,
-            minHeight : 300,
+
+    $(document).ready(function () {
+        $('#summernote').summernote({
+            lang: 'zh-CN',
+            // minHeight : 300,
+            height: 300,
+            focus:true,
             dialogsFade : true,// Add fade effect on dialogs
             dialogsInBody : true,// Dialogs can be placed in body, not in
-            // summernote.
             disableDragAndDrop : false,// default false You can disable drag
-            // and drop
             callbacks: {
-                onImageUpload: function(files) {
-                    console.log(files);
-                    // upload image to server and create imgNode...
-                    $summernote.summernote('insertNode', imgNode);
+                onChange: function(contents, $editable) {
+                    console.log('onChange:', contents, $editable);
+                },
+                onImageUpload: function (files) {
+                    var formdata = new FormData();
+                    formdata.append("file",files[0]);
+                    console.log(formdata.get("file"));
+                    console.log('123');
+                    var formdata = new FormData();
+                    formdata.append("file", files[0]);
+                    console.log(formdata.get("file"));
+                    // console.log('image upload:', files, editor, $editable);
+                    // console.log(files[0]);
+
+                    // formData.append('file', files[0]);
+                    // formdata.append("file", document.getElementById('myfile').files[0]);
+                    // console.log(formdata.get("file"));
+                    // $.ajax({
+                    //     url: '/admin/Index/uppic',//上传图片文件处理地址,
+                    //     type: "POST",
+                    //     data: formData,
+                    //     dataType: 'JSON',
+                    //     processData: false,//告诉jQuery不要加工数据
+                    //     contentType: false,
+                    //     success: function (data) {
+                    //         console.log(data);
+                    //         // $('#summernote').summernote('insertImage', data, 'img');
+                    //     },
+                    //     error: function (data) {
+                    //         alert('图片上传出错，文件过大或者其他情况');
+                    //     }
+                    // });
                 }
             }
         });
-    })
-    // $(document).ready(function () {
-    //     $('#summernote').summernote({
-    //         lang: 'zh-CN',
-    //         // minHeight : 300,
-    //         height: 300,
-    //         focus:true,
-    //         dialogsFade : true,// Add fade effect on dialogs
-    //         dialogsInBody : true,// Dialogs can be placed in body, not in
-    //         disableDragAndDrop : false,// default false You can disable drag
-    //         callbacks: {
-    //             onChange: function(contents, $editable) {
-    //                 console.log('onChange:', contents, $editable);
-    //             },
-    //             onImageUpload: function (files) {
-    //                 console.log('123');
-    //                 var formdata = new FormData();
-    //                 formdata.append("file", files[0]);
-    //                 console.log(formdata.get("file"));
-    //                 // console.log('image upload:', files, editor, $editable);
-    //                 // console.log(files[0]);
-    //
-    //                 // formData.append('file', files[0]);
-    //                 // formdata.append("file", document.getElementById('myfile').files[0]);
-    //                 // console.log(formdata.get("file"));
-    //                 // $.ajax({
-    //                 //     url: '/admin/Index/uppic',//上传图片文件处理地址,
-    //                 //     type: "POST",
-    //                 //     data: formData,
-    //                 //     dataType: 'JSON',
-    //                 //     processData: false,//告诉jQuery不要加工数据
-    //                 //     contentType: false,
-    //                 //     success: function (data) {
-    //                 //         console.log(data);
-    //                 //         // $('#summernote').summernote('insertImage', data, 'img');
-    //                 //     },
-    //                 //     error: function (data) {
-    //                 //         alert('图片上传出错，文件过大或者其他情况');
-    //                 //     }
-    //                 // });
-    //             }
-    //         }
-    //     });
-    // });
+    });
     function check() {
         $('#details').val($('#summernote').code());
         document.getElementById('form1').submit();
