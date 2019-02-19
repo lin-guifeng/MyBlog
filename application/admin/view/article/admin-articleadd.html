@@ -95,6 +95,7 @@
             contentType:false,
             processData:false,
             success:function(res){
+                console.log(res);
                 $('.imginput').val(res);
                 $('.showImg').attr("src",res).css('display','block');
                 $('.addImg').css('display','none');
