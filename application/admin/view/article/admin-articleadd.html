@@ -49,11 +49,11 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">文章详情</label>
                             <div class="col-sm-8">
-                                <div class="ibox no-padding" style="border: solid 1px #e5e6e7;overflow: scroll;">
+                                <!--<div class="ibox no-padding" style="border: solid 1px #e5e6e7;overflow: scroll;">-->
                                     <div name="txt" id="summernote">
 
                                     </div>
-                                </div>
+                                <!--</div>-->
                             </div>
                         </div>
 
@@ -112,14 +112,10 @@
     $(document).ready(function () {
         $('#summernote').summernote({
             lang: 'zh-CN',
-            Height : 300,
             minHeight : 300,
-            maxHeight: 300,
             dialogsFade : true,// Add fade effect on dialogs
             dialogsInBody : true,// Dialogs can be placed in body, not in
-            // summernote.
             disableDragAndDrop : false,// default false You can disable drag
-            // and drop
             toolbar: [
                 //字体工具
                 ['fontname', ['fontname']], //字体系列
