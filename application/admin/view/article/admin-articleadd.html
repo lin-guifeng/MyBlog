@@ -117,8 +117,10 @@
             disableDragAndDrop : false,// default false You can disable drag
             callbacks: {
                 onImageUpload: function (files) {
+                    formdata.append("file", files[0]);
+                    console.log(formdata.get("file"));
                     // console.log('image upload:', files, editor, $editable);
-                    console.log(files[0]);
+                    // console.log(files[0]);
                     // var formData = new FormData();
                     // formData.append('file', files[0]);
                     // formdata.append("file", document.getElementById('myfile').files[0]);
