@@ -106,7 +106,7 @@
 <script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>
 <script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
 <script>
-    $('div.summernote').each(function() {
+    $('div #summernote').each(function() {
         var $this = $(this);
         var placeholder = $this.attr("placeholder") || '';
         var url = $this.attr("action") || '';
