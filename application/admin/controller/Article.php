@@ -17,15 +17,18 @@ class Article extends Common
 //    添加文章
     public function articleAdd(){
         if ($this->request->isPost()){
-            $data = $this->request->post();
-            dump($data);
+            $article = $this->request->post();
+//            dump($data);
+            $data['img'] = $article['img'];
+            $data['title'] = $article['title'];
+            $data['txt'] = $article['txt'];
 //            echo json_encode($data);
-//            $res=model('article')->articleAdd($data);
-//            if($res){
-//                $this->success("添加文章成功","/admin/article/articleList");
-//            }else{
-//                $this->error("添加文章失败","/admin/article/articleList");
-//            }
+            $res=model('article')->articleAdd($data);
+            if($res){
+                $this->success("添加文章成功","/admin/article/articleList");
+            }else{
+                $this->error("添加文章失败","/admin/article/articleList");
+            }
         }
         return view('admin-articleadd');
     }
