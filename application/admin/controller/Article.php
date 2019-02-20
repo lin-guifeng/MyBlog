@@ -70,6 +70,8 @@ class Article extends Common
             }else{
                 $classify['status']==0;
             }
+            echo json_encode($classify);
+            return;
             $res=model('article')->classifyAdd($classify);
             if($res){
                 $this->success("添加分类成功","/admin/article/articleList");
