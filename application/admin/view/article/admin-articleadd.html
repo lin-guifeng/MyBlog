@@ -112,6 +112,7 @@
             dialogsFade : true,
             dialogsInBody : true,
             disableDragAndDrop : false,
+            callbacks: {
             onImageUpload: function (files) {
                 var formdata = new FormData();
                 formdata.append("file", files[0]);
@@ -131,6 +132,7 @@
                         alert('图片上传出错，文件过大或者其他情况');
                     }
                 });
+            }
             }
         });
 
