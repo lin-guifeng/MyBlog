@@ -33,7 +33,7 @@
                                     <input name="image" type="file" onchange="change(this)" class="upload_input" style="display: none;" id="myfile" >
                                     <input type="hidden" name="img" value="" class="imginput">
                                     <!--<img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">-->
-                                    <img class="addImg" src="http://www.linguifeng.top/uploads/20190219/66d925253614934483ba3c60cdad309b.jpg" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
+                                    <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
                                     <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;display: none;" onclick="clickImg(this)" class="showImg">
                                 </div>
                             </div>
@@ -71,7 +71,6 @@
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js"></script>
 <script src="/static/admin/js/bootstrap.min.js"></script>
-
 <!-- jQuery Validation plugin javascript-->
 <script src="/static/admin/js/plugins/validate/jquery.validate.min.js"></script>
 <script src="/static/admin/js/plugins/validate/messages_zh.min.js"></script>
@@ -96,10 +95,8 @@
             contentType:false,
             processData:false,
             success:function(res){
-                console.log(res);
-                var let = "www.linguifeng.top"+res
-                $('.imginput').val(let);
-                $('.showImg').attr("src",let).css('display','block');
+                $('.imginput').val(res);
+                $('.showImg').attr("src",res).css('display','block');
                 $('.addImg').css('display','none');
             },
             error: function(jqXHR){
@@ -108,40 +105,34 @@
         });
     }
 
-
     $(document).ready(function () {
         $('#summernote').summernote({
             lang: 'zh-CN',
-            // minHeight : 300,
             height: 300,
             focus:true,
-            dialogsFade : true,// Add fade effect on dialogs
-            dialogsInBody : true,// Dialogs can be placed in body, not in
-            disableDragAndDrop : false,// default false You can disable drag
-
-                onImageUpload: function (files) {
-
-                    var formdata = new FormData();
-                    formdata.append("file", files[0]);
-                    console.log(formdata.get("file"));
-                    $.ajax({
-                        url: '/admin/Index/uppic',//上传图片文件处理地址,
-                        type: "POST",
-                        data: formdata,
-                        dataType: 'JSON',
-                        processData: false,//告诉jQuery不要加工数据
-                        contentType: false,
-                        success: function (data) {
-                            console.log(data);
-                            var let = "www.linguifeng.top"+data
-                            $('#summernote').summernote('insertImage', let, 'img');
-                        },
-                        error: function (data) {
-                            alert('图片上传出错，文件过大或者其他情况');
-                        }
-                    });
-                }
-
+            dialogsFade : true,
+            dialogsInBody : true,
+            disableDragAndDrop : false,
+            onImageUpload: function (files) {
+                var formdata = new FormData();
+                formdata.append("file", files[0]);
+                console.log(formdata.get("file"));
+                $.ajax({
+                    url: '/admin/Index/uppic',//上传图片文件处理地址,
+                    type: "POST",
+                    data: formdata,
+                    dataType: 'JSON',
+                    processData: false,//告诉jQuery不要加工数据
+                    contentType: false,
+                    success: function (data) {
+                        console.log(data);
+                        $('#summernote').summernote('insertImage', data, 'img');
+                    },
+                    error: function (data) {
+                        alert('图片上传出错，文件过大或者其他情况');
+                    }
+                });
+            }
         });
     });
     function check() {
