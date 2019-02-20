@@ -39,21 +39,17 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="col-sm-2 control-label">标题</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="title" required>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="col-sm-2 control-label">文章详情</label>
                             <div class="col-sm-8">
                                 <div class="ibox no-padding" style="border: solid 1px #e5e6e7;height: 400px;">
-                                    <div name="txt" id="summernote" >
-
-                                    </div>
+                                    <div name="txt" id="summernote"></div>
                                 </div>
                             </div>
                         </div>
@@ -72,11 +68,10 @@
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js"></script>
 <script src="/static/admin/js/bootstrap.min.js"></script>
-
 <!-- SUMMERNOTE -->
 <!--<script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>-->
-<!--<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>-->
 <script type="text/javascript" src="/static/admin/js/plugins/summernote/summernote-bs4.js"></script>
+<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
 <script>
     function clickImg(obj){
         $(obj).parent().find('.upload_input').click();
@@ -103,7 +98,6 @@
             },
         });
     }
-
     $(document).ready(function () {
         $('#summernote').summernote({
             lang: 'zh-CN',
@@ -116,7 +110,6 @@
             onImageUpload: function (files) {
                 var formdata = new FormData();
                 formdata.append("file", files[0]);
-                console.log(formdata.get("file"));
                 $.ajax({
                     url: '/admin/Index/uppic',//上传图片文件处理地址,
                     type: "POST",
@@ -125,7 +118,6 @@
                     processData: false,//告诉jQuery不要加工数据
                     contentType: false,
                     success: function (data) {
-                        console.log(data);
                         $('#summernote').summernote('insertImage', data, 'img');
                     },
                     error: function (data) {
