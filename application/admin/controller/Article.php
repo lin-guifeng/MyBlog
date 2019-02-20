@@ -74,9 +74,9 @@ class Article extends Common
             return;
             $res=model('article')->classifyAdd($classify);
             if($res){
-                $this->success("添加分类成功","/admin/article/articleList");
+                $this->success("添加分类成功","/admin/article/classifyList");
             }else{
-                $this->error("添加分类失败","/admin/article/articleList");
+                $this->error("添加分类失败","/admin/article/classifyList");
             }
         }
         return view('admin-classifyadd');
