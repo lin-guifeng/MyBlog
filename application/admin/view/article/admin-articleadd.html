@@ -9,7 +9,9 @@
     <link rel="shortcut icon" href="favicon.ico"> <link href="/static/admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="/static/admin/css/font-awesome.css?v=4.4.0" rel="stylesheet">
     <link href="/static/admin/css/animate.css" rel="stylesheet">
-    <link href="/static/admin/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <!--<link href="/static/admin/css/plugins/summernote/summernote.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="/static/admin/css/plugins/summernote/summernote-bs4.css">
+
     <!--<link href="/static/admin/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">-->
 </head>
 <style>
@@ -71,13 +73,11 @@
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js"></script>
 <script src="/static/admin/js/bootstrap.min.js"></script>
-<!-- jQuery Validation plugin javascript-->
-<script src="/static/admin/js/plugins/validate/jquery.validate.min.js"></script>
-<script src="/static/admin/js/plugins/validate/messages_zh.min.js"></script>
-<script src="/static/admin/js/demo/form-validate-demo.js"></script>
+
 <!-- SUMMERNOTE -->
-<script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>
-<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
+<!--<script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>-->
+<!--<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>-->
+<script type="text/javascript" src="/static/admin/js/plugins/summernote/summernote-bs4.js"></script>
 <script>
     function clickImg(obj){
         $(obj).parent().find('.upload_input').click();
