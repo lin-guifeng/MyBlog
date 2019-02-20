@@ -65,7 +65,7 @@ class Article extends Common
     public function classifyAdd(){
         if ($this->request->isPost()){
             $classify = $this->request->post();
-            if($classify['status']==true){
+            if($classify['status']=='on'){
                 $classify['status']==1;
             }else{
                 $classify['status']==0;
