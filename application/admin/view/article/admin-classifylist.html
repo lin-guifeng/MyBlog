@@ -24,7 +24,7 @@
                     <!-- Example Pagination -->
                     <div class="example-wrap">
                         <div class="example">
-                            <div class="btn-group hidden-xs" role="group" id="toolbar">
+                            <div role="group" id="toolbar">
                                 <button id="btn_add" type="button" class="btn btn-outline btn-primary">
                                     <i class="fa fa-plus" aria-hidden="true"></i>
                                     <span>添加</span>
@@ -105,6 +105,11 @@
                     align: 'center',
                     valign: 'middle',
                 }, {
+                    field: 'sort',
+                    title: '分类排序',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
                     field: 'time',
                     title: '添加时间',
                     align: 'center',
@@ -114,6 +119,16 @@
         };
         return oTableInit;
     };
+
+    $("#btn_add").click(function () {
+        layer.open({
+            type: 2,
+            title: '添加分组',
+            area: ['800px', '90%'],
+            content: '{:url("Article/classifyAdd")}'
+        });
+
+
 
     $("#btn_edit").click(function () {
         var i = 0;

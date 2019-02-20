@@ -23,6 +23,10 @@ class Article extends Model
         $res=db('article')->insert($data);
         return $res;
     }
+    public function classifyAdd($data){
+        $res=db('classify')->insert($data);
+        return $res;
+    }
     public function del($admin_id){
         $res=db('admin')->where('id',$admin_id)->delete();
         return $res;

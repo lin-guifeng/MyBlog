@@ -44,7 +44,7 @@ class Article extends Common
         # 获取并且计算 页号 分页大小
         $list = db('admin_classify')
             ->page($page,$limit)
-            ->order('time desc')
+            ->order('sort desc')
             ->select();
         foreach ($list as &$val){
             if($val['status']=='1'){
@@ -63,11 +63,39 @@ class Article extends Common
 
 //    分类添加
     public function classifyAdd(){
+        if ($this->request->isPost()){
+            $classify = $this->request->post();
+            if($classify['status']==true){
+                $classify['status']==1;
+            }else{
+                $classify['status']==0;
+            }
+            $res=model('article')->classifyAdd($classify);
+            if($res){
+                $this->success("添加分类成功","/admin/article/articleList");
+            }else{
+                $this->error("添加分类失败","/admin/article/articleList");
+            }
+        }
         return view('admin-classifyadd');
     }
 
     //    分类编辑
     public function classifyEdit(){
+        if ($this->request->isPost()){
+            $classify = $this->request->post();
+            if($classify['status']==true){
+                $classify['status']==1;
+            }else{
+                $classify['status']==0;
+            }
+            $res=model('article')->classifyEdit($classify);
+            if($res){
+                $this->success("修改分类成功","/admin/article/articleList");
+            }else{
+                $this->error("修改分类失败","/admin/article/articleList");
+            }
+        }
         return view('admin-classifyedit');
     }
 
