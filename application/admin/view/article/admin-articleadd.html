@@ -136,7 +136,7 @@
 
     });
     function check() {
-        var a = $('#summernote').code();
+        var a = $('#summernote').summernote('code');
         console.log(a);
         $('#details').val(a);
         document.getElementById('form1').submit();
