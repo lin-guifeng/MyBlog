@@ -65,7 +65,7 @@
         var oTableInit = new Object();
         oTableInit.Init = function () {
             $('#table').bootstrapTable({
-                url: '{:url("Article/groupLists")}', //请求地址
+                url: '{:url("Article/classifyList")}', //请求地址
                 method: 'GET', //请求
                 toolbar: '#toolbar',
                 striped: true,
@@ -160,7 +160,7 @@
                 idlist += $(this).parents("tr").attr("data-uniqueid") + ",";
             })
             $.ajax({
-                url: '/admin/account/recordDel',
+                url: '/admin/Article/classifyDel',
                 dataType: 'json',
                 type: 'get',
                 data: { idlist: idlist },
