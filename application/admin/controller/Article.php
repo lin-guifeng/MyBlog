@@ -18,11 +18,9 @@ class Article extends Common
     public function articleAdd(){
         if ($this->request->isPost()){
             $article = $this->request->post();
-//            dump($data);
             $data['img'] = $article['img'];
             $data['title'] = $article['title'];
-            $data['txt'] = $article['txt'];
-//            echo json_encode($data);
+            $data['content'] = $article['txt'];
             $res=model('article')->articleAdd($data);
             if($res){
                 $this->success("添加文章成功","/admin/article/articleList");
