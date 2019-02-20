@@ -133,9 +133,12 @@
                 });
             }
         });
+
     });
     function check() {
-        $('#details').val($('#summernote').code());
+        var a = $('#summernote').code();
+        console.log(a);
+        $('#details').val(a);
         document.getElementById('form1').submit();
     }
 </script>
