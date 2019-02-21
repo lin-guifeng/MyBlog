@@ -31,34 +31,34 @@ class Article extends Common
         return view('admin-articleadd');
     }
 
-
+//    分类列表
+    public function classifyList(){
+        return view('admin-classifylist');
+    }
 
 //    获取分类数据
-    public function classifyList(){
-        if ($this->request->isGet()) {
-            $limit = trim(input('limit'));
-            $offset = trim(input('offset'));
-            $page = floor($offset / $limit) + 1;
-            # 获取并且计算 页号 分页大小
-            $list = db('admin_classify')
-                ->page($page, $limit)
-                ->order('sort desc')
-                ->select();
-            foreach ($list as &$val) {
-                if ($val['status'] == '1') {
-                    $val['status'] == '正常';
-                } else {
-                    $val['status'] == '禁用';
-                }
+    public function classifyData(){
+        $limit = trim(input('limit'));
+        $offset = trim(input('offset'));
+        $page = floor($offset / $limit) + 1;
+        # 获取并且计算 页号 分页大小
+        $list = db('admin_classify')
+            ->page($page,$limit)
+            ->order('sort desc')
+            ->select();
+        foreach ($list as &$val){
+            if($val['status']=='1'){
+                $val['status']=='正常';
+            }else{
+                $val['status']=='禁用';
             }
-            $count = db('admin_classify')->count();
-            $res = [
-                'rows' => $list,
-                'total' => $count,
-            ];
-            echo json_encode($res);
         }
-        return view('admin-classifylist');
+        $count = db('admin_classify')->count();
+        $res = [
+            'rows' => $list,
+            'total' => $count,
+        ];
+        echo json_encode($res);
     }
 
 //    分类添加
