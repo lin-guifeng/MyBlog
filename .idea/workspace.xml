@@ -74,7 +74,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-classifylist.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
@@ -101,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="39" column="32" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="331">
+              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -252,8 +252,8 @@
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-classifyadd.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-classifyedit.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-classifylist.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
       </list>
     </option>
   </component>
@@ -887,12 +887,12 @@
       <workItem from="1550556156206" duration="11757000" />
       <workItem from="1550624497338" duration="13048000" />
       <workItem from="1550648574349" duration="8716000" />
-      <workItem from="1550711046739" duration="4573000" />
+      <workItem from="1550711046739" duration="4733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296520000" />
+    <option name="totallyTimeSpent" value="296680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1173,17 +1173,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-classifylist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
         </state>
       </provider>
     </entry>

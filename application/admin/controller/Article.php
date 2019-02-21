@@ -42,7 +42,7 @@ class Article extends Common
         $offset = trim(input('offset'));
         $page = floor($offset / $limit) + 1;
         # 获取并且计算 页号 分页大小
-        $list = db('admin_classify')
+        $list = db('classify')
             ->page($page,$limit)
             ->order('sort desc')
             ->select();
@@ -53,7 +53,7 @@ class Article extends Common
                 $val['status']=='禁用';
             }
         }
-        $count = db('admin_classify')->count();
+        $count = db('classify')->count();
         $res = [
             'rows' => $list,
             'total' => $count,
