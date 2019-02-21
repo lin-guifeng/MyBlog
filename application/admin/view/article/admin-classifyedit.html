@@ -23,19 +23,19 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">分类名称</label>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="name" required value="{$classify->name}">
+                                <input type="text" class="form-control" name="name" required value="{$classify['name']}">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">分类状态</label>
                             <div class="col-sm-4">
-                                <input type="checkbox" class="js-switch"{if condition="$classify->status=1"}checked{/if}>
+                                <input type="checkbox" class="js-switch"{if condition="$classify['status']=1"}checked{/if}>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">分类排序</label>
                             <div class="col-sm-4 ">
-                                <input type="text" class="form-control" name="sort" required value="{$classify->sort}">
+                                <input type="text" class="form-control" name="sort" required value="{$classify['sort']}">
                             </div>
                         </div>
                         <div class="form-group">
