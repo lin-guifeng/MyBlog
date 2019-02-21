@@ -4,8 +4,8 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Article.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
           <entry key="html" value="210" />
           <entry key="ico" value="2" />
           <entry key="js" value="11" />
-          <entry key="php" value="264" />
+          <entry key="php" value="265" />
           <entry key="think" value="1" />
         </counts>
       </usages-collector>
@@ -50,7 +50,7 @@
           <entry key="HTML" value="210" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="11" />
-          <entry key="PHP" value="266" />
+          <entry key="PHP" value="267" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -58,14 +58,14 @@
         <counts>
           <entry key="css" value="190" />
           <entry key="html" value="3105" />
-          <entry key="php" value="2842" />
+          <entry key="php" value="2856" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
           <entry key="HTML" value="3105" />
-          <entry key="PHP" value="2842" />
+          <entry key="PHP" value="2856" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -77,18 +77,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+            <state relative-caret-position="360">
+              <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/demo/thinkphp51_backstage/views/admin/public/base.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -237,10 +241,10 @@
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-articleedit.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-classifyadd.html" />
-        <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-classifyedit.html" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-classifylist.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
+        <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
       </list>
     </option>
   </component>
@@ -892,12 +896,12 @@
       <workItem from="1550711046739" duration="6038000" />
       <workItem from="1550719660649" duration="1118000" />
       <workItem from="1550728098952" duration="3957000" />
-      <workItem from="1550733224487" duration="4231000" />
+      <workItem from="1550733224487" duration="4361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307291000" />
+    <option name="totallyTimeSpent" value="307421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1117,13 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/view/index/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="835">
@@ -1185,8 +1182,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+        <state relative-caret-position="360">
+          <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
         </state>
       </provider>
     </entry>

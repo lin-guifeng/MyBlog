@@ -82,7 +82,7 @@ class Article extends Common
     //    分类编辑
     public function classifyEdit(){
         $id = $this->request->get('id');
-        $res = model('article')->classifyEdit($id);
+        $res = model('article')->classifyData($id);
         if ($this->request->isPost()){
             $classify = $this->request->post();
             $classify['status']==0;

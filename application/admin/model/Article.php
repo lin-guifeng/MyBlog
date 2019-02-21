@@ -19,6 +19,10 @@ class Article extends Model
         $res=db('classify')->insert($data);
         return $res;
     }
+    public function classifyData($id){
+        $res=db('classify')->where('id',$id)->find();
+        return $res;
+    }
     public function classifyEdit($id,$data){
         $res=db('classify')->where('id',$id)->update($data);
         return $res;
