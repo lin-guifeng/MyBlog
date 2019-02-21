@@ -81,20 +81,22 @@ class Article extends Common
 
     //    分类编辑
     public function classifyEdit(){
+        $id = $this->request->get('id');
+        $res = model('article')->classifyEdit($id);
         if ($this->request->isPost()){
             $classify = $this->request->post();
             $classify['status']==0;
             if($classify['status']=='on'){
                 $classify['status']==1;
             }
-            $res=model('article')->classifyEdit($classify);
+            $res=model('article')->classifyEdit($id,$classify);
             if($res){
                 $this->success("修改分类成功","/admin/article/articleList");
             }else{
                 $this->error("修改分类失败","/admin/article/articleList");
             }
         }
-        $res = model('article')->classifyEdit($this->request->get('id'));
+
         $this->assign('classify',$res);
         return view('admin-classifyedit');
     }
