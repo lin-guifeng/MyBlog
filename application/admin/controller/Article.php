@@ -105,7 +105,7 @@ class Article extends Common
     //    分类删除
     public function classifyDel(){
         $idlist = array_filter(explode(',', input('idlist')));
-        $res = model('article')->recordDel($idlist);
+        $res = model('article')->classifyDel($idlist);
         if($res){
             $this->success("删除分类成功","/admin/article/articleList");
         }else{
