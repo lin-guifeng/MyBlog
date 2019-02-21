@@ -65,9 +65,7 @@ class Article extends Common
     public function classifyAdd(){
         if ($this->request->isPost()){
             $classify = $this->request->post();
-            echo json_encode($classify);
-            return;
-            if($classify['status']=='on'){
+            if(isset($classify['status'])){
                 $classify['status']==1;
             }else{
                 $classify['status']==0;
@@ -98,6 +96,10 @@ class Article extends Common
                 $this->error("修改分类失败","/admin/article/articleList");
             }
         }
+        dump($this->param);
+        exit;
+        $id = $this->param;
+        $res = model('article')->classifyEdit($id);
         return view('admin-classifyedit');
     }
 
