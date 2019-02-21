@@ -36,7 +36,7 @@
           <entry key="Account" value="1" />
           <entry key="css" value="7" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="210" />
+          <entry key="html" value="211" />
           <entry key="ico" value="2" />
           <entry key="js" value="11" />
           <entry key="php" value="265" />
@@ -46,7 +46,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="210" />
+          <entry key="HTML" value="211" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="11" />
           <entry key="PHP" value="267" />
@@ -56,14 +56,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="3117" />
+          <entry key="html" value="3123" />
           <entry key="php" value="2856" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="3117" />
+          <entry key="HTML" value="3123" />
           <entry key="PHP" value="2856" />
         </counts>
       </usages-collector>
@@ -95,11 +95,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/demo/thinkphp51_backstage/views/admin/public/form.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://E:/demo/thinkphp51_backstage/application/admin/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -112,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://E:/demo/thinkphp51_backstage/views/admin/user/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="32" column="124" lean-forward="true" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="124" />
+            <state relative-caret-position="660">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -121,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-classifyedit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="25" column="118" selection-start-line="25" selection-start-column="118" selection-end-line="25" selection-end-column="118" />
+            <state relative-caret-position="391">
+              <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -132,6 +127,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="655">
               <caret line="73" selection-start-line="73" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/demo/thinkphp51_backstage/views/admin/permission/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -895,12 +899,12 @@
       <workItem from="1550711046739" duration="6038000" />
       <workItem from="1550719660649" duration="1118000" />
       <workItem from="1550728098952" duration="3957000" />
-      <workItem from="1550733224487" duration="4495000" />
+      <workItem from="1550733224487" duration="5616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307555000" />
+    <option name="totallyTimeSpent" value="308676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1071,13 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/permission/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -1138,16 +1135,6 @@
     <entry file="file://E:/demo/thinkphp51_backstage/views/admin/public/form.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/role/edit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/user/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="32" column="124" lean-forward="true" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/demo/thinkphp51_backstage/application/admin/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1186,10 +1173,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/role/edit.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/user/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/demo/thinkphp51_backstage/views/admin/permission/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-classifyedit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="25" column="118" selection-start-line="25" selection-start-column="118" selection-end-line="25" selection-end-column="118" />
+        <state relative-caret-position="391">
+          <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
         </state>
       </provider>
     </entry>
