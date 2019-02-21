@@ -159,6 +159,7 @@
             $("input[name='btSelectItem']:checked").each(function () {
                 idlist += $(this).parents("tr").attr("data-uniqueid") + ",";
             })
+            console.log(idlist);
             $.ajax({
                 url: '/admin/Article/classifyDel',
                 dataType: 'json',
