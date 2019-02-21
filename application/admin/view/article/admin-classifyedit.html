@@ -19,7 +19,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
-                    <form class="form-horizontal m-t" id="" action="{:url('article/classifyAdd')}" method="post" target="_parent">
+                    <form class="form-horizontal m-t" id="" action="{:url('article/classifyEdit')}" method="post" target="_parent">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">分类名称</label>
                             <div class="col-sm-4">
@@ -46,5 +46,10 @@
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/admin/js/plugins/switchery/switchery.js"></script>
+<script>
+    var elem = document.querySelector('.js-switch');
+    var switchery = new Switchery(elem);
+</script>
 </body>
 </html>

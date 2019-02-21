@@ -70,8 +70,6 @@ class Article extends Common
             }else{
                 $classify['status']==0;
             }
-            echo json_encode($classify);
-            return;
             $res=model('article')->classifyAdd($classify);
             if($res){
                 $this->success("添加分类成功","/admin/article/classifyList");
@@ -99,6 +97,17 @@ class Article extends Common
             }
         }
         return view('admin-classifyedit');
+    }
+
+    //    分类删除
+    public function classifyDel(){
+        $idlist = array_filter(explode(',', input('idlist')));
+        $res = model('article')->recordDel($idlist);
+        if($res){
+            $this->success("删除分类成功","/admin/article/articleList");
+        }else{
+            $this->error("删除分类失败","/admin/article/articleList");
+        }
     }
 
 

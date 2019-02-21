@@ -10,11 +10,6 @@ class Article extends Model
         return $res;
     }
 
-    public function recordList($id){
-        $res=db('admin_record')->where('id',$id)->limit('10')->order('time')->select();
-        return $res;
-    }
-
     public function types(){
         $res=db('model')->paginate(5);
         return $res;
@@ -25,6 +20,14 @@ class Article extends Model
     }
     public function classifyAdd($data){
         $res=db('classify')->insert($data);
+        return $res;
+    }
+    public function classifyEdit($id,$data){
+        $res=db('classify')->where('id',$id)->update($data);
+        return $res;
+    }
+    public function classifyDel($id){
+        $res=db('classify')->where('id',$id)->delete();
         return $res;
     }
     public function del($admin_id){
