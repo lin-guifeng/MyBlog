@@ -96,7 +96,7 @@ class Article extends Common
                 $this->error("修改分类失败","/admin/article/articleList");
             }
         }
-        dump($this->request->get());
+        dump($this->request->get('id'));
         exit;
         $id = $this->param;
         $res = model('article')->classifyEdit($id);
