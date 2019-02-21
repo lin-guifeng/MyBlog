@@ -83,10 +83,9 @@ class Article extends Common
     public function classifyEdit(){
         if ($this->request->isPost()){
             $classify = $this->request->post();
-            if($classify['status']==true){
+            $classify['status']==0;
+            if($classify['status']=='on'){
                 $classify['status']==1;
-            }else{
-                $classify['status']==0;
             }
             $res=model('article')->classifyEdit($classify);
             if($res){
@@ -95,16 +94,15 @@ class Article extends Common
                 $this->error("修改分类失败","/admin/article/articleList");
             }
         }
-        dump($this->request->get('id'));
-        exit;
-        $id = $this->param;
-        $res = model('article')->classifyEdit($id);
+        $res = model('article')->classifyEdit($this->request->get('id'));
+        $this->assign('classify',$res);
         return view('admin-classifyedit');
     }
 
     //    分类删除
     public function classifyDel(){
         $idlist = array_filter(explode(',', input('idlist')));
+
         $res = model('article')->classifyDel($idlist);
         if($res){
             $this->success("删除分类成功","/admin/article/articleList");

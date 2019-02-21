@@ -24,7 +24,7 @@ class Article extends Model
         return $res;
     }
     public function classifyDel($id){
-        $res=db('classify')->where('id',$id)->delete();
+        $res=db('classify')->delete($id);
         return $res;
     }
 
