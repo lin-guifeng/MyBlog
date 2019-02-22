@@ -31,73 +31,163 @@
                     <!-- Example Pagination -->
                     <div class="example-wrap">
                         <div class="example">
-                            <div class="" id="" role="group">
-                                <a onclick="add()" type="button" class="btn btn-outline btn-primary">
-                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
-                                    <span>新建文章</span>
-                                </a>
+                            <div role="group" id="toolbar">
+                                <button id="btn_add" type="button" class="btn btn-outline btn-primary">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                    <span>添加</span>
+                                </button>
+                                <button id="btn_edit" type="button" class="btn btn-outline btn-primary">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span>编辑</span>
+                                </button>
+                                <button id="btn_delete" type="button" class="btn btn-outline btn-danger">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <span>删除</span>
+                                </button>
                             </div>
-                            <table  class="table">
-                                <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>标题</th>
-                                    <th>时间</th>
-                                </tr>
-
-                                </thead>
-                                <tbody>
-                                {if condition="!$article"}
-                                <tr>
-                                    <td colspan="7" class="text-center">没有数据</td>
-                                </tr>
-                                {else/}
-                                {foreach $article as $key => $val}
-                                <tr>
-                                    <td>{$val.id}</td>
-                                    <td>{$val.title}</td>
-                                    <td>{$val.time}</td>
-                                </tr>
-                                {/foreach}
-                                {/if}
-                                </tbody>
-                            </table>
-                            {$page}
+                            <table id="table"></table>
                         </div>
                     </div>
                     <!-- End Example Pagination -->
                 </div>
-
-
-
-
-
-
             </div>
         </div>
     </div>
     <!-- End Panel Other -->
 </div>
-
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
-
-<!-- Bootstrap table -->
+<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script>
+    $(function () {
+        //1.初始化Table
+        var oTable = new TableInit();
+        oTable.Init();
+    });
+    var TableInit = function () {
+        var oTableInit = new Object();
+        oTableInit.Init = function () {
+            $('#table').bootstrapTable({
+                url: '{:url("Article/classifyData")}', //请求地址
+                method: 'GET', //请求
+                toolbar: '#toolbar',
+                striped: true,
+                cache: false,
+                pagination: true,
+                sortable: true,
+                clickToSelect: true,
+                search: false,
+                sidePagination: "server", //客户端client   服务端server
+                pageNumber: 1,
+                pageSize: 10,
+                uniqueId: "id",
+                queryParams: function (params) {
+                    return {
+                        offset: params.offset,  //页码
+                        limit: params.limit,   //页面大小
+                    };
+                },
+                showHeader : true,
+                showColumns : true,
+                showRefresh : true,
+                columns: [{
+                    checkbox: true,
+                }, {
+                    field: 'id',
+                    title: 'ID',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'title',
+                    title: '文章标题',
+                    align: 'center',
+                    valign: 'middle',
+                },{
+                    field: 'img',
+                    title: '封面',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'classify',
+                    title: '文章分类',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'sort',
+                    title: '文章排序',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'time',
+                    title: '添加时间',
+                    align: 'center',
+                    valign: 'middle',
+                }],
+            });
+        };
+        return oTableInit;
+    };
 
-<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
-<script type="text/javascript">
-    function add(){
+    $("#btn_add").click(function () {
         layer.open({
             type: 2,
-            title: '添加文章',
+            title: '添加分组',
             area: ['800px', '90%'],
             content: '{:url("Article/articleAdd")}'
         });
-    }
+    })
+
+
+    $("#btn_edit").click(function () {
+        var i = 0;
+        var id;
+        $("input[name='btSelectItem']:checked").each(function () {
+            i++;
+            id = $(this).parents("tr").attr("data-uniqueid");
+        })
+        if (i > 1) {
+            alert("编辑只支持单一操作")
+        } else {
+            if (i != 0) {
+                // alert("获取选中的id为" + id);
+                layer.open({
+                    type: 2,
+                    title: '添加分组',
+                    area: ['800px', '90%'],
+                    content: '{:url("Article/articleEdit")}?id='+id,
+                });
+            } else {
+                alert("请选中要编辑的数据");
+            }
+        }
+    })
+    $("#btn_delete").click(function () {
+        if (confirm("确认要删除吗？")) {
+            var idlist = "";
+            $("input[name='btSelectItem']:checked").each(function () {
+                idlist += $(this).parents("tr").attr("data-uniqueid") + ",";
+            })
+            console.log(idlist);
+            $.ajax({
+                url: '/admin/Article/articleDel',
+                dataType: 'json',
+                type: 'get',
+                data: { idlist: idlist },
+                success: function (res) {
+                    console.log(res);
+                    if(res.code=='1'){
+                        self.location.reload();
+                    }
+                },
+            });
+            // alert("删除的列表为" + idlist);
+        }
+    });
+
 </script>
 </body>
 

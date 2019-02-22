@@ -128,8 +128,6 @@
             content: '{:url("Article/classifyAdd")}'
         });
     })
-
-
     $("#btn_edit").click(function () {
         var i = 0;
         var id;
@@ -141,7 +139,6 @@
             alert("编辑只支持单一操作")
         } else {
             if (i != 0) {
-                // alert("获取选中的id为" + id);
                 layer.open({
                     type: 2,
                     title: '添加分组',
@@ -172,10 +169,8 @@
                     }
                 },
             });
-            // alert("删除的列表为" + idlist);
         }
     });
-
 </script>
 
 <script type="text/javascript">
