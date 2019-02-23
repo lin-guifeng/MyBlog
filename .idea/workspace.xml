@@ -4,7 +4,7 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/article/admin-articleedit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/article/admin-articleedit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,14 +56,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="3315" />
+          <entry key="html" value="3318" />
           <entry key="php" value="3013" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="3315" />
+          <entry key="HTML" value="3318" />
           <entry key="PHP" value="3013" />
         </counts>
       </usages-collector>
@@ -81,11 +81,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+            <state relative-caret-position="415">
+              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articleedit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="489">
@@ -270,11 +273,11 @@
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-classifylist.html" />
         <option value="E:/BaiduNetdiskDownload/demo1/MallTest/application/admin/controller/Common.php" />
         <option value="$USER_HOME$/Desktop/demo.html" />
-        <option value="$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-articleadd.html" />
         <option value="$PROJECT_DIR$/application/admin/view/article/admin-articleedit.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html" />
       </list>
     </option>
   </component>
@@ -965,12 +968,12 @@
       <workItem from="1550733224487" duration="6277000" />
       <workItem from="1550740388026" duration="3660000" />
       <workItem from="1550797067876" duration="7258000" />
-      <workItem from="1550883480729" duration="6240000" />
+      <workItem from="1550883480729" duration="7983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326495000" />
+    <option name="totallyTimeSpent" value="328238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1211,13 +1214,6 @@
     <entry file="file://E:/BaiduNetdiskDownload/demo1/MallTest/application/admin/controller/News.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/model/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -1283,6 +1279,16 @@
           <caret line="49" column="86" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
           <folding>
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-articlelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
