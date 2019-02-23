@@ -55,15 +55,13 @@ class Article extends Common
             }
         }
         $this->assign('article',$res);
-        return view('admin-classifyedit');
+        return view('admin-articleedit');
     }
-
 
 
     //    文章删除
     public function articleDel(){
         $idlist = array_filter(explode(',', input('idlist')));
-
         $res = model('article')->articleDel($idlist);
         if($res){
             $this->success("删除文章成功","/admin/article/articleList");
@@ -138,7 +136,6 @@ class Article extends Common
                 $this->error("修改分类失败","/admin/article/articleList");
             }
         }
-
         $this->assign('classify',$res);
         return view('admin-classifyedit');
     }
@@ -146,7 +143,6 @@ class Article extends Common
     //    分类删除
     public function classifyDel(){
         $idlist = array_filter(explode(',', input('idlist')));
-
         $res = model('article')->classifyDel($idlist);
         if($res){
             $this->success("删除分类成功","/admin/article/articleList");

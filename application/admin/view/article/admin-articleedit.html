@@ -32,10 +32,8 @@
                             <div class="col-sm-4">
                                 <div style="height: 100px;">
                                     <input name="image" type="file" onchange="change(this)" class="upload_input" style="display: none;" id="myfile" >
-                                    <input type="hidden" name="img" value="" class="imginput">
-                                    <!--<img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">-->
-                                    <img class="addImg" src="/static/admin/img/20181211095522.png" alt="" style="width:100px;height: 100%;" onclick="clickImg(this)">
-                                    <img src="/static/admin/img/20181211095522.png" alt="" style="height: 100%;display: none;" onclick="clickImg(this)" class="showImg">
+                                    <input type="hidden" name="img" value="{$article['img']}" class="imginput">
+                                    <img src="{$article['img']}" alt="" style="height: 100%;" onclick="clickImg(this)" class="showImg">
                                 </div>
                             </div>
                         </div>
@@ -90,8 +88,7 @@
             processData:false,
             success:function(res){
                 $('.imginput').val(res);
-                $('.showImg').attr("src",res).css('display','block');
-                $('.addImg').css('display','none');
+                $('.showImg').attr("src",res);
             },
             error: function(jqXHR){
                 alert("发生错误：" + jqXHR.status);
