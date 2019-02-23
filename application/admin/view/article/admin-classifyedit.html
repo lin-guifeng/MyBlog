@@ -20,7 +20,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
-                    <form class="form-horizontal m-t" id="" action="{:url('article/classifyEdit')}" method="post" target="_parent">
+                    <form class="form-horizontal m-t" id="" action="{:url('article/classifyEdit')}?id={$classify['id']}" method="post" target="_parent">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">分类名称</label>
                             <div class="col-sm-4">
@@ -57,7 +57,6 @@
 <script>
     var elem = document.querySelector('.js-switch');
     var switchery = new Switchery(elem);
-
 </script>
 </body>
 </html>
