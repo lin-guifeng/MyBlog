@@ -13,13 +13,36 @@ class Article extends Model
         $res=db('article')->insert($data);
         return $res;
     }
-
+    public function articleData($page,$limit){
+        $list = db('article')
+            ->page($page,$limit)
+            ->order('time desc')
+            ->select();
+        $count = db('article')->count();
+        $res = [
+            'rows' => $list,
+            'total' => $count,
+        ];
+        return $res;
+    }
+    public function articleFind($id){
+        $res=db('article')->where('id',$id)->find();
+        return $res;
+    }
+    public function articleEdit($id,$data){
+        $res=db('article')->where('id',$id)->update($data);
+        return $res;
+    }
+    public function articleDel($id){
+        $res=db('article')->delete($id);
+        return $res;
+    }
 
     public function classifyAdd($data){
         $res=db('classify')->insert($data);
         return $res;
     }
-    public function classifyData($id){
+    public function classifyFind($id){
         $res=db('classify')->where('id',$id)->find();
         return $res;
     }

@@ -5,16 +5,22 @@ use \think\Controller;
 
 class Article extends Common
 {
-//    文章列表
+    //    文章列表
     public function articleList(){
-        $res = model('article')->articlelist();
-        $page= $res->render();
-        $this->assign('page',$page);
-        $this->assign('article',$res);
         return view('admin-articlelist');
     }
 
-//    添加文章
+    //    获取文章列表数据
+    public function articleData(){
+        $limit = trim(input('limit'));
+        $offset = trim(input('offset'));
+        $page = floor($offset / $limit) + 1;
+        # 获取并且计算 页号 分页大小
+        $res = model('article')->articleData($page,$limit);
+        echo json_encode($res);
+    }
+
+    //    添加文章
     public function articleAdd(){
         if ($this->request->isPost()){
             $article = $this->request->post();
@@ -31,12 +37,48 @@ class Article extends Common
         return view('admin-articleadd');
     }
 
-//    分类列表
+    //    文章编辑
+    public function articleEdit(){
+        $id = $this->request->get('id');
+        $res = model('article')->articleFind($id);
+        if ($this->request->isPost()){
+            $classify = $this->request->post();
+            $classify['status']==0;
+            if($classify['status']=='on'){
+                $classify['status']==1;
+            }
+            $res=model('article')->articleEdit($id,$classify);
+            if($res){
+                $this->success("修改文章成功","/admin/article/articleList");
+            }else{
+                $this->error("修改文章失败","/admin/article/articleList");
+            }
+        }
+        $this->assign('article',$res);
+        return view('admin-classifyedit');
+    }
+
+
+
+    //    文章删除
+    public function articleDel(){
+        $idlist = array_filter(explode(',', input('idlist')));
+
+        $res = model('article')->articleDel($idlist);
+        if($res){
+            $this->success("删除文章成功","/admin/article/articleList");
+        }else{
+            $this->error("删除文章失败","/admin/article/articleList");
+        }
+    }
+
+
+    //    分类列表
     public function classifyList(){
         return view('admin-classifylist');
     }
 
-//    获取分类数据
+    //    获取分类数据
     public function classifyData(){
         $limit = trim(input('limit'));
         $offset = trim(input('offset'));
@@ -61,7 +103,7 @@ class Article extends Common
         echo json_encode($res);
     }
 
-//    分类添加
+    //    分类添加
     public function classifyAdd(){
         if ($this->request->isPost()){
             $classify = $this->request->post();
@@ -82,7 +124,7 @@ class Article extends Common
     //    分类编辑
     public function classifyEdit(){
         $id = $this->request->get('id');
-        $res = model('article')->classifyData($id);
+        $res = model('article')->classifyFind($id);
         if ($this->request->isPost()){
             $classify = $this->request->post();
             $classify['status']==0;
