@@ -42,12 +42,11 @@ class Article extends Common
         $id = $this->request->get('id');
         $res = model('article')->articleFind($id);
         if ($this->request->isPost()){
-            $classify = $this->request->post();
-            $classify['status']==0;
-            if($classify['status']=='on'){
-                $classify['status']==1;
-            }
-            $res=model('article')->articleEdit($id,$classify);
+            $article = $this->request->post();
+            $data['img'] = $article['img'];
+            $data['title'] = $article['title'];
+            $data['content'] = $article['txt'];
+            $res=model('article')->articleEdit($id,$data);
             if($res){
                 $this->success("修改文章成功","/admin/article/articleList");
             }else{
