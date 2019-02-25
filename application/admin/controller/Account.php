@@ -199,7 +199,6 @@ class Account extends Common
     }
 
 
-   
     public function recordData(){
         $limit = trim(input('limit'));
         $offset = trim(input('offset'));
