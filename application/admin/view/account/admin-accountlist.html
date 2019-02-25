@@ -29,7 +29,7 @@
                     <!-- Example Pagination -->
                     <div class="example-wrap">
                         <div class="example">
-                            <div class="btn-group hidden-xs" role="group">
+                            <div role="group" id="toolbar">
                                 <button id="btn_add" type="button" class="btn btn-outline btn-primary">
                                     <i class="fa fa-plus" aria-hidden="true"></i>
                                     <span>添加</span>
@@ -43,45 +43,7 @@
                                     <span>删除</span>
                                 </button>
                             </div>
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                <tr>
-                                    <th>
-                                        <input type="checkbox" class="i-checks" name="input[]">
-                                    </th>
-                                    <th style="text-align: center; vertical-align: middle; ">ID</th>
-                                    <th style="text-align: center; vertical-align: middle; ">昵称</th>
-                                    <th style="text-align: center; vertical-align: middle; ">账号</th>
-                                    <th style="text-align: center; vertical-align: middle; ">所属分组</th>
-                                    <th style="text-align: center; vertical-align: middle; ">状态</th>
-                                    <th style="text-align: center; vertical-align: middle; ">时间</th>
-                                    <th style="text-align: center; vertical-align: middle; ">操作</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    {if condition="!$admin"}
-                                    <tr>
-                                        <td style="text-align: center; vertical-align: middle; " colspan="7" class="text-center">没有数据</td>
-                                    </tr>
-                                    {else/}
-                                    {foreach $admin as $key => $user}
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" class="i-checks" name="input[]">
-                                        </td>
-                                        <td style="text-align: center; vertical-align: middle; ">{$user.id}</td>
-                                        <td style="text-align: center; vertical-align: middle; ">{$user.name}</td>
-                                        <td style="text-align: center; vertical-align: middle; ">{$user.user}</td>
-                                        <td style="text-align: center; vertical-align: middle; ">{$user.group_id}</td>
-                                        <td style="text-align: center; vertical-align: middle; ">{$user.status}</td>
-                                        <td style="text-align: center; vertical-align: middle; ">{$user.time}</td>
-                                        <td style="text-align: center; vertical-align: middle; ">{$user.time}</td>
-                                    </tr>
-                                    {/foreach}
-                                    {/if}
-                                </tbody>
-                            </table>
-                            {$page}
+                            <table id="table"></table>
                         </div>
                     </div>
                     <!-- End Example Pagination -->
@@ -95,32 +57,133 @@
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
-
-<!-- 自定义js -->
-<script src="/static/admin/js/content.js?v=1.0.0"></script>
-
-
-<!-- Bootstrap table -->
+<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/static/admin/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script>
+    $(function () {
+        //1.初始化Table
+        var oTable = new TableInit();
+        oTable.Init();
+    });
+    var TableInit = function () {
+        var oTableInit = new Object();
+        oTableInit.Init = function () {
+            $('#table').bootstrapTable({
+                url: '{:url("Account/accountData")}', //请求地址
+                method: 'GET', //请求
+                toolbar: '#toolbar',
+                striped: true,
+                cache: false,
+                pagination: true,
+                sortable: true,
+                clickToSelect: true,
+                search: false,
+                sidePagination: "server", //客户端client   服务端server
+                pageNumber: 1,
+                pageSize: 10,
+                uniqueId: "id",
+                queryParams: function (params) {
+                    return {
+                        offset: params.offset,  //页码
+                        limit: params.limit,   //页面大小
+                    };
+                },
+                showHeader : true,
+                showColumns : true,
+                showRefresh : true,
+                columns: [{
+                    checkbox: true,
+                }, {
+                    field: 'id',
+                    title: 'ID',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'name',
+                    title: '昵称',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'user',
+                    title: '账号',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'group',
+                    title: '所属分组',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'status',
+                    title: '状态',
+                    align: 'center',
+                    valign: 'middle',
+                }, {
+                    field: 'time',
+                    title: '添加时间',
+                    align: 'center',
+                    valign: 'middle',
+                }],
 
-<!-- Peity -->
-<script src="/static/admin/js/demo/bootstrap-table-demo.js"></script>
-<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
+            });
+        };
+        return oTableInit;
+    };
 
-<script type="text/javascript">
-    function edits(){
+    $("#btn_add").click(function () {
         layer.open({
             type: 2,
-            title: '添加管理员',
-            shade: 0.8,
+            title: '添加分组',
             area: ['800px', '90%'],
             content: '{:url("Account/accountAdd")}'
         });
-    }
-
+    })
+    $("#btn_edit").click(function () {
+        var i = 0;
+        var id;
+        $("input[name='btSelectItem']:checked").each(function () {
+            i++;
+            id = $(this).parents("tr").attr("data-uniqueid");
+        })
+        if (i > 1) {
+            alert("编辑只支持单一操作")
+        } else {
+            if (i != 0) {
+                // alert("获取选中的id为" + id);
+                layer.open({
+                    type: 2,
+                    title: '添加分组',
+                    area: ['800px', '90%'],
+                    content: '{:url("Account/accountEdit")}?id='+id,
+                });
+            } else {
+                alert("请选中要编辑的数据");
+            }
+        }
+    })
+    $("#btn_delete").click(function () {
+        if (confirm("确认要删除吗？")) {
+            var idlist = "";
+            $("input[name='btSelectItem']:checked").each(function () {
+                idlist += $(this).parents("tr").attr("data-uniqueid") + ",";
+            })
+            console.log(idlist);
+            $.ajax({
+                url: '/admin/Account/accountDel',
+                dataType: 'json',
+                type: 'get',
+                data: { idlist: idlist },
+                success: function (res) {
+                    console.log(res);
+                    if(res.code=='1'){
+                        self.location.reload();
+                    }
+                },
+            });
+        }
+    });
 </script>
 </body>
-
 </html>

@@ -38,6 +38,18 @@ class Article extends Model
         return $res;
     }
 
+    public function classifyData($page,$limit){
+        $list = db('classify')
+            ->page($page,$limit)
+            ->order('time desc')
+            ->select();
+        $count = db('classify')->count();
+        $res = [
+            'rows' => $list,
+            'total' => $count,
+        ];
+        return $res;
+    }
     public function classifyAdd($data){
         $res=db('classify')->insert($data);
         return $res;
