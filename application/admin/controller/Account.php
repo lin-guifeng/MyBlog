@@ -219,15 +219,11 @@ class Account extends Common
         # 查询相关数据
         $count = db('admin_record')->count();
         # 查询数据条数
-
         $ret = [
             'rows' => $list,
             'total' => $count,
         ];
         echo json_encode($ret);
-        # 构造返回数据类型
-//        $this->ajaxReturn($ret);
-        # 返回JSON数据
     }
 //    删除记录
     public function recordDel(){

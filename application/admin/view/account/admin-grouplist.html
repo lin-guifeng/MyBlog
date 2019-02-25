@@ -137,7 +137,7 @@
             type: 2,
             title: '添加分组',
             area: ['800px', '90%'],
-            content: '{:url("Account/accountAdd")}'
+            content: '{:url("Account/groupAdd")}'
         });
     })
     $("#btn_edit").click(function () {
@@ -156,7 +156,7 @@
                     type: 2,
                     title: '添加分组',
                     area: ['800px', '90%'],
-                    content: '{:url("Account/accountEdit")}?id='+id,
+                    content: '{:url("Account/groupEdit")}?id='+id,
                 });
             } else {
                 alert("请选中要编辑的数据");
@@ -171,7 +171,7 @@
             })
             console.log(idlist);
             $.ajax({
-                url: '/admin/Account/accountDel',
+                url: '/admin/Account/groupDel',
                 dataType: 'json',
                 type: 'get',
                 data: { idlist: idlist },
