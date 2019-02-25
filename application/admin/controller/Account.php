@@ -66,7 +66,7 @@ class Account extends Common
     }
     public function accountEdit(){
         $id = $this->request->get('id');
-        $res = model('article')->articleFind($id);
+        $res = model('account')->accountFind($id);
         if ($this->request->isPost()){
             $data = $this->request->post();
             $rule = [
@@ -108,7 +108,7 @@ class Account extends Common
                 }
             }
         }
-        $this->assign('account',$res);
+        $this->assign('user',$res);
         return view('admin-accountedit');
     }
     public function accountDel(){
