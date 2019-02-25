@@ -199,9 +199,7 @@ class Account extends Common
     }
 
 
-    public function recordList(){
-        return view('admin-record');
-    }
+   
     public function recordData(){
         $limit = trim(input('limit'));
         $offset = trim(input('offset'));
