@@ -5,8 +5,6 @@ use \think\Session;
 class Index extends Common
 {
     public function index(){
-        $res = model('account')->recordList(session('admin_id'));
-        $this->assign('res',$res);
         return view('index');
     }
 
