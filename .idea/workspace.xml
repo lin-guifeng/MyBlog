@@ -57,14 +57,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="3708" />
+          <entry key="html" value="3711" />
           <entry key="php" value="3270" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="3708" />
+          <entry key="HTML" value="3711" />
           <entry key="PHP" value="3270" />
         </counts>
       </usages-collector>
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+            <state relative-caret-position="721">
+              <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -976,12 +976,12 @@
       <workItem from="1550797067876" duration="7258000" />
       <workItem from="1550883480729" duration="15742000" />
       <workItem from="1551057415592" duration="10407000" />
-      <workItem from="1551142932359" duration="4423000" />
+      <workItem from="1551142932359" duration="5786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350827000" />
+    <option name="totallyTimeSpent" value="352190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1304,8 +1304,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+        <state relative-caret-position="721">
+          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
         </state>
       </provider>
     </entry>
