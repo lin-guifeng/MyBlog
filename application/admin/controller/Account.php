@@ -98,7 +98,7 @@ class Account extends Common
                     'user' => $data['user'],
                     'password' => $data['password'],
                 ];
-                $res = model('Account')->accountEdit($admin);
+                $res = model('Account')->accountEdit($id,$admin);
                 if ($res) {
                     $this->success("修改管理员成功", "/admin/account/accountList");
                 } else {
