@@ -138,7 +138,9 @@
             data: { id: obj },
             success: function (res) {
                 console.log(res);
-
+                if(res.code=='1'){
+                    self.location.reload();
+                }
             },
         });
     }
