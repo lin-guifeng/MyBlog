@@ -4,6 +4,8 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/model/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +42,7 @@
           <entry key="html" value="246" />
           <entry key="ico" value="2" />
           <entry key="js" value="12" />
-          <entry key="php" value="287" />
+          <entry key="php" value="288" />
           <entry key="think" value="1" />
         </counts>
       </usages-collector>
@@ -50,22 +52,22 @@
           <entry key="HTML" value="246" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="12" />
-          <entry key="PHP" value="289" />
+          <entry key="PHP" value="290" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="3711" />
-          <entry key="php" value="3270" />
+          <entry key="html" value="3732" />
+          <entry key="php" value="3395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="3711" />
-          <entry key="PHP" value="3270" />
+          <entry key="HTML" value="3732" />
+          <entry key="PHP" value="3395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -91,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+            <state relative-caret-position="361">
+              <caret line="137" column="30" lean-forward="true" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -139,20 +141,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-classifyadd.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="84" />
+            <state relative-caret-position="205">
+              <caret line="199" column="34" lean-forward="true" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Common.php">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/article/admin-classifyadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="30">
+              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -169,8 +171,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/model/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="571">
+              <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -269,12 +271,12 @@
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-accountlist.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/view/login/login.html" />
-        <option value="$PROJECT_DIR$/application/admin/model/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-groupedit.html" />
         <option value="$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
+        <option value="$PROJECT_DIR$/application/admin/model/Account.php" />
       </list>
     </option>
   </component>
@@ -304,7 +306,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -976,12 +978,12 @@
       <workItem from="1550797067876" duration="7258000" />
       <workItem from="1550883480729" duration="15742000" />
       <workItem from="1551057415592" duration="10407000" />
-      <workItem from="1551142932359" duration="5786000" />
+      <workItem from="1551142932359" duration="8815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352190000" />
+    <option name="totallyTimeSpent" value="355219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1229,24 +1231,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5550">
-          <caret line="187" column="28" selection-start-line="187" selection-start-column="23" selection-end-line="187" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1304,8 +1292,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/admin-grouplist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+        <state relative-caret-position="361">
+          <caret line="137" column="30" lean-forward="true" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/model/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="199" column="34" lean-forward="true" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="34" />
         </state>
       </provider>
     </entry>

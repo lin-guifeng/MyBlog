@@ -63,6 +63,19 @@ class Account extends Model
         $res=db('group')->delete($id);
         return $res;
     }
+    public function groupStatus($id){
+        $status=db('group')->where('id',$id)->value('status');
+        if($status=='0'){
+            $res = db('group')->where('id', $id)->update([
+                'status'  => '1',
+            ]);
+        }else{
+            $res = db('group')->where('id', $id)->update([
+                'status'  => '0',
+            ]);
+        }
+        return $res;
+    }
 
 
     public function recordDel($idlist){

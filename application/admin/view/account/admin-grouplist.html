@@ -78,7 +78,7 @@
                 cache: false,
                 pagination: true,
                 sortable: true,
-                clickToSelect: true,
+                clickToSelect: false,
                 search: false,
                 sidePagination: "server", //客户端client   服务端server
                 pageNumber: 1,
@@ -127,14 +127,20 @@
     };
     window.operateEvents = {
         "click #tableBtn": function (e, value, row, index) {
-            console.log(e);
-            console.log(value);
-            console.log(row.id);
-            console.log(index);
+            status(row.id);
         }
     }
     function status(obj){
+        $.ajax({
+            url: '/admin/Account/groupStatus',
+            dataType: 'json',
+            type: 'get',
+            data: { id: obj },
+            success: function (res) {
+                console.log(res);
 
+            },
+        });
     }
     $("#btn_add").click(function () {
         layer.open({
