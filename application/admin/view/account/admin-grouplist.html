@@ -112,7 +112,12 @@
                     valign: 'middle',
                     events:operateEvents,
                     formatter : function (value, row, index) {
-                        return "<button id='tableBtn' type='button' class='btn btn-default'>"+value+"</button>"
+                        if(value == "1") {
+                            return "<button id='tableBtn' type='button' class='btn btn-primary'>正常</button>"
+                        }else{
+                            return "<button id='tableBtn' type='button' class='btn btn-danger'>禁用</button>"
+                        }
+
                     },
                 }, {
                     field: 'time',
@@ -139,7 +144,9 @@
             success: function (res) {
                 console.log(res);
                 if(res.code=='1'){
-                    self.location.reload();
+                    $("#table").bootstrapTable("refresh", {
+                        silent: true //静态刷新
+                    });
                 }
             },
         });
