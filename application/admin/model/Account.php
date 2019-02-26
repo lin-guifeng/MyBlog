@@ -33,6 +33,15 @@ class Account extends Model
         $res=db('admin')->delete($admin_id);
         return $res;
     }
+    public function accountStatus($id){
+        $status=db('account')->where('id',$id)->value('status');
+        if($status=='0'){
+            $res = db('account')->where('id', $id)->update(['status'  => '1',]);
+        }else{
+            $res = db('account')->where('id', $id)->update(['status'  => '0',]);
+        }
+        return $res;
+    }
 
 
     public function groupData($page,$limit){

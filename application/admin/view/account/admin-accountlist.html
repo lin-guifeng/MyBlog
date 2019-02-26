@@ -120,6 +120,15 @@
                     title: '状态',
                     align: 'center',
                     valign: 'middle',
+                    events:operateEvents,
+                    formatter : function (value, row, index) {
+                        if(value == "1") {
+                            return "<button id='tableBtn' type='button' class='btn btn-primary'>正常</button>"
+                        }else{
+                            return "<button id='tableBtn' type='button' class='btn btn-danger'>禁用</button>"
+                        }
+
+                    },
                 }, {
                     field: 'time',
                     title: '添加时间',
@@ -131,6 +140,27 @@
         };
         return oTableInit;
     };
+    window.operateEvents = {
+        "click #tableBtn": function (e, value, row, index) {
+            status(row.id);
+        }
+    }
+    function status(obj){
+        $.ajax({
+            url: '/admin/Account/accountStatus',
+            dataType: 'json',
+            type: 'get',
+            data: { id: obj },
+            success: function (res) {
+                console.log(res);
+                if(res.code=='1'){
+                    $("#table").bootstrapTable("refresh", {
+                        silent: true //静态刷新
+                    });
+                }
+            },
+        });
+    }
 
     $("#btn_add").click(function () {
         layer.open({

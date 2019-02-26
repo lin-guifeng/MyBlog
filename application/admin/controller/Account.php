@@ -120,6 +120,15 @@ class Account extends Common
             $this->error('删除失败','admin/account/accountlist');
         }
     }
+    public function accountStatus(){
+        $id = input('get.id');
+        $res = model('Account')->accountStatus($id);
+        if($res){
+            return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
+        }else{
+            return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
+        }
+    }
 
 
     public function upimg(){
