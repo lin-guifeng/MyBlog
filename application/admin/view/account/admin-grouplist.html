@@ -110,6 +110,7 @@
                     title: '状态',
                     align: 'center',
                     valign: 'middle',
+                    events:operateEvents,
                     formatter : function (value, row, index) {
                         return "<button id='tableBtn' type='button' class='btn btn-default'>"+value+"</button>"
                     },
@@ -124,7 +125,17 @@
         };
         return oTableInit;
     };
+    window.operateEvents = {
+        "click #tableBtn": function (e, value, row, index) {
+            console.log(e);
+            console.log(value);
+            console.log(row);
+            console.log(index);
+        }
+    }
+    function status(obj){
 
+    }
     $("#btn_add").click(function () {
         layer.open({
             type: 2,
