@@ -102,27 +102,20 @@
                     valign: 'middle',
                 }, {
                     field: 'name',
-                    title: '昵称',
+                    title: '名称',
                     align: 'center',
                     valign: 'middle',
-                }, {
-                    field: 'user',
-                    title: '账号',
-                    align: 'center',
-                    valign: 'middle',
-                }, {
-                    field: 'group',
-                    title: '所属分组',
-                    align: 'center',
-                    valign: 'middle',
-                }, {
+                },  {
                     field: 'status',
                     title: '状态',
                     align: 'center',
                     valign: 'middle',
+                    formatter : function (value, row, index) {
+                        return "<button id='tableBtn' type='button' class='btn btn-default'>"+value+"</button>"
+                    },
                 }, {
                     field: 'time',
-                    title: '添加时间',
+                    title: '时间',
                     align: 'center',
                     valign: 'middle',
                 }],
