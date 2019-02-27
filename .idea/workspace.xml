@@ -57,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="4108" />
+          <entry key="html" value="4109" />
           <entry key="js" value="9" />
           <entry key="php" value="3662" />
         </counts>
@@ -65,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="4108" />
+          <entry key="HTML" value="4109" />
           <entry key="JavaScript" value="9" />
           <entry key="PHP" value="3662" />
         </counts>
@@ -132,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="99" column="15" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
+            <state relative-caret-position="690">
+              <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -1029,12 +1029,12 @@
       <workItem from="1550883480729" duration="15742000" />
       <workItem from="1551057415592" duration="10407000" />
       <workItem from="1551142932359" duration="17108000" />
-      <workItem from="1551229337558" duration="18308000" />
+      <workItem from="1551229337558" duration="18326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381820000" />
+    <option name="totallyTimeSpent" value="381838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1403,8 +1403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboadd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="99" column="15" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
+        <state relative-caret-position="690">
+          <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
