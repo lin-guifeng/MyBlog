@@ -8,7 +8,7 @@ class Picture extends Model
     public function lunboData($page,$limit){
         $list = db('lunbo')
             ->page($page,$limit)
-            ->order('time desc')
+            ->order('sort desc')
             ->select();
         $count = db('lunbo')->count();
         $res = [
@@ -33,12 +33,12 @@ class Picture extends Model
         $res=db('lunbo')->delete($id);
         return $res;
     }
-    public function accountStatus($id){
-        $status=db('account')->where('id',$id)->value('status');
+    public function lunboStatus($id){
+        $status=db('lunbo')->where('id',$id)->value('status');
         if($status=='0'){
-            $res = db('account')->where('id', $id)->update(['status'  => '1',]);
+            $res = db('lunbo')->where('id', $id)->update(['status'  => '1',]);
         }else{
-            $res = db('account')->where('id', $id)->update(['status'  => '0',]);
+            $res = db('lunbo')->where('id', $id)->update(['status'  => '0',]);
         }
         return $res;
     }

@@ -94,6 +94,25 @@
             '</div>'
             ),
             $img = $li.find('img');
+        var $btns = $('<div class="file-panel">' +
+            '<span class="cancel" >删除</span>').appendTo($li);
+        $li.on('mouseenter', function () {
+            $btns.stop().animate({height: 30});
+        });
+        $li.on('mouseleave', function () {
+            $btns.stop().animate({height: 0});
+        });
+        $btns.on('click', 'span', function () {
+            var index = $(this).index();
+            switch (index) {
+                case 0:
+                    uploader.removeFile(file);
+                    removeFile(file);
+                    $("input[name='url']").val("")
+                    return;
+            }
+        });
+
         // $list为容器jQuery实例
         $list.append( $li );
         // 创建缩略图

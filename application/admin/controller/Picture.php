@@ -73,10 +73,8 @@ class Picture extends Common
         $folder = input('folder');
         if ($folder) {
             //保存目录
-            $Path = 'public' . DS . 'uploads' . DS . $folder;
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads' . DS . $folder);
         }else{
-            $Path = 'public' . DS . 'uploads';
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
         }
 
