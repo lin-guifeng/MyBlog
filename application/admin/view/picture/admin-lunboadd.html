@@ -87,11 +87,11 @@
             $li = $(
             '<div id="' + file.id + '" class="file-item thumbnail">' +
             '<img>' +
-            '<div class="info">' + file.name + '</div>' +
+            '<div class="info" style="text-align: center;">' + 删除 + '</div>' +
             '</div>'
             ),
             $img = $li.find('img');
-        $(".info").on('click', 'span', function () {
+        $(".info").on('click', function () {
             var index = $(this).index();
             switch (index) {
                 case 0:
