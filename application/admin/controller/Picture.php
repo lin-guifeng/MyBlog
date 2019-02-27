@@ -21,6 +21,8 @@ class Picture extends Common
     public function lunboAdd(){
         if ($this->request->isPost()){
             $data = $this->request->post();
+            echo json_encode($data);
+            return;
             $res=model('picture')->lunboAdd($data);
             if($res){
                 $this->success("添加轮播图成功","/admin/picture/lunboList");
