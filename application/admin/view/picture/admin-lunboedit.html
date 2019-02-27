@@ -79,11 +79,12 @@
             extensions: 'gif,jpg,jpeg,bmp,png',
             mimeTypes: 'image/*'
         },
-        beforeFileQueued:function(file){
-            console.log('beforeFileQueued')
-            console.log(file)
-            return true;//false 不添加
-        },
+      
+    });
+    uploader.on( 'beforeFileQueued', function( file ) {
+        console.log('beforeFileQueued')
+        console.log(file)
+        return true;//false 不添加
     });
     // 当有文件添加进来的时候
     uploader.on( 'fileQueued', function( file ) {
