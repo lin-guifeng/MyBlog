@@ -57,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="190" />
-          <entry key="html" value="4283" />
+          <entry key="html" value="4291" />
           <entry key="js" value="9" />
           <entry key="php" value="3662" />
         </counts>
@@ -65,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="190" />
-          <entry key="HTML" value="4283" />
+          <entry key="HTML" value="4291" />
           <entry key="JavaScript" value="9" />
           <entry key="PHP" value="3662" />
         </counts>
@@ -106,7 +106,10 @@
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboedit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="547">
-              <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="63" selection-start-line="63" selection-end-line="154" selection-end-column="9" />
+            <state relative-caret-position="450">
+              <caret line="33" column="38" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -336,7 +339,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -1026,12 +1029,12 @@
       <workItem from="1550883480729" duration="15742000" />
       <workItem from="1551057415592" duration="10407000" />
       <workItem from="1551142932359" duration="17108000" />
-      <workItem from="1551229337558" duration="23363000" />
+      <workItem from="1551229337558" duration="23389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="386875000" />
+    <option name="totallyTimeSpent" value="386901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1394,8 +1397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboadd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="63" selection-start-line="63" selection-end-line="154" selection-end-column="9" />
+        <state relative-caret-position="450">
+          <caret line="33" column="38" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="33" selection-end-column="38" />
           <folding>
             <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -1405,7 +1408,10 @@
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboedit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
-          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
