@@ -93,13 +93,14 @@
             ),
             $img = $li.find('img');
         var A = $('input[name="url"]').val();
-        if(A!=''||A!=undefined||A!=null){
-            console.log(A);
-            console.log($list);
-        }else{
-            $list.append( $li );
-        }
-
+        // if(A!=''||A!=undefined||A!=null){
+        //     console.log(A);
+        //     console.log($list);
+        // }else{
+        //     $list.append( $li );
+        // }
+        console.log(A);
+        $list.append( $li );
         // 创建缩略图
         // 如果为非图片文件，可以不用调用此方法。
         // thumbnailWidth x thumbnailHeight 为 100 x 100
