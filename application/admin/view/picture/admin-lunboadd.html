@@ -88,7 +88,8 @@
     });
     // 当有文件添加进来的时候
     uploader.on( 'fileQueued', function( file ) {
-        var $li = $(
+        var $list = $("#fileList"),
+            $li = $(
             '<div id="' + file.id + '" class="file-item thumbnail">' +
             '<img>' +
             '<div class="info">' + file.name + '</div>' +
