@@ -92,10 +92,14 @@
             '</div>'
             ),
             $img = $li.find('img');
+        var A = $('input[name="url"]').val();
+        if(A.length>0){
+            console.log($list.html());
+        }else{
+            $list.append( $li );
+        }
 
 
-        // $list为容器jQuery实例
-        $list.append( $li );
         // 创建缩略图
         // 如果为非图片文件，可以不用调用此方法。
         // thumbnailWidth x thumbnailHeight 为 100 x 100
