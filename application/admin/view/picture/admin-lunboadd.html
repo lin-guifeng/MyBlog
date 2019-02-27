@@ -74,7 +74,7 @@
         // 选择文件的按钮。可选。
         // 内部根据当前运行是创建，可能是input元素，也可能是flash.
         pick: {id:'#filePicker',multiple: false},
-        
+
         // 只允许选择图片文件。
         accept: {
             title: 'Images',
@@ -93,14 +93,14 @@
             ),
             $img = $li.find('img');
         var A = $('input[name="url"]').val();
-        // if(A!=''||A!=undefined||A!=null){
-        //     console.log(A);
-        //     console.log($list);
-        // }else{
-        //     $list.append( $li );
-        // }
-        console.log(A);
-        $list.append( $li );
+        if(A=='undefined'){
+            $list.append( $li );
+        }else{
+            console.log(A);
+            console.log($list.html());
+            console.log($list);
+        }
+
         // 创建缩略图
         // 如果为非图片文件，可以不用调用此方法。
         // thumbnailWidth x thumbnailHeight 为 100 x 100
