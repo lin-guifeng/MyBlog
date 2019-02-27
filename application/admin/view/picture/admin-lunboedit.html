@@ -79,7 +79,10 @@
             extensions: 'gif,jpg,jpeg,bmp,png',
             mimeTypes: 'image/*'
         },
-      
+
+    });
+    uploader.on('ready', function() {
+        console.log('123');
     });
     uploader.on( 'beforeFileQueued', function( file ) {
         console.log('beforeFileQueued')
