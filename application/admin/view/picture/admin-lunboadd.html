@@ -93,14 +93,11 @@
             $img = $li.find('img');
         $li.on('click', '.info', function () {
             console.log(file);
-            var index = $(this).index();
-            switch (index) {
-                case 0:
+
                     uploader.removeFile(file);
                     removeFile(file);
                     $("input[name='url']").val("")
-                    return;
-            }
+               
         });
 
         // $list为容器jQuery实例
