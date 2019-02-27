@@ -93,12 +93,13 @@
             ),
             $img = $li.find('img');
         var A = $('input[name="url"]').val();
-        if(A){
-            $list.append( $li );
-        }else{
+        if(A!=null){
             console.log(A);
             console.log($list.html());
             console.log($list);
+
+        }else{
+            $list.append( $li );
         }
 
         // 创建缩略图
