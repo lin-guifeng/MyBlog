@@ -133,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboadd.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="89" column="57" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
+              <caret line="89" column="61" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -1029,12 +1029,12 @@
       <workItem from="1550883480729" duration="15742000" />
       <workItem from="1551057415592" duration="10407000" />
       <workItem from="1551142932359" duration="17108000" />
-      <workItem from="1551229337558" duration="16776000" />
+      <workItem from="1551229337558" duration="16835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380288000" />
+    <option name="totallyTimeSpent" value="380347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1404,7 +1404,7 @@
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-lunboadd.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="89" column="57" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
+          <caret line="89" column="61" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
