@@ -62,4 +62,30 @@ class Picture extends Common
             $this->error("删除轮播失败","/admin/picture/lunboList");
         }
     }
+
+    //图片上传
+    public function uploadpic(){
+        $file = $this->request->file('file');//file是传文件的名称，这是webloader插件固定写入的。因为webloader插件会写入一个隐藏input，这里与TP5的写法有点区别
+        $file->size = 524288000;
+        $folder = input('folder');
+        if ($folder) {
+            //保存目录
+            $Path = 'public' . DS . 'uploads' . DS . $folder;
+            $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads' . DS . $folder);
+        }else{
+            $Path = 'public' . DS . 'uploads';
+            $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+        }
+
+        if($info){
+            // 成功上传后 获取上传信息
+            // 输出 jpg 地址
+            $filePath = "/".$Path. DS .$info->getSaveName();
+            $filePath = str_replace("\\","/",$filePath);   //替换\为/
+            return json(['success'=>true,'filePath'=>$filePath]);
+        }else{
+            // 上传失败获取错误信息
+            echo $file->getError();
+        }
+    }
 }

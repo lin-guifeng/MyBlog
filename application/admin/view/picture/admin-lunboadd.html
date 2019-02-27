@@ -26,7 +26,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
-                    <form class="form-horizontal m-t" id="form1" action="{:url('article/articleAdd')}" method="post" target="_parent">
+                    <form class="form-horizontal m-t" id="form1" action="{:url('picture/lunboAdd')}" method="post" target="_parent">
                         <div class="form-group">
                             <label class="col-sm-2 control-label">封面</label>
                             <div class="col-sm-4">
@@ -73,9 +73,9 @@
         // 选完文件后，是否自动上传。
         auto: true,
         // swf文件路径
-        swf: BASE_URL + '/js/Uploader.swf',
+        swf: '/static/js/Uploader.swf',
         // 文件接收服务端。
-        server: 'http://webuploader.duapp.com/server/fileupload.php',
+        server: '{:url("picture/uploadpic")}',
         // 选择文件的按钮。可选。
         // 内部根据当前运行是创建，可能是input元素，也可能是flash.
         pick: '#filePicker',
