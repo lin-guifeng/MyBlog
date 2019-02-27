@@ -20,9 +20,10 @@ class Picture extends Common
     //    添加轮播图
     public function lunboAdd(){
         if ($this->request->isPost()){
-            $data = $this->request->post();
-            echo json_encode($data);
-            return;
+            $ajaxData = $this->request->post();
+            $data['url'] = $ajaxData['url'];
+            $data['name'] = $ajaxData['name'];
+            $data['sort'] = $ajaxData['sort'];
             $res=model('picture')->lunboAdd($data);
             if($res){
                 $this->success("添加轮播图成功","/admin/picture/lunboList");
@@ -38,10 +39,10 @@ class Picture extends Common
         $id = $this->request->get('id');
         $res = model('picture')->lunboFind($id);
         if ($this->request->isPost()){
-            $article = $this->request->post();
-            $data['img'] = $article['img'];
-            $data['title'] = $article['title'];
-            $data['content'] = $article['txt'];
+            $ajaxData = $this->request->post();
+            $data['url'] = $ajaxData['url'];
+            $data['name'] = $ajaxData['name'];
+            $data['sort'] = $ajaxData['sort'];
             $res=model('picture')->lunboEdit($id,$data);
             if($res){
                 $this->success("修改轮播图成功","/admin/picture/lunboList");
