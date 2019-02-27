@@ -94,10 +94,8 @@
             $img = $li.find('img');
         var A = $('input[name="url"]').val();
         if(A!=null){
-            console.log(A);
-            console.log($list.html());
-            console.log($list);
 
+            $list.html($li);
         }else{
             $list.append( $li );
         }
