@@ -80,7 +80,7 @@ class Picture extends Common
         if($info){
             // 成功上传后 获取上传信息
             // 输出 jpg 地址
-            $filePath = "/".$Path. DS .$info->getSaveName();
+            $filePath = "http://www.linguifeng.top/uploads/".$info->getSaveName();
             $filePath = str_replace("\\","/",$filePath);   //替换\为/
             return json(['success'=>true,'filePath'=>$filePath]);
         }else{
