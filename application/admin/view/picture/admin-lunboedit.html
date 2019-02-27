@@ -30,27 +30,16 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">封面</label>
                             <div class="col-sm-4">
-                                <div style="height: 100px;">
-                                    <input name="image" type="file" onchange="change(this)" class="upload_input" style="display: none;" id="myfile" >
-                                    <input type="hidden" name="img" value="{$article['img']}" class="imginput">
-                                    <img src="{$article['img']}" alt="" style="height: 100%;" onclick="clickImg(this)" class="showImg">
-                                </div>
+
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">标题</label>
+                            <label class="col-sm-2 control-label">名称</label>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="title" required value="{$article['title']}">
+                                <input type="text" class="form-control" name="title" required value="">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">文章详情</label>
-                            <div class="col-sm-8">
-                                <div class="ibox no-padding" style="border: solid 1px #e5e6e7;height: 400px;">
-                                    <div name="txt" id="summernote">{$article['content']}</div>
-                                </div>
-                            </div>
-                        </div>
+
                         <input type="hidden" name="txt" id="details">
                         <div class="form-group">
                             <div class="col-sm-8 col-sm-offset-3">
@@ -66,70 +55,7 @@
 <!-- 全局js -->
 <script src="/static/admin/js/jquery.min.js"></script>
 <script src="/static/admin/js/bootstrap.min.js"></script>
-<!-- SUMMERNOTE -->
-<!--<script src="/static/admin/js/plugins/summernote/summernote.min.js"></script>-->
-<script type="text/javascript" src="/static/admin/js/plugins/summernote/summernote-bs4.js"></script>
-<script src="/static/admin/js/plugins/summernote/summernote-zh-CN.js"></script>
-<script>
-    function clickImg(obj){
-        $(obj).parent().find('.upload_input').click();
-    }
-    function change(obj){
-        var formdata = new FormData();
-        formdata.append("file", document.getElementById('myfile').files[0]);
-        console.log(formdata.get("file"));
-        $.ajax({
-            type:"post",
-            url:"/admin/Index/uppic",
-            data:formdata,
-            dataType: "json",
-            cache: false,//不缓存
-            contentType:false,
-            processData:false,
-            success:function(res){
-                $('.imginput').val(res);
-                $('.showImg').attr("src",res);
-            },
-            error: function(jqXHR){
-                alert("发生错误：" + jqXHR.status);
-            },
-        });
-    }
-    $(document).ready(function () {
-        $('#summernote').summernote({
-            lang: 'zh-CN',
-            height: 300,
-            focus:true,
-            dialogsFade : true,
-            dialogsInBody : true,
-            disableDragAndDrop : false,
-            callbacks: {
-                onImageUpload: function (files) {
-                    var formdata = new FormData();
-                    formdata.append("file", files[0]);
-                    $.ajax({
-                        url: '/admin/Index/uppic',//上传图片文件处理地址,
-                        type: "POST",
-                        data: formdata,
-                        dataType: 'JSON',
-                        processData: false,//告诉jQuery不要加工数据
-                        contentType: false,
-                        success: function (data) {
-                            $('#summernote').summernote('insertImage', data, 'img');
-                        },
-                        error: function (data) {
-                            alert('图片上传出错，文件过大或者其他情况');
-                        }
-                    });
-                }
-            }
-        });
-    });
-    function check() {
-        var a = $('#summernote').summernote('code');
-        $('#details').val(a);
-        document.getElementById('form1').submit();
-    }
-</script>
+
+
 </body>
 </html>
