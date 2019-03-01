@@ -32,7 +32,7 @@
                             <div class="col-sm-4">
                                 <div id="uploader-demo">
                                     <!--用来存放item-->
-                                    <div id="fileList" class="uploader-list"></div>
+                                    <div id="fileList" class="uploader-list"><input type="hidden" name="url" value="{$lunbo['url']}" /></div>
                                     <div id="filePicker">选择图片</div>
                                 </div>
                             </div>
@@ -40,11 +40,10 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">名称</label>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="title" required value="">
+                                <input type="text" class="form-control" name="title" required value="{$lunbo['name']}">
                             </div>
                         </div>
 
-                        <input type="hidden" name="txt" id="details">
                         <div class="form-group">
                             <div class="col-sm-8 col-sm-offset-3">
                                 <button class="btn btn-primary" type="button" onclick="check()">提交</button>
@@ -110,7 +109,6 @@
             $img = $li.find('img');
         var A = $('input[name="url"]').val();
         if(A!=null){
-
             $list.html($li);
         }else{
             $list.append( $li );
@@ -144,8 +142,9 @@
 
     uploader.on( 'uploadSuccess', function( file,response) {
         $( '#'+file.id ).addClass('upload-state-done');
-        console.log(response.filePath);
-        $("#fileList").append('<input type="hidden" name="url" value="'+response.filePath+'" />');
+        // console.log(response.filePath);
+        $('input[name="url"]').val(response.filePath);
+        // $("#fileList").append('<input type="hidden" name="url" value="'+response.filePath+'" />');
 
     });
     // 文件上传失败，显示上传出错。
