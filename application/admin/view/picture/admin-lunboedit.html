@@ -82,7 +82,16 @@
 
     });
     uploader.on('ready', function() {
-        console.log('123');
+        var $list = $("#fileList"),
+            $li = $(
+                '<div id="" class="file-item thumbnail">' +
+                '<img src="{$lunbo[\'url\']}">' +
+                '<div class="info" style="text-align: center;">删除</div>' +
+                '</div>'
+            ),
+            $img = $li.find('img');
+        $list.append( $li );
+        console.log();
     });
     uploader.on( 'beforeFileQueued', function( file ) {
         console.log('beforeFileQueued')
