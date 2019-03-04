@@ -8,7 +8,7 @@ class Index extends Model
         return $res;
     }
     public function user(){
-        $res=db('admin')->where(['id'=>'7'])->find();
+        $res=db('admin')->where(['id'=>'7','name'=>'林桂锋'])->find();
         return $res;
     }
     public function accountData($page,$limit){
