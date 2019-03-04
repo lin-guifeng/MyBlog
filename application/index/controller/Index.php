@@ -4,7 +4,7 @@ use \think\Controller;
 class Index
 {
     public function index(){
-        $lunbo = M('index')->lunbo();
+        $lunbo = model('index')->lunbo();
         $this->assign('lunbo',$lunbo);
         return view('index');
     }
