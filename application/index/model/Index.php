@@ -4,7 +4,7 @@ use think\Model;
 class Index extends Model
 {
     public function lunbo(){
-        $res=db('admin')->where(['status'=>'1'])->order('sort desc')->select();
+        $res=db('lunbo')->where(['status'=>'1'])->order('sort desc')->select();
         return $res;
     }
     public function accountData($page,$limit){
