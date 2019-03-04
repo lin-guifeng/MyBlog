@@ -5,10 +5,6 @@ use think\Model;
 
 class Article extends Model
 {
-    public function types(){
-        $res=db('model')->paginate(5);
-        return $res;
-    }
     public function articleAdd($data){
         $res=db('article')->insert($data);
         return $res;
@@ -37,6 +33,16 @@ class Article extends Model
         $res=db('article')->delete($id);
         return $res;
     }
+    public function articleStatus($id){
+        $status=db('article')->where('id',$id)->value('status');
+        if($status=='0'){
+            $res = db('article')->where('id', $id)->update(['status'  => '1',]);
+        }else{
+            $res = db('article')->where('id', $id)->update(['status'  => '0',]);
+        }
+        return $res;
+    }
+
 
     public function classifyData($page,$limit){
         $list = db('classify')
@@ -64,6 +70,15 @@ class Article extends Model
     }
     public function classifyDel($id){
         $res=db('classify')->delete($id);
+        return $res;
+    }
+    public function classifyStatus($id){
+        $status=db('classify')->where('id',$id)->value('status');
+        if($status=='0'){
+            $res = db('classify')->where('id', $id)->update(['status'  => '1',]);
+        }else{
+            $res = db('classify')->where('id', $id)->update(['status'  => '0',]);
+        }
         return $res;
     }
 

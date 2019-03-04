@@ -9,7 +9,6 @@ class Article extends Common
     public function articleList(){
         return view('admin-articlelist');
     }
-
     //    获取文章列表数据
     public function articleData(){
         $limit = trim(input('limit'));
@@ -19,7 +18,6 @@ class Article extends Common
         $res = model('article')->articleData($page,$limit);
         echo json_encode($res);
     }
-
     //    添加文章
     public function articleAdd(){
         if ($this->request->isPost()){
@@ -36,7 +34,6 @@ class Article extends Common
         }
         return view('admin-articleadd');
     }
-
     //    文章编辑
     public function articleEdit(){
         $id = $this->request->get('id');
@@ -56,8 +53,6 @@ class Article extends Common
         $this->assign('article',$res);
         return view('admin-articleedit');
     }
-
-
     //    文章删除
     public function articleDel(){
         $idlist = array_filter(explode(',', input('idlist')));
@@ -68,7 +63,16 @@ class Article extends Common
             $this->error("删除文章失败","/admin/article/articleList");
         }
     }
-
+    //    文章状态是否下架
+    public function articleStatus(){
+        $id = input('get.id');
+        $res = model('Article')->articleStatus($id);
+        if($res){
+            return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
+        }else{
+            return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
+        }
+    }
 
     //    分类列表
     public function classifyList(){
@@ -147,6 +151,16 @@ class Article extends Common
             $this->success("删除分类成功","/admin/article/articleList");
         }else{
             $this->error("删除分类失败","/admin/article/articleList");
+        }
+    }
+    //    分类状态是否禁用
+    public function classifyStatus(){
+        $id = input('get.id');
+        $res = model('Article')->classifyStatus($id);
+        if($res){
+            return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
+        }else{
+            return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
         }
     }
 
