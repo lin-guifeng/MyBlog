@@ -1,5 +1,5 @@
 <?php
-namespace app\Index\model;
+namespace app\index\model;
 use think\Model;
 class Index extends Model
 {
