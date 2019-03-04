@@ -34,11 +34,11 @@ class Account extends Model
         return $res;
     }
     public function accountStatus($id){
-        $status=db('account')->where('id',$id)->value('status');
+        $status=db('admin')->where('id',$id)->value('status');
         if($status=='0'){
-            $res = db('account')->where('id', $id)->update(['status'  => '1',]);
+            $res = db('admin')->where('id', $id)->update(['status'  => '1',]);
         }else{
-            $res = db('account')->where('id', $id)->update(['status'  => '0',]);
+            $res = db('admin')->where('id', $id)->update(['status'  => '0',]);
         }
         return $res;
     }
