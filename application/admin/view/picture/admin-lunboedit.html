@@ -111,11 +111,9 @@
             $img = $li.find('img');
         var A = $('input[name="url"]').val();
         console.log(A);
-        if(A!=null){
-            $list.html($li);
-        }else{
-            $list.append( $li );
-        }
+
+        $list.append( $li );
+
 
         // 创建缩略图
         // 如果为非图片文件，可以不用调用此方法。
