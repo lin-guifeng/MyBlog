@@ -41,7 +41,6 @@ class Picture extends Common
         $res = model('picture')->lunboFind($id);
         if ($this->request->isPost()){
             $ajaxData = $this->request->post();
-            return json_encode($ajaxData);
             $data['url'] = $ajaxData['url'];
             $data['name'] = $ajaxData['name'];
             $data['sort'] = $ajaxData['sort'];
