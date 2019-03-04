@@ -66,7 +66,16 @@ class Picture extends Common
             $this->error("删除轮播失败","/admin/picture/lunboList");
         }
     }
-
+    //    轮播图是否禁用
+    public function lunboStatus(){
+        $id = input('get.id');
+        $res = model('picture')->lunboStatus($id);
+        if($res){
+            return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
+        }else{
+            return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
+        }
+    }
     //图片上传
     public function uploadpic(){
         $file = $this->request->file('file');//file是传文件的名称，这是webloader插件固定写入的。因为webloader插件会写入一个隐藏input，这里与TP5的写法有点区别
