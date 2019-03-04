@@ -7,6 +7,10 @@ class Index extends Model
         $res=db('lunbo')->where(['status'=>'1'])->order('sort desc')->select();
         return $res;
     }
+    public function user(){
+        $res=db('admin')->where(['id'=>'7'])->find();
+        return $res;
+    }
     public function accountData($page,$limit){
         $list = db('admin')
             ->page($page,$limit)
