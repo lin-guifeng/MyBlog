@@ -22,17 +22,17 @@ class Common
         return "images/$u_id" . '.jpg';
     }
     public function getHtml(){
-        <?php
-    header('content-type:text/html;charset=utf-8;');
-    $url = 'http://image.baidu.com/search/index?ct=201326592&cl=2&st=-1&lm=-1&nc=1&ie=utf-8&tn=baiduimage&ipn=r&rps=1&pv=&fm=rs2&word=%E7%94%B0%E5%9B%AD%E8%87%AA%E7%84%B6%E9%A3%8E%E5%85%89&oriquery=%E8%87%AA%E7%84%B6%E9%A3%8E%E5%85%89&ofr=%E8%87%AA%E7%84%B6%E9%A3%8E%E5%85%89&hs=2&sensitive=0';//爬虫目标地址
-    @ini_set("implicit_flush",1);//在代码中设置及时输出
-    ob_implicit_flush(1);//开启及时输出开启
-    @ob_end_clean();//清除缓存内容
-    echo '开始爬虫……<br>';
-    ini_set("max_execution_time", "120");//设置最大执行时间
-    $res = file_get_contents($url);
-    preg_match_all('/[^>"]*\.(?:png|jpg|bmp|gif|jpeg)/',$res,$img_matches);//正则匹配图片
-    $count = 0;
+
+        header('content-type:text/html;charset=utf-8;');
+        $url = 'http://image.baidu.com/search/index?ct=201326592&cl=2&st=-1&lm=-1&nc=1&ie=utf-8&tn=baiduimage&ipn=r&rps=1&pv=&fm=rs2&word=%E7%94%B0%E5%9B%AD%E8%87%AA%E7%84%B6%E9%A3%8E%E5%85%89&oriquery=%E8%87%AA%E7%84%B6%E9%A3%8E%E5%85%89&ofr=%E8%87%AA%E7%84%B6%E9%A3%8E%E5%85%89&hs=2&sensitive=0';//爬虫目标地址
+        @ini_set("implicit_flush",1);//在代码中设置及时输出
+        ob_implicit_flush(1);//开启及时输出开启
+        @ob_end_clean();//清除缓存内容
+        echo '开始爬虫……<br>';
+        ini_set("max_execution_time", "120");//设置最大执行时间
+        $res = file_get_contents($url);
+        preg_match_all('/[^>"]*\.(?:png|jpg|bmp|gif|jpeg)/',$res,$img_matches);//正则匹配图片
+        $count = 0;
     foreach ($img_matches[0] as $key => $value) {
         if(strpos($value, '=') === FALSE && (strpos($value, '{') === FALSE || strpos($value, '}') === FALSE)){
             $ext = substr($value, strrpos($value, '.'));
