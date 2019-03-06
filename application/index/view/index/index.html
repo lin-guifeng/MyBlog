@@ -45,23 +45,47 @@
 </header>
 <div class="swiper-container">
   <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="swiper-zoom-container">
+        <img src="http://lorempixel.com/800/800/sports/1/">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper-zoom-container">
+        <img src="http://lorempixel.com/800/400/sports/2/">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper-zoom-container">
+        <img src="http://lorempixel.com/400/800/sports/3/">
+      </div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination-white"></div>
+  <!-- Add Navigation -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+<!--<div class="swiper-container">-->
+  <!--<div class="swiper-wrapper">-->
     <!--{volist name="lunbo" id="vo"}-->
     <!--<div class="swiper-slide"><a href="/" target="_blank"><img src="{$vo.url}"></a></div>-->
     <!--{/volist}-->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-  </div>
-  <!-- 如果需要分页器 -->
-  <div class="swiper-pagination"></div>
+    <!--<div class="swiper-slide">Slide 1</div>-->
+    <!--<div class="swiper-slide">Slide 2</div>-->
+    <!--<div class="swiper-slide">Slide 3</div>-->
+  <!--</div>-->
+  <!--&lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+  <!--<div class="swiper-pagination"></div>-->
 
-  <!-- 如果需要导航按钮 -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <!--&lt;!&ndash; 如果需要导航按钮 &ndash;&gt;-->
+  <!--<div class="swiper-button-prev"></div>-->
+  <!--<div class="swiper-button-next"></div>-->
 
-  <!-- 如果需要滚动条 -->
-  <div class="swiper-scrollbar"></div>
-</div>
+  <!--&lt;!&ndash; 如果需要滚动条 &ndash;&gt;-->
+  <!--<div class="swiper-scrollbar"></div>-->
+<!--</div>-->
 <div class="searchbox">
   <div class="search">
     <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
@@ -459,27 +483,15 @@
   </a> </footer>
 </body>
 <script>
-    $(document).ready(function () {
-        var mySwiper = new Swiper ('.swiper-container', {
-            direction: 'vertical', // 垂直切换选项
-            loop: true, // 循环模式选项
-
-            // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // 如果需要滚动条
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        })
-    })
+    var swiper = new Swiper('.swiper-container', {
+        zoom: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 </script>
 </html>
