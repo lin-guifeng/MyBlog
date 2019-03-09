@@ -38,4 +38,10 @@ class Index extends Common
         }
     }
 
+//    环境测试
+    public function phpinfo(){
+        phpinfo();
+    }
+
+
 }

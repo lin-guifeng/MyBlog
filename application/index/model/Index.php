@@ -11,6 +11,13 @@ class Index extends Model
         $res=db('admin')->where(['id'=>'7','name'=>'林桂锋'])->find();
         return $res;
     }
+    public function getList(){
+        $res=db('article')->where(['status'=>'1'])->order('time desc')->select();
+        return $res;
+    }
+
+
+
     public function accountData($page,$limit){
         $list = db('admin')
             ->page($page,$limit)
