@@ -17,6 +17,9 @@ class Index extends Controller
         $this->assign('lunbo',$lunbo);
         return view('index');
     }
+    public function phpinfo(){
+        echo phpinfo();
+    }
     
     
 }
