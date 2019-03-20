@@ -118,7 +118,7 @@ class Picture extends Common
             $ajaxData = $this->request->post();
 
 
-            $data = getPicture($ajaxData['keyword']);
+            $data = $this->getPicture($ajaxData['keyword']);
             dump($data);
 //            $res=model('picture')->lunboAdd($data);
 //            if($res){
