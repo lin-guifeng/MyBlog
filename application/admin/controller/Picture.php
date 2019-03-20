@@ -118,12 +118,14 @@ class Picture extends Common
         if ($this->request->isPost()){
             $ajaxData = $this->request->post();
             $data = $this->getPicture($ajaxData['keyword'],$ajaxData['num']);
-            $res=model('picture')->pictureAdd($data);
-            if($res){
-                $this->success("批量添加图片成功","/admin/picture/pictureList");
-            }else{
-                $this->error("批量添加图片失败","/admin/picture/pictureList");
-            }
+            $res=db('picture')->insertAll($data);
+            dump($res);
+//            $res=model('picture')->pictureAdd($data);
+//            if($res){
+//                $this->success("批量添加图片成功","/admin/picture/pictureList");
+//            }else{
+//                $this->error("批量添加图片失败","/admin/picture/pictureList");
+//            }
         }
         return view('admin-pictureadd');
     }
