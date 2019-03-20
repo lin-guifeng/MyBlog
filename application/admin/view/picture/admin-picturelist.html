@@ -172,18 +172,20 @@
     })
     $("#btn_delete").click(function () {
         if (confirm("确认要删除吗？")) {
+            layer.load();
             var idlist = "";
             $("input[name='btSelectItem']:checked").each(function () {
                 idlist += $(this).parents("tr").attr("data-uniqueid") + ",";
             })
             console.log(idlist);
             $.ajax({
-                url: '/admin/Picture/lunboDel',
+                url: '/admin/Picture/pictureDel',
                 dataType: 'json',
                 type: 'get',
                 data: { idlist: idlist },
                 success: function (res) {
                     console.log(res);
+                    layer.closeAll('loading');
                     if(res.code=='1'){
                         self.location.reload();
                     }

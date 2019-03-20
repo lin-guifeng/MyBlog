@@ -127,5 +127,15 @@ class Picture extends Common
         }
         return view('admin-pictureadd');
     }
+    //    图片删除
+    public function pictureDel(){
+        $idlist = array_filter(explode(',', input('idlist')));
+        $res = model('picture')->pictureDel($idlist);
+        if($res){
+            $this->success("删除图片成功","/admin/picture/pictureList");
+        }else{
+            $this->error("删除图片失败","/admin/picture/pictureList");
+        }
+    }
 
 }
