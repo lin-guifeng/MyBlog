@@ -93,7 +93,7 @@ class Common extends Controller
             $con = file_get_contents($url);
             $con = json_decode($con,true);
             $html = array_merge((array)$html,(array)$con['data']);
-            if($con['data']['0']){
+            if(empty($con['data']['0'])==true){
                 break;
             }
         }
