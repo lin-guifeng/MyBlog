@@ -92,14 +92,18 @@ class Common extends Controller
 
             foreach ($value as $keys=>$val){
                 if($keys=='middleURL'){
-                    dump($value[$keys]);
+                    $res[$key]['url'] = $value[$keys];
                 }
+                if($keys=='fromPageTitleEnc'){
+                    $res[$key]['title'] = $value[$keys];
+                }
+                $res[$key]['keyword'] = $keyword;
             }
 //            $res[$key]['url'] = $value['middleURL'];
 //            $res[$key]['title'] = $value['fromPageTitleEnc'];
 //            $res[$key]['keyword'] = $keyword;
         }
-//        return $res;
+        return $res;
     }
 
 }
