@@ -119,14 +119,13 @@ class Picture extends Common
 
 
             $data = $this->getPicture($ajaxData['keyword']);
-//            echo $data;
-            dump($data);
-//            $res=model('picture')->lunboAdd($data);
-//            if($res){
-//                $this->success("添加轮播图成功","/admin/picture/lunboList");
-//            }else{
-//                $this->error("添加轮播图失败","/admin/picture/lunboList");
-//            }
+
+            $res=model('picture')->pictureAdd($data);
+            if($res){
+                $this->success("添加轮播图成功","/admin/picture/lunboList");
+            }else{
+                $this->error("添加轮播图失败","/admin/picture/lunboList");
+            }
         }
         return view('admin-pictureadd');
     }

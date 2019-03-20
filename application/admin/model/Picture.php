@@ -55,6 +55,10 @@ class Picture extends Model
         ];
         return $res;
     }
+    public function pictureAdd($data){
+        $res=db('picture')->saveAll($data);
+        return $res;
+    }
 
 
     public function groupData($page,$limit){
