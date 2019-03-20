@@ -40,7 +40,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-8 col-sm-offset-3">
-                                <button class="btn btn-primary" type="button" onclick="forms()">提交</button>
+                                <button class="btn btn-primary" type="button">提交</button>
                             </div>
                         </div>
                     </form>
@@ -53,7 +53,7 @@
 <script src="/static/admin/js/jquery.min.js"></script>
 <script src="/static/admin/js/bootstrap.min.js"></script>
 <script>
-    function forms() {
+    $('.btn').click(function (e){
         layer.load('删除中');
         $.ajax({
             type: "POST",//方法类型
@@ -71,7 +71,7 @@
                 layer.msg("数据异常！");
             }
         });
-    }
+    })
 </script>
 </body>
 </html>
