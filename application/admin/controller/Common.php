@@ -83,23 +83,20 @@ class Common extends Controller
     public function getPicture($keyword,$num){
         $keywords = urlencode($keyword);
 
-//        $html = [];
-//        $t1=microtime(true);
-//        $num=1;
-//        for ($i=0;$i<$num;$i++){
-            $pn = 30+30*2;
+        $html = [];
+        $t1=microtime(true);
+
+        for ($i=0;$i<$num;$i++){
+            $pn = 30+30*$i;
             $gsm = base_convert($pn, 10, 16);
             $url = "https://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=".$keywords."&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=&ic=&hd=&latest=&copyright=&word=".$keywords."&s=&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&expermode=&force=&pn=".$pn."&rn=30&gsm=".$gsm;
             $con = file_get_contents($url);
             $con = json_decode($con,true);
-            $res = empty($con['data']['0']);
-            return $res;
-            exit;
-//            $html = array_merge((array)$html,(array)$con['data']);
-//            if($con){
-//                break;
-//            }
-//        }
+            $html = array_merge((array)$html,(array)$con['data']);
+            if($con['data']['0']){
+                break;
+            }
+        }
         $t2=microtime(true);
         foreach($html as $key=>$value){
 //            $res[$key]['url'] = $value['middleURL'];
