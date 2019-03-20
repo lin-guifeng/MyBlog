@@ -119,7 +119,8 @@ class Picture extends Common
             $ajaxData = $this->request->post();
             $data = $this->getPicture($ajaxData['keyword'],$ajaxData['num']);
             $res=db('picture')->insertAll($data);
-            return json_encode($res);
+            dump($res);
+//            return json_encode($res);
 //            $this->success("批量添加图片成功","/admin/picture/pictureList",$res);
 
 //            $res=model('picture')->pictureAdd($data);
