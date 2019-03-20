@@ -59,6 +59,10 @@ class Picture extends Model
         $res=db('picture')->insertAll($data);
         return $res;
     }
+    public function pictureDel($id){
+        $res=db('picture')->delete($id);
+        return $res;
+    }
 
 
     public function groupData($page,$limit){
