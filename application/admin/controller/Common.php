@@ -86,7 +86,7 @@ class Common extends Controller
         $html = [];
         $t1=microtime(true);
 
-//        for ($i=0;$i<$num;$i++){
+        for ($i=0;$i<$num;$i++){
         $i=100;
             $pn = 30+30*$i;
             $gsm = base_convert($pn, 10, 16);
@@ -94,12 +94,12 @@ class Common extends Controller
             $con = file_get_contents($url);
             $con = json_decode($con,true);
 
-//            $html = array_merge((array)$html,(array)$con['data']);
-//            if(empty($con['data'])==true){
-//                break;
-//            }
-//        }
-        return $con;
+            $html = array_merge((array)$html,(array)$con['data']);
+            if ($con['bdIsClustered']=='2'){
+                break;
+            }
+        }
+        return $html;
         exit;
         $t2=microtime(true);
         foreach($html as $key=>$value){
