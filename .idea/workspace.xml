@@ -62,7 +62,7 @@
         <counts>
           <entry key="css" value="201" />
           <entry key="dummy" value="21" />
-          <entry key="html" value="4910" />
+          <entry key="html" value="4912" />
           <entry key="js" value="9" />
           <entry key="php" value="4921" />
         </counts>
@@ -70,7 +70,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="201" />
-          <entry key="HTML" value="4910" />
+          <entry key="HTML" value="4912" />
           <entry key="JavaScript" value="9" />
           <entry key="PHP" value="4921" />
           <entry key="PLAIN_TEXT" value="21" />
@@ -172,8 +172,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-pictureadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+            <state relative-caret-position="271">
+              <caret line="42" column="92" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -1103,12 +1103,12 @@
       <workItem from="1552612174304" duration="599000" />
       <workItem from="1552870821369" duration="2631000" />
       <workItem from="1552957876944" duration="4932000" />
-      <workItem from="1553043713240" duration="17250000" />
+      <workItem from="1553043713240" duration="17338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469303000" />
+    <option name="totallyTimeSpent" value="469391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1425,8 +1425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-pictureadd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        <state relative-caret-position="271">
+          <caret line="42" column="92" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
         </state>
       </provider>
     </entry>
