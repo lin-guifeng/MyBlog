@@ -85,6 +85,7 @@ class Common extends Controller
 
         $html = [];
         $t1=microtime(true);
+        $num=1;
         for ($i=0;$i<$num;$i++){
             $pn = 30+30*$i;
             $gsm = base_convert($pn, 10, 16);
