@@ -23,7 +23,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
-                    <form class="form-horizontal m-t" id="form1" action="{:url('picture/pictureAdd')}" method="post">
+                    <form class="form-horizontal m-t" id="form1" action="#" method="post" onsubmit="return false">
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">关键词</label>
@@ -54,27 +54,27 @@
 <script src="/static/admin/js/bootstrap.min.js"></script>
 <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script>
-    // $('.btn').click(function (e){
-    //     layer.load('添加中');
-    //     $.ajax({
-    //         type: "POST",//方法类型
-    //         dataType: "json",//预期服务器返回的数据类型
-    //         url: "{:url('picture/pictureAdd')}" ,//url
-    //         data: $('#form1').serialize(),
-    //         success: function (res) {
-    //             layer.closeAll('loading');
-    //             console.log(res);
-    //             // if(res.code=='1'){
-    //             //     parent.location="{:url('picture/pictureList')}";
-    //             // }
-    //         },
-    //         error : function(res) {
-    //             console.log(res);
-    //             layer.closeAll('loading');
-    //             layer.msg("数据异常！");
-    //         }
-    //     });
-    // })
+    $('.btn').click(function (e){
+        layer.load('添加中');
+        $.ajax({
+            type: "POST",//方法类型
+            dataType: "json",//预期服务器返回的数据类型
+            url: "{:url('picture/pictureAdd')}" ,//url
+            data: $('#form1').serialize(),
+            success: function (res) {
+                layer.closeAll('loading');
+                console.log(res);
+                // if(res.code=='1'){
+                //     parent.location="{:url('picture/pictureList')}";
+                // }
+            },
+            error : function(res) {
+                console.log(res);
+                layer.closeAll('loading');
+                layer.msg("数据异常！");
+            }
+        });
+    })
 </script>
 </body>
 </html>
