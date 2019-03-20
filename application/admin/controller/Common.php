@@ -92,7 +92,7 @@ class Common extends Controller
             $con = json_decode($con,true);
 //            $html = array_merge($html,$con['data']);
         }
-        return gettype($con['data']);
+        return gettype($html);
 
 //        foreach($html as $key=>$value){
 //            foreach ($value as $keys=>$val){
