@@ -4,5 +4,6 @@
     <mapping directory="E:/BaiduNetdiskDownload/demo1/MallTest" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../forum" vcs="Git" />
   </component>
 </project>
