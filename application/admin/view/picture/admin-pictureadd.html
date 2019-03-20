@@ -55,7 +55,7 @@
 <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script>
     $('.btn').click(function (e){
-        layer.load('删除中');
+        layer.load('添加中');
         $.ajax({
             type: "POST",//方法类型
             dataType: "json",//预期服务器返回的数据类型
@@ -63,9 +63,10 @@
             data: $('#form1').serialize(),
             success: function (res) {
                 layer.closeAll('loading');
-                if(res.code=='1'){
-                    parent.location="{:url('picture/pictureList')}";
-                }
+                console.log(res);
+                // if(res.code=='1'){
+                //     parent.location="{:url('picture/pictureList')}";
+                // }
             },
             error : function() {
                 layer.closeAll('loading');
