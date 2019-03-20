@@ -93,9 +93,9 @@ class Common extends Controller
             $con = json_decode($con,true);
 
             $html = array_merge((array)$html,(array)$con['data']);
-            if(empty($con['data']['1'])==true){
-                break;
-            }
+//            if(empty($con['data']['1'])==true){
+//                break;
+//            }
         }
         return $html;
         exit;
