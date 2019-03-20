@@ -84,6 +84,7 @@ class Common extends Controller
         $keywords = urlencode($keyword);
 
         $html = [];
+        $t1=microtime(true);
         for ($i=0;$i<$num;$i++){
             $pn = 30+30*$i;
             $gsm = base_convert($pn, 10, 16);
@@ -92,21 +93,25 @@ class Common extends Controller
             $con = json_decode($con,true);
             $html = array_merge((array)$html,(array)$con['data']);
         }
-
+        $t2=microtime(true);
         foreach($html as $key=>$value){
-            $res[$key]['url'] = $value['middleURL'];
-            $res[$key]['title'] = $value['fromPageTitleEnc'];
-            $res[$key]['keyword'] = $keyword;
-//            foreach ($value as $keys=>$val){
-//                if($keys=='middleURL'){
-//                    $res[$key]['url'] = $value[$keys];
-//                }
-//                if($keys=='fromPageTitleEnc'){
-//                    $res[$key]['title'] = $value[$keys];
-//                }
-//                $res[$key]['keyword'] = $keyword;
-//            }
+//            $res[$key]['url'] = $value['middleURL'];
+//            $res[$key]['title'] = $value['fromPageTitleEnc'];
+//            $res[$key]['keyword'] = $keyword;
+            foreach ($value as $keys=>$val){
+                if($keys=='middleURL'){
+                    $res[$key]['url'] = $value[$keys];
+                }
+                if($keys=='fromPageTitleEnc'){
+                    $res[$key]['title'] = $value[$keys];
+                }
+                $res[$key]['keyword'] = $keyword;
+            }
         }
+        $t3=microtime(true);
+        $time1=$t2-$t1;
+        $time2=$t3-$t2;
+        $res = $time1.'.'.$time2;
         return $res;
     }
 
