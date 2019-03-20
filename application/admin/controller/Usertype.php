@@ -1,7 +1,7 @@
 <?php
 namespace app\admin\controller;
 
-class UserType extends Common
+class Usertype extends Common
 {
     public function paqu(){
 
