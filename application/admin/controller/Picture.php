@@ -119,15 +119,15 @@ class Picture extends Common
             $ajaxData = $this->request->post();
 //            $t1=microtime(true);
             $data = $this->getPicture($ajaxData['keyword'],$ajaxData['num']);
-//            dump($data);
+            dump($data);
 //            $t2=microtime(true);
-            $res=db('picture')->insertAll($data);
+//            $res=db('picture')->insertAll($data);
 //            $t3=microtime(true);
 //            $time1=$t2-$t1;
 //            $time2=$t3-$t2;
 //            dump($time1);
 //            dump($time2);
-            dump($res);
+//            dump($res);
 //            return json_encode($res);
 //            $this->success("批量添加图片成功","/admin/picture/pictureList",$res);
 
