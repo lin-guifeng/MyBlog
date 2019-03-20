@@ -68,7 +68,8 @@
                 //     parent.location="{:url('picture/pictureList')}";
                 // }
             },
-            error : function() {
+            error : function(res) {
+                console.log(res);
                 layer.closeAll('loading');
                 layer.msg("数据异常！");
             }
