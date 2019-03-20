@@ -172,7 +172,7 @@
     })
     $("#btn_delete").click(function () {
         if (confirm("确认要删除吗？")) {
-            layer.load();
+            layer.load('删除中');
             var idlist = "";
             $("input[name='btSelectItem']:checked").each(function () {
                 idlist += $(this).parents("tr").attr("data-uniqueid") + ",";

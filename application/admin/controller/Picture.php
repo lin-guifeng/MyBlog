@@ -113,11 +113,11 @@ class Picture extends Common
         $res = model('picture')->pictureData($page,$limit);
         echo json_encode($res);
     }
+    //    批量导入百度图片
     public function pictureAdd(){
         if ($this->request->isPost()){
             $ajaxData = $this->request->post();
             $data = $this->getPicture($ajaxData['keyword'],$ajaxData['num']);
-//            dump($data);
             $res=model('picture')->pictureAdd($data);
             if($res){
                 $this->success("批量添加图片成功","/admin/picture/pictureList");
