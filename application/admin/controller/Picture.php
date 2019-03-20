@@ -119,7 +119,8 @@ class Picture extends Common
 
 
             $data = $this->getPicture($ajaxData['keyword']);
-            dump($data);
+            echo $data;
+//            dump($data);
 //            $res=model('picture')->lunboAdd($data);
 //            if($res){
 //                $this->success("添加轮播图成功","/admin/picture/lunboList");

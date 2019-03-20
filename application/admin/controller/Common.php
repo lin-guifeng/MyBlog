@@ -89,11 +89,12 @@ class Common extends Controller
         $html = file_get_contents($url);
         $html = json_decode($html,true);
         foreach($html['data'] as $key=>$value){
-            $res[$key]['url'] = $value['middleURL'];
+            dump($value);
+//            $res[$key]['url'] = $value['middleURL'];
 //            $res[$key]['title'] = $value['fromPageTitleEnc'];
 //            $res[$key]['keyword'] = $keyword;
         }
-        return $res;
+//        return $res;
     }
 
 }
