@@ -92,18 +92,20 @@ class Common extends Controller
             $con = json_decode($con,true);
             $html = array_merge((array)$html,(array)$con['data']);
         }
-//        return gettype($html);
 
         foreach($html as $key=>$value){
-            foreach ($value as $keys=>$val){
-                if($keys=='middleURL'){
-                    $res[$key]['url'] = $value[$keys];
-                }
-                if($keys=='fromPageTitleEnc'){
-                    $res[$key]['title'] = $value[$keys];
-                }
-                $res[$key]['keyword'] = $keyword;
-            }
+            $res[$key]['url'] = $value['middleURL'];
+            $res[$key]['title'] = $value['fromPageTitleEnc'];
+            $res[$key]['keyword'] = $keyword;
+//            foreach ($value as $keys=>$val){
+//                if($keys=='middleURL'){
+//                    $res[$key]['url'] = $value[$keys];
+//                }
+//                if($keys=='fromPageTitleEnc'){
+//                    $res[$key]['title'] = $value[$keys];
+//                }
+//                $res[$key]['keyword'] = $keyword;
+//            }
         }
         return $res;
     }

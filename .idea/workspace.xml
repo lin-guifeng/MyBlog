@@ -7,7 +7,7 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Picture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Common.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="4976" />
           <entry key="js" value="9" />
-          <entry key="php" value="4998" />
+          <entry key="php" value="5004" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +72,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="4976" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="4998" />
+          <entry key="PHP" value="5004" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -90,11 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+            <state relative-caret-position="811">
+              <caret line="107" column="15" lean-forward="true" selection-start-line="99" selection-start-column="13" selection-end-line="107" selection-end-column="15" />
               <folding>
                 <element signature="e#38#60#0#PHP" expanded="true" />
               </folding>
@@ -129,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="571">
-              <caret line="127" column="23" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+              <caret line="127" column="25" lean-forward="true" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -276,11 +276,11 @@
         <option value="$PROJECT_DIR$/application/admin/controller/UserType.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Usertype.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Common.php" />
         <option value="$PROJECT_DIR$/application/admin/model/Picture.php" />
         <option value="$PROJECT_DIR$/application/admin/view/picture/admin-picturelist.html" />
         <option value="$PROJECT_DIR$/application/admin/view/picture/admin-pictureadd.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Picture.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Common.php" />
       </list>
     </option>
   </component>
@@ -1100,12 +1100,12 @@
       <workItem from="1552612174304" duration="599000" />
       <workItem from="1552870821369" duration="2631000" />
       <workItem from="1552957876944" duration="4932000" />
-      <workItem from="1553043713240" duration="21325000" />
+      <workItem from="1553043713240" duration="21786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="473378000" />
+    <option name="totallyTimeSpent" value="473839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1400,16 +1400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
-          <folding>
-            <element signature="e#38#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/model/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1420,7 +1410,17 @@
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
-          <caret line="127" column="23" selection-start-line="127" selection-start-column="23" selection-end-line="127" selection-end-column="23" />
+          <caret line="127" column="25" lean-forward="true" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="107" column="15" lean-forward="true" selection-start-line="99" selection-start-column="13" selection-end-line="107" selection-end-column="15" />
+          <folding>
+            <element signature="e#38#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
