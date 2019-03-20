@@ -116,10 +116,7 @@ class Picture extends Common
     public function pictureAdd(){
         if ($this->request->isPost()){
             $ajaxData = $this->request->post();
-
-
-            $data = $this->getPicture($ajaxData['keyword']);
-
+            $data = $this->getPicture($ajaxData['keyword'],$ajaxData['num']);
             $res=model('picture')->pictureAdd($data);
             if($res){
                 $this->success("添加轮播图成功","/admin/picture/lunboList");
