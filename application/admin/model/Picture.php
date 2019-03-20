@@ -43,6 +43,19 @@ class Picture extends Model
         return $res;
     }
 
+    public function pictureData($page,$limit){
+        $list = db('picture')
+            ->page($page,$limit)
+            ->order('id desc')
+            ->select();
+        $count = db('picture')->count();
+        $res = [
+            'rows' => $list,
+            'total' => $count,
+        ];
+        return $res;
+    }
+
 
     public function groupData($page,$limit){
         $list = db('group')

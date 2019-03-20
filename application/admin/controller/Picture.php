@@ -100,4 +100,34 @@ class Picture extends Common
         }
     }
 
+    //    百度图片列表
+    public function pictureList(){
+        return view('admin-picturelist');
+    }
+    //    获取百度图片列表数据
+    public function pictureData(){
+        $limit = trim(input('limit'));
+        $offset = trim(input('offset'));
+        $page = floor($offset / $limit) + 1;
+        # 获取并且计算 页号 分页大小
+        $res = model('picture')->pictureData($page,$limit);
+        echo json_encode($res);
+    }
+    public function pictureAdd(){
+        if ($this->request->isPost()){
+            $ajaxData = $this->request->post();
+
+
+            $data = getPicture($ajaxData['keyword']);
+            dump($data);
+//            $res=model('picture')->lunboAdd($data);
+//            if($res){
+//                $this->success("添加轮播图成功","/admin/picture/lunboList");
+//            }else{
+//                $this->error("添加轮播图失败","/admin/picture/lunboList");
+//            }
+        }
+        return view('admin-picturelist');
+    }
+
 }
