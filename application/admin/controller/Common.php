@@ -114,7 +114,7 @@ class Common extends Controller
         $t3=microtime(true);
         $time1=$t2-$t1;
         $time2=$t3-$t2;
-        $res = $time1.'.'.$time2;
+//        $res = $time1.'.'.$time2;
         return $res;
     }
 
