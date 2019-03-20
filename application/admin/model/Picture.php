@@ -56,7 +56,7 @@ class Picture extends Model
         return $res;
     }
     public function pictureAdd($data){
-        $res=db('picture')->saveAll($data);
+        $res=db('picture')->insertAll($data);
         return $res;
     }
 
