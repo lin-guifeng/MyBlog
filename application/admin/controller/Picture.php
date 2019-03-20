@@ -127,7 +127,7 @@ class Picture extends Common
 //                $this->error("添加轮播图失败","/admin/picture/lunboList");
 //            }
         }
-        return view('admin-picturelist');
+        return view('admin-pictureadd');
     }
 
 }
