@@ -64,9 +64,9 @@
             success: function (res) {
                 layer.closeAll('loading');
                 console.log(res);
-                // if(res.code=='1'){
-                //     parent.location="{:url('picture/pictureList')}";
-                // }
+                if(res.code=='1'){
+                    parent.location="{:url('picture/pictureList')}";
+                }
             },
             error : function(res) {
                 console.log(res);
