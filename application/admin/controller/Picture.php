@@ -119,9 +119,9 @@ class Picture extends Common
             $data = $this->getPicture($ajaxData['keyword'],$ajaxData['num']);
             $res=model('picture')->pictureAdd($data);
             if($res){
-                $this->success("添加轮播图成功","/admin/picture/lunboList");
+                $this->success("添加轮播图成功","/admin/picture/pictureList");
             }else{
-                $this->error("添加轮播图失败","/admin/picture/lunboList");
+                $this->error("添加轮播图失败","/admin/picture/pictureList");
             }
         }
         return view('admin-pictureadd');
