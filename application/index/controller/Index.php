@@ -9,7 +9,12 @@ class Index extends Controller
         $data = model('index')->getList();
 
 
+        foreach ($data as &$value){
+            $value['con'] = mb_substr ( $value['content'], 0,100,'utf-8' );
+        }
 
+//        dump($data);
+//        exit;
 
 
         $this->assign('data',$data);
@@ -23,12 +28,7 @@ class Index extends Controller
         $data = model('index')->getList();
 
 
-        foreach ($data as &$value){
-            $value['content'] = mb_substr ( $value['content'], 0,100,'utf-8' );
-        }
 
-        dump($data);
-        exit;
         $this->assign('data',$data);
         $this->assign('user',$user);
         $this->assign('lunbo',$lunbo);
