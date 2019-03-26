@@ -23,11 +23,11 @@ class Index extends Controller
         $data = model('index')->getList();
 
 
-        foreach ($data as &$value){
+        foreach ($data as $value){
             $value['con'] = mb_substr ( $value['content'], 0,100,'utf-8' );
         }
 
-
+        dump($data);
         $this->assign('data',$data);
         $this->assign('user',$user);
         $this->assign('lunbo',$lunbo);
