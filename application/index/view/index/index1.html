@@ -118,12 +118,15 @@
     .box1 .newsl{
         float: left;
         width: 30%;
-        max-height: 170px;
-        display: block;
-        overflow: hidden;
+        max-height: 150px;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
     .box1 .newsl img{
         width: 100%;
+        height:auto;
         -moz-transition: all .5s ease;
         -webkit-transition: all .5s ease;
         -ms-transition: all .5s ease;
@@ -185,10 +188,10 @@
             </div>
             <div class="list">
                 {volist name="data" id="vo"}
-                <div class="box1" style="background-color: #fff;">
+                <div class="box1" style="background-color: #fff;height: 220px;">
                     <h3>个人博客，属于我的小世界！</h3>
-                    <div class="newsl" style="">
-                        <img src="{$vo.img}" alt="" style="">
+                    <div class="newsl">
+                        <img src="{$vo.img}" alt="">
                     </div>
                     <div class="newsr">
                         <div>
