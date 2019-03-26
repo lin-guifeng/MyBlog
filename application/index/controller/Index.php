@@ -49,6 +49,12 @@ class Index extends Controller
     public function time(){
         return view('time');
     }
+    public function about(){
+        return view('about');
+    }
+    public function daohang(){
+        return view('daohang');
+    }
 
 
 }
