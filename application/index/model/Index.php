@@ -16,6 +16,10 @@ class Index extends Model
         return $res;
     }
 
+    public function getinfo($id){
+        $res = db('article')->where(['id'=>$id])->find();
+        return $res;
+    }
 
 
     public function accountData($page,$limit){

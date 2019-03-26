@@ -23,7 +23,9 @@ class Index extends Controller
         $data = model('index')->getList();
 
 
-
+        foreach ($data as &$value){
+            $value['con'] = mb_substr ( $value['content'], 0,100,'utf-8' );
+        }
 
 
         $this->assign('data',$data);
@@ -38,6 +40,9 @@ class Index extends Controller
         return view('list');
     }
     public function info(){
+        $id = input(get.id);
+        $data = model('index')->getinfo($id);
+        $this->assign('data',$data);
         return view('info');
     }
     public function list2(){
