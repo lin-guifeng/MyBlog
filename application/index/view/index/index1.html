@@ -184,10 +184,11 @@
                 </div>
             </div>
             <div class="list">
+                {volist name="data" id="vo"}
                 <div class="box1" style="background-color: #fff;">
                     <h3>个人博客，属于我的小世界！</h3>
                     <div class="newsl" style="">
-                        <img src="/static/images/11.jpg" alt="" style="">
+                        <img src="{$vo.img}" alt="" style="">
                     </div>
                     <div class="newsr">
                         <div>
@@ -215,14 +216,12 @@
                                     <!--<i class="fa fa-list"></i>-->
                                     <!--<span>林桂锋</span>-->
                                 <!--</li>-->
-
                             </ul>
-
                         </div>
-
                     </div>
 
                 </div>
+                {/volist}
             </div>
         </div>
         <div class="rbox">
