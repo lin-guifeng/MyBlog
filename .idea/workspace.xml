@@ -7,6 +7,7 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/view/index/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +65,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="5715" />
           <entry key="js" value="9" />
-          <entry key="php" value="5417" />
+          <entry key="php" value="5443" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +73,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="5715" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="5417" />
+          <entry key="PHP" value="5443" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -109,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="620">
-              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -163,11 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/view/index/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="199" column="67" selection-start-line="199" selection-start-column="67" selection-end-line="199" selection-end-column="67" />
+            <state relative-caret-position="1082">
+              <caret line="223" column="26" selection-start-line="223" selection-start-column="26" selection-end-line="223" selection-end-column="26" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#article#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -313,8 +314,8 @@
         <option value="$PROJECT_DIR$/application/index/model/Index.php" />
         <option value="$PROJECT_DIR$/application/index/view/index/info.html" />
         <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/index/view/index/index1.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -1135,12 +1136,12 @@
       <workItem from="1552870821369" duration="2631000" />
       <workItem from="1552957876944" duration="4932000" />
       <workItem from="1553043713240" duration="24798000" />
-      <workItem from="1553561558982" duration="24350000" />
+      <workItem from="1553561558982" duration="24583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501201000" />
+    <option name="totallyTimeSpent" value="501434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1467,13 +1468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -1487,8 +1481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/index/index1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="199" column="67" selection-start-line="199" selection-start-column="67" selection-end-line="199" selection-end-column="67" />
+        <state relative-caret-position="1082">
+          <caret line="223" column="26" selection-start-line="223" selection-start-column="26" selection-end-line="223" selection-end-column="26" />
           <folding>
             <element signature="n#div#0;n#div#0;n#article#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1500,6 +1494,13 @@
             <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#article#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
         </state>
       </provider>
     </entry>
