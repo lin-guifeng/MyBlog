@@ -28,6 +28,7 @@ class Index extends Controller
         }
 
         dump($data);
+        exit;
         $this->assign('data',$data);
         $this->assign('user',$user);
         $this->assign('lunbo',$lunbo);
