@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/static/swiper-4.5.0/dist/css/swiper.min.css">
     <script src="/static/swiper-4.5.0/dist/js/swiper.min.js"></script>
 <style>
+    header{
+        background-color: #0C0C0C;
+    }
     header::before {
         background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
         content: "";
@@ -89,9 +92,14 @@
             <div class="banbox">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+                    {volist name="lunbo" id="vo"}
+                        <div class="swiper-slide"><a href="/" target="_blank"><img src="{$vo.url}"></a></div>
+                    <!--<li class="slide" ><a href="/" target="_blank"><img src="{$vo.url}"></a></li>-->
+                    {/volist}
+
+                        <!--<div class="swiper-slide">Slide 1</div>-->
+                        <!--<div class="swiper-slide">Slide 2</div>-->
+                        <!--<div class="swiper-slide">Slide 3</div>-->
                     </div>
                     <!-- 如果需要分页器 -->
                     <div class="swiper-pagination"></div>
