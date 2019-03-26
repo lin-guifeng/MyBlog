@@ -32,11 +32,11 @@ class Index extends Controller
 
         foreach ($data as &$value){
             $content_01 = $value["content"];//从数据库获取富文本content
-            $content_02 = htmlspecialchars_decode($content_01)//把一些预定义的 HTML 实体转换为字符
+            $content_02 = htmlspecialchars_decode($content_01);//把一些预定义的 HTML 实体转换为字符
             $content_03 = str_replace("&nbsp;","",$content_02);//将空格替换成空
             $contents = strip_tags($content_03);//函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
-            
-            $value['content'] = mb_substr ( $value['content'], 0,100,'utf-8' );
+
+            $value['content'] = mb_substr ( $contents, 0,100,'utf-8' );
         }
         var_dump($data);//打印输出
         exit;
