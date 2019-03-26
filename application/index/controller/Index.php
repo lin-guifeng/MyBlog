@@ -38,8 +38,7 @@ class Index extends Controller
 
             $value['content'] = mb_substr ( $contents, 0,100,'utf-8' );
         }
-        var_dump($data);//打印输出
-        exit;
+       
 
 
         $this->assign('data',$data);
