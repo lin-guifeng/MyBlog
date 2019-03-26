@@ -26,7 +26,9 @@ class Index extends Controller
         $user = model('index')->user();
         $lunbo = model('index')->lunbo();
         $data = model('index')->getList();
-
+        foreach ($data as &$value){
+            $value['con'] = mb_substr ( $value['content'], 0,100,'utf-8' );
+        }
 
 
         $this->assign('data',$data);
