@@ -37,8 +37,8 @@ class Index extends Controller
     public function lists(){
         return view('list');
     }
-    public function list1(){
-        return view('list1');
+    public function info(){
+        return view('info');
     }
     public function list2(){
         return view('list2');
