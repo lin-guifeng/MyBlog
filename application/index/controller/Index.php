@@ -36,9 +36,9 @@ class Index extends Controller
             $content_03 = str_replace("&nbsp;","",$content_02);//将空格替换成空
             $contents = strip_tags($content_03);//函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
 
-            $value['content'] = mb_substr ( $contents, 0,100,'utf-8' );
+            $value['con'] = mb_substr ( $contents, 0,100,'utf-8' );
         }
-       
+
 
 
         $this->assign('data',$data);
