@@ -7,7 +7,7 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/index/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/view/index/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1709">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state relative-caret-position="241">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -148,10 +148,10 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="900">
               <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
             </state>
           </provider>
@@ -266,8 +266,8 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Common.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Picture.php" />
         <option value="$PROJECT_DIR$/application/admin/view/picture/admin-pictureadd.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/index1.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/index/view/index/index1.html" />
       </list>
     </option>
   </component>
@@ -1088,12 +1088,12 @@
       <workItem from="1552870821369" duration="2631000" />
       <workItem from="1552957876944" duration="4932000" />
       <workItem from="1553043713240" duration="24798000" />
-      <workItem from="1553561558982" duration="9843000" />
+      <workItem from="1553561558982" duration="9949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="486694000" />
+    <option name="totallyTimeSpent" value="486800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1369,13 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1709">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-picturelist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1385,8 +1378,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="900">
           <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
