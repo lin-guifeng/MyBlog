@@ -109,11 +109,11 @@
       <ul>
         {volist name="data" id="vo"}
         <li>
-          <h3 class="blogtitle"><a href="{:url('Index/info')}?id={vo.id}" target="_blank">{vo.title}</a></h3>
-          <span class="blogpic imgscale"><i><a href="/">原创模板</a></i><a href="/" title=""><img src="{vo.img}" alt=""></a></span>
-          <p class="blogtext">{vo.con}...</p>
-          <p class="bloginfo"><i class="avatar"><img src="/static/images/avatar.jpg"></i><span>林桂锋</span><span>{vo.time}</span></p>
-          <a href="{:url('Index/info')}?id={vo.id}" class="viewmore">阅读更多</a>
+          <h3 class="blogtitle"><a href="{:url('Index/info')}?id={$vo.id}" target="_blank">{$vo.title}</a></h3>
+          <span class="blogpic imgscale"><i><a href="/">原创模板</a></i><a href="/" title=""><img src="{$vo.img}" alt=""></a></span>
+          <p class="blogtext">{$vo.con}...</p>
+          <p class="bloginfo"><i class="avatar"><img src="/static/images/avatar.jpg"></i><span>林桂锋</span><span>{$vo.time}</span></p>
+          <a href="{:url('Index/info')}?id={$vo.id}" class="viewmore">阅读更多</a>
         </li>
         {/volist}
       </ul>
