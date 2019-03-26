@@ -18,6 +18,17 @@ class Index extends Controller
         return view('index');
     }
     public function index1(){
+        $user = model('index')->user();
+        $lunbo = model('index')->lunbo();
+        $data = model('index')->getList();
+
+
+
+
+
+        $this->assign('data',$data);
+        $this->assign('user',$user);
+        $this->assign('lunbo',$lunbo);
         return view('index1');
     }
     public function phpinfo(){
