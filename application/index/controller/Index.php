@@ -45,7 +45,7 @@ class Index extends Controller
         return view('list');
     }
     public function info(){
-        $id = input(get.id);
+        $id = input('get.id');
         $data = model('index')->getinfo($id);
         $this->assign('data',$data);
         return view('info');
