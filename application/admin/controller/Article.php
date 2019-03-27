@@ -24,6 +24,7 @@ class Article extends Common
             $article = $this->request->post();
             $data['img'] = $article['img'];
             $data['title'] = $article['title'];
+            $data['introduction'] = $article['introduction'];
             $data['content'] = $article['txt'];
             $res=model('article')->articleAdd($data);
             if($res){
@@ -42,6 +43,7 @@ class Article extends Common
             $article = $this->request->post();
             $data['img'] = $article['img'];
             $data['title'] = $article['title'];
+            $data['introduction'] = $article['introduction'];
             $data['content'] = $article['txt'];
             $res=model('article')->articleEdit($id,$data);
             if($res){
