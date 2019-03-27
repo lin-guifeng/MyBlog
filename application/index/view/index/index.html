@@ -31,6 +31,7 @@
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease;
     position: relative;
+    display: block;
   }
   .box1 h3{
     margin: 0 0 10px 0;
@@ -56,6 +57,11 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
     transition: all 0.5s;
+  }
+  .box1 .newsl img:hover{
+    transform: scale(5);
+    position:relative;
+    z-index:100;
   }
   .box1 .newsr{
     float: left;
@@ -158,7 +164,7 @@
       <h2 class="htitle">最新博文</h2>
       <div class="list">
         {volist name="data" id="vo"}
-        <div class="box1" style="background-color: #fff;height: 220px;">
+        <a href="{:url('Index/info')}?id={$vo.id}" class="box1" style="background-color: #fff;height: 220px;">
           <h3>个人博客，属于我的小世界！</h3>
           <div class="newsl">
             <img src="{$vo.img}" alt="">
@@ -192,7 +198,7 @@
 
             </div>
           </div>
-        </div>
+        </a>
         {/volist}
       </div>
 
