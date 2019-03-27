@@ -43,42 +43,7 @@ class Common extends Controller
 
 
     }
-    public function get1(){
-        $url = "https://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=%E9%A3%8E%E6%99%AF&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=&ic=&hd=&latest=&copyright=&word=%E9%A3%8E%E6%99%AF&s=&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&expermode=&force=&pn=30&rn=30&gsm=1e&1553046679244=";
-        $html = file_get_contents($url);
-        dump($html);
-    }
-    public function get2(){
-        $url = "https://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=%E9%A3%8E%E6%99%AF&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=&ic=&hd=&latest=&copyright=&word=%E9%A3%8E%E6%99%AF&s=&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&expermode=&force=&pn=60&rn=30&gsm=3c&1553046679306=";
-        $html = file_get_contents($url);
-        dump($html);
-    }
-    public function get3(){
-        $url = "https://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=%E9%A3%8E%E6%99%AF&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=&ic=&hd=&latest=&copyright=&word=%E9%A3%8E%E6%99%AF&s=&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&expermode=&force=&pn=90&rn=30&gsm=5a&1553046735808=";
-        $html = file_get_contents($url);
-        dump($html);
-    }
-    public function get4(){
-        $url = "https://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=%E9%A3%8E%E6%99%AF&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=&ic=&hd=&latest=&copyright=&word=%E9%A3%8E%E6%99%AF&s=&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&expermode=&force=&pn=120&rn=30&gsm=78&1553046735861=";
-        $html = file_get_contents($url);
-        $html = json_decode($html,true);
-        dump($html);
-    }
-    public function getall(){
-        $keyword = "美女";
-        $keyword = urlencode($keyword);
-        $pn = 30;
-        $gsm = base_convert($pn, 10, 16);
-//        for ($i=1;$i<=100;$i++){
-//
-//        }
-        $url = "https://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj&ct=201326592&is=&fp=result&queryWord=".$keyword."&cl=2&lm=-1&ie=utf-8&oe=utf-8&adpicid=&st=-1&z=&ic=&hd=&latest=&copyright=&word=".$keyword."&s=&se=&tab=&width=&height=&face=0&istype=2&qc=&nc=1&fr=&expermode=&force=&pn=".$pn."&rn=30&gsm=".$gsm;
 
-
-        $html = file_get_contents($url);
-        $html = json_decode($html,true);
-        dump($html['data']);
-    }
 
     public function getPicture($keyword,$num){
         $keywords = urlencode($keyword);
@@ -106,6 +71,29 @@ class Common extends Controller
             }
         }
         return $res;
+    }
+
+    public function getTuwan(){
+        $html = [];
+        $callnum = '1553681240966';
+        for ($i=1;$i<=32;$i++){
+
+
+            $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
+            $con = file_get_contents($url);
+            $con = json_decode($con,true);
+            $html = array_merge((array)$html,(array)$con['data']);
+
+            $callnum++;
+        }
+        foreach($html as $key=>$value){
+//            $value['id']
+            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347145";
+            $cons = file_get_contents($urls);
+            $cons = json_decode($cons,true);
+            $htmls = array_merge((array)$html,(array)$cons['data']);
+        }
+//        return $res;
     }
 
 }

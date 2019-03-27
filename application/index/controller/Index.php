@@ -7,15 +7,10 @@ class Index extends Controller
         $user = model('index')->user();
         $lunbo = model('index')->lunbo();
         $data = model('index')->getList();
-
-
         foreach ($data as &$value){
-            $value['con'] = mb_substr ( $value['content'], 0,100,'utf-8' );
+//            $value['con'] = mb_substr ( $value['content'], 0,100,'utf-8' );
+            $value['time']=date('Y-m-d',strtotime($value['time']));
         }
-
-//        dump($data);
-//        exit;
-
 
         $this->assign('data',$data);
         $this->assign('user',$user);
@@ -47,6 +42,9 @@ class Index extends Controller
     public function info(){
         $id = input('get.id');
         $data = model('index')->getinfo($id);
+        foreach ($data as &$val){
+            $val['time']=date('Y-m-d',strtotime($val['time']));
+        }
         $this->assign('data',$data);
         return view('info');
     }

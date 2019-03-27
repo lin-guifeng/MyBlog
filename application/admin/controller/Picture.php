@@ -138,4 +138,42 @@ class Picture extends Common
         }
     }
 
+    //    兔玩网列表
+    public function tuwanList(){
+        return view('admin-tuwanlist');
+    }
+    //    获取兔玩网图片列表数据
+    public function tuwanData(){
+        $limit = trim(input('limit'));
+        $offset = trim(input('offset'));
+        $page = floor($offset / $limit) + 1;
+        # 获取并且计算 页号 分页大小
+        $res = model('picture')->tuwanData($page,$limit);
+        echo json_encode($res);
+    }
+    //    批量导入兔玩网图片
+    public function tuwanAdd(){
+        if ($this->request->isPost()){
+            $ajaxData = $this->request->post();
+            $data = $this->getTuwan($ajaxData['keyword'],$ajaxData['num']);
+            $res=model('picture')->tuwanAdd($data);
+            if($res){
+                $this->success("批量添加图片成功","/admin/picture/tuwanList");
+            }else{
+                $this->error("批量添加图片失败","/admin/picture/tuwanList");
+            }
+        }
+        return view('admin-tuwanadd');
+    }
+    //    兔玩网图片删除
+    public function tuwanDel(){
+        $idlist = array_filter(explode(',', input('idlist')));
+        $res = model('picture')->tuwanDel($idlist);
+        if($res){
+            $this->success("删除图片成功","/admin/picture/tuwanList");
+        }else{
+            $this->error("删除图片失败","/admin/picture/tuwanList");
+        }
+    }
+
 }
