@@ -176,4 +176,23 @@ class Picture extends Common
         }
     }
 
+    public function tuwanTags(){
+        $arr = [
+          '腿控','女仆','标准福利','兔女郎','旗袍','动漫类','JK制服','运动体操服','黑丝','御姐','网袜','肉丝','其他服装','萝莉','白丝','比基尼','巨乳','死库水','大福利','保守','游戏类','脚控','吊带袜','轻剧情','洛丽塔','丰满微胖'
+        ];
+
+        $res = db('tuwan')->field('tags')->select();
+        foreach ($res as &$val){
+            $val['tags'] = json_decode($val['tags']);
+            foreach ($val['tags'] as &$vals){
+                if(in_array($vals,$arr)){
+                    $vals = array_search($vals, $arr);
+                }
+            }
+        }
+        dump($res);
+    }
+
+
+
 }
