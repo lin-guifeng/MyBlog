@@ -16,16 +16,17 @@
 <div class="swiper-container gallery-top">
     <div class="swiper-wrapper">
         {volist name="data" id="vo"}
-        <div class="swiper-slide" style=""><img src="" alt=""></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+        <div class="swiper-slide" style=""><img src="{$vo}" alt=""></div>
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>-->
+        {/volist}
     </div>
     <!-- Add Arrows -->
     <div class="swiper-button-next swiper-button-white"></div>
@@ -33,16 +34,18 @@
 </div>
 <div class="swiper-container gallery-thumbs">
     <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
+        {volist name="data" id="vo"}
+        <div class="swiper-slide"><img src="{$vo}" alt=""></div>
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>-->
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>-->
+        {/volist}
     </div>
 </div>
 <!-- Swiper JS -->
