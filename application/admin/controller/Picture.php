@@ -155,7 +155,7 @@ class Picture extends Common
     public function tuwanAdd(){
 
         $data = [];
-        for ($i=1;$i<=16;$i++){
+        for ($i=1;$i<=10;$i++){
             $getData = $this->getTuwan($i);
             $data = array_merge((array)$data,(array)$getData);
         }
