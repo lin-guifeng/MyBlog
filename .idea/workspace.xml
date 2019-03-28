@@ -64,7 +64,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="5883" />
           <entry key="js" value="9" />
-          <entry key="php" value="5899" />
+          <entry key="php" value="5900" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +72,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="5883" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="5899" />
+          <entry key="PHP" value="5900" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -131,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Common.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="451">
-              <caret line="87" column="46" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="87" selection-end-column="46" />
+              <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
               <folding>
                 <element signature="e#38#60#0#PHP" expanded="true" />
               </folding>
@@ -1110,12 +1110,12 @@
       <workItem from="1553043713240" duration="24798000" />
       <workItem from="1553561558982" duration="25001000" />
       <workItem from="1553648566534" duration="15343000" />
-      <workItem from="1553734670552" duration="10431000" />
+      <workItem from="1553734670552" duration="10655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="527626000" />
+    <option name="totallyTimeSpent" value="527850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1456,7 +1456,7 @@
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
-          <caret line="87" column="46" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="87" selection-end-column="46" />
+          <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
           <folding>
             <element signature="e#38#60#0#PHP" expanded="true" />
           </folding>
