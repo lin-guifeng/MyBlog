@@ -23,7 +23,7 @@
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-content">
-                    <form class="form-horizontal m-t" id="form1" action="#" method="post" onsubmit="return false">
+                    <form class="form-horizontal m-t" id="form1" action="{:url('picture/tuwanAdd')}" method="post">
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">关键词</label>
@@ -40,7 +40,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-8 col-sm-offset-3">
-                                <button class="btn btn-primary" type="button">提交</button>
+                                <button class="btn btn-primary" type="submit">提交</button>
                             </div>
                         </div>
                     </form>
@@ -54,28 +54,28 @@
 <script src="/static/admin/js/bootstrap.min.js"></script>
 <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script>
-    $('.btn').click(function (e){
-        layer.load('添加中');
-        // var index = layer.load(0, {shade: false});
-        $.ajax({
-            type: "POST",//方法类型
-            dataType: "json",//预期服务器返回的数据类型
-            url: "{:url('picture/tuwanAdd')}" ,//url
-            data: $('#form1').serialize(),
-            success: function (res) {
-                layer.closeAll('loading');
-                console.log(res);
-                // if(res.code=='1'){
-                //     parent.location="{:url('picture/tuwanList')}";
-                // }
-            },
-            error : function(res) {
-                console.log(res);
-                layer.closeAll('loading');
-                layer.msg("数据异常！");
-            }
-        });
-    })
+    // $('.btn').click(function (e){
+    //     layer.load('添加中');
+    //     // var index = layer.load(0, {shade: false});
+    //     $.ajax({
+    //         type: "POST",//方法类型
+    //         dataType: "json",//预期服务器返回的数据类型
+    //         url: "{:url('picture/tuwanAdd')}" ,//url
+    //         data: $('#form1').serialize(),
+    //         success: function (res) {
+    //             layer.closeAll('loading');
+    //             console.log(res);
+    //             if(res.code=='1'){
+    //                 parent.location="{:url('picture/tuwanList')}";
+    //             }
+    //         },
+    //         error : function(res) {
+    //             console.log(res);
+    //             layer.closeAll('loading');
+    //             layer.msg("数据异常！");
+    //         }
+    //     });
+    // })
 </script>
 </body>
 </html>
