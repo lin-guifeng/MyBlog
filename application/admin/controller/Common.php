@@ -94,12 +94,17 @@ class Common extends Controller
 //            $callnum++;
 //        }
         foreach($html['data'] as $key=>$value){
-//            $value['id']
-            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347145";
+            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
             $cons = file_get_contents($urls);
             $cons = substr($cons, strlen('(')+strpos($cons, '('),(strlen($cons) - strpos($cons, ')'))*(-1));
             $cons = json_decode($cons,true);
-            $res[$key] = $cons;
+            $res[$key]['tags'] = $cons['tags'];
+            $res[$key]['thumb'] = $cons['thumb'];
+            $res[$key]['title'] = $cons['title'];
+            $res[$key]['bgm'] = $cons['bgm'];
+            $res[$key]['bgm_name'] = $cons['bgm_name'];
+            $res[$key]['bgm_img'] = $cons['bgm_img'];
+            $res[$key]['pid'] = $cons['id'];
 //            $htmls = array_merge((array)$html,(array)$cons['data']);
         }
         return $res;
