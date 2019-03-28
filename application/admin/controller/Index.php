@@ -43,10 +43,19 @@ class Index extends Common
         phpinfo();
     }
 
+//    测试页面
     public function test(){
-        list($t1, $t2) = explode(' ', microtime());
-        $time = (float)sprintf('%.0f',(floatval($t1)+floatval($t2))*1000);
-        echo "时间戳：".$time;
+
+//        13位时间戳
+//        list($t1, $t2) = explode(' ', microtime());
+//        $time = (float)sprintf('%.0f',(floatval($t1)+floatval($t2))*1000);
+//        echo "时间戳：".$time;
+        $res = db('tuwan')->field('tags')->select();
+        foreach ($res as &$val){
+            $val['tags'] = json_decode($val['tags']);
+        }
+        dump($res);
+
     }
 
 
