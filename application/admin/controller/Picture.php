@@ -194,7 +194,6 @@ class Picture extends Common
             $val['tags'] = implode(',',$val['tags']);
             $res = db('tuwan')->where('id',$key+1)->update(['tags' => $val['tags']]);
         }
-
         dump($res);
     }
 

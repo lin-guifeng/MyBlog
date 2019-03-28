@@ -45,15 +45,15 @@ class Index extends Common
 
 //    测试页面
     public function test(){
-
+        $arr = [
+            '腿控','女仆','标准福利','兔女郎','旗袍','动漫类','JK制服','运动体操服','黑丝','御姐','网袜','肉丝','其他服装','萝莉','白丝','比基尼','巨乳','死库水','大福利','保守','游戏类','脚控','吊带袜','轻剧情','洛丽塔','丰满微胖'
+        ];
 //        13位时间戳
 //        list($t1, $t2) = explode(' ', microtime());
 //        $time = (float)sprintf('%.0f',(floatval($t1)+floatval($t2))*1000);
 //        echo "时间戳：".$time;
-        $res = db('tuwan')->field('tags')->select();
-        foreach ($res as &$val){
-            $val['tags'] = json_decode($val['tags']);
-        }
+        $res = db('tuwan_tags')->insertAll($arr);
+
         dump($res);
 
     }
