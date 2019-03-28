@@ -163,7 +163,9 @@ class Picture extends Common
 //                $this->error("批量添加图片失败","/admin/picture/tuwanList");
 //            }
             $data = $this->getTuwan();
-            dump($data);
+//            dump($data);
+            echo $data;
+            return;
         }
         return view('admin-tuwanadd');
     }
