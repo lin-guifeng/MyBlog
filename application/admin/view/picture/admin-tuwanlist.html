@@ -139,11 +139,10 @@
             },
         });
     }
-
+    var page=1;
+    var callnum = '1553681240966';
     $("#btn_add").click(function () {
         layer.load('添加中');
-        var page=1;
-        var callnum = '1553681240966';
             $.ajax({
                 type: "get",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
@@ -152,12 +151,13 @@
                 success: function (res) {
                     layer.closeAll('loading');
                     console.log(res);
-                    // if(res.code=='1'){
+                    if(res.code=='1'){
                         page++;
                         callnum++;
-
-                        // parent.location="{:url('picture/tuwanList')}";
-                    // }
+                        $("#table").bootstrapTable("refresh", {
+                            silent: true //静态刷新
+                        });
+                    }
                 },
                 error : function(res) {
                     console.log(res);

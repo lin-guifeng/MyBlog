@@ -158,12 +158,12 @@ class Picture extends Common
 //        return;
 //        exit;
         $res = model('picture')->tuwanAdd($data);
-        echo $res;
-//        if($res){
-//            $this->success("批量添加图片成功","/admin/picture/tuwanList");
-//        }else{
-//            $this->error("批量添加图片失败","/admin/picture/tuwanList");
-//        }
+//        echo $res;
+        if($res){
+            $this->success("批量添加图片成功","/admin/picture/tuwanList");
+        }else{
+            $this->error("批量添加图片失败","/admin/picture/tuwanList");
+        }
     }
     //    兔玩网图片删除
     public function tuwanDel(){
