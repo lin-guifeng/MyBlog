@@ -75,6 +75,7 @@ class Common extends Controller
 
     public function getTuwan(){
         $html = [];
+        $htmls = [];
         $callnum = '1553681240966';
         for ($i=1;$i<=32;$i++){
 
@@ -93,7 +94,7 @@ class Common extends Controller
             $cons = json_decode($cons,true);
             $htmls = array_merge((array)$html,(array)$cons['data']);
         }
-//        return $res;
+        return $htmls;
     }
 
 }

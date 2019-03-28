@@ -154,14 +154,16 @@ class Picture extends Common
     //    批量导入兔玩网图片
     public function tuwanAdd(){
         if ($this->request->isPost()){
-            $ajaxData = $this->request->post();
-            $data = $this->getTuwan($ajaxData['keyword'],$ajaxData['num']);
-            $res=model('picture')->tuwanAdd($data);
-            if($res){
-                $this->success("批量添加图片成功","/admin/picture/tuwanList");
-            }else{
-                $this->error("批量添加图片失败","/admin/picture/tuwanList");
-            }
+//            $ajaxData = $this->request->post();
+//            $data = $this->getTuwan($ajaxData['keyword'],$ajaxData['num']);
+//            $res=model('picture')->tuwanAdd($data);
+//            if($res){
+//                $this->success("批量添加图片成功","/admin/picture/tuwanList");
+//            }else{
+//                $this->error("批量添加图片失败","/admin/picture/tuwanList");
+//            }
+            $data = $this->getTuwan();
+            dump($data);
         }
         return view('admin-tuwanadd');
     }
