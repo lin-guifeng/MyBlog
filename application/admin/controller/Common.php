@@ -86,7 +86,7 @@ class Common extends Controller
             $cons = file_get_contents($urls);
             $cons = substr($cons, strlen('(')+strpos($cons, '('),(strlen($cons) - strpos($cons, ')'))*(-1));
             $cons = json_decode($cons,true);
-            $res[$key]['tags'] = $cons['tags'];
+            $res[$key]['tags'] = json_encode($cons['tags']);
             $res[$key]['thumb'] = json_encode($cons['thumb']);
             $res[$key]['title'] = $cons['title'];
             $res[$key]['bgm'] = $cons['bgm'];
