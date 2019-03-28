@@ -66,7 +66,7 @@ class Picture extends Model
 
     public function tuwanData($page,$limit){
         $list = db('tuwan')
-            ->where('id,pid,title,pic,time')
+            ->field('id,pid,title,pic,time')
             ->page($page,$limit)
             ->order('id desc')
             ->select();
