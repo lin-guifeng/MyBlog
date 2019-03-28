@@ -97,7 +97,8 @@ class Common extends Controller
 //            $value['id']
             $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347145";
             $cons = file_get_contents($urls);
-//            $cons = json_decode($cons,true);
+            $cons = substr($cons, strlen('(')+strpos($cons, '('),(strlen($cons) - strpos($cons, ')'))*(-1));
+            $cons = json_decode($cons,true);
             $value['album'] = $cons;
 //            $htmls = array_merge((array)$html,(array)$cons['data']);
         }
