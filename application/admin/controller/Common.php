@@ -84,8 +84,8 @@ class Common extends Controller
         foreach($html['data'] as $key=>$value){
             $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
             $cons = file_get_contents($urls);
-            $cons = substr($cons, strlen('(')+strpos($cons, '('),(strlen($cons) - strpos($cons, ')'))*(-1));
-            $cons = json_decode($cons,true);
+//            $cons = substr($cons, strlen('(')+strpos($cons, '('),(strlen($cons) - strpos($cons, ')'))*(-1));
+//            $cons = json_decode($cons,true);
             $res[$key]['abc'] = $cons;
 //            $res[$key]['tags'] = json_encode($cons['tags']);
 //            $res[$key]['thumb'] = json_encode($cons['thumb']);
