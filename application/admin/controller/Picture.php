@@ -180,7 +180,7 @@ class Picture extends Common
         $arr = [
           '腿控','女仆','标准福利','兔女郎','旗袍','动漫类','JK制服','运动体操服','黑丝','御姐','网袜','肉丝','其他服装','萝莉','白丝','比基尼','巨乳','死库水','大福利','保守','游戏类','脚控','吊带袜','轻剧情','洛丽塔','丰满微胖'
         ];
-        $res = db('tuwan')->field('tags')->select();
+        $res = db('tuwan_copy')->field('tags')->select();
         foreach ($res as $key => $val){
             $val['tags'] = json_decode($val['tags']);
             if(is_object($val['tags'])){
@@ -192,7 +192,7 @@ class Picture extends Common
                 }
             }
             $val['tags'] = implode(',',$val['tags']);
-            $res = db('tuwan')->where('id',$key)->update(['tags' => $val['tags']]);
+            $res = db('tuwan')->where('id',$key+1)->update(['tags' => $val['tags']]);
         }
 
         dump($res);

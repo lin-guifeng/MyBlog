@@ -64,7 +64,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="5980" />
           <entry key="js" value="9" />
-          <entry key="php" value="6405" />
+          <entry key="php" value="6412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +72,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="5980" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="6405" />
+          <entry key="PHP" value="6412" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -99,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="511">
-              <caret line="194" column="47" selection-start-line="194" selection-start-column="47" selection-end-line="194" selection-end-column="47" />
+              <caret line="194" column="49" selection-start-line="194" selection-start-column="49" selection-end-line="194" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -1105,12 +1105,12 @@
       <workItem from="1553043713240" duration="24798000" />
       <workItem from="1553561558982" duration="25001000" />
       <workItem from="1553648566534" duration="15343000" />
-      <workItem from="1553734670552" duration="19821000" />
+      <workItem from="1553734670552" duration="19968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="537016000" />
+    <option name="totallyTimeSpent" value="537163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1451,7 +1451,7 @@
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
-          <caret line="194" column="47" selection-start-line="194" selection-start-column="47" selection-end-line="194" selection-end-column="47" />
+          <caret line="194" column="49" selection-start-line="194" selection-start-column="49" selection-end-line="194" selection-end-column="49" />
         </state>
       </provider>
     </entry>
