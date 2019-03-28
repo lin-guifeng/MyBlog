@@ -43,5 +43,9 @@ class Index extends Common
         phpinfo();
     }
 
+    public function test(){
+        echo "时间戳：".time();
+    }
+
 
 }

@@ -156,7 +156,7 @@ class Picture extends Common
 
         $callnum = '1553681240966';
         $data = [];
-        for ($i=9;$i<=16;$i++){
+        for ($i=1;$i<=16;$i++){
             $getData = $this->getTuwan($i,$callnum);
             $callnum++;
             $data = array_merge((array)$data,(array)$getData);
