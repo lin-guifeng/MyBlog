@@ -44,7 +44,9 @@ class Index extends Common
     }
 
     public function test(){
-        echo "时间戳：".time();
+        list($t1, $t2) = explode(' ', microtime());
+        $time = (float)sprintf('%.0f',(floatval($t1)+floatval($t2))*1000);
+        echo "时间戳：".$time;
     }
 
 
