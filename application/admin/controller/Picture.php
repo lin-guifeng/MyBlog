@@ -155,7 +155,8 @@ class Picture extends Common
     public function tuwanAdd(){
         $data = $this->getTuwan(1,'1553681240966');
         $res = model('picture')->tuwanAdd($data);
-        echo $res;
+        dump($data);
+        //        echo $res;
         return;
 //        if($res){
 //            $this->success("批量添加图片成功","/admin/picture/tuwanList");

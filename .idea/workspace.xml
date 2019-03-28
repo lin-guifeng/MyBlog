@@ -64,7 +64,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="5883" />
           <entry key="js" value="9" />
-          <entry key="php" value="5855" />
+          <entry key="php" value="5868" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +72,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="5883" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="5855" />
+          <entry key="PHP" value="5868" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -107,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="155" column="48" selection-start-line="155" selection-start-column="48" selection-end-line="155" selection-end-column="48" />
+            <state relative-caret-position="481">
+              <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -1110,12 +1110,12 @@
       <workItem from="1553043713240" duration="24798000" />
       <workItem from="1553561558982" duration="25001000" />
       <workItem from="1553648566534" duration="15343000" />
-      <workItem from="1553734670552" duration="8519000" />
+      <workItem from="1553734670552" duration="8677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="525714000" />
+    <option name="totallyTimeSpent" value="525872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1458,8 +1458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="155" column="48" selection-start-line="155" selection-start-column="48" selection-end-line="155" selection-end-column="48" />
+        <state relative-caret-position="481">
+          <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
         </state>
       </provider>
     </entry>
