@@ -190,6 +190,7 @@ class Picture extends Common
                     $vals = array_search($vals, $arr)+1;
                 }
             }
+            $val['tags'] = implode(',',$val['tags']);
 
 //            $data[$key]['tags'] = implode(',',$val['tags']);
         }
