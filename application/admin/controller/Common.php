@@ -77,16 +77,21 @@ class Common extends Controller
         $html = [];
         $htmls = [];
         $callnum = '1553681240966';
-        for ($i=1;$i<=32;$i++){
-
-
-            $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
-            $con = file_get_contents($url);
-            $con = json_decode($con,true);
-            $html = array_merge((array)$html,(array)$con['data']);
-
-            $callnum++;
-        }
+        $i=1;
+        $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
+        $con = file_get_contents($url);
+        $html = json_decode($con,true);
+//        $html = array_merge((array)$html,(array)$con['data']);
+//        for ($i=1;$i<=32;$i++){
+//
+//
+//            $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
+//            $con = file_get_contents($url);
+//            $con = json_decode($con,true);
+//            $html = array_merge((array)$html,(array)$con['data']);
+//
+//            $callnum++;
+//        }
 //        foreach($html as $key=>$value){
 ////            $value['id']
 //            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347145";
