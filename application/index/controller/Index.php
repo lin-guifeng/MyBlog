@@ -69,6 +69,13 @@ class Index extends Controller
         $this->assign('data',$data);
         return view('tuwan');
     }
+    public function tuwaninfo(){
+
+        $data = db('tuwan')->where('id',input('get.id'))->find();
+        $data['thumb'] = json_decode($data['thumb'],true);
+        $this->assign('data',$data['thumb']);
+        return view('tuwaninfo');
+    }
 
 
 }
