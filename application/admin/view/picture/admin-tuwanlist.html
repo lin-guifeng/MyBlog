@@ -145,7 +145,7 @@
         var page=1;
         var callnum = '1553681240966';
             $.ajax({
-                type: "POST",//方法类型
+                type: "get",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "{:url('picture/tuwanAdd')}" ,//url
                 data: { page: page,callnum: callnum },
