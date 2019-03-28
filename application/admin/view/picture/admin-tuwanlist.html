@@ -144,15 +144,16 @@
             },
         });
     }
-    var page=1;
-    var callnum = '1553681240966';
+    // var page=1;
+    // var callnum = '1553681240966';
     $("#btn_add").click(function () {
         layer.load('添加中');
             $.ajax({
                 type: "get",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "{:url('picture/tuwanAdd')}" ,//url
-                data: { page: page,callnum: callnum },
+                // data: { page: page,callnum: callnum },
+                data:{},
                 success: function (res) {
                     layer.closeAll('loading');
                     console.log(res);

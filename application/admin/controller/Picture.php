@@ -153,7 +153,15 @@ class Picture extends Common
     }
     //    批量导入兔玩网图片
     public function tuwanAdd(){
-        $data = $this->getTuwan(input('get.page'),input('get.callnum'));
+
+        $callnum = '1553681240966';
+        $data = [];
+        for ($i=1;$i<=32;$i++){
+            $getData = $this->getTuwan($i,$callnum);
+            $callnum++;
+            $data = array_merge((array)$data,(array)$getData);
+        }
+//        $data = $this->getTuwan(input('get.page'),input('get.callnum'));
 //        echo json_encode($data);
 //        return;
 //        exit;
