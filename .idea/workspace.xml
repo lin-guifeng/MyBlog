@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="192" column="24" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
+            <state relative-caret-position="481">
+              <caret line="184" column="57" selection-start-line="184" selection-start-column="57" selection-end-line="184" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -313,7 +313,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -1105,12 +1105,12 @@
       <workItem from="1553043713240" duration="24798000" />
       <workItem from="1553561558982" duration="25001000" />
       <workItem from="1553648566534" duration="15343000" />
-      <workItem from="1553734670552" duration="18539000" />
+      <workItem from="1553734670552" duration="18998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="535734000" />
+    <option name="totallyTimeSpent" value="536193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1450,8 +1450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="192" column="24" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="24" />
+        <state relative-caret-position="481">
+          <caret line="184" column="57" selection-start-line="184" selection-start-column="57" selection-end-line="184" selection-end-column="57" />
         </state>
       </provider>
     </entry>
