@@ -79,8 +79,8 @@ class Common extends Controller
         $callnum = '1553681240966';
         $i=1;
         $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
-        $con = file_get_contents($url);
-        $html = json_decode($con,true);
+        $html = file_get_contents($url);
+//        $html = json_decode($con,true);
 //        $html = array_merge((array)$html,(array)$con['data']);
 //        for ($i=1;$i<=32;$i++){
 //
