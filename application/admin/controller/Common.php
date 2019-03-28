@@ -77,32 +77,29 @@ class Common extends Controller
         $html = [];
         $htmls = [];
         $callnum = '1553681240966';
-//        $i=1;
-//        $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
-//        $con = file_get_contents($url);
-//        $con = substr($con,strpos($con,'(')+1);
-//        $con = substr($con, 0, -1);
-//
-//        $html = json_decode($con);
+        $i=1;
+        $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
+        $con = file_get_contents($url);
+        $con = substr($con,strpos($con,'(')+1);
+        $con = substr($con, 0, -1);
+        $html = json_decode($con);
 //        $html = array_merge((array)$html,(array)$con['data']);
-        for ($i=1;$i<=16;$i++){
-
-
-            $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
-            $con = file_get_contents($url);
-            $con = substr($con,strpos($con,'(')+1);
-            $con = substr($con, 0, -1);
-            $con = json_decode($con,true);
-            $html = array_merge((array)$html,(array)$con['data']);
-
-            $callnum++;
-        }
-        foreach($html as $key=>$value){
+//        for ($i=1;$i<=16;$i++){
+//            $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
+//            $con = file_get_contents($url);
+//            $con = substr($con,strpos($con,'(')+1);
+//            $con = substr($con, 0, -1);
+//            $con = json_decode($con,true);
+//            $html = array_merge((array)$html,(array)$con['data']);
+//            $callnum++;
+//        }
+        foreach($html as &$value){
 //            $value['id']
             $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347145";
             $cons = file_get_contents($urls);
-            $cons = json_decode($cons,true);
-            $htmls = array_merge((array)$html,(array)$cons['data']);
+//            $cons = json_decode($cons,true);
+            $value['album'] = $cons;
+//            $htmls = array_merge((array)$html,(array)$cons['data']);
         }
         return $html;
     }
