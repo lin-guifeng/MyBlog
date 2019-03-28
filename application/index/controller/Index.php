@@ -64,5 +64,11 @@ class Index extends Controller
         return view('daohang');
     }
 
+    public function tuwan(){
+        $data = db('tuwan')->field('id,pic')->select();
+        $this->assign('data',$data);
+        return view('tuwan');
+    }
+
 
 }

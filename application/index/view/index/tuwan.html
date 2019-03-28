@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 1000px;margin: 0 auto;background-color: #2A2E36;">
+        {volist name="data" id="vo"}
+        <div style="width: 250px;float: left;height: 300px;padding: 10px 20px;">
+            <img src="{$vo.pic}" alt="" style="width: 100%;overflow: hidden;">
+        </div>
+        {/volist}
+    </div>
+</body>
+</html>
