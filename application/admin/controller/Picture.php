@@ -191,7 +191,7 @@ class Picture extends Common
                 }
             }
 
-            $data[$key]['tags'] = implode(',',array_filter($val['tags']));
+            $data[$key]['tags'] = implode(',',$val['tags']);
         }
         dump($data);
     }
