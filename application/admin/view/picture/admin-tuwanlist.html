@@ -141,14 +141,14 @@
     }
 
     $("#btn_add").click(function () {
-
-            layer.load('添加中');
-
+        layer.load('添加中');
+        var page=1;
+        var callnum = '1553681240966';
             $.ajax({
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "{:url('picture/tuwanAdd')}" ,//url
-                data: $('#form1').serialize(),
+                data: { page: page,callnum: callnum },
                 success: function (res) {
                     layer.closeAll('loading');
                     console.log(res);
