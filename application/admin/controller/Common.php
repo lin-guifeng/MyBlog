@@ -87,7 +87,7 @@ class Common extends Controller
             $cons = substr($cons, 0, -1);
             $cons = json_decode($cons,true);
 //            $res[$key]['abc'] = $cons;
-            $res[$key]['pic'] = json_encode($value['pic']);
+            $res[$key]['pic'] = $value['pic'];
             $res[$key]['tags'] = json_encode($cons['tags']);
             $res[$key]['thumb'] = json_encode($cons['thumb']);
             $res[$key]['title'] = $cons['title'];
