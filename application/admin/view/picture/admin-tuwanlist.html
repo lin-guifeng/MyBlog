@@ -141,12 +141,28 @@
     }
 
     $("#btn_add").click(function () {
-        layer.open({
-            type: 2,
-            title: '导入',
-            area: ['800px', '90%'],
-            content: '{:url("Picture/tuwanAdd")}'
-        });
+
+            layer.load('添加中');
+
+            $.ajax({
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "{:url('picture/tuwanAdd')}" ,//url
+                data: $('#form1').serialize(),
+                success: function (res) {
+                    layer.closeAll('loading');
+                    console.log(res);
+                    // if(res.code=='1'){
+                    //     parent.location="{:url('picture/tuwanList')}";
+                    // }
+                },
+                error : function(res) {
+                    console.log(res);
+                    layer.closeAll('loading');
+                    layer.msg("数据异常！");
+                }
+            });
+
     })
     $("#btn_edit").click(function () {
         var i = 0;

@@ -64,6 +64,26 @@ class Picture extends Model
         return $res;
     }
 
+    public function tuwanData($page,$limit){
+        $list = db('tuwan')
+            ->page($page,$limit)
+            ->order('id desc')
+            ->select();
+        $count = db('tuwan')->count();
+        $res = [
+            'rows' => $list,
+            'total' => $count,
+        ];
+        return $res;
+    }
+    public function tuwanAdd($data){
+        $res=db('tuwan')->insertAll($data);
+        return $res;
+    }
+
+
+
+
 
     public function groupData($page,$limit){
         $list = db('group')
