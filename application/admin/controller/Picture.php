@@ -154,7 +154,7 @@ class Picture extends Common
     //    批量导入兔玩网图片
     public function tuwanAdd(){
         $data = $this->getTuwan(1,'1553681240966');
-        $res = model('picture')->tuwanAdd($data);
+//        $res = model('picture')->tuwanAdd($data);
         dump($data);
         //        echo $res;
         return;
