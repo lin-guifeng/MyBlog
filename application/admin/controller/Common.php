@@ -85,7 +85,7 @@ class Common extends Controller
 //
 //        $html = json_decode($con);
 //        $html = array_merge((array)$html,(array)$con['data']);
-        for ($i=1;$i<=32;$i++){
+        for ($i=1;$i<=16;$i++){
 
 
             $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
