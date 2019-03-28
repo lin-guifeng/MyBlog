@@ -182,7 +182,7 @@ class Picture extends Common
         ];
 
         $res = db('tuwan')->field('tags')->select();
-        foreach ($res as $key => $val){
+        foreach ($res as &$val){
 
             $val['tags'] = json_decode($val['tags']);
             foreach ($val['tags'] as &$vals){
