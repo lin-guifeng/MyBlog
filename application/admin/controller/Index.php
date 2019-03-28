@@ -53,7 +53,10 @@ class Index extends Common
 //        $time = (float)sprintf('%.0f',(floatval($t1)+floatval($t2))*1000);
 //        echo "时间戳：".$time;
         dump($arr);
-        $res = db('tuwan_tags')->insertAll($arr);
+        foreach ($arr as $val){
+            $res = db('tuwan_tags')->insert(['name'=>$val]);
+        }
+
 
         dump($res);
 
