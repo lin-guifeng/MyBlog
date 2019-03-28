@@ -52,6 +52,7 @@ class Index extends Common
 //        list($t1, $t2) = explode(' ', microtime());
 //        $time = (float)sprintf('%.0f',(floatval($t1)+floatval($t2))*1000);
 //        echo "时间戳：".$time;
+        dump($arr);
         $res = db('tuwan_tags')->insertAll($arr);
 
         dump($res);
