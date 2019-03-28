@@ -152,9 +152,12 @@
                 success: function (res) {
                     layer.closeAll('loading');
                     console.log(res);
-                    // if(res.code=='1'){
-                    //     parent.location="{:url('picture/tuwanList')}";
-                    // }
+                    if(res.code=='1'){
+                        page++;
+                        callnum++;
+
+                        // parent.location="{:url('picture/tuwanList')}";
+                    }
                 },
                 error : function(res) {
                     console.log(res);

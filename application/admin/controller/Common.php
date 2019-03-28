@@ -74,7 +74,6 @@ class Common extends Controller
     }
 
     public function getTuwan($i,$callnum){
-
         $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=".$callnum;
         $con = file_get_contents($url);
         $con = substr($con,strpos($con,'(')+1);
@@ -86,16 +85,15 @@ class Common extends Controller
             $cons = file_get_contents($urls);
             $cons = substr($cons,strpos($cons,'(')+1);
             $cons = substr($cons, 0, -1);
-//            $cons = substr($cons, strlen('(')+strpos($cons, '('),(strlen($cons) - strpos($cons, ')'))*(-1));
             $cons = json_decode($cons,true);
-            $res[$key]['abc'] = $cons;
-//            $res[$key]['tags'] = json_encode($cons['tags']);
-//            $res[$key]['thumb'] = json_encode($cons['thumb']);
-//            $res[$key]['title'] = $cons['title'];
-//            $res[$key]['bgm'] = $cons['bgm'];
-//            $res[$key]['bgm_name'] = $cons['bgm_name'];
-//            $res[$key]['bgm_img'] = $cons['bgm_img'];
-//            $res[$key]['pid'] = $cons['id'];
+//            $res[$key]['abc'] = $cons;
+            $res[$key]['tags'] = json_encode($cons['tags']);
+            $res[$key]['thumb'] = json_encode($cons['thumb']);
+            $res[$key]['title'] = $cons['title'];
+            $res[$key]['bgm'] = $cons['bgm'];
+            $res[$key]['bgm_name'] = $cons['bgm_name'];
+            $res[$key]['bgm_img'] = $cons['bgm_img'];
+            $res[$key]['pid'] = $cons['id'];
         }
         return $res;
     }
