@@ -74,29 +74,36 @@ class Common extends Controller
     }
 
     public function getTuwan($i){
-        $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=pc&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=1553681240966";
-        $con = file_get_contents($url);
-        $con = substr($con,strpos($con,'(')+1);
-        $con = substr($con, 0, -1);
-        $html = json_decode($con,true);
+//        $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=wap&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=1553681240966";
+//        $con = file_get_contents($url);
+//        $con = substr($con,strpos($con,'(')+1);
+//        $con = substr($con, 0, -1);
+//        $html = json_decode($con,true);
         $res = [];
-        foreach($html['data'] as $key=>$value){
-            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
+        $html = [];
+//        foreach($html['data'] as $key=>$value){
+        for($i=1;$i++;$i<=1000){
+//            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
+            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$i."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
             $cons = file_get_contents($urls);
             $cons = substr($cons,strpos($cons,'(')+1);
             $cons = substr($cons, 0, -1);
             $cons = json_decode($cons,true);
-//            $res[$key]['abc'] = $cons;
-            $res[$key]['pic'] = $value['pic'];
-            $res[$key]['tags'] = json_encode($cons['tags']);
-            $res[$key]['thumb'] = json_encode($cons['thumb']);
-            $res[$key]['title'] = $cons['title'];
-            $res[$key]['bgm'] = $cons['bgm'];
-            $res[$key]['bgm_name'] = $cons['bgm_name'];
-            $res[$key]['bgm_img'] = $cons['bgm_img'];
-            $res[$key]['pid'] = $cons['id'];
+            if($cons['error']=='0'&&$cons['thumb']!='null'){
+//                $html['data'] = json_encode($cons['data']);
+                $html = array_merge((array)$html,(array)$cons['id']);
+            }
+//            $res[$key]['pic'] = $value['pic'];
+//            $res[$key]['tags'] = json_encode($cons['tags']);
+//            $res[$key]['thumb'] = json_encode($cons['thumb']);
+//            $res[$key]['title'] = $cons['title'];
+//            $res[$key]['bgm'] = $cons['bgm'];
+//            $res[$key]['bgm_name'] = $cons['bgm_name'];
+//            $res[$key]['bgm_img'] = $cons['bgm_img'];
+//            $res[$key]['pid'] = $cons['id'];
+//            $res[$key]['data'] = json_encode($cons['data']);
         }
-        return $res;
+        return $html;
     }
 
 }
