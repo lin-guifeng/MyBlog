@@ -73,7 +73,7 @@ class Common extends Controller
         return $res;
     }
 
-    public function getTuwan($i){
+    public function getTuwan(){
 //        $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=wap&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=1553681240966";
 //        $con = file_get_contents($url);
 //        $con = substr($con,strpos($con,'(')+1);
