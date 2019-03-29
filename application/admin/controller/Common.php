@@ -93,7 +93,7 @@ class Common extends Controller
             $cons = substr($cons, 0, -1);
             $cons = json_decode($cons,true);
             if($cons['error']=='0'){
-                $res['pic'] = $cons['pic'];
+//                $res['pic'] = $cons['pic'];
                 $res['id'] = $cons['id'];
                 $html = array_merge((array)$html,(array)$cons['id']);
 
