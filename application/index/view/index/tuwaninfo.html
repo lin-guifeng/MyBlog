@@ -10,6 +10,35 @@
     <link rel="stylesheet" type="text/css" href="/static/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/static/swiper-4.5.0/dist/css/swiper.min.css">
     <script src="/static/swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+        .gallery-thumbs .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 <!-- Swiper -->
