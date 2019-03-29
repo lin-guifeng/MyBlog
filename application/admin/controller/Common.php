@@ -82,7 +82,7 @@ class Common extends Controller
         $res = [];
         $html = [];
 //        foreach($html['data'] as $key=>$value){
-        for($i=1;$i++;$i<=50){
+        for($i=1;$i<=100;$i++){
             $key = urlencode($i);
 //            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
             $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$key."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
