@@ -82,7 +82,7 @@ class Common extends Controller
         $res = [];
         $html = [];
 //        foreach($html['data'] as $key=>$value){
-        for($i=1;$i<=100;$i++){
+        for($i=1;$i<=1600;$i++){
             $key = urlencode($i);
 //            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
             $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$key."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
@@ -93,7 +93,8 @@ class Common extends Controller
             $cons = substr($cons, 0, -1);
             $cons = json_decode($cons,true);
             if($cons['error']=='0'){
-
+                $res['pic'] = $cons['pic'];
+                $res['id'] = $cons['id'];
                 $html = array_merge((array)$html,(array)$cons['id']);
 
 //                $html['data'] = json_encode($cons['data']);
