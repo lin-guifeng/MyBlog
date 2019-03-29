@@ -92,7 +92,7 @@ class Common extends Controller
             $cons = substr($cons,strpos($cons,'(')+1);
             $cons = substr($cons, 0, -1);
             $cons = json_decode($cons,true);
-            if($cons['error']=='0'&&isset($cons['thumb'])){
+            if($cons['error']=='0'){
 
                 $html = array_merge((array)$html,(array)$cons['id']);
 
