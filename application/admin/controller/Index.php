@@ -58,7 +58,7 @@ class Index extends Common
 //            $res = db('tuwan_tags')->insert(['name'=>$val]);
 //        }
 
-        $res = $this->getTuwan($i);
+        $res = $this->getTuwan();
         dump($res);
 
     }
