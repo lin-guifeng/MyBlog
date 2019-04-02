@@ -26,11 +26,11 @@
             data: { page: page },
             success: function (res) {
                 console.log(res);
-                // if(res.code=='1'){
-                //     html = "<p>插入第"+page+"批数据成功："+res.data+"</p>";
-                //     $('.tip').append(html);
-                //     page++;
-                // }
+                if(res.code=='1'){
+                    html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
+                    $('.tip').append(html);
+                    page++;
+                }
             },
         });
     }
