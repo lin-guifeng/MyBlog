@@ -116,7 +116,7 @@ class Common extends Controller
         return $html;
     }
     public function getTuwans($num){
-        $start = ($num-1)*100+$num;
+        $start = ($num-1)*100+1;
         $end = $num*100;
         $html=[];
         for($i=$start;$i<=$end;$i++){
