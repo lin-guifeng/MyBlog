@@ -59,14 +59,14 @@ class Index extends Common
 //        }
         if ($this->request->isPost()){
             $page = $this->request->post('page');
-            $data=db('tuwan_url')->limit($page,500)->select();
+            $data=db('tuwan_url')->limit($page,100)->select();
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
                 if($val['text']!=null){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
-                        $res[$key] = $val['text'];
+//                        $res[$key] = $val['text'];
                         $res[$key]['pic'] = $val['text']['pic'];
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
