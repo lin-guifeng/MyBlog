@@ -60,12 +60,15 @@ class Index extends Common
         if ($this->request->isPost()){
             $page = $this->request->post('page');
             $data=db('tuwan_url')->limit($page,100)->select();
-            foreach ($data as &$val){
+            foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
+                if($val['text']!=null&&$val['text']['error']!='1'){
+                    $res[$key] = $val['text'];
+                }
             }
-            return $data;
+            return $res;
 //            if($res){
 //                return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
 //            }else{
