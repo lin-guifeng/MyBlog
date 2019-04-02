@@ -58,13 +58,17 @@ class Index extends Common
 //            $res = db('tuwan_tags')->insert(['name'=>$val]);
 //        }
         if ($this->request->isPost()){
-            $data = $this->getTuwans($this->request->post('page'));
-            $res=db('tuwan_url')->insertAll($data);
-            if($res){
-                return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
-            }else{
-                return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
+            $page = $this->request->post('page');
+            $data=db('tuwan_url')->limit($page,100)->select();
+            foreach ($data as &$val){
+                $val['text'] = json_decode($val['text'],true);
             }
+            echo $data;
+//            if($res){
+//                return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
+//            }else{
+//                return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
+//            }
         }
 
         return view('test');

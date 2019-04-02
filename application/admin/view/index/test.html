@@ -10,7 +10,7 @@
     <link href="/static/admin/css/font-awesome.css?v=4.4.0" rel="stylesheet">
 </head>
 <body>
-    <button type="button" class="btn btn-primary" onclick="status()">点击</button>
+    <button type="button" class="btn btn-primary btn-lg" onclick="status()">点击</button>
     <div class="tip"></div>
 </body>
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
@@ -26,11 +26,11 @@
             data: { page: page },
             success: function (res) {
                 console.log(res);
-                if(res.code=='1'){
-                    html = "<p>插入第"+page+"批数据成功："+res.data+"</p>";
-                    $('.tip').append(html);
-                    page++;
-                }
+                // if(res.code=='1'){
+                //     html = "<p>插入第"+page+"批数据成功："+res.data+"</p>";
+                //     $('.tip').append(html);
+                //     page++;
+                // }
             },
         });
     }
