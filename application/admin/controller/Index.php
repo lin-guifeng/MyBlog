@@ -59,7 +59,9 @@ class Index extends Common
 //        }
         if ($this->request->isPost()){
             $page = $this->request->post('page');
-            $data=db('tuwan_url')->limit($page,100)->select();
+            $num = 100;
+            $start = ($page-1)*$num;
+            $data=db('tuwan_url')->limit($start,$num)->select();
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
@@ -79,12 +81,13 @@ class Index extends Common
                     }
                 }
             }
-            return $res;
-//            if($res){
-//                return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
-//            }else{
-//                return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
-//            }
+            $tuwan=db('tuwan')->insertAll($res);
+//            return $res;
+            if($tuwan){
+                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
+            }else{
+                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
+            }
         }
 
         return view('test');
