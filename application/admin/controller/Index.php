@@ -59,7 +59,7 @@ class Index extends Common
 //        }
         if ($this->request->isPost()){
             $page = $this->request->post('page');
-            $data=db('tuwan_url')->limit($page,100)->select();
+            $data=db('tuwan_url')->limit($page,500)->select();
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
@@ -67,6 +67,15 @@ class Index extends Common
                 if($val['text']!=null){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         $res[$key] = $val['text'];
+                        $res[$key]['pic'] = $val['text']['pic'];
+                        $res[$key]['tags'] = json_encode($val['text']['tags']);
+                        $res[$key]['thumb'] = json_encode($val['text']['thumb']);
+                        $res[$key]['title'] = $val['text']['title'];
+                        $res[$key]['bgm'] = $val['text']['bgm'];
+                        $res[$key]['bgm_name'] = $val['text']['bgm_name'];
+                        $res[$key]['bgm_img'] = $val['text']['bgm_img'];
+                        $res[$key]['pid'] = $val['text']['id'];
+                        $res[$key]['data'] = json_encode($val['text']['data']);
                     }
                 }
             }
