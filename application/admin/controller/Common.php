@@ -82,25 +82,27 @@ class Common extends Controller
         $res = [];
         $html = [];
 //        foreach($html['data'] as $key=>$value){
-        for($i=1;$i<=100;$i++){
+        for($i=1;$i<=3000;$i++){
             $key = urlencode($i);
 //            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
             $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$key."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
             $urls = preg_replace("/ /", "%20", $urls);
 //            $cons = file_get_contents($urls);
-            $cons = get( $urls, $_header = NULL );
-            $cons = substr($cons,strpos($cons,'(')+1);
-            $cons = substr($cons, 0, -1);
-            $cons = json_decode($cons,true);
-            if($cons['error']=='0'){
-                if (isset($cons['pic'])){$res['pic'] = $cons['pic'];}
-                $res['thumb'] = json_encode($cons['thumb']);
-                $res['id'] = $cons['id'];
-                $html = array_merge((array)$html,(array)$res);
+            $html[$i] = get($urls);
+
+
+//            $cons = substr($cons,strpos($cons,'(')+1);
+//            $cons = substr($cons, 0, -1);
+//            $cons = json_decode($cons,true);
+//            if($cons['error']=='0'){
+//                if (isset($cons['pic'])){$res['pic'] = $cons['pic'];}
+//                $res['thumb'] = json_encode($cons['thumb']);
+//                $res['id'] = $cons['id'];
+//                $html = array_merge((array)$html,(array)$res);
 
 //                $html['data'] = json_encode($cons['data']);
 
-            }
+//            }
 //            $res[$key]['pic'] = $value['pic'];
 //            $res[$key]['tags'] = json_encode($cons['tags']);
 //            $res[$key]['thumb'] = json_encode($cons['thumb']);
