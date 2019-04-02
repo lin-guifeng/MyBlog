@@ -120,12 +120,7 @@ class Common extends Controller
         $end = $num*100;
         $html=[];
         for($i=$start;$i<=$end;$i++){
-            $key = [
-                'type'=>'image',
-                'dpr'=>3,
-                'id'=>$i,
-            ];
-            $urls = "https://api.tuwan.com/apps/Welfare/detail?"+ urlencode($key);
+            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$i;
             $html = array_merge((array)$html,(array)get($urls));
         }
         return $html;
