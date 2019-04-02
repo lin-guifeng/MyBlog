@@ -63,7 +63,7 @@ class Index extends Common
             foreach ($data as &$val){
                 $val['text'] = json_decode($val['text'],true);
             }
-            echo $data;
+            return $data;
 //            if($res){
 //                return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
 //            }else{
