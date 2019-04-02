@@ -118,10 +118,13 @@ class Common extends Controller
     public function getTuwans($num){
         $start = ($num-1)*100+$num;
         $end = $num*100;
-        $res=[];
+        $html=[];
         for($i=$start;$i<=$end;$i++){
             $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$i;
-            $res[$i]['text'] = array_merge((array)$res[$i]['text'],(array)get($urls));
+            $html = array_merge((array)$html,(array)get($urls));
+        }
+        foreach($html as $key=>$value){
+            $res[$key]['text'] = $value;
         }
         return $res;
     }
