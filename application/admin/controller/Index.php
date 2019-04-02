@@ -67,15 +67,15 @@ class Index extends Common
                 if($val['text']!=null){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
 //                        $res[$key] = $val['text'];
-                        $res[$key]['pic'] = $val['text']['pic'];
-                        $res[$key]['tags'] = json_encode($val['text']['tags']);
+//                        $res[$key]['pic'] = $val['text']['pic'];
+//                        $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
-                        $res[$key]['title'] = $val['text']['title'];
-                        $res[$key]['bgm'] = $val['text']['bgm'];
-                        $res[$key]['bgm_name'] = $val['text']['bgm_name'];
-                        $res[$key]['bgm_img'] = $val['text']['bgm_img'];
-                        $res[$key]['pid'] = $val['text']['id'];
-                        $res[$key]['data'] = json_encode($val['text']['data']);
+//                        $res[$key]['title'] = $val['text']['title'];
+//                        $res[$key]['bgm'] = $val['text']['bgm'];
+//                        $res[$key]['bgm_name'] = $val['text']['bgm_name'];
+//                        $res[$key]['bgm_img'] = $val['text']['bgm_img'];
+//                        $res[$key]['pid'] = $val['text']['id'];
+//                        $res[$key]['data'] = json_encode($val['text']['data']);
                     }
                 }
             }
