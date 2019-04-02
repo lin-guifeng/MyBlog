@@ -64,8 +64,10 @@ class Index extends Common
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
-                if($val['text']!=null&&$val['text']['error']!='1'){
-                    $res[$key] = $val['text'];
+                if($val['text']!=null){
+                    if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
+                        $res[$key] = $val['text'];
+                    }
                 }
             }
             return $res;
