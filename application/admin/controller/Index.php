@@ -81,13 +81,13 @@ class Index extends Common
                     }
                 }
             }
-            $tuwan=db('tuwan')->insertAll($res);
-//            return $res;
-            if($tuwan){
-                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
-            }else{
-                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
-            }
+//            $tuwan=db('tuwan')->insertAll($res);
+            return $res;
+//            if($tuwan){
+//                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
+//            }else{
+//                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
+//            }
         }
 
         return view('test');
