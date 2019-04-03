@@ -197,6 +197,109 @@ class Picture extends Common
         dump($res);
     }
 
+    public function tuwan(){
+        return view("admin-tuwanoperation");
+    }
+    public function tuwan_a(){
+        if ($this->request->isPost()){
+            $num = $this->request->post('num');
+            $start = ($num-1)*100+1;
+            $end = $num*100;
+            $html=[];
+            for($i=$start;$i<=$end;$i++){
+                $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$i;
+                $html = array_merge((array)$html,(array)get($urls));
+            }
+            foreach($html as $key=>$value){
+                $res[$key]['text'] = $value;
+
+            }
+
+            return $res;
+//            if($tuwan){
+//                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
+//            }else{
+//                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
+//            }
+        }
+    }
+    public function tuwan_b(){
+
+        if ($this->request->isPost()){
+            $page = $this->request->post('page');
+//        $page = 1;
+            $num = 100;
+            $start = ($page-1)*$num;
+            $data=db('tuwan')->limit($start,$num)->select();
+            foreach ($data as $key => $val){
+                $picData = json_decode($val['data']);
+                $res[$key]['id'] = $val['id'];
+                $thumb = json_decode($val['thumb']);
+                $data_pic = json_decode(json_encode($picData['0']),TRUE);
+                $details = [];
+                for ($i=0;$i<count($thumb);$i++){
+                    $result = substr($data_pic['thumb'],0,strrpos($data_pic['thumb'],"/u/"));
+
+                    $a = "http://img4.tuwandata.com/v3/thumb/jpg/";
+                    $b = substr($thumb[$i],39,6);
+                    $c = substr($result,45);
+                    $d = substr($thumb[$i],strpos($data_pic['thumb'],"/u/"));
+                    $details[$i] = $a.$b.$c.$d;
+                }
+                $res[$key]['details'] = $details;
+            }
+
+//            $tuwan=db('tuwan')->saveAll($res);
+            return $res;
+//            if($tuwan){
+//                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
+//            }else{
+//                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
+//            }
+        }
+
+        return view('test');
+
+    }
+    public function tuwan_c(){
+
+        if ($this->request->isPost()){
+            $page = $this->request->post('page');
+//        $page = 1;
+            $num = 100;
+            $start = ($page-1)*$num;
+            $data=db('tuwan')->limit($start,$num)->select();
+            foreach ($data as $key => $val){
+                $picData = json_decode($val['data']);
+                $res[$key]['id'] = $val['id'];
+                $thumb = json_decode($val['thumb']);
+                $data_pic = json_decode(json_encode($picData['0']),TRUE);
+                $details = [];
+                for ($i=0;$i<count($thumb);$i++){
+                    $result = substr($data_pic['thumb'],0,strrpos($data_pic['thumb'],"/u/"));
+
+                    $a = "http://img4.tuwandata.com/v3/thumb/jpg/";
+                    $b = substr($thumb[$i],39,6);
+                    $c = substr($result,45);
+                    $d = substr($thumb[$i],strpos($data_pic['thumb'],"/u/"));
+                    $details[$i] = $a.$b.$c.$d;
+                }
+                $res[$key]['details'] = $details;
+            }
+
+//            $tuwan=db('tuwan')->saveAll($res);
+            return $res;
+//            if($tuwan){
+//                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
+//            }else{
+//                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
+//            }
+        }
+
+        return view('test');
+
+    }
+
 
 
 }
