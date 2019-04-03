@@ -58,20 +58,11 @@ class Index extends Common
             foreach ($data as $key => $val){
                 $res[$key]['data'] = json_decode($val['data']);
                 $res[$key]['id'] = $val['id'];
-                $res[$key]['thumb'] = $val['thumb'];
+                 = json_decode($val['thumb']);
                 $data_pic = json_decode($val['data'])['0'];
 
-//                $res[$key]['a'] = [
-//                'pic' => $picdata[0]['pic'],
-//                'ratio' => $picdata[0]['ratio'],
-//                'thumb' => $picdata[0]['thumb'],
-//                ];
-                $thumb = json_decode($val['thumb']);
-
-                for ($i=3;$i<count($thumb);$i++){
+                for ($i=3;$i<count($res[$key]['thumb']);$i++){
                     array_push($res[$key]['data'],$data_pic);
-//                    [] = ;
-
 
                 }
             }
