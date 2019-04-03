@@ -56,7 +56,7 @@ class Index extends Common
             $picdata = [];
             $thumb = [];
             foreach ($data as $key => $val){
-                $res[$key]['data'] = json_decode($val['data'])['0']['pic'];
+                $res[$key]['a'] = json_decode($val['data'])['0'];
 
 //                $res[$key]['a'] = [
 //                'pic' => $picdata[0]['pic'],
