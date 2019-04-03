@@ -60,12 +60,14 @@ class Index extends Common
 
 
                 $data_pic = $res[$key]['data']['0'];
+
                 for ($i=3;$i<count($res[$key]['thumb']);$i++){
                     array_push($res[$key]['data'],$data_pic);
                 }
-                foreach ($res[$key]['data'] as $k=>$v){
-                    $res[$key]['data'][$k] = json_decode(json_encode($v),TRUE);
+                for ($i=0;$i<count($res[$key]['thumb']);$i++){
+                    $res[$key]['data'][$i] = json_decode(json_encode($res[$key]['data'][$i]),TRUE);
                 }
+
 
             }
 
