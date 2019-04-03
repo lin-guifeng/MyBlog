@@ -70,7 +70,7 @@ class Index extends Common
 
             }
 //            $tuwan=db('tuwan')->saveAll($res);
-            return $data_pic;
+            return $data_pic['pic'];
 //            if($tuwan){
 //                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
 //            }else{
