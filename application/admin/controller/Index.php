@@ -57,17 +57,48 @@ class Index extends Common
                 $res[$key]['data'] = json_decode($val['data']);
                 $res[$key]['id'] = $val['id'];
                 $res[$key]['thumb'] = json_decode($val['thumb']);
-
-
-                $data_pic = $res[$key]['data']['0'];
-
-                for ($i=3;$i<count($res[$key]['thumb']);$i++){
-                    array_push($res[$key]['data'],$data_pic);
-                }
+//                $data_pic = $res[$key]['data']['0'];
+                $data_pic = json_decode(json_encode($res[$key]['data']['0']),TRUE);
+                $details = [];
                 for ($i=0;$i<count($res[$key]['thumb']);$i++){
-                    $res[$key]['data'][$i] = json_decode(json_encode($res[$key]['data'][$i]),TRUE);
-                }
+                    $result = substr($data_pic['thumb'],0,strrpos($data_pic['thumb'],"/u/"));
 
+                    $a = "http://img4.tuwandata.com/v3/thumb/jpg/";
+                    $b = substr($res[$key]['thumb'][$i],39,6);
+                    $c = substr($result,45);
+
+                    $d = substr($res[$key]['thumb'][$i],strpos($data_pic['thumb'],"/u/"));
+
+//                    substr($data_pic['thumb'],45,10);
+                    $details[$i] = $a.$b.$c.$d;
+
+
+                }
+                $res[$key]['details'] = $details;
+
+//                $thumb = "http://img4.tuwandata.com/v3/thumb/jpg/NjY3Yi
+//                wx
+//                NTgsMTU4LDksMywxLC0xLE5PTkUsLCw5MA==
+//                /u/GLDM9lMIBglnFv7YKftLBup2YNoaaYyHpxtx61x7TAw1OhW9opuBDHVRaFUe3iYEeQ513PSMuLSI75j8NhJhKlP4rC8ibQimQcXA1kBsLKMq.jpg";
+//                $pic = "http://img4.tuwandata.com/v3/thumb/jpg/NjY3Yi
+//                wx
+//                MTI1LDAsOSwzLDEsLTEsTk9ORSwsLDkw
+//                /u/GLDM9lMIBglnFv7YKftLBup2YNoaaYyHpxtx61x7TAw1OhW9opuBDHVRaFUe3iYEeQ513PSMuLSI75j8NhJhKlP4rC8ibQimQcXA1kBsLKMq.jpg";
+//
+//                $thumb1 = "http://img4.tuwandata.com/v3/thumb/jpg/MTAzYi
+//                wx
+//                NTgsMTU4LDksMywxLC0xLE5PTkUsLCw5MA==
+//                /u/GLDM9lMIBglnFv7YKftLBup2YNoaaYyHpxtx61x7TAwNMgPjWt2elOIjcIGdkGANKeN3E876CqrbmJ0fnbH7ytmLutT4f0irFJ9NCwe5k9mE.jpg";
+//                $pic1 = "http://img4.tuwandata.com/v3/thumb/jpg/MTAzYi
+//                w2MzksMCw5LDMsMSwtMSxOT05FLCwsOTA=
+//                /u/GLDM9lMIBglnFv7YKftLBup2YNoaaYyHpxtx61x7TAwNMgPjWt2elOIjcIGdkGANKeN3E876CqrbmJ0fnbH7ytmLutT4f0irFJ9NCwe5k9mE.jpg";
+//
+//                $thumb2 = "http://img4.tuwandata.com/v3/thumb/jpg/Zjg2OC
+//                wx
+//                NTgsMTU4LDksMywxLC0xLE5PTkUsLCw5MA==/u/GLDM9lMIBglnFv7YKftLBGMPjX1086xD88jhANdH32N9vAKmqokJp9GP4c3ZLIDhIoF82NYCkRyrST60Bq6F7qw87ab4Ajxdfkbb2fhdfKeA.jpg";
+//                $pic2 = "http://img4.tuwandata.com/v3/thumb/jpg/Zjg2OC
+//                wx
+//                MDAwLDAsOSwzLDEsLTEsTk9ORSwsLDkw/u/GLDM9lMIBglnFv7YKftLBGMPjX1086xD88jhANdH32N9vAKmqokJp9GP4c3ZLIDhIoF82NYCkRyrST60Bq6F7qw87ab4Ajxdfkbb2fhdfKeA.jpg";
 
             }
 

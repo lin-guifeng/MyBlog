@@ -65,7 +65,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="6458" />
           <entry key="js" value="9" />
-          <entry key="php" value="7703" />
+          <entry key="php" value="7946" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -73,7 +73,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="6458" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="7703" />
+          <entry key="PHP" value="7946" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -94,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="67" column="91" selection-start-line="67" selection-start-column="91" selection-end-line="67" selection-end-column="91" />
+            <state relative-caret-position="1261">
+              <caret line="100" column="167" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="100" selection-end-column="167" />
               <folding>
                 <element signature="e#38#60#0#PHP" expanded="true" />
               </folding>
@@ -318,7 +318,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -1121,12 +1121,12 @@
       <workItem from="1553734670552" duration="25662000" />
       <workItem from="1553821186436" duration="8641000" />
       <workItem from="1554168788977" duration="15841000" />
-      <workItem from="1554255085839" duration="12090000" />
+      <workItem from="1554255085839" duration="17083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="579429000" />
+    <option name="totallyTimeSpent" value="584422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1447,8 +1447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="67" column="91" selection-start-line="67" selection-start-column="91" selection-end-line="67" selection-end-column="91" />
+        <state relative-caret-position="1261">
+          <caret line="100" column="167" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="100" selection-end-column="167" />
           <folding>
             <element signature="e#38#60#0#PHP" expanded="true" />
           </folding>
