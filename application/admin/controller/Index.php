@@ -60,10 +60,11 @@ class Index extends Common
                 $res[$key]['id'] = $val['id'];
                 $res[$key]['thumb'] = json_decode($val['thumb']);
                 $data_pic = json_decode($val['data'])['0'];
+                $data_pic = json_decode($data_pic);
                 for ($i=3;$i<count($res[$key]['thumb']);$i++){
-                    array_push($res[$key]['data'],$data_pic['pic']);
+                    array_push($res[$key]['data'],$data_pic);
                 }
-              
+
             }
 //            $tuwan=db('tuwan')->saveAll($res);
             return $res;
