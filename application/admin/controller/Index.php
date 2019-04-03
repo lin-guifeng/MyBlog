@@ -47,8 +47,9 @@ class Index extends Common
 //    测试页面
     public function test(){
 
-        if ($this->request->isPost()){
-            $page = $this->request->post('page');
+//        if ($this->request->isPost()){
+//            $page = $this->request->post('page');
+        $page = 1;
             $num = 10;
             $start = ($page-1)*$num;
             $data=db('tuwan')->limit($start,$num)->select();
@@ -69,16 +70,17 @@ class Index extends Common
 //                }
 
             }
+            dump($data_pic);
 //            $tuwan=db('tuwan')->saveAll($res);
-            return $data_pic['pic'];
+//            return $data_pic;
 //            if($tuwan){
 //                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
 //            }else{
 //                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
 //            }
-        }
+//        }
 
-        return view('test');
+//        return view('test');
 
     }
 
