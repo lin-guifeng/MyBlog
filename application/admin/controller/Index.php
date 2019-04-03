@@ -70,7 +70,7 @@ class Index extends Common
 //                }
 
             }
-        $data_pic = json_decode(json_encode(simplexml_load_string($data_pic)),TRUE);
+        $data_pic = json_decode(json_encode($data_pic),TRUE);
             dump($data_pic);
             exit;
 //            $tuwan=db('tuwan')->saveAll($res);
