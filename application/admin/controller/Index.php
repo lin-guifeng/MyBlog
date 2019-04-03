@@ -56,21 +56,21 @@ class Index extends Common
             $picdata = [];
             $thumb = [];
             foreach ($data as $key => $val){
-                $res[$key]['data'] = json_decode($val['data']);
-                $res[$key]['id'] = $val['id'];
-                $res[$key]['thumb'] = json_decode($val['thumb']);
+//                $res[$key]['data'] = json_decode($val['data']);
+//                $res[$key]['id'] = $val['id'];
+//                $res[$key]['thumb'] = json_decode($val['thumb']);
                 $data_pic = json_decode($val['data'])['0'];
 //                $data_pic = json_decode($data_pic);
-                for ($i=3;$i<count($res[$key]['thumb']);$i++){
+//                for ($i=3;$i<count($res[$key]['thumb']);$i++){
 //                    foreach ($data_pic as $k => $v){
 //                        $data_pic[$k] = 123;
 //                    }
-                    array_push($res[$key]['data'],array($data_pic));
-                }
+//                    array_push($res[$key]['data'],array($data_pic));
+//                }
 
             }
 //            $tuwan=db('tuwan')->saveAll($res);
-            return $res;
+            return $data_pic;
 //            if($tuwan){
 //                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
 //            }else{
