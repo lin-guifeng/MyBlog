@@ -66,7 +66,7 @@ class Index extends Common
 //                'ratio' => $picdata[0]['ratio'],
 //                'thumb' => $picdata[0]['thumb'],
 //                ];
-//                $thumb = json_decode($val['thumb']);
+                $thumb = json_decode($val['thumb']);
 
                 for ($i=3;$i<count($thumb);$i++){
                     array_push($res[$key]['data'],$data_pic);
