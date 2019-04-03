@@ -47,42 +47,35 @@ class Index extends Common
 //    测试页面
     public function test(){
 
-//        if ($this->request->isPost()){
-//            $page = $this->request->post('page');
-        $page = 1;
+        if ($this->request->isPost()){
+            $page = $this->request->post('page');
+//        $page = 1;
             $num = 10;
             $start = ($page-1)*$num;
             $data=db('tuwan')->limit($start,$num)->select();
-            $res = [];
-            $picdata = [];
-            $thumb = [];
             foreach ($data as $key => $val){
-//                $res[$key]['data'] = json_decode($val['data']);
-//                $res[$key]['id'] = $val['id'];
-//                $res[$key]['thumb'] = json_decode($val['thumb']);
-                $data_pic = json_decode($val['data'])['0'];
-//                $data_pic = json_decode($data_pic);
-//                for ($i=3;$i<count($res[$key]['thumb']);$i++){
-//                    foreach ($data_pic as $k => $v){
-//                        $data_pic[$k] = 123;
-//                    }
-//                    array_push($res[$key]['data'],array($data_pic));
-//                }
+                $res[$key]['data'] = json_decode($val['data']);
+                $res[$key]['id'] = $val['id'];
+                $res[$key]['thumb'] = json_decode($val['thumb']);
+                $data_pic = $res[$key]['data']['0'];
+
+                for ($i=3;$i<count($res[$key]['thumb']);$i++){
+                    array_push($res[$key]['data'],$data_pic);
+                }
 
             }
-        $data_pic = json_decode(json_encode($data_pic),TRUE);
-            dump($data_pic);
-            exit;
+
+//            json_decode(json_encode($res[$key]['data']['0']),TRUE);
 //            $tuwan=db('tuwan')->saveAll($res);
-//            return $data_pic;
+            return $res;
 //            if($tuwan){
 //                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
 //            }else{
 //                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
 //            }
-//        }
+        }
 
-//        return view('test');
+        return view('test');
 
     }
 
