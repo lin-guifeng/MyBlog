@@ -71,6 +71,7 @@ class Index extends Common
 
             }
             dump($data_pic);
+            exit;
 //            $tuwan=db('tuwan')->saveAll($res);
 //            return $data_pic;
 //            if($tuwan){
