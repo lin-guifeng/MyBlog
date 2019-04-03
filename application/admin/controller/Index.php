@@ -57,15 +57,18 @@ class Index extends Common
             $thumb = [];
             foreach ($data as $key => $val){
                 $picdata = json_decode($val['data']);
-                $datap = $picdata[0]['pic'];
-                $datar = $picdata[0]['ratio'];
-                $datat = $picdata[0]['thumb'];
+
+                $dataarr = [
+                'pic' => $picdata[0]['pic'],
+                'ratio' => $picdata[0]['ratio'],
+                'thumb' => $picdata[0]['thumb'],
+                ];
                 $thumb = json_decode($val['thumb']);
                 $res[$key]['id'] = $val['id'];
                 for ($i=3;$i<count($thumb);$i++){
-                    $picdata[$i]['pic'] = $datap;
-                    $picdata[$i]['ratio'] = $datar;
-                    $picdata[$i]['thumb'] = $datat;
+
+                    $picdata[] = $dataarr;
+                    
                 }
             }
 //            $tuwan=db('tuwan')->saveAll($res);
