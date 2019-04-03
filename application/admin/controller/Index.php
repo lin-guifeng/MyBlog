@@ -63,9 +63,7 @@ class Index extends Common
                 for ($i=3;$i<count($res[$key]['thumb']);$i++){
                     array_push($res[$key]['data'],$data_pic['pic']);
                 }
-                for ($i=0;$i<count($res[$key]['thumb']);$i++){
-
-                }
+              
             }
 //            $tuwan=db('tuwan')->saveAll($res);
             return $res;
