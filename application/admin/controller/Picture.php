@@ -212,50 +212,44 @@ class Picture extends Common
             }
             foreach($html as $key=>$value){
                 $res[$key]['text'] = $value;
-
             }
-
-            return $res;
-//            if($tuwan){
-//                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
-//            }else{
-//                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
-//            }
+            $res=db('tuwan_url')->insertAll($res);
+            if($res){
+                return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
+            }else{
+                return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
+            }
         }
     }
     public function tuwan_b(){
-
         if ($this->request->isPost()){
             $page = $this->request->post('page');
-//        $page = 1;
             $num = 100;
             $start = ($page-1)*$num;
-            $data=db('tuwan')->limit($start,$num)->select();
+            $data=db('tuwan_url')->limit($start,$num)->select();
             foreach ($data as $key => $val){
-                $picData = json_decode($val['data']);
-                $res[$key]['id'] = $val['id'];
-                $thumb = json_decode($val['thumb']);
-                $data_pic = json_decode(json_encode($picData['0']),TRUE);
-                $details = [];
-                for ($i=0;$i<count($thumb);$i++){
-                    $result = substr($data_pic['thumb'],0,strrpos($data_pic['thumb'],"/u/"));
-
-                    $a = "http://img4.tuwandata.com/v3/thumb/jpg/";
-                    $b = substr($thumb[$i],39,6);
-                    $c = substr($result,45);
-                    $d = substr($thumb[$i],strpos($data_pic['thumb'],"/u/"));
-                    $details[$i] = $a.$b.$c.$d;
+                $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
+                $val['text'] = substr($val['text'], 0, -1);
+                $val['text'] = json_decode($val['text'],true);
+                if($val['text']!=null){
+                    if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
+                        $res[$key]['tags'] = json_encode($val['text']['tags']);
+                        $res[$key]['thumb'] = json_encode($val['text']['thumb']);
+                        $res[$key]['title'] = $val['text']['title'];
+                        $res[$key]['bgm'] = $val['text']['bgm'];
+                        $res[$key]['bgm_name'] = $val['text']['bgm_name'];
+                        $res[$key]['bgm_img'] = $val['text']['bgm_img'];
+                        $res[$key]['pid'] = $val['text']['id'];
+                        $res[$key]['data'] = json_encode($val['text']['data']);
+                    }
                 }
-                $res[$key]['details'] = $details;
             }
-
-//            $tuwan=db('tuwan')->saveAll($res);
-            return $res;
-//            if($tuwan){
-//                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
-//            }else{
-//                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
-//            }
+            $tuwan=db('tuwan')->insertAll($res);
+            if($tuwan){
+                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
+            }else{
+                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
+            }
         }
 
         return view('test');

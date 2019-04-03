@@ -28,9 +28,11 @@
 </body>
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script>
 
     function tuwan_a(){
+        layer.load('添加中');
         var num = $(".tuwan_a").val();
         var html = "";
         $.ajax({
@@ -39,16 +41,18 @@
             type: 'post',
             data: { num: num },
             success: function (res) {
+                layer.closeAll('loading');
                 console.log(res);
-                // if(res.code=='1'){
-                //     html = "<p>获取第"+num+"批数据成功："+res.data+"</p>";
-                //     $('.tip').append(html);
-                //
-                // }
+                if(res.code=='1'){
+                    html = "<p>获取第"+num+"批数据成功："+res.data+"</p>";
+                    $('.tip_a').html(html);
+
+                }
             },
         });
     }
     function tuwan_b(){
+        layer.load('添加中');
         var html = "";
         $.ajax({
             url: '/admin/Picture/tuwan_b',
@@ -57,6 +61,7 @@
             data: { page: page },
             success: function (res) {
                 console.log(res);
+                layer.closeAll('loading');
                 // if(res.code=='1'){
                 //     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
                 //     $('.tip').append(html);
@@ -66,6 +71,7 @@
         });
     }
     function tuwan_c(){
+        layer.load('添加中');
         var html = "";
         $.ajax({
             url: '/admin/Picture/tuwan_b',
@@ -73,6 +79,7 @@
             type: 'post',
             data: { page: page },
             success: function (res) {
+                layer.closeAll('loading');
                 console.log(res);
                 // if(res.code=='1'){
                 //     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
