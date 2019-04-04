@@ -233,7 +233,10 @@ class Picture extends Common
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
-                if($val['text']!=null&&$max_num<$val['text']['id']){
+                if($val['text']!=null){
+                    if($max_num>=$val['text']['id']){
+                        break;
+                    }
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
@@ -246,7 +249,7 @@ class Picture extends Common
                     }
                 }
             }
-            return $res;
+            return 123;
             exit;
             if($res){
                 $tuwan=db('tuwan')->insertAll($res);
