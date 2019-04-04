@@ -227,11 +227,14 @@ class Picture extends Common
             $num = 100;
             $start = ($page-1)*$num;
             $data=db('tuwan_url')->limit($start,$num)->select();
+            $max_num = db('tuwan')->max('pid');
+            return $max_num;
+            exit;
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
-                if($val['text']!=null){
+                if($val['text']!=null&&$max_num<$val['text']['id']){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
@@ -244,16 +247,18 @@ class Picture extends Common
                     }
                 }
             }
-            $tuwan=db('tuwan')->insertAll($res);
+            if($res){
+                $tuwan=db('tuwan')->insertAll($res);
+            }else{
+                return ['data'=>$res,'code'=>2,'message'=>'没有符合条件数据！'];
+            }
+
             if($tuwan){
                 return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
             }else{
                 return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
             }
         }
-
-        return view('test');
-
     }
     public function tuwan_c(){
 
