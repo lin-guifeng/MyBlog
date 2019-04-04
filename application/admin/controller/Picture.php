@@ -237,6 +237,7 @@ class Picture extends Common
 
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         if($max_num>=$val['text']['id']){
+                            $res = false;
                             break;
                         }
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
@@ -250,7 +251,6 @@ class Picture extends Common
                     }
                 }
             }
-            return 123;
             if($res){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
