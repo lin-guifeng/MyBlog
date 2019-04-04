@@ -228,8 +228,7 @@ class Picture extends Common
             $start = ($page-1)*$num;
             $data=db('tuwan_url')->limit($start,$num)->select();
             $max_num = db('tuwan')->max('pid');
-            return $max_num;
-            exit;
+
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
@@ -247,6 +246,8 @@ class Picture extends Common
                     }
                 }
             }
+            return $res;
+            exit;
             if($res){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
