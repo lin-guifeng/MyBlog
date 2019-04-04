@@ -250,7 +250,7 @@ class Picture extends Common
                     }
                 }
             }
-           
+            return 123;
             if($res){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
