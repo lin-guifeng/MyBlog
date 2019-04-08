@@ -230,7 +230,7 @@ class Picture extends Common
             $max_num = db('tuwan')->max('pid');
             $is_have = true;
             if(!$data){
-                return ['data'=>1,'code'=>3,'message'=>'没有符合条件数据！'];
+                return ['data'=>1,'code'=>2,'message'=>'没有符合条件数据！'];
             }
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
@@ -242,18 +242,18 @@ class Picture extends Common
                             $is_have = false;
                             break;
                         }
-//                        $res[$key]['tags'] = json_encode($val['text']['tags']);
-//                        $res[$key]['thumb'] = json_encode($val['text']['thumb']);
-//                        $res[$key]['title'] = $val['text']['title'];
-//                        $res[$key]['bgm'] = $val['text']['bgm'];
-//                        $res[$key]['bgm_name'] = $val['text']['bgm_name'];
-//                        $res[$key]['bgm_img'] = $val['text']['bgm_img'];
-//                        $res[$key]['pid'] = $val['text']['id'];
-//                        $res[$key]['data'] = json_encode($val['text']['data']);
+                        $res[$key]['tags'] = json_encode($val['text']['tags']);
+                        $res[$key]['thumb'] = json_encode($val['text']['thumb']);
+                        $res[$key]['title'] = $val['text']['title'];
+                        $res[$key]['bgm'] = $val['text']['bgm'];
+                        $res[$key]['bgm_name'] = $val['text']['bgm_name'];
+                        $res[$key]['bgm_img'] = $val['text']['bgm_img'];
+                        $res[$key]['pid'] = $val['text']['id'];
+                        $res[$key]['data'] = json_encode($val['text']['data']);
                     }
                 }
             }
-            return $is_have;
+
             if($is_have==true){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
