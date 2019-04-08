@@ -66,7 +66,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="6762" />
           <entry key="js" value="9" />
-          <entry key="php" value="8291" />
+          <entry key="php" value="8302" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,7 +74,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="6762" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="8291" />
+          <entry key="PHP" value="8302" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -109,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="253" column="28" selection-start-line="253" selection-start-column="28" selection-end-line="253" selection-end-column="28" />
+            <state relative-caret-position="211">
+              <caret line="232" column="43" selection-start-line="232" selection-start-column="43" selection-end-line="232" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -119,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-tuwanoperation.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1231">
-              <caret line="78" column="22" lean-forward="true" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -133,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/application/admin/model/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="685">
-              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -328,7 +328,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -1134,12 +1134,12 @@
       <workItem from="1554255085839" duration="23156000" />
       <workItem from="1554341429872" duration="4364000" />
       <workItem from="1554365877158" duration="1256000" />
-      <workItem from="1554686844495" duration="3064000" />
+      <workItem from="1554686844495" duration="3301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="599179000" />
+    <option name="totallyTimeSpent" value="599416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1443,14 +1443,14 @@
     <entry file="file://$PROJECT_DIR$/application/admin/model/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-tuwanoperation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1231">
-          <caret line="78" column="22" lean-forward="true" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1471,8 +1471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="253" column="28" selection-start-line="253" selection-start-column="28" selection-end-line="253" selection-end-column="28" />
+        <state relative-caret-position="211">
+          <caret line="232" column="43" selection-start-line="232" selection-start-column="43" selection-end-line="232" selection-end-column="43" />
         </state>
       </provider>
     </entry>

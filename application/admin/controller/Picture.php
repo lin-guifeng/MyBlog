@@ -229,12 +229,14 @@ class Picture extends Common
             $data=db('tuwan_url')->limit($start,$num)->select();
             $max_num = db('tuwan')->max('pid');
             $is_have = true;
+            if(!$data){
+                return ['data'=>1,'code'=>3,'message'=>'没有符合条件数据！'];
+            }
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
                 if($val['text']!=null){
-
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         if($max_num>=$val['text']['id']){
                             $is_have = false;
