@@ -257,7 +257,7 @@ class Picture extends Common
             if($is_have==true){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
-                return ['data'=>$res,'code'=>2,'message'=>'没有符合条件数据！'];
+                return ['data'=>1,'code'=>2,'message'=>'没有符合条件数据！'];
             }
 
             if($tuwan){
