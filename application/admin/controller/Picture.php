@@ -214,8 +214,9 @@ class Picture extends Common
                 $res[$key]['text'] = $value;
             }
             $res=db('tuwan_url')->insertAll($res);
+            $count = db('tuwan_url')->count();
             if($res){
-                return ['data'=>$res,'code'=>1,'message'=>'操作完成'];
+                return ['data'=>$count,'code'=>1,'message'=>'操作完成'];
             }else{
                 return ['data'=>$res,'code'=>0,'message'=>'操作失败'];
             }
@@ -230,7 +231,7 @@ class Picture extends Common
             $max_num = db('tuwan')->max('pid');
             $is_have = true;
             if(!$data){
-                return ['data'=>1,'code'=>2,'message'=>'没有符合条件数据！'];
+                return ['data'=>1,'code'=>2,'message'=>'没有添加这一批次数据，请修改批次！'];
             }
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
@@ -257,9 +258,8 @@ class Picture extends Common
             if($is_have==true){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
-                return ['data'=>1,'code'=>2,'message'=>'没有符合条件数据！'];
+                return ['data'=>1,'code'=>2,'message'=>'没有符合条件数据,请修改批次！'];
             }
-
             if($tuwan){
                 return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
             }else{
@@ -267,8 +267,8 @@ class Picture extends Common
             }
         }
     }
-    public function tuwan_c(){
 
+    public function tuwan_c(){
         if ($this->request->isPost()){
             $page = $this->request->post('page');
 //        $page = 1;
