@@ -54,7 +54,7 @@
     }
     function tuwan_b(){
         layer.load('添加中');
-        var page = 1;
+        var page = $(".tuwan_a").val();
         var html = "";
         $.ajax({
             url: '/admin/Picture/tuwan_b',
@@ -67,7 +67,9 @@
                 if(res.code=='1'){
                     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
                     $('.tip').append(html);
-
+                }
+                if(res.code== '2'){
+                    layer.msg('请修改批次！');
                 }
             },
         });
@@ -76,7 +78,7 @@
         layer.load('添加中');
         var html = "";
         $.ajax({
-            url: '/admin/Picture/tuwan_b',
+            url: '/admin/Picture/tuwan_c',
             dataType: 'json',
             type: 'post',
             data: { page: page },

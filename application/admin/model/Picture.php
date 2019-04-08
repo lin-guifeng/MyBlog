@@ -66,10 +66,13 @@ class Picture extends Model
 
     public function tuwanData($page,$limit){
         $list = db('tuwan')
-            ->field('id,pid,title,pic,time')
+            ->field('id,pid,title,thumb,time')
             ->page($page,$limit)
             ->order('id desc')
             ->select();
+        foreach ($list as $k=>$v){
+            $list[$k]['pic'] = json_decode($v['thumb'])['0'];
+        }
         $count = db('tuwan')->count();
         $res = [
             'rows' => $list,
