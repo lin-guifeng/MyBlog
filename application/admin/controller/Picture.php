@@ -228,7 +228,7 @@ class Picture extends Common
             $start = ($page-1)*$num;
             $data=db('tuwan_url')->limit($start,$num)->select();
             $max_num = db('tuwan')->max('pid');
-
+            $is_have = trus;
             foreach ($data as $key => $val){
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
@@ -237,7 +237,7 @@ class Picture extends Common
 
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         if($max_num>=$val['text']['id']){
-                            $res = false;
+                            $is_have = false;
                             break;
                         }
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
@@ -251,7 +251,7 @@ class Picture extends Common
                     }
                 }
             }
-            if($res){
+            if($is_have){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
                 return ['data'=>$res,'code'=>2,'message'=>'没有符合条件数据！'];
