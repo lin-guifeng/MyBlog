@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"/var/www/html/MyBlog/public/../application/admin/view/index/index.html";i:1553064032;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"/var/www/html/MyBlog/public/../application/admin/view/index/index.html";i:1554285702;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -61,6 +61,12 @@
                         <a class="J_menuItem" href="<?php echo url('index/main'); ?>"><i class="fa fa-home"></i><span class="nav-label">主页</span></a>
                     </li>
                     <li>
+                        <a class="J_menuItem" href="<?php echo url('index/phpinfo'); ?>"><i class="fa fa-home"></i><span class="nav-label">phpinfo</span></a>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="<?php echo url('index/test'); ?>"><i class="fa fa-home"></i><span class="nav-label">测试页面</span></a>
+                    </li>
+                    <li>
                         <a href="#">
                             <i class="fa fa fa-bar-chart-o"></i>
                             <span class="nav-label">管理员管理</span>
@@ -108,6 +114,15 @@
                             </li>
                             <li>
                                 <a class="J_menuItem" href="<?php echo url('Picture/pictureList'); ?>">百度图片</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="<?php echo url('Picture/tuwanList'); ?>">兔玩网图片</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="<?php echo url('Picture/tuwanTags'); ?>">兔玩网标签</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="<?php echo url('Picture/tuwan'); ?>">兔玩网数据获取</a>
                             </li>
                         </ul>
                     </li>

@@ -1,0 +1,529 @@
+---------------------------------------------------------------
+[ 2019-03-28T17:55:11+08:00 ] 113.88.103.240 GET /admin/picture/tuwanList
+[ info ] www.linguifeng.top/admin/picture/tuwanList [运行时间：0.016383s][吞吐率：61.04req/s] [内存消耗：1,708.55kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picture',
+    2 => 'tuwanList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|2; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/admin/picture/tuwanadd.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Picture->tuwanList[ /var/www/html/MyBlog/application/admin/controller/Picture.php ]
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/admin/view/picture/admin-tuwanlist.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-28T17:55:11+08:00 ] 113.88.103.240 GET /admin/picture/tuwandata.html?offset=0&limit=10&_=1553766911461
+[ info ] www.linguifeng.top/admin/picture/tuwandata.html?offset=0&limit=10&_=1553766911461 [运行时间：0.022343s][吞吐率：44.76req/s] [内存消耗：2,581.27kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picture',
+    2 => 'tuwandata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|2; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/admin/picture/tuwanList',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'offset' => '0',
+  'limit' => '10',
+  '_' => '1553766911461',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Picture->tuwanData[ /var/www/html/MyBlog/application/admin/controller/Picture.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`title`,`pic`,`time` FROM `blog_tuwan` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_tuwan` LIMIT 1 [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2019-03-28T17:55:12+08:00 ] 113.88.103.240 GET /admin/picture/favicon.ico
+[ info ] www.linguifeng.top/admin/picture/favicon.ico [运行时间：0.015726s][吞吐率：63.59req/s] [内存消耗：1,693.83kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picture',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|2; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/admin/picture/tuwanList',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-28T17:57:57+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.023316s][吞吐率：42.89req/s] [内存消耗：2,903.43kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.000938s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:26:47+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.027264s][吞吐率：36.68req/s] [内存消耗：2,974.33kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.001012s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:26:48+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.025632s][吞吐率：39.01req/s] [内存消耗：2,698.34kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.000935s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:26:50+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.026027s][吞吐率：38.42req/s] [内存消耗：2,698.34kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.001028s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:26:51+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.024643s][吞吐率：40.58req/s] [内存消耗：2,698.34kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.000914s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:26:51+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.026334s][吞吐率：37.97req/s] [内存消耗：2,698.34kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.000982s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:26:56+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.024922s][吞吐率：40.13req/s] [内存消耗：2,698.38kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.000945s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:27:04+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.025068s][吞吐率：39.89req/s] [内存消耗：2,698.34kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.001099s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:27:57+08:00 ] 113.88.103.240 GET /index/index/tuwan.html
+[ info ] www.linguifeng.top/index/index/tuwan.html [运行时间：0.027223s][吞吐率：36.73req/s] [内存消耗：2,978.46kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000368s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.000962s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:28:00+08:00 ] 113.88.103.240 GET /index/index/tuwan.html?id=1
+[ info ] www.linguifeng.top/index/index/tuwan.html?id=1 [运行时间：0.026516s][吞吐率：37.71req/s] [内存消耗：2,699.02kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwan',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.linguifeng.top/index/index/tuwan.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwan[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwan.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT `id`,`pic` FROM `blog_tuwan` [ RunTime:0.001003s ]
+---------------------------------------------------------------
+[ 2019-03-28T18:28:14+08:00 ] 113.88.103.240 GET /index/index/tuwaninfo.html?id=1
+[ info ] www.linguifeng.top/index/index/tuwaninfo.html?id=1 [运行时间：0.021616s][吞吐率：46.26req/s] [内存消耗：2,606.60kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'tuwaninfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=nmss41d0fc5b83m8p3q00g1dl5; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->tuwaninfo[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/tuwaninfo.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tuwan` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]

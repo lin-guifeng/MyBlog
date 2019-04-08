@@ -1,0 +1,114 @@
+---------------------------------------------------------------
+[ 2019-04-01T06:57:10+08:00 ] 47.92.140.160 GET /
+[ info ] www.linguifeng.top/ [运行时间：0.026546s][吞吐率：37.67req/s] [内存消耗：2,673.20kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.linguifeng.top',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/index.html [ array (
+  0 => 'data',
+  1 => 'user',
+  2 => 'lunbo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_admin` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_admin` WHERE  `id` = 7  AND `name` = '林桂锋' LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_lunbo` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_lunbo` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `status` = 1 ORDER BY `time` DESC [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2019-04-01T07:46:57+08:00 ] 101.132.69.5 GET /
+[ info ] www.linguifeng.top/ [运行时间：0.026902s][吞吐率：37.17req/s] [内存消耗：2,673.12kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.linguifeng.top',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/index.html [ array (
+  0 => 'data',
+  1 => 'user',
+  2 => 'lunbo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_admin` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_admin` WHERE  `id` = 7  AND `name` = '林桂锋' LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_lunbo` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_lunbo` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `status` = 1 ORDER BY `time` DESC [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2019-04-01T15:02:19+08:00 ] 139.224.238.50 GET /
+[ info ] www.linguifeng.top/ [运行时间：0.023968s][吞吐率：41.72req/s] [内存消耗：2,673.12kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.linguifeng.top',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/MyBlog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/MyBlog/public/../application/index/view/index/index.html [ array (
+  0 => 'data',
+  1 => 'user',
+  2 => 'lunbo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_admin` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_admin` WHERE  `id` = 7  AND `name` = '林桂锋' LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_lunbo` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_lunbo` WHERE  `status` = 1 ORDER BY `sort` DESC [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_article` WHERE  `status` = 1 ORDER BY `time` DESC [ RunTime:0.000272s ]
