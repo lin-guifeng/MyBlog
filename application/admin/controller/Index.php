@@ -110,7 +110,7 @@ class Index extends Common
             }
             $res[$key]['details'] = json_encode($details);
             $res[$key]['status'] = "1";
-            $tuwan=db('tuwan')->save($res[$key]);
+            $tuwan=db('tuwan')->update($res[$key]);
         }
         dump($tuwan);
     }
