@@ -230,6 +230,7 @@ class Picture extends Common
             $data=db('tuwan_url')->limit($start,$num)->select();
             $max_num = db('tuwan')->max('pid');
             $is_have = true;
+            $i=0;
             if(!$data){
                 return ['data'=>1,'code'=>2,'message'=>'没有添加这一批次数据，请修改批次！'];
             }
@@ -239,13 +240,16 @@ class Picture extends Common
                 $val['text'] = json_decode($val['text'],true);
                 if(isset($val['text']['id'])&&$max_num>=$val['text']['id']){
 //                    $is_have = false;
-                    break;
+//                    break;
+                $i++;
                 }
                 if($val['text']!=null){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
 //                        if($max_num>=$val['text']['id']){
 //                            $is_have = false;
-//                            continue;
+//
+//                        }else{
+//                            $is_have = true;
 //                        }
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
@@ -263,7 +267,7 @@ class Picture extends Common
 //                }
 
             }
-            return $max_num;
+            return $i;
             if($is_have==true){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
