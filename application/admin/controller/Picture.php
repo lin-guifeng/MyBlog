@@ -310,14 +310,14 @@ class Picture extends Common
                 }
                 $res[$key]['details'] = json_encode($details);
                 $res[$key]['status'] = "1";
-                $tuwan=db('tuwan')->save($res[$key]);
+                $tuwan=db('tuwan')->update($res[$key]);
             }
-            return $tuwan;
-//            if(empty($res)){
-//                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
-//            }else{
-//                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
-//            }
+//            return $tuwan;
+            if(empty($res)){
+                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
+            }else{
+                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
+            }
 //            return $tuwan;
 //            $tuwan=db('tuwan')->saveAll($res);
 //            return $res;
