@@ -257,6 +257,10 @@ class Picture extends Common
                         $res[$key]['data'] = json_encode($val['text']['data']);
                     }
                 }
+                if($max_num>=$res[$key]['pid']){
+//                            $is_have = false;
+                    break;
+                }
 
             }
             return $res;
