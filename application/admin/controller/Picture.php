@@ -311,12 +311,13 @@ class Picture extends Common
                 $res[$key]['details'] = json_encode($details);
                 $res[$key]['status'] = "1";
             }
-            return $res;
+
             if(empty($res)){
                 return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
             }else{
                 $tuwan=db('tuwan')->saveAll($res);
             }
+            return $tuwan;
 //            $tuwan=db('tuwan')->saveAll($res);
 //            return $res;
             if($tuwan){
