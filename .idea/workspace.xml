@@ -7,8 +7,8 @@
     <list default="true" id="95d39f7f-d53a-4689-a430-f462847616fa" name="Default Changelist" comment="">
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/common.php" afterDir="false" />
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Picture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanoperation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/index/view/index/tuwaninfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/tuwaninfo.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,21 +42,21 @@
           <entry key="Account" value="1" />
           <entry key="css" value="9" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="374" />
+          <entry key="html" value="375" />
           <entry key="ico" value="2" />
           <entry key="js" value="15" />
           <entry key="mustache" value="2" />
-          <entry key="php" value="402" />
+          <entry key="php" value="403" />
           <entry key="think" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="9" />
-          <entry key="HTML" value="374" />
+          <entry key="HTML" value="375" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="404" />
+          <entry key="PHP" value="405" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -64,17 +64,17 @@
         <counts>
           <entry key="css" value="201" />
           <entry key="dummy" value="21" />
-          <entry key="html" value="6900" />
+          <entry key="html" value="6918" />
           <entry key="js" value="9" />
-          <entry key="php" value="8776" />
+          <entry key="php" value="8792" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="201" />
-          <entry key="HTML" value="6900" />
+          <entry key="HTML" value="6918" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="8776" />
+          <entry key="PHP" value="8792" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -153,7 +153,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-tuwanoperation.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="691">
@@ -171,20 +171,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/index/view/index/tuwaninfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3360">
-              <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+            <state relative-caret-position="690">
+              <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-pictureadd.html">
+        <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1920">
-              <caret line="64" column="42" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="42" />
+            <state relative-caret-position="565">
+              <caret line="75" column="53" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -287,9 +287,7 @@
         <option value="$PROJECT_DIR$/application/index/view/index/info.html" />
         <option value="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanadd.html" />
         <option value="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html" />
-        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/index/view/index/tuwan.html" />
-        <option value="$PROJECT_DIR$/application/index/view/index/tuwaninfo.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Common.php" />
         <option value="$PROJECT_DIR$/application/admin/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/admin/model/Picture.php" />
@@ -298,6 +296,8 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Picture.php" />
         <option value="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanoperation.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/index/view/index/tuwaninfo.html" />
       </list>
     </option>
   </component>
@@ -1136,12 +1136,12 @@
       <workItem from="1554365877158" duration="1256000" />
       <workItem from="1554686844495" duration="4667000" />
       <workItem from="1554772106337" duration="6504000" />
-      <workItem from="1554788759141" duration="6742000" />
+      <workItem from="1554788759141" duration="7209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="614028000" />
+    <option name="totallyTimeSpent" value="614495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1247,13 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/index/tuwan.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1272,13 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="22" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/tuwaninfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1475,6 +1461,20 @@
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="75" column="53" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/tuwaninfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
         </state>
       </provider>
     </entry>
