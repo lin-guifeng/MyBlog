@@ -86,6 +86,7 @@
             success: function (res) {
                 layer.closeAll('loading');
                 console.log(res);
+                layer.msg(res.message);
                 // if(res.code=='1'){
                 //     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
                 //     $('.tip').append(html);
@@ -96,7 +97,6 @@
     }
     function tuwan_del() {
         layer.load();
-        var html = "";
         $.ajax({
             url: '/admin/Picture/tuwan_del',
             dataType: 'json',
@@ -105,11 +105,7 @@
             success: function (res) {
                 layer.closeAll('loading');
                 console.log(res);
-                // if(res.code=='1'){
-                //     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
-                //     $('.tip').append(html);
-                //     page++;
-                // }
+                layer.msg(res.message);
             },
         });
     }
