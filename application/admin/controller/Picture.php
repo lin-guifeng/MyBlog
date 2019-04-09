@@ -288,7 +288,7 @@ class Picture extends Common
             $page = $this->request->post('page');
             $num = 100;
             $start = ($page-1)*$num;
-            $data=db('tuwan')->limit($start,$num)->order('id desc')->select();
+            $data=db('tuwan')->limit($start,$num)->order('id asc')->select();
             foreach ($data as $key => $val){
                 if ($val['status'] == '1'){
                     continue;
