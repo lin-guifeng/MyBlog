@@ -90,11 +90,11 @@
             success: function (res) {
                 layer.closeAll('loading');
                 console.log(res);
-                layer.msg(res.message);
-                if(res.code=='1'){
-                    html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
-                    $('.tip').append(html);
-                }
+                // layer.msg(res.message);
+                // if(res.code=='1'){
+                //     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
+                //     $('.tip').append(html);
+                // }
             },
         });
     }

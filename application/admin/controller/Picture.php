@@ -289,6 +289,7 @@ class Picture extends Common
             $num = 100;
             $start = ($page-1)*$num;
             $data=db('tuwan')->limit($start,$num)->order('id desc')->select();
+            return $data;
             foreach ($data as $key => $val){
                 if ($val['status'] == '1'){
                     continue;
