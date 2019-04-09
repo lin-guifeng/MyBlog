@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"/var/www/html/MyBlog/public/../application/admin/view/picture/admin-tuwanoperation.html";i:1554714589;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"/var/www/html/MyBlog/public/../application/admin/view/picture/admin-tuwanoperation.html";i:1554803810;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,19 +12,22 @@
 </head>
 <body>
 <div style="width: 500px;margin: 20px auto;text-align: center;">
-    <input type="text" placeholder="第几批数据" min="16" class="tuwan_a"><span>100条链接/批(前15批数据获取完毕)</span>
-    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tuwan_a()">点击批量获取链接数据</button>
+    <input type="text" placeholder="第几批数据" class="tuwan_a"><span>100条链接/批(前15批数据获取完毕)</span>
+    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tuwan_a()" style="margin-top: 10px;">点击批量获取链接数据</button>
+    <button type="button" class="btn btn-danger btn-block btn-lg" onclick="tuwan_del()" style="margin-top: 10px;">删除所有链接</button>
     <div class="tip_a"></div>
 </div>
 <div style="width: 300px;margin: 20px auto;text-align: center;">
-    <input type="text" placeholder="第几批数据" min="16" class="tuwan_b"><span>100条链接/批</span>
-    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tuwan_b()">点击筛选有效链接</button>
+    <input type="text" placeholder="第几批数据" class="tuwan_b"><span>100条链接/批</span>
+    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tuwan_b()" style="margin-top: 10px;">点击筛选有效链接</button>
     <div class="tip_b"></div>
 </div>
 <div style="width: 300px;margin: 20px auto;text-align: center;">
-    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tuwan_c()">点击获取完整数据</button>
+    <input type="text" placeholder="第几批数据" class="tuwan_c"><span>100条链接/批</span>
+    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tuwan_c()" style="margin-top: 10px;">点击获取完整数据</button>
     <div class="tip_c"></div>
 </div>
+
 
 
 </body>
@@ -55,7 +58,7 @@
     }
     function tuwan_b(){
         layer.load('添加中');
-        var page = $(".tuwan_a").val();
+        var page = $(".tuwan_b").val();
         var html = "";
         $.ajax({
             url: '/admin/Picture/tuwan_b',
@@ -66,17 +69,19 @@
                 console.log(res);
                 layer.closeAll('loading');
                 if(res.code=='1'){
+                    layer.msg(res.message);
                     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
-                    $('.tip').append(html);
+                    $('.tip_b').append(html);
                 }
                 if(res.code== '2'){
-                    layer.msg('请修改批次！');
+                    layer.msg(res.message);
                 }
             },
         });
     }
     function tuwan_c(){
         layer.load('添加中');
+        var page = $(".tuwan_c").val();
         var html = "";
         $.ajax({
             url: '/admin/Picture/tuwan_c',
@@ -86,13 +91,31 @@
             success: function (res) {
                 layer.closeAll('loading');
                 console.log(res);
-                // if(res.code=='1'){
-                //     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
-                //     $('.tip').append(html);
-                //     page++;
-                // }
+                layer.msg(res.message);
+                if(res.code=='1'){
+                    html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
+                    $('.tip_c').append(html);
+                }
             },
         });
     }
+    function tuwan_del() {
+        var str = "<div><h4>确定要删除全部数据吗？</h4></div>";
+        layer.confirm(str, {btn: ['确定', '取消'], title: "提示"}, function () {
+            layer.load();
+            $.ajax({
+                url: '/admin/Picture/tuwan_del',
+                dataType: 'json',
+                type: 'post',
+                data: {},
+                success: function (res) {
+                    layer.closeAll('loading');
+                    console.log(res);
+                    layer.msg(res.message);
+                },
+            });
+        });
+    }
+
 </script>
 </html>

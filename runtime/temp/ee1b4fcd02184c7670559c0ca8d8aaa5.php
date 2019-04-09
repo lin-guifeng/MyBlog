@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"/var/www/html/MyBlog/public/../application/index/view/index/tuwaninfo.html";i:1553821785;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"/var/www/html/MyBlog/public/../application/index/view/index/tuwaninfo.html";i:1554804212;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -57,7 +57,7 @@
 <!-- Swiper -->
 <div class="swiper-container gallery-top">
     <div class="swiper-wrapper">
-        <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+        <?php if(is_array($data['details']) || $data['details'] instanceof \think\Collection || $data['details'] instanceof \think\Paginator): $i = 0; $__LIST__ = $data['details'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
         <div class="swiper-slide" style=""><img src="<?php echo $vo; ?>" alt=""></div>
         <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>-->
         <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>-->
@@ -76,7 +76,7 @@
 </div>
 <div class="swiper-container gallery-thumbs">
     <div class="swiper-wrapper">
-        <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+        <?php if(is_array($data['thumb']) || $data['thumb'] instanceof \think\Collection || $data['thumb'] instanceof \think\Paginator): $i = 0; $__LIST__ = $data['thumb'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
         <div class="swiper-slide"><img src="<?php echo $vo; ?>" alt=""></div>
         <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>-->
         <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>-->
