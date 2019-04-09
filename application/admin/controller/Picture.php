@@ -286,11 +286,14 @@ class Picture extends Common
     public function tuwan_c(){
         if ($this->request->isPost()){
             $page = $this->request->post('page');
-//        $page = 1;
             $num = 100;
             $start = ($page-1)*$num;
-            $data=db('tuwan')->limit($start,$num)->select();
+            $data=db('tuwan')->limit($start,$num)->order('id desc')->select();
             foreach ($data as $key => $val){
+                if ($val['status'] == '1'){
+                    continue;
+                    $res = [];
+                }
                 $picData = json_decode($val['data']);
                 $res[$key]['id'] = $val['id'];
                 $thumb = json_decode($val['thumb']);
@@ -305,16 +308,21 @@ class Picture extends Common
                     $d = substr($thumb[$i],strpos($data_pic['thumb'],"/u/"));
                     $details[$i] = $a.$b.$c.$d;
                 }
-                $res[$key]['details'] = $details;
+                $res[$key]['details'] = json_encode($details);
+                $res[$key]['status'] = "1";
             }
-
+            if(empty($res)){
+                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
+            }else{
+                $tuwan=db('tuwan')->saveAll($res);
+            }
 //            $tuwan=db('tuwan')->saveAll($res);
-            return $res;
-//            if($tuwan){
-//                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
-//            }else{
-//                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
-//            }
+//            return $res;
+            if($tuwan){
+                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
+            }else{
+                return ['data'=>$tuwan,'code'=>0,'message'=>'修改失败'];
+            }
         }
 
         return view('test');
@@ -328,19 +336,6 @@ class Picture extends Common
             return ['data'=>$tuwan,'code'=>0,'message'=>'删除失败！'];
         }
     }
-    public function tuwan_update(){
-        $res = db('tuwan')->Field('id,status')->select();
-        foreach ($res as &$val){
-            $val['status'] = "1";
-        }
-        $tuwan=db('tuwan')->save($res);
-        if($tuwan){
-            return ['data'=>$tuwan,'code'=>1,'message'=>'修改成功！'];
-        }else{
-            return ['data'=>$tuwan,'code'=>0,'message'=>'修改失败！'];
-        }
-    }
-
 
 
 }
