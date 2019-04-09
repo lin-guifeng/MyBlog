@@ -259,7 +259,7 @@ class Picture extends Common
                 }
                 if($max_num>=$res[$key]['pid']){
 //                            $is_have = false;
-                    break;
+                    continue;
                 }
 
             }
