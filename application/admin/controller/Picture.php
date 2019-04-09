@@ -306,7 +306,7 @@ class Picture extends Common
 
     }
     public function tuwan_del(){
-        $tuwan=db('tuwan_url')->deleete(true);
+        $tuwan=db('tuwan_url')->delete(true);
         if($tuwan){
             return ['data'=>$tuwan,'code'=>1,'message'=>'删除成功！'];
         }else{
