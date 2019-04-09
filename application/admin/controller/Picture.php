@@ -328,6 +328,18 @@ class Picture extends Common
             return ['data'=>$tuwan,'code'=>0,'message'=>'删除失败！'];
         }
     }
+    public function tuwan_update(){
+        $res = db('tuwan')->select();
+        foreach ($res as &$val){
+            $val['status'] = "1";
+        }
+        $tuwan=db('tuwan')->saveAll($res);
+        if($tuwan){
+            return ['data'=>$tuwan,'code'=>1,'message'=>'修改成功！'];
+        }else{
+            return ['data'=>$tuwan,'code'=>0,'message'=>'修改失败！'];
+        }
+    }
 
 
 

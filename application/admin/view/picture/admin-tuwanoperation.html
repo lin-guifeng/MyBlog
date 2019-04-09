@@ -25,6 +25,11 @@
     <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tuwan_c()" style="margin-top: 10px;">点击获取完整数据</button>
     <div class="tip_c"></div>
 </div>
+<div style="width: 300px;margin: 20px auto;text-align: center;">
+    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="updates()" style="margin-top: 10px;">更新数据</button>
+    <div class="tip_c"></div>
+</div>
+
 
 
 </body>
@@ -103,6 +108,23 @@
             layer.load();
             $.ajax({
                 url: '/admin/Picture/tuwan_del',
+                dataType: 'json',
+                type: 'post',
+                data: {},
+                success: function (res) {
+                    layer.closeAll('loading');
+                    console.log(res);
+                    layer.msg(res.message);
+                },
+            });
+        });
+    }
+    function updates(){
+        var str = "<div><h4>确定要更新全部数据吗？</h4></div>";
+        layer.confirm(str, {btn: ['确定', '取消'], title: "提示"}, function () {
+            layer.load();
+            $.ajax({
+                url: '/admin/Picture/tuwan_update',
                 dataType: 'json',
                 type: 'post',
                 data: {},

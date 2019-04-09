@@ -12,6 +12,7 @@
 <body>
     <button type="button" class="btn btn-primary btn-lg" onclick="status()">点击</button>
     <div class="tip"></div>
+    <button type="button" class="btn btn-primary btn-lg" onclick="update()">修改</button>
 </body>
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
@@ -32,6 +33,23 @@
                 //     page++;
                 // }
             },
+        });
+    }
+    function update(){
+        var str = "<div><h4>确定要更新全部数据吗？</h4></div>";
+        layer.confirm(str, {btn: ['确定', '取消'], title: "提示"}, function () {
+            layer.load();
+            $.ajax({
+                url: '/admin/Picture/tuwan_update',
+                dataType: 'json',
+                type: 'post',
+                data: {},
+                success: function (res) {
+                    layer.closeAll('loading');
+                    console.log(res);
+                    layer.msg(res.message);
+                },
+            });
         });
     }
 </script>
