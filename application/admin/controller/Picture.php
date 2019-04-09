@@ -310,21 +310,22 @@ class Picture extends Common
                 }
                 $res[$key]['details'] = $details;
                 $res[$key]['status'] = "1";
+                $tuwan=db('tuwan')->save($res[$key]);
             }
 
-//            if(empty($res)){
-//                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
-//            }else{
-                $tuwan=db('tuwan')->save($res);
-//            }
-            return $tuwan;
+            if(empty($res)){
+                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
+            }else{
+                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
+            }
+//            return $tuwan;
 //            $tuwan=db('tuwan')->saveAll($res);
 //            return $res;
-            if($tuwan){
-                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
-            }else{
-                return ['data'=>$tuwan,'code'=>0,'message'=>'修改失败'];
-            }
+//            if($tuwan){
+//                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
+//            }else{
+//                return ['data'=>$tuwan,'code'=>0,'message'=>'修改失败'];
+//            }
         }
 
         return view('test');
