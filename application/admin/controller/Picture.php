@@ -312,12 +312,12 @@ class Picture extends Common
                 $res[$key]['status'] = "1";
             }
 
-            if(empty($res)){
-                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
-            }else{
-                $tuwan=db('tuwan')->saveAll($res);
-            }
-            return $tuwan;
+//            if(empty($res)){
+//                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
+//            }else{
+//                $tuwan=db('tuwan')->saveAll($res);
+//            }
+            return empty($res);
 //            $tuwan=db('tuwan')->saveAll($res);
 //            return $res;
             if($tuwan){
