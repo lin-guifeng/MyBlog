@@ -308,7 +308,7 @@ class Picture extends Common
                     $d = substr($thumb[$i],strpos($data_pic['thumb'],"/u/"));
                     $details[$i] = $a.$b.$c.$d;
                 }
-                $res[$key]['details'] = json_encode($details);
+                $res[$key]['details'] = $details;
                 $res[$key]['status'] = "1";
             }
 
