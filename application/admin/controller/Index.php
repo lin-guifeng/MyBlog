@@ -84,5 +84,36 @@ class Index extends Common
 
     }
 
+    public function tests(){
+        $page = 1;
+        $num = 100;
+        $start = ($page-1)*$num;
+        $data=db('tuwan')->limit($start,$num)->order('id asc')->select();
+        foreach ($data as $key => $val){
+            if ($val['status'] == '1'){
+                continue;
+//                    $res = [];
+            }
+            $picData = json_decode($val['data']);
+            $res[$key]['id'] = $val['id'];
+            $thumb = json_decode($val['thumb']);
+            $data_pic = json_decode(json_encode($picData['0']),TRUE);
+            $details = [];
+            for ($i=0;$i<count($thumb);$i++){
+                $result = substr($data_pic['thumb'],0,strrpos($data_pic['thumb'],"/u/"));
+
+                $a = "http://img4.tuwandata.com/v3/thumb/jpg/";
+                $b = substr($thumb[$i],39,6);
+                $c = substr($result,45);
+                $d = substr($thumb[$i],strpos($data_pic['thumb'],"/u/"));
+                $details[$i] = $a.$b.$c.$d;
+            }
+            $res[$key]['details'] = json_encode($details);
+            $res[$key]['status'] = "1";
+            $tuwan=db('tuwan')->save($res[$key]);
+        }
+        dump($tuwan);
+    }
+
 
 }
