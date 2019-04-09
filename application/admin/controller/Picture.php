@@ -237,6 +237,10 @@ class Picture extends Common
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
+                if(isset($val['text']['id'])&&$max_num>=$val['text']['id']){
+//                    $is_have = false;
+                    break;
+                }
                 if($val['text']!=null){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
 //                        if($max_num>=$val['text']['id']){
@@ -253,6 +257,7 @@ class Picture extends Common
                         $res[$key]['data'] = json_encode($val['text']['data']);
                     }
                 }
+
             }
             return $res;
             if($is_have==true){
