@@ -243,10 +243,10 @@ class Picture extends Common
                 }
                 if($val['text']!=null){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
-                        if($max_num>=$val['text']['id']){
+//                        if($max_num>=$val['text']['id']){
 //                            $is_have = false;
-                            continue;
-                        }
+//                            continue;
+//                        }
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
                         $res[$key]['title'] = $val['text']['title'];
@@ -263,7 +263,7 @@ class Picture extends Common
 //                }
 
             }
-            return $res;
+            return $max_num;
             if($is_have==true){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
