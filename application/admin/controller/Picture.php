@@ -329,11 +329,11 @@ class Picture extends Common
         }
     }
     public function tuwan_update(){
-        $res = db('tuwan')->select();
+        $res = db('tuwan')->Field('id,status')->select();
         foreach ($res as &$val){
             $val['status'] = "1";
         }
-        $tuwan=db('tuwan')->saveAll($res);
+        $tuwan=db('tuwan')->save($res);
         if($tuwan){
             return ['data'=>$tuwan,'code'=>1,'message'=>'修改成功！'];
         }else{
