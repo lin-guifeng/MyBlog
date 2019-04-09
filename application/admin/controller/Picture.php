@@ -289,7 +289,6 @@ class Picture extends Common
             $num = 100;
             $start = ($page-1)*$num;
             $data=db('tuwan')->limit($start,$num)->order('id desc')->select();
-            return $data;
             foreach ($data as $key => $val){
                 if ($val['status'] == '1'){
                     continue;
@@ -312,6 +311,7 @@ class Picture extends Common
                 $res[$key]['details'] = json_encode($details);
                 $res[$key]['status'] = "1";
             }
+            return $res;
             if(empty($res)){
                 return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
             }else{
