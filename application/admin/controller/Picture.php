@@ -292,7 +292,7 @@ class Picture extends Common
             foreach ($data as $key => $val){
                 if ($val['status'] == '1'){
                     continue;
-                    $res = [];
+//                    $res = [];
                 }
                 $picData = json_decode($val['data']);
                 $res[$key]['id'] = $val['id'];
@@ -312,12 +312,12 @@ class Picture extends Common
                 $res[$key]['status'] = "1";
                 $tuwan=db('tuwan')->save($res[$key]);
             }
-
-            if(empty($res)){
-                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
-            }else{
-                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
-            }
+            return $tuwan;
+//            if(empty($res)){
+//                return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
+//            }else{
+//                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
+//            }
 //            return $tuwan;
 //            $tuwan=db('tuwan')->saveAll($res);
 //            return $res;
