@@ -245,7 +245,7 @@ class Picture extends Common
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         if($max_num>=$val['text']['id']){
 //                            $is_have = false;
-                            break;
+                            continue;
                         }
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
@@ -257,10 +257,10 @@ class Picture extends Common
                         $res[$key]['data'] = json_encode($val['text']['data']);
                     }
                 }
-                if($max_num>=$res[$key]['pid']){
+//                if($max_num>=$res[$key]['pid']){
 //                            $is_have = false;
-                    continue;
-                }
+//                    continue;
+//                }
 
             }
             return $res;
