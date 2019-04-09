@@ -269,16 +269,16 @@ class Picture extends Common
 //                }
 
             }
-            
+
             if($is_have==true){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
                 return ['data'=>1,'code'=>2,'message'=>'没有符合条件数据,请修改批次！'];
             }
             if($tuwan){
-                return ['data'=>$tuwan,'code'=>1,'message'=>'操作完成'];
+                return ['data'=>$tuwan,'code'=>1,'message'=>'筛选链接成功'];
             }else{
-                return ['data'=>$tuwan,'code'=>0,'message'=>'操作失败'];
+                return ['data'=>$tuwan,'code'=>0,'message'=>'筛选链接失败'];
             }
         }
     }

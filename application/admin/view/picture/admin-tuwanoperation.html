@@ -66,6 +66,7 @@
                 console.log(res);
                 layer.closeAll('loading');
                 if(res.code=='1'){
+                    layer.msg(res.message);
                     html = "<p>修改第"+page+"批数据成功："+res.data+"</p>";
                     $('.tip').append(html);
                 }
