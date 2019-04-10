@@ -29,10 +29,13 @@
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
 <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script>
+    $(function () {
+
+
     var page = 1;
     ajax_data(page);
     function ajax_data(page){
-        layer.load('添加中');
+        // layer.load('添加中');
         var html = "";
         $.ajax({
             url: '/index/index/tuwan',
@@ -47,5 +50,6 @@
             },
         });
     }
+    });
 </script>
 </html>
