@@ -60,7 +60,7 @@
         <counts>
           <entry key="css" value="201" />
           <entry key="dummy" value="21" />
-          <entry key="html" value="7441" />
+          <entry key="html" value="7446" />
           <entry key="js" value="9" />
           <entry key="php" value="8975" />
         </counts>
@@ -68,7 +68,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="201" />
-          <entry key="HTML" value="7441" />
+          <entry key="HTML" value="7446" />
           <entry key="JavaScript" value="9" />
           <entry key="PHP" value="8975" />
           <entry key="PLAIN_TEXT" value="21" />
@@ -1150,12 +1150,12 @@
       <workItem from="1554686844495" duration="4667000" />
       <workItem from="1554772106337" duration="6504000" />
       <workItem from="1554788759141" duration="8565000" />
-      <workItem from="1554858421972" duration="13806000" />
+      <workItem from="1554858421972" duration="13929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="629657000" />
+    <option name="totallyTimeSpent" value="629780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
