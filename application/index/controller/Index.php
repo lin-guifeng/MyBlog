@@ -71,7 +71,7 @@ class Index extends Controller
             $end = $page*20;
             $data = db('tuwan')->field('id,data')->limit($start,$end)->order("id desc")->select();
             foreach ($data as &$val) {
-                $val['pic'] = json_decode($val['data']);
+                $val['pic'] = json_decode($val['data'])['0'];
             }
             return ['data'=>$data,'code'=>0,'message'=>'获取成功！'];
         }
