@@ -60,7 +60,7 @@
         <counts>
           <entry key="css" value="201" />
           <entry key="dummy" value="21" />
-          <entry key="html" value="7402" />
+          <entry key="html" value="7403" />
           <entry key="js" value="9" />
           <entry key="php" value="8947" />
         </counts>
@@ -68,7 +68,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="201" />
-          <entry key="HTML" value="7402" />
+          <entry key="HTML" value="7403" />
           <entry key="JavaScript" value="9" />
           <entry key="PHP" value="8947" />
           <entry key="PLAIN_TEXT" value="21" />
@@ -181,8 +181,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-picturelist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="165" column="49" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
+            <state relative-caret-position="590">
+              <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1149,12 +1149,12 @@
       <workItem from="1554686844495" duration="4667000" />
       <workItem from="1554772106337" duration="6504000" />
       <workItem from="1554788759141" duration="8565000" />
-      <workItem from="1554858421972" duration="12635000" />
+      <workItem from="1554858421972" duration="12708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628486000" />
+    <option name="totallyTimeSpent" value="628559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1495,8 +1495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-picturelist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="165" column="49" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
+        <state relative-caret-position="590">
+          <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
