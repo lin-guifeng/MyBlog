@@ -108,10 +108,13 @@ class Picture extends Common
     public function pictureData(){
         $limit = trim(input('limit'));
         $offset = trim(input('offset'));
-        $keyword = trim(input('keyword'));
+        $where="";
+        if(input('keyword')){
+            $where['keyword'] = trim(input('keyword'));
+        }
         $page = floor($offset / $limit) + 1;
         # 获取并且计算 页号 分页大小
-        $res = model('picture')->pictureData($page,$limit,$keyword);
+        $res = model('picture')->pictureData($page,$limit,$where);
         echo json_encode($res);
     }
     //    批量导入百度图片

@@ -13,6 +13,21 @@
     <link href="/static/admin/css/animate.css" rel="stylesheet">
     <link href="/static/admin/css/style.css?v=4.1.0" rel="stylesheet">
 </head>
+<style>
+    tr>td img{
+        transition: All 0.4s ease-in-out;
+        -webkit-transition: All 0.4s ease-in-out;
+        -moz-transition: All 0.4s ease-in-out;
+        -o-transition: All 0.4s ease-in-out;
+    }
+    tr>td img:hover{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+    }
+</style>
 <body class="gray-bg">
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="ibox float-e-margins">
@@ -152,7 +167,6 @@
             };
             return temp;
         };
-
         return oTableInit;
     };
 
