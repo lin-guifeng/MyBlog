@@ -69,11 +69,9 @@
         setTimeout(function(){
             //$(".loadmore").remove();
             $('.main').append(result);
-
             finished=0;
             //最后一页
-            if(lastpage==1)
-            {
+            if(lastpage==1){
                 sover=1;
                 loadover();
             }

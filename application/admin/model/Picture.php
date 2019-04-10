@@ -43,10 +43,11 @@ class Picture extends Model
         return $res;
     }
 
-    public function pictureData($page,$limit){
+    public function pictureData($page,$limit,$keyword){
         $list = db('picture')
             ->page($page,$limit)
             ->order('id desc')
+            ->where('keyword',$keyword)
             ->select();
         $count = db('picture')->count();
         $res = [

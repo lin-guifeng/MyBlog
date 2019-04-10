@@ -15,6 +15,32 @@
 </head>
 <body class="gray-bg">
 <div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <div class="row row-lg">
+                <div class="col-sm-12">
+                    <!-- Example Pagination -->
+                    <div class="example-wrap">
+                        <div class="example">
+                            <form id="formSearch" class="form-horizontal">
+                                <div class="form-group" style="margin-top:15px">
+                                    <label class="control-label col-sm-1" for="keyword">关键词</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="keyword">
+                                    </div>
+
+                                    <div class="col-sm-4" style="text-align:left;">
+                                        <button type="button" style="margin-left:50px" id="btn_query" class="btn btn-primary">查询</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Example Pagination -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Panel Other -->
     <div class="ibox float-e-margins">
         <div class="ibox-content">
@@ -78,12 +104,13 @@
                 pageNumber: 1,
                 pageSize: 10,
                 uniqueId: "id",
-                queryParams: function (params) {
-                    return {
-                        offset: params.offset,  //页码
-                        limit: params.limit,   //页面大小
-                    };
-                },
+                queryParams: oTableInit.queryParams,
+                // queryParams: function (params) {
+                //     return {
+                //         offset: params.offset,  //页码
+                //         limit: params.limit,   //页面大小
+                //     };
+                // },
                 showHeader : true,
                 showColumns : true,
                 showRefresh : true,
@@ -116,8 +143,19 @@
 
             });
         };
+        oTableInit.queryParams = function (params) {
+            var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+                limit: params.limit,   //页面大小
+                offset: params.offset,  //页码
+                keyword: $("#keyword").val(),
+                // statu: $("#txt_search_statu").val()
+            };
+            return temp;
+        };
+
         return oTableInit;
     };
+
     window.operateEvents = {
         "click #tableBtn": function (e, value, row, index) {
             status(row.id);
