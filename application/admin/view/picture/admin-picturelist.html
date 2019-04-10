@@ -30,7 +30,7 @@
                                     </div>
 
                                     <div class="col-sm-4" style="text-align:left;">
-                                        <button type="button" style="margin-left:50px" id="btn_query" class="btn btn-primary">查询</button>
+                                        <button type="button" style="margin-left:50px" id="btn_query" class="btn btn-primary search_btn">查询</button>
                                     </div>
                                 </div>
                             </form>
@@ -99,7 +99,7 @@
                 pagination: true,
                 sortable: true,
                 clickToSelect: true,
-                search: false,
+                search: true,
                 sidePagination: "server", //客户端client   服务端server
                 pageNumber: 1,
                 pageSize: 10,
@@ -161,6 +161,11 @@
             status(row.id);
         }
     }
+    $('#search_btn').click(function() {
+        $('#table').bootstrapTable('refresh', {
+            url : '{:url("Picture/pictureData")}'
+        });
+    })
     function status(obj){
         $.ajax({
             url: '/admin/Picture/lunboStatus',
