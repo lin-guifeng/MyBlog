@@ -6,17 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .list{
+            width: 250px;float: left;height: 300px;margin: 10px 0;display: block;
+        }
+        .list img{
+            width: 100%;overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <div style="width: 500px;margin: 20px auto;">
         <button type="button" class="btn btn-danger btn-block">下载</button>
     </div>
-    <div style="width: 1000px;margin: 0 auto;background-color: #2A2E36;">
-        <!--{volist name="data" id="vo"}-->
-        <!--<a style="width: 250px;float: left;height: 300px;margin: 10px 0;display: block;" href="{url:('index/tuwaninfo')}?id={$vo.id}">-->
-            <!--<img src="{$vo.pic}" alt="" style="width: 100%;overflow: hidden;">-->
-        <!--</a>-->
-        <!--{/volist}-->
+    <div style="width: 1000px;margin: 0 auto;background-color: #2A2E36;" class="main">
+
     </div>
 </body>
 <script>
@@ -34,7 +38,7 @@
                 layer.closeAll('loading');
                 console.log(res);
                 layer.msg(res.message);
-
+                html+="<a href='' class='list'><img src='' alt=''></a>";
             },
         });
     }
