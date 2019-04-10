@@ -67,9 +67,8 @@ class Index extends Controller
     public function tuwan(){
         if ($this->request->isPost()) {
             $page = $this->request->post('page');
-            $start = ($page-1)*20+1;
-            $end = $page*20;
-            $data = db('tuwan')->field('id,data')->limit($start,$end)->order("id desc")->select();
+            $start = ($page-1)*20;
+            $data = db('tuwan')->field('id,data')->limit($start,20)->order("id desc")->select();
             foreach ($data as &$val) {
                 $val['pic'] = json_decode($val['data'])['0'];
             }
