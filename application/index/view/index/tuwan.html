@@ -29,33 +29,54 @@
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
 <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script>
-    // $(function () {
-    //
-    //
-    // var page = 1;
-    // ajax_data(page);
-    // function ajax_data(page){
-    //     // layer.load('添加中');
-    //     var html = "";
-    //     $.ajax({
-    //         url: '/index/index/tuwan',
-    //         dataType: 'json',
-    //         type: 'post',
-    //         data: { page: page },
-    //         success: function (res) {
-    //             // layer.closeAll('loading');
-    //             console.log(res);
-    //             // layer.msg(res.message);
-    //             // html+="<a href='' class='list'><img src='' alt=''></a>";
-    //         },
-    //     });
-    // }
-    // });
 
+
+    $(function () {
     var page=1;
     var finished=0;
     var sover=0;
     var lastpage = 0;
+
+        ajax_data(page);
+
+    function ajax_data(page){
+        var result = "";
+        // layer.load('添加中');
+        $.ajax({
+            url: '/index/index/tuwan',
+            dataType: 'json',
+            type: 'post',
+            data: { page: page },
+            success: function (res) {
+                console.log(res);
+                if(res.code=='0'){
+                    var data = res.data;
+                    // layer.closeAll('loading');
+
+                    // layer.msg(res.message);
+                    for(var i = 0; i < 20; i++){
+                        result+="<a href='#' class='list'><img src='"+data[i].pic.pic+"' alt=''></a>";
+                    }
+                    page++;
+                    finished==0
+                }else{
+                    lastpage = 1;
+                }
+            },
+        });
+        setTimeout(function(){
+            //$(".loadmore").remove();
+            $('.main').append(result);
+
+            finished=0;
+            //最后一页
+            if(lastpage==1)
+            {
+                sover=1;
+                loadover();
+            }
+        },1000);
+    }
 
     //如果屏幕未到整屏自动加载下一页补满
     var setdefult=setInterval(function (){
@@ -106,48 +127,26 @@
                 //防止未加载完再次执行
                 finished=1;
 
-                var result = "";
-                $.ajax({
-                    url: '/index/index/tuwan',
-                    dataType: 'json',
-                    type: 'post',
-                    data: { page: page },
-                    success: function (res) {
-                        if(res.code=='0'){
-                            var data = res.data;
-                            // layer.closeAll('loading');
-                            console.log(res);
-                            // layer.msg(res.message);
-                            for(var i = 0; i < 20; i++){
-                                result+="<a href='#' class='list'><img src='"+data[i].pic.pic+"' alt=''></a>";
-                            }
-                            page++;
-                            finished==0
-                        }else{
-                            lastpage = 1;
-                        }
 
-
-                    },
-                });
+                ajax_data(page);
                 // for(var i = 0; i < 6; i++){
                 //     vid++;
                 //     result+='<li>'
                 //         +'<a href="">好经典人生语句，经典得让人心痛！'+parseInt(vid)+'</a>'
                 //         +'</li>'
                 // }
-                setTimeout(function(){
-                    //$(".loadmore").remove();
-                    $('.prolist').append(result);
-
-                    finished=0;
-                    //最后一页
-                    if(lastpage==1)
-                    {
-                        sover=1;
-                        loadover();
-                    }
-                },1000);
+                // setTimeout(function(){
+                //     //$(".loadmore").remove();
+                //     $('.prolist').append(result);
+                //
+                //     finished=0;
+                //     //最后一页
+                //     if(lastpage==1)
+                //     {
+                //         sover=1;
+                //         loadover();
+                //     }
+                // },1000);
                 /*$.ajax({
                  type: 'GET',
                  url: 'json/more.json?t=25&page='+page,
@@ -197,5 +196,6 @@
     $(window).scroll(function (){
         loadmore($(this));
     });
+    })
 </script>
 </html>
