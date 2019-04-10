@@ -8,13 +8,35 @@
     <title>Document</title>
 </head>
 <body>
-
+    <div style="width: 500px;margin: 20px auto;">
+        <button type="button" class="btn btn-danger btn-block">下载</button>
+    </div>
     <div style="width: 1000px;margin: 0 auto;background-color: #2A2E36;">
-        {volist name="data" id="vo"}
-        <a style="width: 250px;float: left;height: 300px;margin: 10px 0;display: block;" href="{url:('index/tuwaninfo')}?id={$vo.id}">
-            <img src="{$vo.pic}" alt="" style="width: 100%;overflow: hidden;">
-        </a>
-        {/volist}
+        <!--{volist name="data" id="vo"}-->
+        <!--<a style="width: 250px;float: left;height: 300px;margin: 10px 0;display: block;" href="{url:('index/tuwaninfo')}?id={$vo.id}">-->
+            <!--<img src="{$vo.pic}" alt="" style="width: 100%;overflow: hidden;">-->
+        <!--</a>-->
+        <!--{/volist}-->
     </div>
 </body>
+<script>
+    var page = 1;
+    ajax_data(page);
+    function ajax_data(page){
+        layer.load('添加中');
+        var html = "";
+        $.ajax({
+            url: '/index/index/tuwan',
+            dataType: 'json',
+            type: 'post',
+            data: { page: page },
+            success: function (res) {
+                layer.closeAll('loading');
+                console.log(res);
+                layer.msg(res.message);
+
+            },
+        });
+    }
+</script>
 </html>

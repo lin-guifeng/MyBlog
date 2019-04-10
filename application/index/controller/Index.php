@@ -65,8 +65,17 @@ class Index extends Controller
     }
 
     public function tuwan(){
-        $data = db('tuwan')->field('id,pic')->select();
-        $this->assign('data',$data);
+        if ($this->request->isPost()) {
+            $page = $this->request->post('page');
+            $start = ($page-1)*20+1;
+            $end = $page*20;
+            $data = db('tuwan')->field('id,data')->limit($start,$end)->order("id desc")->select();
+            foreach ($data as &$val) {
+                $val['pic'] = json_decode($val['data'])['0']['thumb'];
+            }
+            return ['data'=>$data,'code'=>0,'message'=>'获取成功！'];
+        }
+//        $this->assign('data',$data);
         return view('tuwan');
     }
     public function tuwaninfo(){

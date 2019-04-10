@@ -200,6 +200,7 @@ class Picture extends Common
     public function tuwan(){
         return view("admin-tuwanoperation");
     }
+
     public function tuwan_a(){
         if ($this->request->isPost()){
             $num = $this->request->post('num');
@@ -222,6 +223,7 @@ class Picture extends Common
             }
         }
     }
+
     public function tuwan_b(){
         if ($this->request->isPost()){
             $page = $this->request->post('page');
@@ -230,7 +232,6 @@ class Picture extends Common
             $data=db('tuwan_url')->limit($start,$num)->select();
             $max_num = db('tuwan')->max('pid');
             $is_have = true;
-            $i=0;
             if(!$data){
                 return ['data'=>1,'code'=>2,'message'=>'没有添加这一批次数据，请修改批次！'];
             }
@@ -238,20 +239,12 @@ class Picture extends Common
                 $val['text'] = substr($val['text'],strpos($val['text'],'(')+1);
                 $val['text'] = substr($val['text'], 0, -1);
                 $val['text'] = json_decode($val['text'],true);
-//                if(isset($val['text']['id'])&&$max_num>=$val['text']['id']){
-//                    $is_have = false;
-//                    break;
-//                $i++;
-//                }
                 if($val['text']!=null){
                     if($val['text']['error']!='1'&&$val['text']['thumb']!=null){
                         if($max_num>=$val['text']['id']) {
                             $is_have = false;
                             continue;
                         }
-//                        }else{
-//                            $is_have = true;
-//                        }
                         $is_have = true;
                         $res[$key]['tags'] = json_encode($val['text']['tags']);
                         $res[$key]['thumb'] = json_encode($val['text']['thumb']);
@@ -263,13 +256,7 @@ class Picture extends Common
                         $res[$key]['data'] = json_encode($val['text']['data']);
                     }
                 }
-//                if($max_num>=$res[$key]['pid']){
-//                            $is_have = false;
-//                    continue;
-//                }
-
             }
-
             if($is_have==true){
                 $tuwan=db('tuwan')->insertAll($res);
             }else{
@@ -292,7 +279,6 @@ class Picture extends Common
             foreach ($data as $key => $val){
                 if ($val['status'] == '1'){
                     continue;
-//                    $res = [];
                 }
                 $picData = json_decode($val['data']);
                 $res[$key]['id'] = $val['id'];
@@ -312,20 +298,11 @@ class Picture extends Common
                 $res[$key]['status'] = "1";
                 $tuwan=db('tuwan')->update($res[$key]);
             }
-//            return $tuwan;
             if(empty($res)){
                 return ['data'=>1,'code'=>2,'message'=>'没有可修改的数据!'];
             }else{
                 return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
             }
-//            return $tuwan;
-//            $tuwan=db('tuwan')->saveAll($res);
-//            return $res;
-//            if($tuwan){
-//                return ['data'=>$tuwan,'code'=>1,'message'=>'修改完成'];
-//            }else{
-//                return ['data'=>$tuwan,'code'=>0,'message'=>'修改失败'];
-//            }
         }
 
         return view('test');
