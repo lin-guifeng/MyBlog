@@ -42,14 +42,14 @@
     $(window).scroll(function (){
         loadmore($(this));
     });
-    function ajax_data(page){
+    function ajax_data(num){
         var result = "";
         // layer.load('添加中');
         $.ajax({
             url: '/index/index/tuwan',
             dataType: 'json',
             type: 'post',
-            data: { page: page },
+            data: { page: num },
             success: function (res) {
                 console.log(res);
                 if(res.code=='0'){
