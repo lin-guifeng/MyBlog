@@ -80,15 +80,15 @@
         },1000);
     }
 
-    //如果屏幕未到整屏自动加载下一页补满
-    var setdefult=setInterval(function (){
-        if(sover==1)
-            clearInterval(setdefult);
-        else if($(".main").height()<$(window).height())
-            loadmore($(window));
-        else
-            clearInterval(setdefult);
-    },500);
+    // //如果屏幕未到整屏自动加载下一页补满
+    // var setdefult=setInterval(function (){
+    //     if(sover==1)
+    //         clearInterval(setdefult);
+    //     else if($(".main").height()<$(window).height())
+    //         loadmore($(window));
+    //     else
+    //         clearInterval(setdefult);
+    // },500);
 
     //加载完
     function loadover(){
