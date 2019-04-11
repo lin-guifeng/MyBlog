@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:84:"/var/www/html/MyBlog/public/../application/admin/view/picture/admin-picturelist.html";i:1553070801;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:84:"/var/www/html/MyBlog/public/../application/admin/view/picture/admin-picturelist.html";i:1554890167;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,8 +14,49 @@
     <link href="/static/admin/css/animate.css" rel="stylesheet">
     <link href="/static/admin/css/style.css?v=4.1.0" rel="stylesheet">
 </head>
+<style>
+    tr>td img{
+        transition: All 0.4s ease-in-out;
+        -webkit-transition: All 0.4s ease-in-out;
+        -moz-transition: All 0.4s ease-in-out;
+        -o-transition: All 0.4s ease-in-out;
+    }
+    tr>td img:hover{
+        transform: scale(5);
+        -webkit-transform: scale(5);
+        -moz-transform: scale(5);
+        -o-transform: scale(5);
+        -ms-transform: scale(5);
+    }
+</style>
 <body class="gray-bg">
 <div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <div class="row row-lg">
+                <div class="col-sm-12">
+                    <!-- Example Pagination -->
+                    <div class="example-wrap">
+                        <div class="example">
+                            <form id="formSearch" class="form-horizontal">
+                                <div class="form-group" style="margin-top:15px">
+                                    <label class="control-label col-sm-1" for="keyword">关键词</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="keyword">
+                                    </div>
+
+                                    <div class="col-sm-4" style="text-align:left;">
+                                        <button type="button" style="margin-left:50px" id="btn_query" class="btn btn-primary search_btn">查询</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Example Pagination -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Panel Other -->
     <div class="ibox float-e-margins">
         <div class="ibox-content">
@@ -74,17 +115,18 @@
                 pagination: true,
                 sortable: true,
                 clickToSelect: true,
-                search: false,
+                search: true,
                 sidePagination: "server", //客户端client   服务端server
                 pageNumber: 1,
                 pageSize: 10,
                 uniqueId: "id",
-                queryParams: function (params) {
-                    return {
-                        offset: params.offset,  //页码
-                        limit: params.limit,   //页面大小
-                    };
-                },
+                queryParams: oTableInit.queryParams,
+                // queryParams: function (params) {
+                //     return {
+                //         offset: params.offset,  //页码
+                //         limit: params.limit,   //页面大小
+                //     };
+                // },
                 showHeader : true,
                 showColumns : true,
                 showRefresh : true,
@@ -117,13 +159,28 @@
 
             });
         };
+        oTableInit.queryParams = function (params) {
+            var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+                limit: params.limit,   //页面大小
+                offset: params.offset,  //页码
+                keyword: $("#keyword").val(),
+                // statu: $("#txt_search_statu").val()
+            };
+            return temp;
+        };
         return oTableInit;
     };
+
     window.operateEvents = {
         "click #tableBtn": function (e, value, row, index) {
             status(row.id);
         }
     }
+    $('.search_btn').click(function() {
+        $('#table').bootstrapTable('refresh', {
+            url : '<?php echo url("Picture/pictureData"); ?>'
+        });
+    })
     function status(obj){
         $.ajax({
             url: '/admin/Picture/lunboStatus',
