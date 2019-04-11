@@ -329,7 +329,7 @@ class Picture extends Common
 
         $dir = "/uploads/images/".$res['id']."/";
         if(!is_dir($dir)){
-            mkdir ($dir,0777);
+            mkdir ($dir,0777,true);
         }
         dump($dir);
 //            foreach ($res['img'] as $val){
