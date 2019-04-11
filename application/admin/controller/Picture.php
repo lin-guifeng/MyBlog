@@ -344,6 +344,8 @@ class Picture extends Common
                     {
                         fclose($fp);
                         echo "图片保存成功";
+                    }else{
+                        echo "错误";
                     }
                 }
 
