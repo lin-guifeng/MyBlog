@@ -328,9 +328,9 @@ class Picture extends Common
             $res['img'] = json_decode($res['details']);
 
         $dir = "/uploads/images/".$res['id']."/";
-        if(!is_dir($dir)){
-            mkdir ($dir,0777,true);
-        }
+//        if(!is_dir($dir)){
+//            mkdir ($dir,0777,true);
+//        }
         dump($dir);
 //            foreach ($res['img'] as $val){
 ////                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
