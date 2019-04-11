@@ -327,13 +327,16 @@ class Picture extends Common
             $res = db('tuwan')->where(array('id'=>1084))->find();
             $res['img'] = json_decode($res['details']);
 
-
-
-            foreach ($res['img'] as $val){
-//                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
-                $this->down_images($val,$res['id']);
-
-            }
+        $dir = "/uploads/images/".$res['id']."/";
+        if(!is_dir($dir)){
+            mkdir ($dir,0777);
+        }
+        dump($dir);
+//            foreach ($res['img'] as $val){
+////                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
+//                $this->down_images($val,$res['id']);
+//
+//            }
 
 
 
@@ -365,7 +368,7 @@ class Picture extends Common
 	//存放图片的路径及图片名称  *****这里注意 你的文件夹是否有创建文件的权限 chomd -R 777 mywenjian
         $dir = "/uploads/images/".$id."/";
 	    if(!is_dir($dir)){
-            mkdir ($dir,0777,true);
+            mkdir ($dir,0777);
         }
 
 	    $filename = date("YmdHis") . uniqid() . $exf;//这里默认是当前文件夹，可以加路径的 可以改为$filepath = '../'.$filename
