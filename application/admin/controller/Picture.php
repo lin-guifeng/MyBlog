@@ -363,7 +363,7 @@ class Picture extends Common
 	    }
 
 	//存放图片的路径及图片名称  *****这里注意 你的文件夹是否有创建文件的权限 chomd -R 777 mywenjian
-        $dir = "/uploads/images/".$id;
+        $dir = "/uploads/images/".$id."/";
 	    if(!is_dir($dir)){
             mkdir ($dir,0777,true);
         }
