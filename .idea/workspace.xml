@@ -6,9 +6,6 @@
       <change beforePath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" beforeDir="false" afterPath="E:/BaiduNetdiskDownload/demo1/MallTest/application/home/controller/Myredis.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Picture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/tuwan.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/tuwan.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +43,7 @@
           <entry key="ico" value="2" />
           <entry key="js" value="15" />
           <entry key="mustache" value="2" />
-          <entry key="php" value="407" />
+          <entry key="php" value="408" />
           <entry key="think" value="1" />
         </counts>
       </usages-collector>
@@ -56,7 +53,7 @@
           <entry key="HTML" value="380" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="15" />
-          <entry key="PHP" value="409" />
+          <entry key="PHP" value="410" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -66,7 +63,7 @@
           <entry key="dummy" value="21" />
           <entry key="html" value="7499" />
           <entry key="js" value="9" />
-          <entry key="php" value="9278" />
+          <entry key="php" value="9282" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -74,7 +71,7 @@
           <entry key="CSS" value="201" />
           <entry key="HTML" value="7499" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="9278" />
+          <entry key="PHP" value="9282" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -92,11 +89,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="324" column="18" selection-start-line="324" selection-start-column="18" selection-end-line="324" selection-end-column="18" />
+            <state relative-caret-position="-299">
+              <caret line="326" column="54" selection-start-line="326" selection-start-column="54" selection-end-line="326" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/model/Picture.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -119,20 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
+            <state relative-caret-position="1111">
               <caret line="243" column="24" lean-forward="true" selection-start-line="241" selection-start-column="23" selection-end-line="243" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/view/index/tuwaninfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -305,8 +302,8 @@
         <option value="$PROJECT_DIR$/application/index/view/index/tuwan.html" />
         <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Picture.php" />
         <option value="$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Picture.php" />
       </list>
     </option>
   </component>
@@ -337,7 +334,7 @@
       <path value="$PROJECT_DIR$/vendor/topthink/think-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -1147,12 +1144,12 @@
       <workItem from="1554772106337" duration="6504000" />
       <workItem from="1554788759141" duration="8565000" />
       <workItem from="1554858421972" duration="15001000" />
-      <workItem from="1554944721906" duration="9919000" />
+      <workItem from="1554944721906" duration="10276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="640771000" />
+    <option name="totallyTimeSpent" value="641128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1390,13 +1387,6 @@
     <entry file="file://$PROJECT_DIR$/application/admin/common.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/Picture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/model/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1476,17 +1466,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="324" column="18" selection-start-line="324" selection-start-column="18" selection-end-line="324" selection-end-column="18" />
+        <state relative-caret-position="1111">
+          <caret line="243" column="24" lean-forward="true" selection-start-line="241" selection-start-column="23" selection-end-line="243" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/picture/admin-tuwanlist.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/model/Picture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="243" column="24" lean-forward="true" selection-start-line="241" selection-start-column="23" selection-end-line="243" selection-end-column="24" />
+        <state relative-caret-position="295">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Picture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="326" column="54" selection-start-line="326" selection-start-column="54" selection-end-line="326" selection-end-column="54" />
         </state>
       </provider>
     </entry>

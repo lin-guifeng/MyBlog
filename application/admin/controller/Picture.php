@@ -323,9 +323,8 @@ class Picture extends Common
 
     //批量下载图片
     public function picDownload(){
-        if ($this->request->isPost()){
-            $id = $this->request->post('id');
-            $res = db('tuwan')->where(array('id'=>$id))->find();
+
+            $res = db('tuwan')->where(array('id'=>1084))->find();
             $res['img'] = json_decode($res['details']);
             $filename = "./uploads/" . date ( 'YmdH' ) . ".zip";
             // 生成文件
@@ -362,7 +361,7 @@ class Picture extends Common
             header ( 'Content-Length: ' . filesize ( $filename ) ); // 告诉浏览器，文件大小
             @readfile ( $filename );//输出文件;
             exit;
-        }
+
 
     }
 
