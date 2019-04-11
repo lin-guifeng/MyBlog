@@ -331,10 +331,11 @@ class Picture extends Common
         $dirs = "/uploads/images/";
         if(is_dir($dirs)){
             echo "123";
-        }else{
-            $dir = "/uploads/images/".$res['id']."/";
-            mkdir ($dir,0777,true);
         }
+//        else{
+//            $dir = "/uploads/images/".$res['id']."/";
+//            mkdir ($dir,0777,true);
+//        }
         dump($dirs);
 //            foreach ($res['img'] as $val){
 ////                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
