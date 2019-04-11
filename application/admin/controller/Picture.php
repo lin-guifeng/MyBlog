@@ -328,7 +328,7 @@ class Picture extends Common
             $res['img'] = json_decode($res['details']);
 
 
-        $dirs = "/uploads/images/";
+        $dirs = ROOT_PATH."public/uploads/images/";
         if(is_dir($dirs)){
             echo "123";
         }
