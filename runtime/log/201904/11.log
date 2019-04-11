@@ -2087,3 +2087,86 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000712s ]
 [ sql ] [ SQL ] SELECT * FROM `blog_tuwan` WHERE  `id` = 1084 LIMIT 1 [ RunTime:0.000390s ]
 [ error ] [2]file_put_contents(/uploads/images/201904111525095caeebd53f37f.jpg): failed to open stream: No such file or directory[/var/www/html/MyBlog/application/admin/controller/Picture.php:370]
+---------------------------------------------------------------
+[ 2019-04-11T15:38:52+08:00 ] 116.25.39.203 GET /admin/picture/picDownload.html
+[ info ] www.linguifeng.top/admin/picture/picDownload.html [运行时间：0.215697s][吞吐率：4.64req/s] [内存消耗：2,521.49kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picture',
+    2 => 'picDownload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=al7bo6jb6h41f5l1mq01973423; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Picture->picDownload[ /var/www/html/MyBlog/application/admin/controller/Picture.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tuwan` WHERE  `id` = 1084 LIMIT 1 [ RunTime:0.000363s ]
+[ error ] [2]file_put_contents(/uploads/images/201904111538525caeef0c0434f.jpg): failed to open stream: No such file or directory[/var/www/html/MyBlog/application/admin/controller/Picture.php:370]
+---------------------------------------------------------------
+[ 2019-04-11T15:43:13+08:00 ] 116.25.39.203 GET /admin/picture/picDownload.html
+[ info ] www.linguifeng.top/admin/picture/picDownload.html [运行时间：34.355703s][吞吐率：0.03req/s] [内存消耗：2,460.36kb] [文件加载：51]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picture',
+    2 => 'picDownload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=al7bo6jb6h41f5l1mq01973423; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Picture->picDownload[ /var/www/html/MyBlog/application/admin/controller/Picture.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tuwan` WHERE  `id` = 1084 LIMIT 1 [ RunTime:0.000388s ]
