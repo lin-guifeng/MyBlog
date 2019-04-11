@@ -330,13 +330,11 @@ class Picture extends Common
 
         $dirs = ROOT_PATH."public/uploads/images/";
         if(is_dir($dirs)){
-            echo "123";
+
+            $dir = $dirs.$res['id']."/";
+            mkdir ($dir,0777,true);
         }
-//        else{
-//            $dir = "/uploads/images/".$res['id']."/";
-//            mkdir ($dir,0777,true);
-//        }
-        dump($dirs);
+        dump($dir);
 //            foreach ($res['img'] as $val){
 ////                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
 //                $this->down_images($val,$res['id']);
