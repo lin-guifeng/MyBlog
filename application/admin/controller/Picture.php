@@ -338,7 +338,7 @@ class Picture extends Common
                     readfile($val);		//读取图片
                     $img = ob_get_contents();	//得到缓冲区中保存的图片
                     ob_end_clean();		//清空缓冲区
-                    $name = date()."jpg";
+                    $name = time()."jpg";
                     $fp = fopen($path.$name,'w');	//写入图片
                     if(fwrite($fp,$img))
                     {
