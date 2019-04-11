@@ -326,56 +326,58 @@ class Picture extends Common
 
             $res = db('tuwan')->where(array('id'=>1084))->find();
             $res['img'] = json_decode($res['details']);
-        $path = 'd:/images/';
-        if(!file_exists($path))
-        {
-            if(mkdir($path,0777,true))
-            {
-//                $img ="http://i2.muimg.com/567571/9b838948a0e2c13f.jpg" ;
-                foreach ($res['img'] as $val){
-                    ob_clean();
-                    ob_start();
-                    readfile($val);		//读取图片
-                    $img = ob_get_contents();	//得到缓冲区中保存的图片
-                    ob_end_clean();		//清空缓冲区
-                    $name = time()."jpg";
-                    $fp = fopen($path.$name,'w');	//写入图片
-                    if(fwrite($fp,$img))
-                    {
-                        fclose($fp);
-                        echo "图片保存成功";
-                    }else{
-                        echo "错误";
-                    }
-                }
 
+
+
+            foreach ($res['img'] as $val){
+//                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
+                $this->down_images($val);
 
             }
-        }
+
 
 
     }
-    public function GrabImage() {
-        $path = 'd:/images/';
-        if(!file_exists($path))
-        {
-            if(mkdir($path,0777,true))
-            {
-                $img ="http://i2.muimg.com/567571/9b838948a0e2c13f.jpg" ;
-                ob_clean();
-                ob_start();
-                readfile($img);		//读取图片
-                $img = ob_get_contents();	//得到缓冲区中保存的图片
-                ob_end_clean();		//清空缓冲区
-                $fp = fopen($path.'test.jpg','w');	//写入图片
-                if(fwrite($fp,$img))
-                {
-                    fclose($fp);
-                    echo "图片保存成功";
-                }
-            }
-        }
+
+    public function down_images($url) {
+	$header = array("Connection: Keep-Alive", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Pragma: no-cache", "Accept-Language: zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3", "User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:29.0) Gecko/20100101 Firefox/29.0");
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, $url);
+	//curl_setopt($ch, CURLOPT_HEADER, $v);
+	curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+	curl_setopt($ch, CURLOPT_ENCODING, 'gzip,deflate');
+	$content = curl_exec($ch);
+	$curlinfo = curl_getinfo($ch);
+	//print_r($curlinfo);
+	//关闭连接
+	curl_close($ch);
+	if ($curlinfo['http_code'] == 200) {
+	    if ($curlinfo['content_type'] == 'image/jpeg') {
+	        $exf = '.jpg';
+	    } else if ($curlinfo['content_type'] == 'image/png') {
+	        $exf = '.png';
+	    } else if ($curlinfo['content_type'] == 'image/gif') {
+	        $exf = '.gif';
+	    }
+
+	//存放图片的路径及图片名称  *****这里注意 你的文件夹是否有创建文件的权限 chomd -R 777 mywenjian
+
+	    $filename = date("YmdHis") . uniqid() . $exf;//这里默认是当前文件夹，可以加路径的 可以改为$filepath = '../'.$filename
+	    $filepath = '/uploads/images/'.$filename;
+	    var_dump($content);
+	    $res = file_put_contents($filepath, $content);
+	    //$res = file_put_contents($filename, $content);//同样这里就可以改为$res = file_put_contents($filepath, $content);
+	    //echo $filepath;
+            echo $res;
+	    }
+
     }
+
+
+
+
 
 
 }
