@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"/var/www/html/MyBlog/public/../application/admin/view/picture/admin-tuwanlist.html";i:1553755192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"/var/www/html/MyBlog/public/../application/admin/view/picture/admin-tuwanlist.html";i:1554965153;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +36,10 @@
                                 <button id="btn_delete" type="button" class="btn btn-outline btn-danger">
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                     <span>删除</span>
+                                </button>
+                                <button id="btn_upload" type="button" class="btn btn-outline btn-default">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                    <span>下载</span>
                                 </button>
                             </div>
                             <table id="table"></table>
@@ -216,6 +220,29 @@
                     if(res.code=='1'){
                         self.location.reload();
                     }
+                },
+            });
+        }
+    });
+    $("#btn_upload").click(function () {
+        if (confirm("确认要下载吗？")) {
+            layer.load();
+            var id = "";
+            $("input[name='btSelectItem']:checked").each(function () {
+                id = $(this).parents("tr").attr("data-uniqueid");
+            })
+
+            $.ajax({
+                url: '/admin/Picture/picDownload',
+                dataType: 'json',
+                type: 'get',
+                data: { id: id },
+                success: function (res) {
+                    console.log(res);
+                    layer.closeAll('loading');
+                    // if(res.code=='1'){
+                    //     self.location.reload();
+                    // }
                 },
             });
         }

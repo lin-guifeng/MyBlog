@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"/var/www/html/MyBlog/public/../application/index/view/index/tuwaninfo.html";i:1554804212;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:74:"/var/www/html/MyBlog/public/../application/index/view/index/tuwaninfo.html";i:1554806337;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -33,6 +33,7 @@
         .swiper-slide {
             background-size: cover;
             background-position: center;
+            text-align: center;
         }
         .gallery-top {
             height: 80%;
