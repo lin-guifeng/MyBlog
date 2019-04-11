@@ -3597,3 +3597,45 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000703s ]
 [ sql ] [ SQL ] SELECT * FROM `blog_tuwan` WHERE  `id` = 1084 LIMIT 1 [ RunTime:0.000420s ]
 [ error ] [2]mkdir(): Permission denied[/var/www/html/MyBlog/application/admin/controller/Picture.php:368]
+---------------------------------------------------------------
+[ 2019-04-11T17:01:53+08:00 ] 116.25.39.203 GET /admin/picture/picDownload.html
+[ info ] www.linguifeng.top/admin/picture/picDownload.html [运行时间：0.022446s][吞吐率：44.55req/s] [内存消耗：2,522.87kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/MyBlog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'picture',
+    2 => 'picDownload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=4712565760; PHPSESSID=al7bo6jb6h41f5l1mq01973423; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.linguifeng.top',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Picture->picDownload[ /var/www/html/MyBlog/application/admin/controller/Picture.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tuwan` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tuwan` WHERE  `id` = 1084 LIMIT 1 [ RunTime:0.000385s ]
+[ error ] [2]mkdir(): No such file or directory[/var/www/html/MyBlog/application/admin/controller/Picture.php:332]
