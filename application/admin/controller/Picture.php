@@ -323,29 +323,33 @@ class Picture extends Common
 
     //批量下载图片
     public function picDownload(){
-
-            $res = db('tuwan')->where(array('id'=>1084))->find();
+        if ($this->request->isPost()) {
+            $id = $this->request->post('id');
+            $res = db('tuwan')->where(array('id' => $id))->find();
             $res['img'] = json_decode($res['details']);
 
 
-        $dirs = ROOT_PATH."public/uploads/images/";
-        if(is_dir($dirs)){
+            $dir = ROOT_PATH . "public/uploads/images/" . $res['id'] . "/";
+            if (!is_dir($dir)) {
+                mkdir($dir, 0777, true);
+            }
 
-            $dir = $dirs.$res['id']."/";
-            mkdir ($dir,0777,true);
+            foreach ($res['img'] as $val) {
+//                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
+                $res = $this->down_images($val, $dir);
+
+            }
+            if($res){
+                db('tuwan')->update(['save' => '1','id'=>$res['id']]);
+                return ['data'=>$res,'code'=>1,'message'=>'保存成功！'];
+            }else{
+                return ['data'=>$res,'code'=>0,'message'=>'保存失败！'];
+            }
+
         }
-        dump($dir);
-//            foreach ($res['img'] as $val){
-////                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
-//                $this->down_images($val,$res['id']);
-//
-//            }
-
-
-
     }
 
-    public function down_images($url,$id) {
+    public function down_images($url,$dir) {
 	$header = array("Connection: Keep-Alive", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Pragma: no-cache", "Accept-Language: zh-Hans-CN,zh-Hans;q=0.8,en-US;q=0.5,en;q=0.3", "User-Agent: Mozilla/5.0 (Windows NT 5.1; rv:29.0) Gecko/20100101 Firefox/29.0");
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
@@ -369,18 +373,14 @@ class Picture extends Common
 	    }
 
 	//存放图片的路径及图片名称  *****这里注意 你的文件夹是否有创建文件的权限 chomd -R 777 mywenjian
-        $dir = "/uploads/images/".$id."/";
-	    if(!is_dir($dir)){
-            mkdir ($dir,0777);
-        }
 
 	    $filename = date("YmdHis") . uniqid() . $exf;//这里默认是当前文件夹，可以加路径的 可以改为$filepath = '../'.$filename
 	    $filepath = $dir . DS.$filename;
-	    var_dump($filepath);
+//	    var_dump($filepath);
 	    $res = file_put_contents($filepath, $content);
 	    //$res = file_put_contents($filename, $content);//同样这里就可以改为$res = file_put_contents($filepath, $content);
 	    //echo $filepath;
-            echo $res;
+            return $res;
 	    }
 
     }
