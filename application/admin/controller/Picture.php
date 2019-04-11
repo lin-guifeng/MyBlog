@@ -326,45 +326,54 @@ class Picture extends Common
 
             $res = db('tuwan')->where(array('id'=>1084))->find();
             $res['img'] = json_decode($res['details']);
-            $filename = "./uploads/" . date ( 'YmdH' ) . ".zip";
-            // 生成文件
-            $zip = new \ZipArchive ();
-            // 使用本类，linux需开启zlib，windows需取消php_zip.dll前的注释
-            if ($zip->open ($filename ,\ZipArchive::OVERWRITE) !== true) {
-                //OVERWRITE 参数会覆写压缩包的文件 文件必须已经存在
-                if($zip->open ($filename ,\ZipArchive::CREATE) !== true){
-                    // 文件不存在则生成一个新的文件 用CREATE打开文件会追加内容至zip
-                    exit ( '无法打开文件，或者文件创建失败' );
+        $path = 'd:/images/';
+        if(!file_exists($path))
+        {
+            if(mkdir($path,0777,true))
+            {
+//                $img ="http://i2.muimg.com/567571/9b838948a0e2c13f.jpg" ;
+                foreach ($res['img'] as $val){
+                    ob_clean();
+                    ob_start();
+                    readfile($val);		//读取图片
+                    $img = ob_get_contents();	//得到缓冲区中保存的图片
+                    ob_end_clean();		//清空缓冲区
+                    $name = date()."jpg";
+                    $fp = fopen($path.$name,'w');	//写入图片
+                    if(fwrite($fp,$img))
+                    {
+                        fclose($fp);
+                        echo "图片保存成功";
+                    }
                 }
-            }
 
-            foreach($res['img'] as $key => $v){
-//                $v['swfimglist'] =  substr($v['swfimglist'],1);
-                $zip->addEmptyDir("attach");
-                if(file_exists($v)){
-                    $zip->addFile($v, basename($v));
-                } else {
-//                    die('图片地址不对哦');
-                    echo 'error';
-                    exit;
-                }
-            }
 
-            // 关闭
-            $zip->close ();
-            //下面是输出下载;
-            header ( "Cache-Control: max-age=0" );
-            header ( "Content-Description: File Transfer" );
-            header ( 'Content-disposition: attachment; filename=' . basename ( $filename ) ); // 文件名
-            header ( "Content-Type: application/zip" ); // zip格式的
-            header ( "Content-Transfer-Encoding: binary" ); // 告诉浏览器，这是二进制文件
-            header ( 'Content-Length: ' . filesize ( $filename ) ); // 告诉浏览器，文件大小
-            @readfile ( $filename );//输出文件;
-            exit;
+            }
+        }
 
 
     }
-
+    public function GrabImage() {
+        $path = 'd:/images/';
+        if(!file_exists($path))
+        {
+            if(mkdir($path,0777,true))
+            {
+                $img ="http://i2.muimg.com/567571/9b838948a0e2c13f.jpg" ;
+                ob_clean();
+                ob_start();
+                readfile($img);		//读取图片
+                $img = ob_get_contents();	//得到缓冲区中保存的图片
+                ob_end_clean();		//清空缓冲区
+                $fp = fopen($path.'test.jpg','w');	//写入图片
+                if(fwrite($fp,$img))
+                {
+                    fclose($fp);
+                    echo "图片保存成功";
+                }
+            }
+        }
+    }
 
 
 }
