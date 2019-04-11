@@ -363,9 +363,13 @@ class Picture extends Common
 	    }
 
 	//存放图片的路径及图片名称  *****这里注意 你的文件夹是否有创建文件的权限 chomd -R 777 mywenjian
+        $dir = "/uploads/images/".$id;
+	    if(!is_dir($dir)){
+            mkdir ($dir,0777,true);
+        }
 
 	    $filename = date("YmdHis") . uniqid() . $exf;//这里默认是当前文件夹，可以加路径的 可以改为$filepath = '../'.$filename
-	    $filepath = ROOT_PATH . 'public' . DS . 'uploads' . DS  . 'images'.DS .$id . DS.$filename;
+	    $filepath = $dir . DS.$filename;
 	    var_dump($filepath);
 	    $res = file_put_contents($filepath, $content);
 	    //$res = file_put_contents($filename, $content);//同样这里就可以改为$res = file_put_contents($filepath, $content);
