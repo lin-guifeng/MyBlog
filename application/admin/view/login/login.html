@@ -62,13 +62,15 @@
 <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
 <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
 <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
+<script src="/static/admin/js/plugins/iCheck/icheck.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.i-checks').iCheck({
             checkboxClass: 'icheckbox_square-green',
             radioClass: 'iradio_square-green',
         });
-        $(".user").focus();
+
+        // $(".user").focus();
         $("#remember").click(function () {
             if ($(".user").val() == "") {
                 alert("用户名不能为空！");
