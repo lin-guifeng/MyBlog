@@ -64,7 +64,11 @@
 <script src="/static/admin/js/plugins/layer/layer.min.js"></script>
 <script>
     $(document).ready(function () {
-        $("user").focus();
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green',
+        });
+        $(".user").focus();
         $("#remember").click(function () {
             if ($(".user").val() == "") {
                 alert("用户名不能为空！");
