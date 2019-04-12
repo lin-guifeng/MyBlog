@@ -27,14 +27,17 @@
             <h3>欢迎使用 H+</h3>
             <form class="m-t" role="form" action="{:url('login/login')}" method="post">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="账号" required="" name="user">
+                    <input type="text" class="form-control" placeholder="账号" required="" name="user"/>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="密码" required="" name="password">
+                    <input type="password" class="form-control" placeholder="密码" required="" name="password"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="input" name="captcha" placeholder="填写右侧的验证码" data-validate="required:请填写右侧的验证码"  style="width: 200px;"/>
-                    <img src="{:url('login/show_captcha')}" alt="" width="121" height="32" class="passcode" onclick="this.src=this.src+'?'"/>
+                    <input type="text" class="form-control" name="captcha" placeholder="填写验证码" />
+
+                </div>
+                <div class="form-group">
+                    <img src="{:url('login/show_captcha')}" alt="" class="passcode" onclick="this.src=this.src+'?'"/>
                 </div>
 
 

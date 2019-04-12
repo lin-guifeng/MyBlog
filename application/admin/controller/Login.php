@@ -87,10 +87,12 @@ class Login extends Controller
         $captcha->imageW=121;
         $captcha->imageH = 32;  //图片高
         $captcha->fontSize =14;  //字体大小
-        $captcha->length   = 4;  //字符数
+        $captcha->length   = 5;  //字符数
         $captcha->fontttf = '5.ttf';  //字体
-        $captcha->expire = 30;  //有效期
+        $captcha->expire = 300;  //有效期
         $captcha->useNoise = false;  //不添加杂点
+        $captcha->reset    = true;
+        $captcha->useCurve =  false;
         return $captcha->entry();
     }
 
