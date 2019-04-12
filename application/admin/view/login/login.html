@@ -32,7 +32,13 @@
                 <div class="form-group">
                     <input type="password" class="form-control" placeholder="密码" required="" name="password">
                 </div>
-                <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
+                <div class="form-group">
+                    <input type="text" class="input" name="captcha" placeholder="填写右侧的验证码" data-validate="required:请填写右侧的验证码"  style="width: 200px;"/>
+                    <img src="{:url('login/show_captcha')}" alt="" width="121" height="32" class="passcode" onclick="this.src=this.src+'?'"/>
+                </div>
+
+
+                    <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
                 <!--<p class="text-muted text-center">-->
                     <!--<a href="login.html#"><small>忘记密码了？</small></a> | <a href="register.html">注册一个新账号</a>-->
                 <!--</p>-->

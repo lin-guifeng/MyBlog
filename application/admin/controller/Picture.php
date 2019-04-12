@@ -337,7 +337,6 @@ class Picture extends Common
             foreach ($res['img'] as $val) {
 //                    $url = "https://hrtvoss.oss-cn-beijing.aliyuncs.com/20160104115712_35150.png";
                 $res = $this->down_images($val, $dir);
-
             }
             if($res){
                 db('tuwan')->update(['save' => '1','id'=>$res['id']]);
