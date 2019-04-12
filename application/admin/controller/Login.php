@@ -3,6 +3,7 @@ namespace app\admin\controller;
 use \think\Validate;
 use \think\Controller;
 use \think\Session;
+use \think\Cookie;
 class Login extends Controller
 {
 //    登录
@@ -38,8 +39,8 @@ class Login extends Controller
 
                 if (!empty($data['remember'])) {
                     //如果用户选择了，记录登录状态就把用户名和加了密的密码放到cookie里面
-                    setcookie('username', $res['user'], time() + 3600 * 24 * 365);
-                    setcookie('password', $res['password'], time() + 3600 * 24 * 365);
+                    cookie('username', $res['user'], time() + 3600 * 24 * 365);
+                    cookie('password', $res['password'], time() + 3600 * 24 * 365);
                 }
                 if($res==true){
                     $record['ip']   = $this->ip();

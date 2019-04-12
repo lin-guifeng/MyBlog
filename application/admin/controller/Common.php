@@ -3,18 +3,19 @@ namespace app\admin\controller;
 use \think\Controller;
 use \think\Request;
 use \think\Session;
+use \think\Cookie;
 class Common extends Controller
 {
     public function _initialize()
     {
         if(session('admin_id')==NULL){
-            if (empty($_COOKIE['username']) || empty($_COOKIE['password'])) {  //如果session为空，并且用户没有选择记录登录状态
+            if (empty(cookie['username']) || empty(cookie['password'])) {  //如果session为空，并且用户没有选择记录登录状态
                 $this->error('请先登录','admin/login/login');
             }else{
                 //用户选择了记住登录状态
 //                $user = $this->getUserInfo($_COOKIE['username'], $_COOKIE['password']);
-                $data_login['user'] = $_COOKIE['username'];
-                $data_login['password'] = md5($_COOKIE['password']);
+                $data_login['user'] = cookie['username'];
+                $data_login['password'] = cookie['password'];
                 $user=model('Login')->check($data_login);
                 //去取用户的个人资料
                 if (empty($user)) {
