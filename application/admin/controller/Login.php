@@ -31,7 +31,7 @@ class Login extends Controller
                 if($captcha->check($code)===false){
                     $this->error('验证码错误,请重新登录','admin/login/login');
                 }
-                $data_login['user']=md5($data['user']);
+                $data_login['user']=$data['user'];
                 $data_login['password']=md5($data['password']);
 
                 $res=model('Login')->check($data_login);
