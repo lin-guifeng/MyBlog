@@ -30,10 +30,10 @@ class Login extends Controller
                 if($captcha->check($code)===false){
                     $this->error('验证码错误,请重新登录','admin/login/login');
                 }
+                $data_login['user']=md5($data['user']);
+                $data_login['password']=md5($data['password']);
 
-                $data['password']=md5($data['password']);
-
-                $res=model('Login')->check($data);
+                $res=model('Login')->check($data_login);
 
                 if($res==true){
                     $record['ip']   = $this->ip();
@@ -91,7 +91,7 @@ class Login extends Controller
     //显示验证码
     public function show_captcha(){
         $captcha = new \think\captcha\Captcha();
-        $captcha->imageW=121;
+        $captcha->imageW=150;
         $captcha->imageH = 32;  //图片高
         $captcha->fontSize =14;  //字体大小
         $captcha->length   = 5;  //字符数

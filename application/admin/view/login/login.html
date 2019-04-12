@@ -24,24 +24,33 @@
             <div>
                 <h1 class="logo-name">H+</h1>
             </div>
-            <h3>欢迎使用 H+</h3>
+            <h3>欢迎登录林桂锋个人网站后台管理系统</h3>
             <form class="m-t" role="form" action="{:url('login/login')}" method="post">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="账号" required="" name="user"/>
+                    <input type="text" class="form-control user" placeholder="账号" required="" name="user"/>
                 </div>
+
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="密码" required="" name="password"/>
+                    <input type="password" class="form-control password" placeholder="密码" required="" name="password"/>
                 </div>
+
                 <div class="form-group">
                     <input type="text" class="form-control" name="captcha" placeholder="填写验证码" />
-
                 </div>
+
                 <div class="form-group">
                     <img src="{:url('login/show_captcha')}" alt="" class="passcode" onclick="this.src=this.src+'?'"/>
                 </div>
 
+                <div class="form-group text-left">
+                    <div class="checkbox i-checks">
+                        <label class="no-padding">
+                            <input type="checkbox" id="remember"><i></i> 记住密码
+                        </label>
+                    </div>
+                </div>
 
-                    <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
+                <button type="submit" class="btn btn-primary block full-width m-b">登 录</button>
                 <!--<p class="text-muted text-center">-->
                     <!--<a href="login.html#"><small>忘记密码了？</small></a> | <a href="register.html">注册一个新账号</a>-->
                 <!--</p>-->
@@ -49,4 +58,55 @@
         </div>
     </div>
 </body>
+<script>
+    $(document).ready(function () {
+        $("user").focus();
+        $("#remember").click(function () {
+            if ($(".user").val() == "") {
+                alert("用户名不能为空！");
+            }else if($(".password").val() == ""){
+                alert("密码不能为空！");
+            }else{
+                if ($('#remember').attr("checked")) {
+                    setCookie("userid", $("#input1").val(), 60);
+                    setCookie("upwd", $("#input2").val(), 60);
+                }else{
+                    delCookie("userid");
+                    delCookie("upwd");
+                }
+            }
+        });
+        if (getCookie("userid") != null){
+            $('#remember').attr("checked", "checked");
+            $('.user').val(getCookie("userid"));
+            $('.password').val(getCookie("upwd"));
+        }
+             //写cookies
+        function setCookie(name, value) {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+        //读取cookies
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg)){
+                return unescape(arr[2]);
+            }else{
+                return null;
+            }
+
+        }
+        //删除cookies
+        function delCookie(name) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval = getCookie(name);
+            if (cval != null){
+                document.cookie = name + "=" + cval + ";expires=" + exp.toGMTString();
+            }
+        }
+    })
+</script>
 </html>
