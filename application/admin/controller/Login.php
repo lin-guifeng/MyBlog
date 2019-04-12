@@ -11,6 +11,7 @@ class Login extends Controller
 
         if ($this->request->isPost()){
             $data = $this->request->post();
+
             $rule = [
                 'user'      =>'require',
                 'password'  => 'require',
@@ -25,7 +26,7 @@ class Login extends Controller
             if(!$result){
                 $this->error($validate->getError());
             }else{
-                $code=input('post.captcha');
+                $code=$data['captcha'];
                 $captcha = new \think\captcha\Captcha();
                 if($captcha->check($code)===false){
                     $this->error('验证码错误,请重新登录','admin/login/login');
@@ -34,8 +35,8 @@ class Login extends Controller
                 $data_login['password']=md5($data['password']);
 
                 $res=model('Login')->check($data_login);
-                $remember = input('post.remember');
-                if (!empty($remember)) {
+
+                if (!empty($data['remember'])) {
                     //如果用户选择了，记录登录状态就把用户名和加了密的密码放到cookie里面
                     setcookie('username', $res['user'], time() + 3600 * 24 * 365);
                     setcookie('password', $res['password'], time() + 3600 * 24 * 365);
