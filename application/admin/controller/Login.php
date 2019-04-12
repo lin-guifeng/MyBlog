@@ -19,16 +19,18 @@ class Login extends Controller
                 'user.require'      =>'账号必须填写',
                 'password.require'  => '密码必须填写',
             ];
-            $code=input('post.captcha');
-            $captcha = new \think\captcha\Captcha();
-            if($captcha->check($code)===false){
-                $this->error('验证码错误,请重新登录','admin/login/login');
-            }
+
             $validate = new Validate($rule, $msg);
             $result   = $validate->check($data);
             if(!$result){
                 $this->error($validate->getError());
             }else{
+                $code=input('post.captcha');
+                $captcha = new \think\captcha\Captcha();
+                if($captcha->check($code)===false){
+                    $this->error('验证码错误,请重新登录','admin/login/login');
+                }
+
                 $data['password']=md5($data['password']);
 
                 $res=model('Login')->check($data);
@@ -96,9 +98,9 @@ class Login extends Controller
         $captcha->fontttf = '5.ttf';  //字体
         $captcha->expire = 300;  //有效期
         $captcha->useNoise = false;  //不添加杂点
-        $captcha->reset    = true;
-        $captcha->useCurve =  false;
-        $captcha->useImgBg = true;
+//        $captcha->reset    = true;
+//        $captcha->useCurve =  false;
+//        $captcha->useImgBg = true;
         return $captcha->entry();
     }
 
