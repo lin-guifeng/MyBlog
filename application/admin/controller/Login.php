@@ -100,9 +100,9 @@ class Login extends Controller
     //显示验证码
     public function show_captcha(){
         $captcha = new \think\captcha\Captcha();
-        $captcha->imageW=200;
+        $captcha->imageW=300;
         $captcha->imageH = 64;  //图片高
-        $captcha->fontSize =14;  //字体大小
+        $captcha->fontSize =30;  //字体大小
         $captcha->length   = 5;  //字符数
         $captcha->fontttf = '5.ttf';  //字体
         $captcha->expire = 300;  //有效期
