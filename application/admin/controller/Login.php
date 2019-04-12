@@ -34,7 +34,12 @@ class Login extends Controller
                 $data_login['password']=md5($data['password']);
 
                 $res=model('Login')->check($data_login);
-
+                $remember = input('post.remember');
+                if (!empty($remember)) {
+                    //如果用户选择了，记录登录状态就把用户名和加了密的密码放到cookie里面
+                    setcookie('username', $res['user'], time() + 3600 * 24 * 365);
+                    setcookie('password', $res['password'], time() + 3600 * 24 * 365);
+                }
                 if($res==true){
                     $record['ip']   = $this->ip();
                     $record['aid']  = $res['id'];
@@ -85,6 +90,10 @@ class Login extends Controller
     public function loginout(){
         session('admin_id',NULL);
         session('admin_name',NULL);
+        if (!empty($_COOKIE['username']) || !empty($_COOKIE['password'])) {
+            setcookie('username', null, time() - 3600 * 24 * 365);
+            setcookie('password', null, time() - 3600 * 24 * 365);
+        }
         $this->success('请重新登录','admin/login/login');
     }
 

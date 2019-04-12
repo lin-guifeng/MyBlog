@@ -8,7 +8,25 @@ class Common extends Controller
     public function _initialize()
     {
         if(session('admin_id')==NULL){
-            $this->error('请先登录','admin/login/login');
+            if (empty($_COOKIE['username']) || empty($_COOKIE['password'])) {  //如果session为空，并且用户没有选择记录登录状态
+                $this->error('请先登录','admin/login/login');
+            }else{
+                //用户选择了记住登录状态
+//                $user = $this->getUserInfo($_COOKIE['username'], $_COOKIE['password']);
+                $data_login['user'] = $_COOKIE['username'];
+                $data_login['password'] = md5($_COOKIE['password']);
+                $user=model('Login')->check($data_login);
+                //去取用户的个人资料
+                if (empty($user)) {
+                    //用户名密码不对没取到信息，转到登录页面
+                    $this->error('请重新登录','admin/login/login');
+                } else {
+                    session('admin_id',$user['id']);
+                    session('admin_name',$user['name']);
+                    session('long_time',time());
+                }
+            }
+
         }
         if(session('long_time')+36000<time()){
             session('admin_id',NULL);
@@ -18,6 +36,29 @@ class Common extends Controller
             session('long_time',time());
         }
     }
+
+    //检查用户是否登录
+    function checklogin()
+    {
+        if (empty($_SESSION['user_info'])) {
+            //检查一下session是不是为空
+            if (empty($_COOKIE['username']) || empty($_COOKIE['password'])) {
+                //如果session为空，并且用户没有选择记录登录状
+                header('location:login.php?req_url=' . $_SERVER['REQUEST_URI']);
+            } else {
+                //用户选择了记住登录状态
+                $user = getUserInfo($_COOKIE['username'], $_COOKIE['password']);
+                //去取用户的个人资料
+                if (empty($user)) {
+                    //用户名密码不对没到取到信息，转到登录页面
+                    header('location:login.php?req_url=' . $_SERVER['REQUEST_URI']);
+                } else {
+                    $_SESSION['user_info'] = $user;
+                }
+            }
+        }
+    }
+
     public function getHtml(){
         //搜索指定关键词的百度图片并显示
         $keyword = "美女";
@@ -73,61 +114,7 @@ class Common extends Controller
         return $res;
     }
 
-    public function getTuwan(){
-//        $url = "https://api.tuwan.com/apps/Welfare/getMenuList?from=wap&format=jsonp&page=".$i."&callback=jQuery1123009817294954161926_1553681240965&_=1553681240966";
-//        $con = file_get_contents($url);
-//        $con = substr($con,strpos($con,'(')+1);
-//        $con = substr($con, 0, -1);
-//        $html = json_decode($con,true);
-        $res = [];
-        $html = [];
-//        foreach($html['data'] as $key=>$value){
-        for($i=1;$i<=3000;$i++){
-            $key = urlencode($i);
-//            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$value['id']."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
-            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$key."&callback=jQuery112301655331505750104_1553649347144&_=1553649347147";
-            $urls = preg_replace("/ /", "%20", $urls);
-//            $cons = file_get_contents($urls);
-            $html[$i] = get($urls);
 
-
-//            $cons = substr($cons,strpos($cons,'(')+1);
-//            $cons = substr($cons, 0, -1);
-//            $cons = json_decode($cons,true);
-//            if($cons['error']=='0'){
-//                if (isset($cons['pic'])){$res['pic'] = $cons['pic'];}
-//                $res['thumb'] = json_encode($cons['thumb']);
-//                $res['id'] = $cons['id'];
-//                $html = array_merge((array)$html,(array)$res);
-
-//                $html['data'] = json_encode($cons['data']);
-
-//            }
-//            $res[$key]['pic'] = $value['pic'];
-//            $res[$key]['tags'] = json_encode($cons['tags']);
-//            $res[$key]['thumb'] = json_encode($cons['thumb']);
-//            $res[$key]['title'] = $cons['title'];
-//            $res[$key]['bgm'] = $cons['bgm'];
-//            $res[$key]['bgm_name'] = $cons['bgm_name'];
-//            $res[$key]['bgm_img'] = $cons['bgm_img'];
-//            $res[$key]['pid'] = $cons['id'];
-//            $res[$key]['data'] = json_encode($cons['data']);
-        }
-        return $html;
-    }
-    public function getTuwans($num){
-        $start = ($num-1)*100+1;
-        $end = $num*100;
-        $html=[];
-        for($i=$start;$i<=$end;$i++){
-            $urls = "https://api.tuwan.com/apps/Welfare/detail?type=image&dpr=3&id=".$i;
-            $html = array_merge((array)$html,(array)get($urls));
-        }
-        foreach($html as $key=>$value){
-            $res[$key]['text'] = $value;
-        }
-        return $res;
-    }
 
 
 
